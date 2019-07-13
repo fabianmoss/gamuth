@@ -7,8 +7,9 @@
 - Every chapter must have:
 -- a very clear focus on one musicological question
 -- one particular method to answer this question
--- a range of exercises (not always involving programming) 
+-- a range of exercises (not always involving programming, also listening and composing) 
 -- and a list of relevant references
+- the algorithms/methods used in each chapter should be one of the most basic instances of a class of methods. The point is not to have the best classifier, the best dimensionality reduction, the best regression model etc. but rather to understand the class of problems that we are dealing with. Thinking in these abstract problem classes helps to recognize and understand the nature of other problems more easily. 
 
 ## 1 INTRODUCTION: What is CM?
 - Description and relation to related fields
@@ -38,6 +39,9 @@
 
 ## 5 HISTORY (regression)
 - trends (maybe with a non note-based dataset e.g. metadata)
+
+## 6 PERFORMANCE
+- Spotify API to compare different recordings
 
 ## Further notes (old)
 General remark: Create excercises with listening, composing and analyzing tasks.
