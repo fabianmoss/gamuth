@@ -1,0 +1,85 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global}
+    \entry{Meyer1989}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d9b5ca629d8ba20eea89f79e24d69d5e}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Leonard\bibnamedelima B.},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{d9b5ca629d8ba20eea89f79e24d69d5e}
+      \strng{fullhash}{d9b5ca629d8ba20eea89f79e24d69d5e}
+      \strng{bibnamehash}{d9b5ca629d8ba20eea89f79e24d69d5e}
+      \strng{authorbibnamehash}{d9b5ca629d8ba20eea89f79e24d69d5e}
+      \strng{authornamehash}{d9b5ca629d8ba20eea89f79e24d69d5e}
+      \strng{authorfullhash}{d9b5ca629d8ba20eea89f79e24d69d5e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Style and {Music}. {Theory}, {History}, and {Ideology}}
+      \field{year}{1989}
+    \endentry
+    \entry{horton_compositionality_2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=435dcaf79a20a79d6a97e091043300d4}{%
+           family={Horton},
+           familyi={H\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{435dcaf79a20a79d6a97e091043300d4}
+      \strng{fullhash}{435dcaf79a20a79d6a97e091043300d4}
+      \strng{bibnamehash}{435dcaf79a20a79d6a97e091043300d4}
+      \strng{authorbibnamehash}{435dcaf79a20a79d6a97e091043300d4}
+      \strng{authornamehash}{435dcaf79a20a79d6a97e091043300d4}
+      \strng{authorfullhash}{435dcaf79a20a79d6a97e091043300d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Musicae Scientiae}
+      \field{month}{9}
+      \field{number}{2}
+      \field{title}{The {Compositionality} of {Tonal} {Structures}: A {Generative} {Approach} to the {Notion} of {Musical} {Meaning}}
+      \field{volume}{5}
+      \field{year}{2001}
+      \field{pages}{131\bibrangedash 159}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1177/102986490100500202
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,80 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage[
+   backend=biber,
+   style=apa,
+   citestyle=authoryear-comp,
+   uniquename=false,
+	 uniquelist=false,
+	 sorting=ynt,
+	 % maxcitenames=2
+   natbib=true
+ ]{biblatex}
+\addbibresource{references.bib}
+
+\title{Computational Music Analysis}
+\author{Fabian C. Moss}
+
+\begin{document}
+
+\maketitle 
+
+\tableofcontents
+
+\chapter{What is Computational Music Analysis?}
+
+\citep{horton_compositionality_2001}
+
+\chapter{Representations, Formats, and Programs}
+
+\section{Notes}
+
+pitches, pitch classes, pitch class sets, GISs, 
+
+\section{Chords}
+
+RomanText, Music21, ABC, \*\*kern
+
+\section{Scores}
+
+MIDI, MusicXML, MEI
+
+\chapter{Music Models}
+
+\section{Regular Expressions}
+
+(Chord symbols)
+
+\section{$n$-gram Models}
+
+(Melody)
+
+\section{Hidden Markov Models}
+
+(Functional Harmony)
+
+\section{Probabilistic Context-Free Grammars}
+
+(Harmony, Form)
+
+\chapter{Style}
+
+- Zipf's law (style, idiom, intra-opus patterns) \citep{Meyer1989}
+- feature clustering (k-means, PCA, ...)
+
+\chapter{History}
+
+- trends (maybe with a non note-based dataset e.g. metadata)
+
+\chapter{Performance}
+
+- Spotify API to compare different recordings
+
+
+%%%%% TAIL %%%%%%%
+
+\printbibliography
+
+\end{document}

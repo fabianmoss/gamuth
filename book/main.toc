@@ -1,0 +1,28 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}What is Computational Music Analysis?}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Representations, Formats, and Programs}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Notes}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Chords}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Scores}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Music Models}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Regular Expressions}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}$n$-gram Models}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Hidden Markov Models}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Probabilistic Context-Free Grammars}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Style}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}History}{13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Performance}{15}
