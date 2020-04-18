@@ -29,10 +29,11 @@
 3. Chords (symbolic)
 
 ## 3 MUSIC MODELS
-1. n-gram models (melody)
-2. HMMs (harmony)
-3. CFGs (form; choro)
-4.  more advanced models
+1. Regular Expressions (chord symbols)
+2. n-gram models (melody)
+3. HMMs (harmony)
+4. CFGs (form; choro)
+5.  more advanced models
 
 ## 4 STYLE (classification)
 - feature clustering (k-means, PCA, ...)
