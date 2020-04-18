@@ -2,16 +2,18 @@
 
 (formerly: musictheory - thoughts about an introduction for programmers)
 
-**GENERAL NOTES:** 
+**GENERAL NOTES:**  
+
 - Overarching goal is to have an ACCESSIBLE introduction for musicologists with elementary understanding of a programming language such as Python or R. Requirement should be a sound understanding of how functions, loops, and conditionals work.
 - Every chapter must have:
 -- a very clear focus on one musicological question
 -- one particular method to answer this question
--- a range of exercises (not always involving programming, also listening and composing) 
+-- a range of exercises (not always involving programming, also listening and composing)
 -- and a list of relevant references
-- the algorithms/methods used in each chapter should be one of the most basic instances of a class of methods. The point is not to have the best classifier, the best dimensionality reduction, the best regression model etc. but rather to understand the class of problems that we are dealing with. Thinking in these abstract problem classes helps to recognize and understand the nature of other problems more easily. 
+- the algorithms/methods used in each chapter should be one of the most basic instances of a class of methods. The point is not to have the best classifier, the best dimensionality reduction, the best regression model etc. but rather to understand the class of problems that we are dealing with. Thinking in these abstract problem classes helps to recognize and understand the nature of other problems more easily.
 
 ## 1 INTRODUCTION: What is CM?
+
 - Description and relation to related fields
 -- musicology
 -- music theory
@@ -23,28 +25,35 @@
 - which language to use? Matlab, R, Python, Julia...
 
 ## 2 REPRESENTATIONS AND FORMATS
+
 (This part could e.g. feature (algorithmic) composition exercises)
+
 1. Notes: pitches / pitch classes / pitch class sets / GISs / MIDI
 2. Scores:  (MEI, music21, MusicXML, \*\*kern)
 3. Chords (symbolic)
 
 ## 3 MUSIC MODELS
+
 1. Regular Expressions (chord symbols)
 2. n-gram models (melody)
 3. HMMs (harmony)
 4. CFGs (form; choro)
-5.  more advanced models
+5. more advanced models
 
 ## 4 STYLE (classification)
+
 - feature clustering (k-means, PCA, ...)
 
 ## 5 HISTORY (regression)
+
 - trends (maybe with a non note-based dataset e.g. metadata)
 
 ## 6 PERFORMANCE
+
 - Spotify API to compare different recordings
 
 ## Further notes (old)
+
 General remark: Create excercises with listening, composing and analyzing tasks.
 
 - Sounds in the external world
@@ -60,14 +69,13 @@ General remark: Create excercises with listening, composing and analyzing tasks.
   - pitch class sets
 - intervals
   - counterpoint
-   - consonance / dissonance
+  - consonance / dissonance
   - interval classes
   - interval class vectors
- 
 - special pitch class sets: chords
   - Triads
-   - Euler space
-   - tonnetz
+  - Euler space
+  - tonnetz
   - seventh chords
 
 - notes in time: durations, rhythm

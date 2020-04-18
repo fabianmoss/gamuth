@@ -1,28 +1,30 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}What is Computational Music Analysis?}{5}
+\contentsline {chapter}{\numberline {1}General remarks}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Representations, Formats, and Programs}{7}
+\contentsline {chapter}{\numberline {2}What is Computational Music Analysis?}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Notes}{7}
+\contentsline {chapter}{\numberline {3}Representations, Formats, and Programs}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Chords}{7}
+\contentsline {section}{\numberline {3.1}Notes}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Scores}{7}
+\contentsline {section}{\numberline {3.2}Chords}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Music Models}{9}
+\contentsline {section}{\numberline {3.3}Scores}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Regular Expressions}{9}
+\contentsline {chapter}{\numberline {4}Music Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}$n$-gram Models}{9}
+\contentsline {section}{\numberline {4.1}Regular Expressions}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Hidden Markov Models}{9}
+\contentsline {section}{\numberline {4.2}$n$-gram Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Probabilistic Context-Free Grammars}{9}
+\contentsline {section}{\numberline {4.3}Hidden Markov Models}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Style}{11}
+\contentsline {section}{\numberline {4.4}Probabilistic Context-Free Grammars}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}History}{13}
+\contentsline {chapter}{\numberline {5}Style}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Performance}{15}
+\contentsline {chapter}{\numberline {6}History}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Performance}{17}

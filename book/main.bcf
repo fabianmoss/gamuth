@@ -1879,30 +1879,23 @@
       <bcf:entrytype>book</bcf:entrytype>
       <bcf:entrytype>inbook</bcf:entrytype>
       <bcf:entrytype>bookinbook</bcf:entrytype>
-      <
-        <bcf:field>issn</bcf:field>
-      </bcf:constraint>
-      <bcf:constraint type="data" datatype="ismn">
-        <bcf:field>ismn</bcf:field>
-      </bcf:constraint>
-      <bcf:constraint type="data" datatype="date">
-        <bcf:field>date</bcf:field>
-        <bcf:field>eventdate</bcf:field>
-        <bcf:field>origdate</bcf:field>
-        <bcf:field>urldate</bcf:field>
-      </bcf:constraint>
-      <bcf:constraint type="data" datatype="pattern" pattern="(?:sf|sm|sn|pf|pm|pn|pp)">
-        <bcf:field>gender</bcf:field>
-      </bcf:constraint>
-    </bcf:constraints>
-  </bcf:datamodel>
-  <!-- CITATION DATA -->
-  <!-- SECTION 0 -->
-  <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
-  </bcf:bibdata>
-  <bcf:section number="0">
->
+      <bcf:entrytype>suppbook</bcf:entrytype>
+      <bcf:entrytype>booklet</bcf:entrytype>
+      <bcf:entrytype>collection</bcf:entrytype>
+      <bcf:entrytype>incollection</bcf:entrytype>
+      <bcf:entrytype>suppcollection</bcf:entrytype>
+      <bcf:entrytype>manual</bcf:entrytype>
+      <bcf:entrytype>misc</bcf:entrytype>
+      <bcf:entrytype>mvbook</bcf:entrytype>
+      <bcf:entrytype>mvcollection</bcf:entrytype>
+      <bcf:entrytype>online</bcf:entrytype>
+      <bcf:entrytype>patent</bcf:entrytype>
+      <bcf:entrytype>periodical</bcf:entrytype>
+      <bcf:entrytype>suppperiodical</bcf:entrytype>
+      <bcf:entrytype>proceedings</bcf:entrytype>
+      <bcf:entrytype>inproceedings</bcf:entrytype>
+      <bcf:entrytype>reference</bcf:entrytype>
+      <bcf:entrytype>inreference</bcf:entrytype>
       <bcf:entrytype>report</bcf:entrytype>
       <bcf:entrytype>set</bcf:entrytype>
       <bcf:entrytype>thesis</bcf:entrytype>
