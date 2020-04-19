@@ -17,7 +17,7 @@ class Tone:
         self.accidentals = self.get_accs()
         self.step = self.get_step()
         self.syntonic = self.get_syntonic()
-        self.label = self.step + self.accidentals + self.syntonic + str(self.octave)
+        self.label = self.get_label()
 
     def get_accs(self):
         accs = np.divmod(self.fifths_pos + 1, 7)[0] # shift 0 to "C"
@@ -27,8 +27,17 @@ class Tone:
         return diatonic[ (np.divmod(self.fifths_pos, 7)[1] + 1) % 7 ] # shift 0 to "C"
 
     def get_syntonic(self):
-        return self.third * "\'" if self.third > 0 else self.third * ","
+        return self.third * "\'" if self.third > 0 else np.abs(self.third) * ","
 
+    def get_label(self):
+        return self.step + self.accidentals + self.syntonic + str(self.octave)
+
+    # def get_coordinates(self):
+    #     match = re.match("([A-G]#*|b*)(,*|'*)\d", self.name)
+    #     self.step = match[0]
+    #     self.accidentals = match[1]
+    #     self.syntonic = match[2]
+    #     self.octave = match[3]
 
     # if all(v is not None for v in [self.octave, self.fifth, self.third, self.name]):
     #     assert self.name == self.inferred_name
@@ -44,3 +53,5 @@ class Interval:
         s = np.asarray(self.source.euler_coordinate)
         t = np.asarray(self.target.euler_coordinate)
         return np.linalg.norm(t - s)
+
+    # def get_interval_name(self):
