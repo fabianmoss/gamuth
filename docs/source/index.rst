@@ -1,17 +1,22 @@
 Learn music theory the hard way!
 ================================
 
+
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
 
-This project has been inspired by 
+The logo, a `hemidemisemiquaver`_ (or a sixty-fourth note), 
+symbolically reflects the level of difficulty.
 
-    * Lewin (2007). *Generalized Intervals and Transformations*.
-      Oxford: Oxford University Press.
+.. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
-This is an ongoing work, hence no guarantee for completeness or accuracy yet.
+This project has been inspired by this great book:
 
+* Lewin, D. (2007). *Generalized Intervals and Transformations*.
+  Oxford: Oxford University Press.
+
+Since this is ongoing work, I can give no guarantee for completeness or accuracy.
 Feel free to `contact me`_ with your questions and suggestions!
 
 .. _contact me: fabianmoss@gmail.com

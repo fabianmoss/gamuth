@@ -57,3 +57,5 @@ html_static_path = ['_static']
 
 # link to master doc
 master_doc = 'index'
+
+html_logo = './_static/logo2.png'
