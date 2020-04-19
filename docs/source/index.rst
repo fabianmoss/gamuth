@@ -6,6 +6,8 @@
 Welcome to the musictheory documentation!
 =========================================
 
+Describe the project here...
+
 Another header
 ==============
 
