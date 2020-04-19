@@ -191,6 +191,7 @@ class Tone:
     # if all(v is not None for v in [self.octave, self.fifth, self.third, self.name]):
     #     assert self.name == self.inferred_name
 
+
 class Interval:
     """ Class for an interval between two tones `s` (source) and `t` (target). """
     def __init__(self, source, target):
