@@ -5,9 +5,8 @@ Learn music theory the hard way!
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-
 The logo, a `hemidemisemiquaver`_ (or a sixty-fourth note), 
-symbolically reflects the level of difficulty.
+symbolically reflects this level of difficulty.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
