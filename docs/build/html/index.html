@@ -39,7 +39,7 @@
 <dl class="method">
 <dt id="musictheory.main.Interval.euclidean_distance">
 <code class="sig-name descname">euclidean_distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.euclidean_distance" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function calculates the Euclidean distance between two tones
+<dd><p>Calculates the Euclidean distance between two tones
 with coordinates in Euler space.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -60,6 +60,94 @@ with coordinates in Euler space.</p>
 <dt id="musictheory.main.Tone">
 <em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param">octave=None</em>, <em class="sig-param">fifth=None</em>, <em class="sig-param">third=None</em>, <em class="sig-param">name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class for tones.</p>
+<dl class="method">
+<dt id="musictheory.main.Tone.get_accs">
+<code class="sig-name descname">get_accs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_accs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the accidentals of the tone (flats (<cite>b</cite>) or sharps (<cite>#</cite>))..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The accidentals of the tone.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_frequency">
+<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><em class="sig-param">chamber_tone=440.0</em>, <em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the frequency of the tone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chamber_tone</strong> (<em>float</em>) – The frequency in Hz of the chamber tone. Default: 440.0 (A)</p></li>
+<li><p><strong>precision</strong> (<em>int</em>) – Rounding precision for the frequency.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The frequency of the tone in Hertz (Hz).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_midi_pitch">
+<code class="sig-name descname">get_midi_pitch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_midi_pitch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the MIDI pitch of the tone.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The MIDI pitch of the tone if it is in MIDI pitch range (0–128)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_pitch_class_chromatic">
+<code class="sig-name descname">get_pitch_class_chromatic</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_chromatic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the pitch class on the tone on the chromatic circle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>start</strong> (<em>int</em>) – Tone that that gets mapped to 0 (default: C=0).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The pitch class of the tone on the chromatic circle.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_pitch_class_circle_of_fifths">
+<code class="sig-name descname">get_pitch_class_circle_of_fifths</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_circle_of_fifths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the pitch class on the tone on the circle of fifths.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>start</strong> (<em>int</em>) – Line-of-fifths number of the tone that gets mapped to 0 (default: C=0).</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The pitch class of the tone on the circle of fifths.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 <div class="toctree-wrapper compound">

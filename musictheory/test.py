@@ -10,6 +10,11 @@ if __name__ == "__main__":
     print(t.label)
     print(i.interval)
 
+    print(t.pitch_class_chromatic)
+    print(s.pitch_class_circle_of_fifths)
+    print(s.midi_pitch, t.midi_pitch)
+    print(s.frequency,t.frequency)
+
     # print(s.accidentals)
     # print(s.step)
     
