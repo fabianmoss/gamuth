@@ -9,7 +9,6 @@ Welcome to musictheory's documentation!
    :caption: Contents:
 
 
-
 Indices and tables
 ==================
 
