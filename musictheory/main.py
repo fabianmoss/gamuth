@@ -224,7 +224,7 @@ class Interval:
             >>> t = Tone(0,-1,-1) # Db,0
             >>> i = Interval(s,t) # the interval between B1 and Db0 is a descending thirteenth
             >>> i.generic_interval()
-            13
+            -13
         """
         g = 7 * self.interval[0] + 4 * self.interval[1] + 2 * self.interval[2]
         if g > 0:
