@@ -12,6 +12,10 @@ This project has been inspired by
 
 This is an ongoing work, hence no guarantee for completeness or accuracy yet.
 
+Feel free to `contact me`_ with your questions and suggestions!
+
+.. _contact me: fabianmoss@gmail.com
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
