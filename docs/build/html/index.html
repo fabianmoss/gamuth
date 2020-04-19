@@ -30,20 +30,24 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-musictheory.main">
-<span id="welcome-to-musictheory-s-documentation"></span><h1>Welcome to musictheory’s documentation!<a class="headerlink" href="#module-musictheory.main" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="welcome-to-musictheory-s-documentation">
+<h1>Welcome to musictheory’s documentation!<a class="headerlink" href="#welcome-to-musictheory-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="module-musictheory.main">
+<span id="intervals-and-tones"></span><h2>Intervals and Tones<a class="headerlink" href="#module-musictheory.main" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-musictheory"></span><dl class="class">
 <dt id="musictheory.main.Interval">
 <em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class for an interval between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
 <dl class="method">
 <dt id="musictheory.main.Interval.euclidean_distance">
-<code class="sig-name descname">euclidean_distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.euclidean_distance" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.euclidean_distance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculates the Euclidean distance between two tones
 with coordinates in Euler space.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
+<dd class="field-odd"><p><strong>precision</strong> (<em>int</em>) – Rounding precision.</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The Euclidean distance between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
@@ -52,6 +56,14 @@ with coordinates in Euler space.</p>
 <dd class="field-odd"><p>float</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C_0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># D&#39;1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">euclidean_distance</span><span class="p">()</span>
+<span class="go">2.45</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -61,8 +73,8 @@ with coordinates in Euler space.</p>
 <em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param">octave=None</em>, <em class="sig-param">fifth=None</em>, <em class="sig-param">third=None</em>, <em class="sig-param">name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class for tones.</p>
 <dl class="method">
-<dt id="musictheory.main.Tone.get_accs">
-<code class="sig-name descname">get_accs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_accs" title="Permalink to this definition">¶</a></dt>
+<dt id="musictheory.main.Tone.get_accidentals">
+<code class="sig-name descname">get_accidentals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_accidentals" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gets the accidentals of the tone (flats (<cite>b</cite>) or sharps (<cite>#</cite>))..</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -75,6 +87,12 @@ with coordinates in Euler space.</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_accidentals</span><span class="p">()</span>
+<span class="go">`#`</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -85,7 +103,7 @@ with coordinates in Euler space.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chamber_tone</strong> (<em>float</em>) – The frequency in Hz of the chamber tone. Default: 440.0 (A)</p></li>
-<li><p><strong>precision</strong> (<em>int</em>) – Rounding precision for the frequency.</p></li>
+<li><p><strong>precision</strong> (<em>int</em>) – Rounding precision.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -95,6 +113,36 @@ with coordinates in Euler space.</p>
 <dd class="field-odd"><p>float</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_frequency</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">261.626</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_label">
+<code class="sig-name descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the complete label of the tone, consisting of its note name, syntonic position, and octave.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The accidentals of the tone.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">get_label</span><span class="p">(),</span> <span class="n">ab</span><span class="o">.</span><span class="n">get_label</span><span class="p">()</span>
+<span class="go">`C_0` `Ab,1`</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -112,6 +160,12 @@ with coordinates in Euler space.</p>
 <dd class="field-odd"><p>int</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_midi_pitch</span><span class="p">()</span>
+<span class="go">60</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -129,11 +183,17 @@ with coordinates in Euler space.</p>
 <dd class="field-odd"><p>int</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class_chromatic</span><span class="p">()</span>
+<span class="go">7</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_pitch_class_circle_of_fifths">
-<code class="sig-name descname">get_pitch_class_circle_of_fifths</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_circle_of_fifths" title="Permalink to this definition">¶</a></dt>
+<dt id="musictheory.main.Tone.get_pitch_class_fifths">
+<code class="sig-name descname">get_pitch_class_fifths</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_fifths" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the pitch class on the tone on the circle of fifths.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -146,11 +206,66 @@ with coordinates in Euler space.</p>
 <dd class="field-odd"><p>int</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class_fifths</span><span class="p">()</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_step">
+<code class="sig-name descname">get_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the diatonic letter name (C, D, E, F, G, A, or B) of the tone <em>without</em> accidentals.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The diatonic step of the tone.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_step</span><span class="p">()</span>
+<span class="go">`C`</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Tone.get_syntonic">
+<code class="sig-name descname">get_syntonic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_syntonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the value of the syntonic level in Euler space.
+Tones on the same syntonic line as central C are marked with <cite>_</cite>,
+and those above or below this line with <cite>‘</cite> or <cite>,</cite>, respectively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The number of thirds above or below the central C.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">e1</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Pythagorean major third above C</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e2</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Just major third above C</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e3</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Just major third below G sharp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">e1</span><span class="o">.</span><span class="n">get_syntonic</span><span class="p">(),</span> <span class="n">e2</span><span class="o">.</span><span class="n">get_syntonic</span><span class="p">(),</span> <span class="n">e3</span><span class="o">.</span><span class="n">get_syntonic</span><span class="p">()</span>
+<span class="go">`&#39;` `_` `,`</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
 
-<div class="toctree-wrapper compound">
 </div>
 </div>
 <div class="section" id="indices-and-tables">

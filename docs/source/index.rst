@@ -1,13 +1,15 @@
 Welcome to musictheory's documentation!
 =======================================
 
-.. automodule:: musictheory.main
-    :members:
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+Intervals and Tones
+-------------------
+.. automodule:: musictheory.main
+    :members:
 
 Indices and tables
 ==================
