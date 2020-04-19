@@ -1,6 +1,16 @@
-Welcome to musictheory's documentation!
-=======================================
+Learn music theory the hard way!
+================================
 
+This is not a pedagogical resource for basic music theory concepts
+but an in-depth introduction into the structures of Western music,
+built axiomatically from tones and their relations.
+
+This project has been inspired by 
+
+    * Lewin (2007). *Generalized Intervals and Transformations*.
+      Oxford: Oxford University Press.
+
+This is an ongoing work, hence no guarantee for completeness or accuracy yet.
 
 .. toctree::
    :maxdepth: 2
