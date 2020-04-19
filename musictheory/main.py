@@ -1,3 +1,10 @@
+"""
+.. module:: musictheory
+    :synopsis: a python module for music theory
+ 
+.. moduleauthor:: Fabian C. Moss <fabianmoss@gmail.com>
+"""
+
 import numpy as np
 import re
 
@@ -5,6 +12,7 @@ diatonic = np.array(list("FCGDAEB"))
 accidentals = ["#", "b"]
 
 class Tone:
+    """ Class for tones. """
     def __init__(self, octave=None, fifth=None, third=None, name=None):
         # coordinates
         self.octave = octave
@@ -43,6 +51,7 @@ class Tone:
     #     assert self.name == self.inferred_name
 
 class Interval:
+    """ Class for an interval between two tones `s` (source) and `t` (target). """
     def __init__(self, source, target):
         self.source = source
         self.target = target
@@ -50,6 +59,19 @@ class Interval:
         self.interval = target.euler_coordinate - source.euler_coordinate
     
     def euclidean_distance(self):
+        '''
+        This function calculates the Euclidean distance between two tones
+        with coordinates in Euler space.
+
+        Arguments
+        ---------
+            None
+            
+        Returns
+        -------
+        float
+            The Euclidean distance between two tones `s` (source) and `t` (target).        
+        '''
         s = np.asarray(self.source.euler_coordinate)
         t = np.asarray(self.target.euler_coordinate)
         return np.linalg.norm(t - s)
