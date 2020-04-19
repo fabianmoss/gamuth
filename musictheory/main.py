@@ -199,8 +199,60 @@ class Interval:
         self.target = target
 
         self.interval = target.euler_coordinate - source.euler_coordinate
+        self.directed_generic_interval = self.get_directed_generic_interval()
+        self.absolute_generic_interval = self.get_absolute_generic_interval()
+        self.euclidean_distance = self.get_euclidean_distance()
+
+    def get_directed_generic_interval(self):
+        """
+        Generic interval (directed) between two tones.
+
+        Parameters:
+            None
+
+        Returns:
+            int: Directed generic interval between `s` and `t`.
+
+        Example:
+            >>> s = Tone(0,-1,-1) # Db,0
+            >>> t = Tone(0,1,1) # B'0
+            >>> i = Interval(s,t) # the interval between Db0 and B1 is an ascending thirteenth
+            >>> i.generic_interval()
+            13
+
+            >>> s = Tone(0,1,1) # B'0
+            >>> t = Tone(0,-1,-1) # Db,0
+            >>> i = Interval(s,t) # the interval between B1 and Db0 is a descending thirteenth
+            >>> i.generic_interval()
+            13
+        """
+        g = 7 * self.interval[0] + 4 * self.interval[1] + 2 * self.interval[2]
+        if g > 0:
+            return g + 1
+        elif g < 0:
+            return g - 1
+        else:
+            return 1
+
+    # def get_directed_generic_interval_class(self):
+    #     return self.directed_generic_interval % 8
+
+    # def get_absolute_generic_interval_class(self):
+    #     return np.abs(self.directed_generic_interval % 7)
+
+    # def get_absolute_generic_interval(self):
+    #     """Absolute value of the generic interval size."""
+    #     return np.abs(self.get_directed_generic_interval())
+
+    # def get_directed_specific_interval(self):
+
+    #     # within octave
+    #     self.absolute_generic_interval % 7
+
+    #     direction, size = np.sign(self.generic_interval()), np.abs(self.generic_interval())
+    #     return str(direction) + str(size)
     
-    def euclidean_distance(self, precision=2):
+    def get_euclidean_distance(self, precision=2):
         '''
         Calculates the Euclidean distance between two tones
         with coordinates in Euler space.
@@ -215,7 +267,7 @@ class Interval:
             >>> s = Tone(0,0,0) # C_0
             >>> t = Tone(1,2,1) # D\'1
             >>> i = Interval(s,t)
-            >>> i.euclidean_distance()
+            >>> i.get_euclidean_distance()
             2.45
         '''
         s = np.asarray(self.source.euler_coordinate)
