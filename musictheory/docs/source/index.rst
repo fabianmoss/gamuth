@@ -34,8 +34,6 @@ Content
    :maxdepth: 2
 
    install
-   tone
-   interval
    api
 
 Indices and tables
