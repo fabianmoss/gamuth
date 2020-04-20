@@ -12,7 +12,9 @@
 -- and a list of relevant references
 - the algorithms/methods used in each chapter should be one of the most basic instances of a class of methods. The point is not to have the best classifier, the best dimensionality reduction, the best regression model etc. but rather to understand the class of problems that we are dealing with. Thinking in these abstract problem classes helps to recognize and understand the nature of other problems more easily.
 
-## INTRODUCTION: What is CM?
+## INTRODUCTION
+
+What is CM?
 
 - Description and relation to related fields
 -- musicology
