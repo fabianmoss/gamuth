@@ -28,11 +28,18 @@
 
 (This part could e.g. feature (algorithmic) composition exercises)
 
-1. Notes: pitches / pitch classes / pitch class sets / GISs / MIDI
-2. Scores:  (MEI, music21, MusicXML, \*\*kern)
-3. Chords (symbolic)
+1. Scores:  (MEI, music21, MusicXML, \*\*kern, MIDI)
+2. Chords (symbolic)
 
-## 3 MUSIC MODELS
+## 3 FUNDAMENTALS
+
+1. Tones
+2. pitches / pitch classes / pitch class sets
+3. GISs
+4. Euler Space / Tonnetz / Tonal Space
+5. Frequency / Temperament
+
+## 4 MUSIC MODELS
 
 1. Regular Expressions (chord symbols)
 2. n-gram models (melody)
@@ -40,15 +47,15 @@
 4. CFGs (form; choro)
 5. more advanced models
 
-## 4 STYLE (classification)
+## 5 STYLE (classification)
 
 - feature clustering (k-means, PCA, ...)
 
-## 5 HISTORY (regression)
+## 6 HISTORY (regression)
 
 - trends (maybe with a non note-based dataset e.g. metadata)
 
-## 6 PERFORMANCE
+## 7 PERFORMANCE
 
 - Spotify API to compare different recordings
 
