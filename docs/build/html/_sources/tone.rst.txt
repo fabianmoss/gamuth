@@ -1,4 +1,0 @@
-Tone
-====
-
-.. automodule: musictheory.main

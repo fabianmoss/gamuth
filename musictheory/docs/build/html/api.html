@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>musictheory API &#8212; musictheory 0.0.1 documentation</title>
+    <title>API &#8212; musictheory 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -31,15 +31,16 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-musictheory.main">
-<span id="musictheory-api"></span><h1><code class="docutils literal notranslate"><span class="pre">musictheory</span></code> API<a class="headerlink" href="#module-musictheory.main" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<p>The entire <code class="docutils literal notranslate"><span class="pre">musictheory</span></code> API.</p>
 <span class="target" id="module-musictheory"></span><dl class="class">
-<dt id="musictheory.main.Interval">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval" title="Permalink to this definition">¶</a></dt>
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">main.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">target</em><span class="sig-paren">)</span></dt>
 <dd><p>Class for an interval between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
 <dl class="method">
-<dt id="musictheory.main.Interval.get_euclidean_distance">
-<code class="sig-name descname">get_euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_euclidean_distance" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param">precision=2</em><span class="sig-paren">)</span></dt>
 <dd><p>Calculates the Euclidean distance between two tones
 with coordinates in Euler space.</p>
 <dl class="field-list simple">
@@ -64,8 +65,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Interval.get_generic_interval">
-<code class="sig-name descname">get_generic_interval</code><span class="sig-paren">(</span><em class="sig-param">directed=True</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_generic_interval" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_generic_interval</code><span class="sig-paren">(</span><em class="sig-param">directed=True</em><span class="sig-paren">)</span></dt>
 <dd><p>Generic interval (directed) between two tones.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -101,12 +102,12 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="class">
-<dt id="musictheory.main.Tone">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param">octave=None</em>, <em class="sig-param">fifth=None</em>, <em class="sig-param">third=None</em>, <em class="sig-param">name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone" title="Permalink to this definition">¶</a></dt>
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">main.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param">octave=None</em>, <em class="sig-param">fifth=None</em>, <em class="sig-param">third=None</em>, <em class="sig-param">name=None</em><span class="sig-paren">)</span></dt>
 <dd><p>Class for tones.</p>
 <dl class="method">
-<dt id="musictheory.main.Tone.get_accidentals">
-<code class="sig-name descname">get_accidentals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_accidentals" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_accidentals</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the accidentals of the tone (flats (<cite>b</cite>) or sharps (<cite>#</cite>))..</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -128,8 +129,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_frequency">
-<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><em class="sig-param">chamber_tone=440.0</em>, <em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_frequency" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><em class="sig-param">chamber_tone=440.0</em>, <em class="sig-param">precision=2</em><span class="sig-paren">)</span></dt>
 <dd><p>Get the frequency of the tone.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -154,8 +155,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_label">
-<code class="sig-name descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_label" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the complete label of the tone, consisting of its note name, syntonic position, and octave.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -178,8 +179,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_midi_pitch">
-<code class="sig-name descname">get_midi_pitch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_midi_pitch" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_midi_pitch</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Get the MIDI pitch of the tone.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -201,8 +202,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_pitch_class">
-<code class="sig-name descname">get_pitch_class</code><span class="sig-paren">(</span><em class="sig-param">start=0</em>, <em class="sig-param">order='chromatic'</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_pitch_class</code><span class="sig-paren">(</span><em class="sig-param">start=0</em>, <em class="sig-param">order='chromatic'</em><span class="sig-paren">)</span></dt>
 <dd><p>Get the pitch-class number on the circle of fifths or the chromatic circle.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -232,8 +233,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_step">
-<code class="sig-name descname">get_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_step" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the diatonic letter name (C, D, E, F, G, A, or B) of the tone <em>without</em> accidentals.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -255,8 +256,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_syntonic">
-<code class="sig-name descname">get_syntonic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_syntonic" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_syntonic</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the value of the syntonic level in Euler space.
 Tones on the same syntonic line as central C are marked with <cite>_</cite>,
 and those above or below this line with <cite>‘</cite> or <cite>,</cite>, respectively.</p>
@@ -309,7 +310,7 @@ and those above or below this line with <cite>‘</cite> or <cite>,</cite>, resp
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tone.html">Tone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="interval.html">Interval</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">musictheory</span></code> API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a></li>
 </ul>
 
 <div class="relations">

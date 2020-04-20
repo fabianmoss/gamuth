@@ -1,5 +1,0 @@
-Interval
-========
-
-.. autoclass: Interval
-   :members:
