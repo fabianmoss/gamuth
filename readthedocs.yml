@@ -20,6 +20,4 @@ formats: all
 python:
   version: 3.7
   install:
-    - requirements: requirements.txt
-
-requirements_file: requirements.txt
+    - requirements: ./requirements.txt
