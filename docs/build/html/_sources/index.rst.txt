@@ -24,6 +24,8 @@ Feel free to `contact me`_ with your questions and suggestions!
    :maxdepth: 2
    :caption: Contents:
 
+   install
+
 Intervals and Tones
 -------------------
 .. automodule:: musictheory.main
