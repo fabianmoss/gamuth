@@ -53,38 +53,6 @@ Feel free to <a class="reference external" href="mailto:fabianmoss&#37;&#52;&#48
 <em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class for an interval between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
 <dl class="method">
-<dt id="musictheory.main.Interval.get_directed_generic_interval">
-<code class="sig-name descname">get_directed_generic_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_directed_generic_interval" title="Permalink to this definition">¶</a></dt>
-<dd><p>Generic interval (directed) between two tones.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Directed generic interval between <cite>s</cite> and <cite>t</cite>.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between Db0 and B1 is an ascending thirteenth</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">()</span>
-<span class="go">13</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between B1 and Db0 is a descending thirteenth</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">()</span>
-<span class="go">-13</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
 <dt id="musictheory.main.Interval.get_euclidean_distance">
 <code class="sig-name descname">get_euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_euclidean_distance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculates the Euclidean distance between two tones
@@ -106,6 +74,45 @@ with coordinates in Euler space.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">get_euclidean_distance</span><span class="p">()</span>
 <span class="go">2.45</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="musictheory.main.Interval.get_generic_interval">
+<code class="sig-name descname">get_generic_interval</code><span class="sig-paren">(</span><em class="sig-param">directed=True</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_generic_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generic interval (directed) between two tones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>directed</strong> (<em>bool</em>) – Affects whether the returned interval is directed or not.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(Directed) generic interval from <cite>s</cite> to <cite>t</cite>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between Db0 and B1 is an ascending thirteenth</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">()</span>
+<span class="go">13</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between B1 and Db0 is a descending thirteenth</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">()</span>
+<span class="go">-13</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between B1 and Db0 is a descending thirteenth</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">(</span><span class="n">directed</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">13</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -213,15 +220,18 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="musictheory.main.Tone.get_pitch_class_chromatic">
-<code class="sig-name descname">get_pitch_class_chromatic</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_chromatic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the pitch class on the tone on the chromatic circle.</p>
+<dt id="musictheory.main.Tone.get_pitch_class">
+<code class="sig-name descname">get_pitch_class</code><span class="sig-paren">(</span><em class="sig-param">start=0</em>, <em class="sig-param">order='chromatic'</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the pitch-class number on the circle of fifths or the chromatic circle.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>start</strong> (<em>int</em>) – Tone that that gets mapped to 0 (default: C=0).</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em>) – Pitch-class number that gets mapped to C (default: 0).</p></li>
+<li><p><strong>order</strong> (<em>str</em>) – Return pitch-class number on the chromatic circle (default) or the circle of fifths.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The pitch class of the tone on the chromatic circle.</p>
+<dd class="field-even"><p>The pitch class of the tone on the circle of fifths or the chromatic circle.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>int</p>
@@ -229,31 +239,13 @@ with coordinates in Euler space.</p>
 </dl>
 <p class="rubric">Example</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class_chromatic</span><span class="p">()</span>
-<span class="go">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="s2">&quot;chromatic&quot;</span><span class="p">)</span>
+<span class="go">1</span>
 </pre></div>
 </div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_pitch_class_fifths">
-<code class="sig-name descname">get_pitch_class_fifths</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_fifths" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the pitch class on the tone on the circle of fifths.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>start</strong> (<em>int</em>) – Line-of-fifths number of the tone that gets mapped to 0 (default: C=0).</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The pitch class of the tone on the circle of fifths.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class_fifths</span><span class="p">()</span>
-<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class</span><span class="p">(</span><span class="n">order</span><span class="o">=</span><span class="s2">&quot;fifths&quot;</span><span class="p">)</span>
+<span class="go">7</span>
 </pre></div>
 </div>
 </dd></dl>

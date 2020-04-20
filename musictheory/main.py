@@ -30,8 +30,6 @@ class Tone:
         # other representations
         self.midi_pitch = self.get_midi_pitch()
         self.frequency = self.get_frequency()
-        self.pitch_class_chromatic = self.get_pitch_class_chromatic()
-        self.pitch_class_fifths = self.get_pitch_class_fifths()
 
     def get_accidentals(self):
         '''
@@ -109,37 +107,47 @@ class Tone:
         '''
         return self.step + self.accidentals + self.syntonic + str(self.octave)
 
-    def get_pitch_class_fifths(self, start=0):
-        '''Get the pitch class on the tone on the circle of fifths.
+    def get_pitch_class(self, start=0, order="chromatic"):
+        '''Get the pitch-class number on the circle of fifths or the chromatic circle.
 
         Args:
-            start (int): Line-of-fifths number of the tone that gets mapped to 0 (default: C=0).
+            start (int): Pitch-class number that gets mapped to C (default: 0).
+            order (str): Return pitch-class number on the chromatic circle (default) or the circle of fifths.
 
         Returns:
-            int: The pitch class of the tone on the circle of fifths.
+            int: The pitch class of the tone on the circle of fifths or the chromatic circle.
 
         Example:
             >>> t = Tone(0,7,0) # C sharp
-            >>> t.get_pitch_class_fifths()
+            >>> t.get_pitch_class(order="chromatic")
             1
-        '''
-        return start + self.fifths_pos % 12
 
-    def get_pitch_class_chromatic(self, start=0):
-        '''Get the pitch class on the tone on the chromatic circle.
-
-        Args:
-            start (int): Tone that that gets mapped to 0 (default: C=0).
-
-        Returns:
-            int: The pitch class of the tone on the chromatic circle.
-
-        Example:
             >>> t = Tone(0,7,0) # C sharp
-            >>> t.get_pitch_class_chromatic()
+            >>> t.get_pitch_class(order="fifths")
             7
         '''
-        return ((self.fifths_pos % 12) * 7) % 12
+        if order == "chromatic":
+            return ((self.fifths_pos % 12) * 7) % 12
+        elif order == "fifths":
+            return start + self.fifths_pos % 12
+        else:
+            raise f"`order` was given a wrong keyword: {order}. Use `chromatic` or `fifths`."
+
+    # def get_pitch_class_chromatic(self, start=0):
+    #     '''Get the pitch class on the tone on the chromatic circle.
+
+    #     Args:
+    #         start (int): Tone that that gets mapped to 0 (default: C=0).
+
+    #     Returns:
+    #         int: The pitch class of the tone on the chromatic circle.
+
+    #     Example:
+    #         >>> t = Tone(0,7,0) # C sharp
+    #         >>> t.get_pitch_class_chromatic()
+    #         7
+    #     '''
+    #     return ((self.fifths_pos % 12) * 7) % 12
 
     def get_midi_pitch(self):
         '''Get the MIDI pitch of the tone.
@@ -199,19 +207,18 @@ class Interval:
         self.target = target
 
         self.interval = target.euler_coordinate - source.euler_coordinate
-        self.directed_generic_interval = self.get_directed_generic_interval()
-        self.absolute_generic_interval = self.get_absolute_generic_interval()
+        self.generic_interval = self.get_generic_interval()
         self.euclidean_distance = self.get_euclidean_distance()
 
-    def get_directed_generic_interval(self):
+    def get_generic_interval(self, directed=True):
         """
         Generic interval (directed) between two tones.
 
         Parameters:
-            None
+            directed (bool): Affects whether the returned interval is directed or not.
 
         Returns:
-            int: Directed generic interval between `s` and `t`.
+            int: (Directed) generic interval from `s` to `t`.
 
         Example:
             >>> s = Tone(0,-1,-1) # Db,0
@@ -225,33 +232,24 @@ class Interval:
             >>> i = Interval(s,t) # the interval between B1 and Db0 is a descending thirteenth
             >>> i.generic_interval()
             -13
+
+            >>> s = Tone(0,1,1) # B'0
+            >>> t = Tone(0,-1,-1) # Db,0
+            >>> i = Interval(s,t) # the interval between B1 and Db0 is a descending thirteenth
+            >>> i.generic_interval(directed=False)
+            13
         """
-        g = 7 * self.interval[0] + 4 * self.interval[1] + 2 * self.interval[2]
-        if g > 0:
-            return g + 1
-        elif g < 0:
-            return g - 1
+        if directed:
+            g = 7 * self.interval[0] + 4 * self.interval[1] + 2 * self.interval[2]
+            if g > 0:
+                return g + 1
+            elif g < 0:
+                return g - 1
+            else:
+                return 1
         else:
-            return 1
+            return np.abs(g)
 
-    # def get_directed_generic_interval_class(self):
-    #     return self.directed_generic_interval % 8
-
-    # def get_absolute_generic_interval_class(self):
-    #     return np.abs(self.directed_generic_interval % 7)
-
-    # def get_absolute_generic_interval(self):
-    #     """Absolute value of the generic interval size."""
-    #     return np.abs(self.get_directed_generic_interval())
-
-    # def get_directed_specific_interval(self):
-
-    #     # within octave
-    #     self.absolute_generic_interval % 7
-
-    #     direction, size = np.sign(self.generic_interval()), np.abs(self.generic_interval())
-    #     return str(direction) + str(size)
-    
     def get_euclidean_distance(self, precision=2):
         '''
         Calculates the Euclidean distance between two tones
@@ -273,5 +271,3 @@ class Interval:
         s = np.asarray(self.source.euler_coordinate)
         t = np.asarray(self.target.euler_coordinate)
         return round(np.linalg.norm(t - s), precision)
-
-    # def get_interval_name(self):
