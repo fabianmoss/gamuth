@@ -221,22 +221,18 @@ class Interval:
             int: (Directed) generic interval from `s` to `t`.
 
         Example:
-            >>> s = Tone(0,-1,-1) # Db,0
-            >>> t = Tone(0,1,1) # B'0
-            >>> i = Interval(s,t) # the interval between Db0 and B1 is an ascending thirteenth
-            >>> i.generic_interval()
+            >>> db = Tone(0,-1,-1) # Db,0
+            >>> b = Tone(0,1,1) # B'0
+            >>> i1 = Interval(db, b) # the interval between Db0 and B1 is an ascending thirteenth
+            >>> i1.generic_interval()
             13
 
-            >>> s = Tone(0,1,1) # B'0
-            >>> t = Tone(0,-1,-1) # Db,0
-            >>> i = Interval(s,t) # the interval between B1 and Db0 is a descending thirteenth
-            >>> i.generic_interval()
+            >>> i2 = Interval(b, db) # the interval between B1 and Db0 is a descending thirteenth
+            >>> i2.generic_interval()
             -13
 
-            >>> s = Tone(0,1,1) # B'0
-            >>> t = Tone(0,-1,-1) # Db,0
-            >>> i = Interval(s,t) # the interval between B1 and Db0 is a descending thirteenth
-            >>> i.generic_interval(directed=False)
+            >>> i3 = Interval(b, db) # the interval between B1 and Db0 is a descending thirteenth
+            >>> i3.generic_interval(directed=False)
             13
         """
         if directed:
