@@ -1,6 +1,10 @@
 Learn music theory the hard way!
 ================================
 
+.. image:: https://readthedocs.org/projects/musictheory/badge/?version=latest
+   :target: https://musictheory.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+
 Introduction
 ------------
 
