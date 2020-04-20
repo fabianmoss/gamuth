@@ -1,5 +1,7 @@
 # Computational Musicology - an introduction
 
+[![Documentation Status](https://readthedocs.org/projects/musictheory/badge/?version=latest)](https://musictheory.readthedocs.io/en/latest/?badge=latest)
+
 (formerly: musictheory - thoughts about an introduction for programmers)
 
 **GENERAL NOTES:**  
