@@ -8,10 +8,9 @@ but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
 The logo, a `hemidemisemiquaver`_ (or a sixty-fourth note), 
 symbolically reflects this level of difficulty. A PDF version of the contents
-of this page can be found `here`_.
+of this page can be found :download:`here <_static/musictheory.pdf>`.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
-.. _here: ./_static/musictheory.pdf
 
 This project has been inspired by this great book:
 
