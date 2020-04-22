@@ -11,7 +11,7 @@ symbolically reflects this level of difficulty. A PDF version of the contents
 of this page can be found `here`_.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
-.. _here: ./../latex/musictheory.pdf
+.. _here: ./_static/musictheory.pdf
 
 This project has been inspired by this great book:
 
