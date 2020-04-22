@@ -1,12 +1,7 @@
 Learn music theory the hard way!
 ================================
 
-.. image:: https://readthedocs.org/projects/musictheory/badge/?version=latest
-   :target: https://musictheory.readthedocs.io/en/latest/?badge=latest
-   :alt: Documentation Status
-
-Introduction
-------------
+Welcome! 
 
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
@@ -31,8 +26,17 @@ Feel free to `contact me`_ with your questions and suggestions!
 
 .. _contact me: fabianmoss@gmail.com
 
-Content
--------
+.. toctree::
+   :maxdepth: 3
+
+   0_intro
+   1_fundamentals
+   2_sequences
+   3_advanced
+
+
+Developers
+----------
 
 .. toctree::
    :maxdepth: 2

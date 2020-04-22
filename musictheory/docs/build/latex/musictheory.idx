@@ -1,11 +1,11 @@
-\indexentry{Tone (class in main)@\spxentry{Tone}\spxextra{class in main}|hyperpage}{3}
-\indexentry{get\_accidentals() (main.Tone method)@\spxentry{get\_accidentals()}\spxextra{main.Tone method}|hyperpage}{3}
-\indexentry{get\_frequency() (main.Tone method)@\spxentry{get\_frequency()}\spxextra{main.Tone method}|hyperpage}{3}
-\indexentry{get\_label() (main.Tone method)@\spxentry{get\_label()}\spxextra{main.Tone method}|hyperpage}{4}
-\indexentry{get\_midi\_pitch() (main.Tone method)@\spxentry{get\_midi\_pitch()}\spxextra{main.Tone method}|hyperpage}{4}
-\indexentry{get\_pitch\_class() (main.Tone method)@\spxentry{get\_pitch\_class()}\spxextra{main.Tone method}|hyperpage}{4}
-\indexentry{get\_step() (main.Tone method)@\spxentry{get\_step()}\spxextra{main.Tone method}|hyperpage}{5}
-\indexentry{get\_syntonic() (main.Tone method)@\spxentry{get\_syntonic()}\spxextra{main.Tone method}|hyperpage}{5}
-\indexentry{Interval (class in main)@\spxentry{Interval}\spxextra{class in main}|hyperpage}{5}
-\indexentry{get\_euclidean\_distance() (main.Interval method)@\spxentry{get\_euclidean\_distance()}\spxextra{main.Interval method}|hyperpage}{5}
-\indexentry{get\_generic\_interval() (main.Interval method)@\spxentry{get\_generic\_interval()}\spxextra{main.Interval method}|hyperpage}{6}
+\indexentry{Tone (class in main)@\spxentry{Tone}\spxextra{class in main}|hyperpage}{11}
+\indexentry{get\_accidentals() (main.Tone method)@\spxentry{get\_accidentals()}\spxextra{main.Tone method}|hyperpage}{11}
+\indexentry{get\_frequency() (main.Tone method)@\spxentry{get\_frequency()}\spxextra{main.Tone method}|hyperpage}{11}
+\indexentry{get\_label() (main.Tone method)@\spxentry{get\_label()}\spxextra{main.Tone method}|hyperpage}{12}
+\indexentry{get\_midi\_pitch() (main.Tone method)@\spxentry{get\_midi\_pitch()}\spxextra{main.Tone method}|hyperpage}{12}
+\indexentry{get\_pitch\_class() (main.Tone method)@\spxentry{get\_pitch\_class()}\spxextra{main.Tone method}|hyperpage}{12}
+\indexentry{get\_step() (main.Tone method)@\spxentry{get\_step()}\spxextra{main.Tone method}|hyperpage}{13}
+\indexentry{get\_syntonic() (main.Tone method)@\spxentry{get\_syntonic()}\spxextra{main.Tone method}|hyperpage}{13}
+\indexentry{Interval (class in main)@\spxentry{Interval}\spxextra{class in main}|hyperpage}{13}
+\indexentry{get\_euclidean\_distance() (main.Interval method)@\spxentry{get\_euclidean\_distance()}\spxextra{main.Interval method}|hyperpage}{13}
+\indexentry{get\_generic\_interval() (main.Interval method)@\spxentry{get\_generic\_interval()}\spxextra{main.Interval method}|hyperpage}{14}

@@ -1,0 +1,26 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter G
+  \item \spxentry{get\_accidentals()}\spxextra{main.Tone method}, \hyperpage{11}
+  \item \spxentry{get\_euclidean\_distance()}\spxextra{main.Interval method}, \hyperpage{13}
+  \item \spxentry{get\_frequency()}\spxextra{main.Tone method}, \hyperpage{11}
+  \item \spxentry{get\_generic\_interval()}\spxextra{main.Interval method}, \hyperpage{14}
+  \item \spxentry{get\_label()}\spxextra{main.Tone method}, \hyperpage{12}
+  \item \spxentry{get\_midi\_pitch()}\spxextra{main.Tone method}, \hyperpage{12}
+  \item \spxentry{get\_pitch\_class()}\spxextra{main.Tone method}, \hyperpage{12}
+  \item \spxentry{get\_step()}\spxextra{main.Tone method}, \hyperpage{13}
+  \item \spxentry{get\_syntonic()}\spxextra{main.Tone method}, \hyperpage{13}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{Interval}\spxextra{class in main}, \hyperpage{13}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{Tone}\spxextra{class in main}, \hyperpage{11}
+
+\end{sphinxtheindex}
