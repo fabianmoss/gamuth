@@ -15,6 +15,8 @@ What is CM?
 - How to do CM? conferences, journals, twitter, GitHub repositories, libraries
 - which language to use? Matlab, R, Python, Julia...
 
+- Music as the "missing Humboldt system" (Merker, 2002) with its "orthogonal discretization of spectro-temporal space" (Merker, 2002:4)
+
 General notes
 -------------
 
