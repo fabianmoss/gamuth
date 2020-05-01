@@ -1,7 +1,8 @@
 Learn music theory the hard way!
 ================================
 
-Welcome! 
+Welcome!
+--------
 
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
@@ -12,17 +13,15 @@ of this page can be found :download:`here <_static/musictheory.pdf>`.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
-This project has been inspired by these great books:
-
-* Lewin, D. (2007). *Generalized Intervals and Transformations*.
-  Oxford: Oxford University Press.
-* Straus, J. (2005). *Introduction to Post-Tonal Theory*, 3rd ed.
-  New Jersey, Pearson.
+This project is inspired by these a number of books, 
+e.g. :cite:`Aldwell2010,Cadwallader1998,Lewin1987,Straus2005`.
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
-which looks very interesting.
+which looks very interesting. 
+The Python project `musthe`_ also seems to pursue a similar goal.
 
 .. _`Music for Geeks and Nerds`: https://pedrokroger.net/mfgan/
+.. _`musthe`: https://github.com/gciruelos/musthe
 
 Since this is ongoing work, I can give no guarantee for completeness or accuracy.
 Feel free to `contact me`_ with your questions and suggestions!
@@ -53,3 +52,8 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. rubric:: References
+
+.. bibliography:: references.bib
+   :style: plain
