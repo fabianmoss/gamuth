@@ -14,10 +14,13 @@ of this page can be found :download:`here <_static/musictheory.pdf>`.
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
 This project is inspired by these a number of books, e.g.
-* Lewin (1987)
-* Cadwallader (1998)
-* Straus (2005)
-* Aldwell (2010)
+
+* Aldwell & Schachter (2010). *Harmony and Voice Leading*.
+* Cadwallader & Gagné (1998). *Analysis of Tonal Music. A Schenkerian Approach*.
+* Forte (1977). *The Structure of Atonal Music*.
+* Lewin (1987). *Generalized Intervals and Transformations*.
+* Müller (2015). *Fundamentals of Music Processing*.
+* Straus (2005). *Introduction to Post-Tonal Theory*.
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
 which looks very interesting. 
