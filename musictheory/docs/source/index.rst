@@ -12,10 +12,12 @@ of this page can be found :download:`here <_static/musictheory.pdf>`.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
-This project has been inspired by this great book:
+This project has been inspired by these great books:
 
 * Lewin, D. (2007). *Generalized Intervals and Transformations*.
   Oxford: Oxford University Press.
+* Straus, J. (2005). *Introduction to Post-Tonal Theory*, 3rd ed.
+  New Jersey, Pearson.
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
 which looks very interesting.
