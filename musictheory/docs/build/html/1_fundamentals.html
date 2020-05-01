@@ -34,31 +34,28 @@
             
   <div class="section" id="fundamentals">
 <h1>Fundamentals<a class="headerlink" href="#fundamentals" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="representations-and-formats">
-<h2>Representations and Formats<a class="headerlink" href="#representations-and-formats" title="Permalink to this headline">¶</a></h2>
-<p>(This part could e.g. feature (algorithmic) composition exercises)</p>
-<div class="section" id="scores">
-<h3>Scores<a class="headerlink" href="#scores" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>MEI</p></li>
-<li><p>music21</p></li>
-<li><p>MusicXML</p></li>
-<li><p>**kern</p></li>
-<li><p>MIDI</p></li>
-</ul>
-</div>
-<div class="section" id="chords">
-<h3>Chords<a class="headerlink" href="#chords" title="Permalink to this headline">¶</a></h3>
-<p>(symbolic)</p>
-</div>
-</div>
-<div class="section" id="tones-pitches-pitch-classes">
-<h2>Tones, pitches, pitch classes<a class="headerlink" href="#tones-pitches-pitch-classes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tonal-spaces">
+<h2>Tonal spaces<a class="headerlink" href="#tonal-spaces" title="Permalink to this headline">¶</a></h2>
+<p>The theory presented in here can be described as a <em>tonal theory</em> in the sense
+that its most fundamental objects are <em>tones</em>, discrete musical entities that have
+a certain location in tonal space.
+A tonal space is then a metrical space describing all possible tone locations,
+and the metric is given by an <em>interval function</em> between the tones. Note that by this definition,
+there are as many different tonal spaces as there are interval functions.</p>
+<p>While many aspects and examples will be taken
+from Western (classical) music, the theory is in principle not restricted to this
+tradition but extends well to virtually all musical cultures where a tone is a meaningful concept.</p>
 <div class="section" id="tones">
 <h3>Tones<a class="headerlink" href="#tones" title="Permalink to this headline">¶</a></h3>
+<p>Let’s start with a mental exercise: imagine a tone.
+Contemplate for a while what this means.
+Does this tone have a pitch? A duration? A velocity (volume)?</p>
+<ul class="simple">
+<li><p>Riemann (1916). <em>Ideen zu einer Lehre von den Tonvorstellungen</em>.</p></li>
+</ul>
 </div>
 <div class="section" id="pitches-pitch-classes-pitch-class-sets">
-<h3>pitches / pitch classes / pitch class sets<a class="headerlink" href="#pitches-pitch-classes-pitch-class-sets" title="Permalink to this headline">¶</a></h3>
+<h3>Pitches / pitch classes / pitch class sets<a class="headerlink" href="#pitches-pitch-classes-pitch-class-sets" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="giss">
 <h3>GISs<a class="headerlink" href="#giss" title="Permalink to this headline">¶</a></h3>
@@ -88,6 +85,24 @@
 <h3>Musical time vs. performance time<a class="headerlink" href="#musical-time-vs-performance-time" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
+<div class="section" id="representations-and-formats">
+<h2>Representations and Formats<a class="headerlink" href="#representations-and-formats" title="Permalink to this headline">¶</a></h2>
+<p>(This part could e.g. feature (algorithmic) composition exercises)</p>
+<div class="section" id="scores">
+<h3>Scores<a class="headerlink" href="#scores" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>MEI</p></li>
+<li><p>music21</p></li>
+<li><p>MusicXML</p></li>
+<li><p>**kern</p></li>
+<li><p>MIDI</p></li>
+</ul>
+</div>
+<div class="section" id="chords">
+<h3>Chords<a class="headerlink" href="#chords" title="Permalink to this headline">¶</a></h3>
+<p>(symbolic)</p>
+</div>
+</div>
 </div>
 
 
@@ -113,14 +128,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fundamentals</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#representations-and-formats">Representations and Formats</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#scores">Scores</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#chords">Chords</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#tones-pitches-pitch-classes">Tones, pitches, pitch classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tonal-spaces">Tonal spaces</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tones">Tones</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pitches-pitch-classes-pitch-class-sets">pitches / pitch classes / pitch class sets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pitches-pitch-classes-pitch-class-sets">Pitches / pitch classes / pitch class sets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#giss">GISs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#euler-space-tonnetz-tonal-space">Euler Space / Tonnetz / Tonal Space</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#frequency-temperament">Frequency / Temperament</a></li>
@@ -131,6 +141,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#rhythm">Rhythm</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#meter">Meter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#musical-time-vs-performance-time">Musical time vs. performance time</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#representations-and-formats">Representations and Formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scores">Scores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chords">Chords</a></li>
 </ul>
 </li>
 </ul>
