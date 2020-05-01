@@ -208,6 +208,7 @@ class Interval:
 
         self.interval = target.euler_coordinate - source.euler_coordinate
         self.generic_interval = self.get_generic_interval()
+        self.specific_interval = self.get_specific_interval()
         self.euclidean_distance = self.get_euclidean_distance()
 
     def get_generic_interval(self, directed=True):
@@ -245,6 +246,38 @@ class Interval:
                 return 1
         else:
             return np.abs(g)
+    
+    def get_specific_interval(self, directed=True, octaves=True):
+        """
+        Specific interval (directed) between two tones.
+
+        Parameters:
+            directed (bool): Affects whether the returned interval is directed or not.
+
+            octaves (bool): returns specific interval class if `False`.
+
+        Returns:
+            int: (Directed) specific interval from `s` to `t`.
+
+        Example:
+            >>> fs = Tone(0,2,1) # F#'0
+            >>> db = Tone(0,-1,-1) # Db,0
+            >>> i1 = Interval(fs, db) 
+            >>> i1.specific_interval()
+            17
+
+            >>> i1.specific_interval(octaves=False)
+            5
+
+        """
+        s = (((12 * self.interval[0]) + 7 * self.interval[1] % 12) + (4 * self.interval[2] % 12))
+        if not octaves:
+            s = s % 12
+
+        if directed:
+            return s
+        else: 
+            return np.abs(s)
 
     def get_euclidean_distance(self, precision=2):
         '''
