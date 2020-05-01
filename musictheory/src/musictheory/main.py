@@ -211,7 +211,7 @@ class Interval:
         self.specific_interval = self.get_specific_interval()
         self.euclidean_distance = self.get_euclidean_distance()
 
-    def get_generic_interval(self, directed=True), octaves=True:
+    def get_generic_interval(self, directed=True, octaves=True):
         """
         Generic interval (directed) between two tones.
 
