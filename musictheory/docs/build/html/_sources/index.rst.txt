@@ -13,8 +13,11 @@ of this page can be found :download:`here <_static/musictheory.pdf>`.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
-This project is inspired by these a number of books, 
-e.g. :cite:`Aldwell2010,Cadwallader1998,Lewin1987,Straus2005`.
+This project is inspired by these a number of books, e.g.
+* Lewin (1987)
+* Cadwallader (1998)
+* Straus (2005)
+* Aldwell (2010)
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
 which looks very interesting. 
@@ -52,8 +55,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
-.. rubric:: References
-
-.. bibliography:: references.bib
-   :style: plain
