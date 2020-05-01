@@ -211,12 +211,14 @@ class Interval:
         self.specific_interval = self.get_specific_interval()
         self.euclidean_distance = self.get_euclidean_distance()
 
-    def get_generic_interval(self, directed=True):
+    def get_generic_interval(self, directed=True), octaves=True:
         """
         Generic interval (directed) between two tones.
 
         Parameters:
             directed (bool): Affects whether the returned interval is directed or not.
+
+            octaves (bool): returns generic interval class if `False`.
 
         Returns:
             int: (Directed) generic interval from `s` to `t`.
@@ -236,8 +238,13 @@ class Interval:
             >>> i3.generic_interval(directed=False)
             13
         """
+        g = 7 * self.interval[0] + 4 * self.interval[1] + 2 * self.interval[2]
+        
+        if not octaves:
+            g = g % 12
+
         if directed:
-            g = 7 * self.interval[0] + 4 * self.interval[1] + 2 * self.interval[2]
+            
             if g > 0:
                 return g + 1
             elif g < 0:
