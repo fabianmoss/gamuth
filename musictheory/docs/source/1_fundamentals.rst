@@ -1,9 +1,6 @@
 Fundamentals
 ============
 
-Tonal spaces
-------------
-
 The theory presented in here can be described as a *tonal theory* in the sense 
 that its most fundamental objects are *tones*, discrete musical entities that have
 a certain location in tonal space. 
@@ -16,7 +13,7 @@ from Western (classical) music, the theory is in principle not restricted to thi
 tradition but extends well to virtually all musical cultures where a tone is a meaningful concept.
 
 Tones
-~~~~~
+-----
 
 Let's start with a mental exercise: imagine a tone.
 Contemplate for a while what this means.
@@ -27,14 +24,21 @@ Does this tone have a pitch? A duration? A velocity (volume)?
 Pitches / pitch classes / pitch class sets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Transformations between representations of tones are actually *transformations of tonal space*.
+
+[Diagram of relations between different representations.]
+
+Frequency / Temperament
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Intervals
+---------
+
 GISs
 ~~~~
 
 Euler Space / Tonnetz / Tonal Space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Frequency / Temperament
-~~~~~~~~~~~~~~~~~~~~~~~
 
 Time
 ----
@@ -43,6 +47,19 @@ Notes
 ~~~~~
 
 (Tones + Duration)
+blablabla...
+
+.. Sinve the relations between tones only given by 
+   their location in tonal space (and the interval function)
+   generalizing the notion of neighbor notes etc. corresponds
+   to changing what the *lines* in Western notation mean.
+   Traditionally, two lines separate tones that are a generic third apart.
+   But there have been other representations. 
+   For instance, the first attempts of Guido separated notes by steps.
+   Let's reinterpret the lines as seconds and fifths. 
+   There have also been a number of attempts to develop a fully chromatic
+   notation system (Parncutt).
+
 
 Rhythm
 ~~~~~~
@@ -56,37 +73,3 @@ Meter
 
 Musical time vs. performance time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-Representations and Formats
----------------------------
-
-(This part could e.g. feature (algorithmic) composition exercises)
-
-Scores
-~~~~~~
-
-- MEI
-- music21
-- MusicXML
-- \*\*kern
-- MIDI
-
-Chords
-~~~~~~
-
-(symbolic)
-
-Schenkerian theory
-~~~~~~~~~~~~~~~~~~
-
-describe central Schenkerian concepts in terms 
-of tones, intervals, and underlying tonal spaces.
-E.g., a neighbor note is the next note (upper or lower)
-in a tonal space that has a notion of neighborhood, e.g.
-the diatonic or chromatic spaces. But in this generalized sense,
-a neighbor can be a semitone, a whole tone, a third, or a fifth
-apart. What the neighbor actually is, depends on the underlying 
-assumed tonal space. Accordingly, the *Bassbrechung* is an upper 
-neighbor on the circle or line of fifths, while the common neighbor note
-only exists in diatonic spaces.

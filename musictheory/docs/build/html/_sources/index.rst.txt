@@ -13,7 +13,7 @@ of this page can be found :download:`here <_static/musictheory.pdf>`.
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
-This project is inspired by these a number of books, e.g.
+This project is inspired by a number of great books, e.g.
 
 * Aldwell & Schachter (2010). *Harmony and Voice Leading*.
 * Cadwallader & Gagné (1998). *Analysis of Tonal Music. A Schenkerian Approach*.
@@ -38,12 +38,14 @@ Overview
 --------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :numbered:
 
    0_intro
    1_fundamentals
    2_sequences
-   3_advanced
+   3_representations
+   4_advanced
 
 
 Developers

@@ -38,12 +38,14 @@ Overview
 --------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :numbered:
 
    0_intro
    1_fundamentals
    2_sequences
-   3_advanced
+   3_representations
+   4_advanced
 
 
 Developers

@@ -1,5 +1,5 @@
-III. Advanced applications
-==========================
+Advanced applications
+=====================
 
 Style (classification)
 ----------------------
