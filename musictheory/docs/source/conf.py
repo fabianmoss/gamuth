@@ -40,6 +40,7 @@ extensions = [
     'sphinxcontrib.bibtex',
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon',
+    'sphinxcontrib.bibtex'
 ]
 
 # # configures bibliography
