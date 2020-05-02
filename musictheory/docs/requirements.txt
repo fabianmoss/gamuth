@@ -1,1 +1,3 @@
 numpy
+pybtex>=0.20
+pybtex-docutils>=0.2.2
