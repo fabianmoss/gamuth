@@ -37,10 +37,8 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc', 
-    'sphinxcontrib.bibtex',
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon',
-    'sphinxcontrib.bibtex'
 ]
 
 # # configures bibliography
