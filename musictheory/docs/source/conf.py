@@ -14,6 +14,10 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('./../../src/'))
 sys.path.insert(0, os.path.abspath('./../../src/musictheory'))
+# directory relative to this conf file
+CURDIR = os.path.abspath(os.path.dirname(__file__))
+# add custom extensions directory to python path
+sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'extensions'))
 
 
 # -- Project information -----------------------------------------------------
@@ -33,9 +37,20 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc', 
+    'sphinxcontrib.bibtex',
     'sphinx.ext.coverage', 
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
 ]
+
+# # configures bibliography
+# # see http://wnielson.bitbucket.org/projects/sphinx-natbib/
+# natbib = {
+#     'file': os.path.join(CURDIR,'references.bib'),
+#     'brackets': '{}',
+#     'separator': ',',
+#     'style': 'numbers',
+#     'sort': True,
+# }
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
