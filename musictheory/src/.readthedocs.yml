@@ -9,6 +9,9 @@ version: 2
 sphinx:
   configuration: docs/source/conf.py
 
+build:
+    image: latest
+
 # Build documentation with MkDocs
 #mkdocs:
 #  configuration: mkdocs.yml
@@ -20,5 +23,7 @@ formats: all
 python:
   version: 3.7
   install:
+    - method: pip
+      path: .
     - requirements: docs/requirements.txt
-    - sphinxcontrib-bibtex
+
