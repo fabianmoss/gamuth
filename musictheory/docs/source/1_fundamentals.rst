@@ -40,6 +40,16 @@ GISs
 Euler Space / Tonnetz / Tonal Space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Western tonal music
+-------------------
+
+- scales / scale degrees
+   - diatonic
+   - chromatic
+   - hexatonic/octatonic
+- modes
+- keys
+
 Time
 ----
 
