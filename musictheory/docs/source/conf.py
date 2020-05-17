@@ -40,7 +40,7 @@ extensions = [
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon',
     'sphinx.ext.mathjax',
-    'sphinxcontrib.bibtex'
+    # 'sphinxcontrib.bibtex'
 ]
 
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
