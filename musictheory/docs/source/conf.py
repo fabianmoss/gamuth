@@ -39,7 +39,10 @@ extensions = [
     'sphinx.ext.autodoc', 
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon',
+    'sphinx.ext.mathjax'
 ]
+
+mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
 # # configures bibliography
 # # see http://wnielson.bitbucket.org/projects/sphinx-natbib/

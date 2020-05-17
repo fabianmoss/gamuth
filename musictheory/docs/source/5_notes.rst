@@ -1,14 +1,14 @@
-.. role:: math(raw)
-   :format: html latex
-..
+.. .. role:: math(raw)
+..    :format: html latex
+.. ..
 
-.. role:: raw-latex(raw)
-   :format: latex
-..
+.. .. role:: raw-latex(raw)
+..    :format: latex
+.. ..
 
-.. contents::
-   :depth: 2
-..
+.. .. contents::
+..    :depth: 3
+.. ..
 
 Pitch-class based music analysis
 ================================
@@ -53,8 +53,8 @@ Frequency space
 A frequency :math:`f` is measured in Hertz (1/sec). We can represent the
 set of fundamental frequencies as
 :math:`F=\{ K \cdot 2^o \cdot 3^q \cdot 5^t\mid o, q, t \in \mathbb Q \}`
-for a fixed ‘Kammerton’ :math:`K`, and :math:`o, q, t\in \mathbb Q`. K
-has been standardized to :math:`K=440 \text{ Hz}` in 1939. Hence, each
+for a fixed *Kammerton* :math:`K`, and :math:`o, q, t\in \mathbb Q`. K
+has been standardized to :math:`K=440~\text{Hz}` in 1939. Hence, each
 fundamental frequency can be represented as
 :math:`f=440 \text{ Hz} \cdot 2^o \cdot 3^q \cdot 5^t`. Here, 2, 3, and
 5 are arbitrary pairwise coprime integers (See Mazzola, 1985, p. 26) but
@@ -86,10 +86,11 @@ C (C4) gets the pitch number 60.
 
 .. math::
 
-   \begin{aligned}
+   .. \begin{aligned}
     p(f) & = c_1+c_2\cdot \log_2\left(\frac{440 \text{ Hz}\cdot 2^o \cdot 3^q \cdot 5^t}{440\text{ Hz}}\right)\\
          & = c_1+c_2\cdot \log_2\left(2^o\cdot3^q\cdot5^t\right) \\
-               & = c_1+c_2 \cdot (o\cdot\log_2(2) + q\cdot \log_2(3) + t\cdot\log_2(5) ).\end{aligned}
+               & = c_1+c_2 \cdot (o\cdot\log_2(2) + q\cdot \log_2(3) + t\cdot\log_2(5) ).
+   .. \end{aligned}
 
 Equivalently,
 
@@ -130,7 +131,7 @@ classes or pitch classes); :math:`\pi\_O: \mathbb T^3 \to \mathbb T^2` ;
 
 Notes are abstract symbolic representations of tones. They can be
 modeled as pairs :math:`n=(p, d)\in \mathbb T^3 \times \mathbb R` where
-:math:`p` encodes **pitch** and :math:`d` **duration**. The pitch
+:math:`p` encodes *pitch* and :math:`d` *duration*. The pitch
 dimension can be represented in one of the tonal pitch spaces (TPS).
 
 Generalized Interval Systems
@@ -143,7 +144,7 @@ Generalized Interval Systems
    space, :math:`(G, \circ)` is a group, and :math:`\text{int}` is an
    interval function that maps :math:`S \times S \to G`. Common
    instances for :math:`G` are :math:`(\mathbb Z, +)` (suitable for the
-   line of fifth) or :math:`(\mathbb{Z_{12}}, +)` (suitable for the
+   line of fifth) or :math:`(\mathbb{Z}_{12}, +)` (suitable for the
    circle of fifths).
 
 -  …. many names: Pitch Space, Tonal Space, Tonal Pitch Space, Music
@@ -153,11 +154,11 @@ These models of tonal space (line of fifths, circle of fifths, tonnetz,
 torus) can serve as support for probability distributions. These in turn
 describe the generative process for tonal pieces.
 
-*For the scope of this dissertation, the bag-of-notes model is assumed.
+For the scope of this dissertation, the bag-of-notes model is assumed.
 Meaning, that the grammar :math:`G` responsible for the sequential
-arrangement of notes is factored out.*
+arrangement of notes is factored out.
 
-**Problem: “Theorizing in the wrong space” (Wiggins, 2012: Music, Mind,
+**Problem: "Theorizing in the wrong space" (Wiggins, 2012: Music, Mind,
 and Mathematics)**
 
 Pitch space encompasses the pitches and their mutual relations, the
