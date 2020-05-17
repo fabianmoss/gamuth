@@ -1,6 +1,9 @@
 Learn music theory the hard way!
 ================================
 
+.. warning::
+    The content on these pages is very much under construction!
+
 Welcome!
 
 This is not a pedagogical resource for basic music theory concepts
