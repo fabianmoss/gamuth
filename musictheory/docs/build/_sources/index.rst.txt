@@ -34,8 +34,8 @@ Feel free to `contact me`_ with your questions and suggestions!
 
 .. _contact me: fabianmoss@gmail.com
 
-Overview
---------
+.. Overview
+.. --------
 
 .. toctree::
    :maxdepth: 2
