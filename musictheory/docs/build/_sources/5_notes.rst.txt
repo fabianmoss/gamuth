@@ -126,7 +126,7 @@ third :math:`t`.
 
 Usually, descriptions of musical space do not consider octaves and
 octave-related tones are subsumed into equivalence classes (chroma
-classes or pitch classes); :math:`\pi\_O: \mathbb T^3 \to \mathbb T^2` ;
+classes or pitch classes); :math:`\pi_O: \mathbb T^3 \to \mathbb T^2` ;
 :math:`(o, q, t) \mapsto (q, t)`
 
 Notes are abstract symbolic representations of tones. They can be
