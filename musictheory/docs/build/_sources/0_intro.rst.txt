@@ -1,9 +1,9 @@
 Introduction
-============
+------------
 
 
 What is CM?
------------
+~~~~~~~~~~~
 
 - Description and relation to related fields
   -- musicology
@@ -18,7 +18,7 @@ What is CM?
 - Music as the "missing Humboldt system" (Merker, 2002) with its "orthogonal discretization of spectro-temporal space" (Merker, 2002:4)
 
 General notes
--------------
+~~~~~~~~~~~~~
 
 - Overarching goal is to have an ACCESSIBLE introduction for musicologists with elementary understanding of a programming language such as Python or R. Requirement should be a sound understanding of how functions, loops, and conditionals work.
 - Every chapter must have:
@@ -29,7 +29,7 @@ General notes
 - the algorithms/methods used in each chapter should be one of the most basic instances of a class of methods. The point is not to have the best classifier, the best dimensionality reduction, the best regression model etc. but rather to understand the class of problems that we are dealing with. Thinking in these abstract problem classes helps to recognize and understand the nature of other problems more easily.
 
 Notes (old)
--------------
+~~~~~~~~~~~
 
 General remark: Create excercises with listening, composing and analyzing tasks.
 

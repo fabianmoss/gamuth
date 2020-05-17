@@ -2,7 +2,6 @@ Learn music theory the hard way!
 ================================
 
 Welcome!
---------
 
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
