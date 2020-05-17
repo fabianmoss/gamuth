@@ -1,2 +1,2 @@
 numpy
-sphinxcontrib-bibtex
+sphinxcontrib_bibtex
