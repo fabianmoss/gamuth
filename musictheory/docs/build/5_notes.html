@@ -1,20 +1,18 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>6. Pitch-class based music analysis &#8212; musictheory 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script async="async" type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Installation" href="install.html" />
@@ -36,7 +34,7 @@
           <div class="body" role="main">
             
   <div class="section" id="pitch-class-based-music-analysis">
-<h1>6. Pitch-class based music analysis<a class="headerlink" href="#pitch-class-based-music-analysis" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">6. </span>Pitch-class based music analysis<a class="headerlink" href="#pitch-class-based-music-analysis" title="Permalink to this headline">¶</a></h1>
 <p>Musical pieces are made up of notes. This almost trivial truth is the
 starting point for this endeavour: to uncover hidden patterns in
 compositions dispersed through the centuries from the late middle ages
@@ -64,7 +62,7 @@ constitutes a unique instance of tonality which nonetheless shares many
 properties with “similar” compositions (similar in style).</p>
 <p>But what is pitch space?</p>
 <div class="section" id="frequency-space">
-<h2>6.1. Frequency space<a class="headerlink" href="#frequency-space" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.1. </span>Frequency space<a class="headerlink" href="#frequency-space" title="Permalink to this headline">¶</a></h2>
 <p>A frequency <span class="math notranslate nohighlight">\(f\)</span> is measured in Hertz (1/sec). We can represent the
 set of fundamental frequencies as
 <span class="math notranslate nohighlight">\(F=\{ K \cdot 2^o \cdot 3^q \cdot 5^t\mid o, q, t \in \mathbb Q \}\)</span>
@@ -72,21 +70,21 @@ for a fixed <em>Kammerton</em> <span class="math notranslate nohighlight">\(K\)<
 has been standardized to <span class="math notranslate nohighlight">\(K=440~\text{Hz}\)</span> in 1939. Hence, each
 fundamental frequency can be represented as
 <span class="math notranslate nohighlight">\(f=440 \text{ Hz} \cdot 2^o \cdot 3^q \cdot 5^t\)</span>. Here, 2, 3, and
-5 are arbitrary pairwise coprime integers (See Mazzola, 1985, p.&nbsp;26) but
+5 are arbitrary pairwise coprime integers (See Mazzola, 1985, p. 26) but
 this choice relates to the numerators of the fundamental frequency
 ratios of the music theoretical basic intervals of two frequencies
 <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> in just intonation:</p>
 <ul class="simple">
-<li>octave: <span class="math notranslate nohighlight">\(f:g = 2:1\)</span></li>
-<li>fifth: <span class="math notranslate nohighlight">\(f:g=3:2\)</span></li>
-<li>major third: <span class="math notranslate nohighlight">\(f:g = 5:4\)</span></li>
+<li><p>octave: <span class="math notranslate nohighlight">\(f:g = 2:1\)</span></p></li>
+<li><p>fifth: <span class="math notranslate nohighlight">\(f:g=3:2\)</span></p></li>
+<li><p>major third: <span class="math notranslate nohighlight">\(f:g = 5:4\)</span></p></li>
 </ul>
 <p>The fact that <span class="math notranslate nohighlight">\(o, q, t\)</span> are <span class="math notranslate nohighlight">\(\in \mathbb Q\)</span> allows for
 unique solution of the equations
 <a href="#id1"><span class="problematic" id="id2">:raw-latex:`\citep[A1.1.2]{Mazzola1985,Mazzola2018}`</span></a>.</p>
 </div>
 <div class="section" id="pitch-space">
-<h2>6.2. Pitch space<a class="headerlink" href="#pitch-space" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.2. </span>Pitch space<a class="headerlink" href="#pitch-space" title="Permalink to this headline">¶</a></h2>
 <p><em>Pitch</em> (or <em>pitch height</em>) is the perceptual correlate to a fundamental
 frequency and is measured on a linear scale. It can be calculated as
 <span class="math notranslate nohighlight">\(p(f) = 69.0 + 12 \cdot \log\_2(f/440 \text{ Hz}) \)</span>, and 12 is the
@@ -118,8 +116,8 @@ integers. Another way to state this is that octave, fifth and major
 third are the basis vectors of tonal space.</p>
 </div>
 <div class="section" id="transformations-of-tonal-spaces">
-<h2>6.3. Transformations of tonal spaces.<a class="headerlink" href="#transformations-of-tonal-spaces" title="Permalink to this headline">¶</a></h2>
-<p>For a fixed (arbitrary) reference tone (e.g.&nbsp;chamber tone A4=440Hz), and
+<h2><span class="section-number">6.3. </span>Transformations of tonal spaces.<a class="headerlink" href="#transformations-of-tonal-spaces" title="Permalink to this headline">¶</a></h2>
+<p>For a fixed (arbitrary) reference tone (e.g. chamber tone A4=440Hz), and
 for integers <span class="math notranslate nohighlight">\(o, q, t \in \mathbb Z\)</span> we can represent all tones in
 just intonation. The integer lattice
 <span class="math notranslate nohighlight">\(\mathbb Z^3 \subseteq \mathbb Q^3\)</span> corresponds to Euler’s
@@ -137,18 +135,18 @@ modeled as pairs <span class="math notranslate nohighlight">\(n=(p, d)\in \mathb
 dimension can be represented in one of the tonal pitch spaces (TPS).</p>
 </div>
 <div class="section" id="generalized-interval-systems">
-<h2>6.4. Generalized Interval Systems<a class="headerlink" href="#generalized-interval-systems" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.4. </span>Generalized Interval Systems<a class="headerlink" href="#generalized-interval-systems" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>(GIS) maps a TPS representation to an appropriate mathematical space</li>
-<li>A <em>Generalized Interval System</em> (GIS) is an ordered triple
+<li><p>(GIS) maps a TPS representation to an appropriate mathematical space</p></li>
+<li><p>A <em>Generalized Interval System</em> (GIS) is an ordered triple
 <span class="math notranslate nohighlight">\((S, (G, \circ), \text{int})\)</span>, where <span class="math notranslate nohighlight">\(S\)</span> is a musical
 space, <span class="math notranslate nohighlight">\((G, \circ)\)</span> is a group, and <span class="math notranslate nohighlight">\(\text{int}\)</span> is an
 interval function that maps <span class="math notranslate nohighlight">\(S \times S \to G\)</span>. Common
 instances for <span class="math notranslate nohighlight">\(G\)</span> are <span class="math notranslate nohighlight">\((\mathbb Z, +)\)</span> (suitable for the
 line of fifth) or <span class="math notranslate nohighlight">\((\mathbb{Z}_{12}, +)\)</span> (suitable for the
-circle of fifths).</li>
-<li>…. many names: Pitch Space, Tonal Space, Tonal Pitch Space, Music
-Space, Musical Space….</li>
+circle of fifths).</p></li>
+<li><p>…. many names: Pitch Space, Tonal Space, Tonal Pitch Space, Music
+Space, Musical Space….</p></li>
 </ul>
 <p>These models of tonal space (line of fifths, circle of fifths, tonnetz,
 torus) can serve as support for probability distributions. These in turn
@@ -171,7 +169,7 @@ intervals. Certain assumptions about pitches transform pitch space.</p>
 </div>
 </div>
 <div class="section" id="models-of-pitch-space">
-<h2>6.5. Models of pitch space<a class="headerlink" href="#models-of-pitch-space" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.5. </span>Models of pitch space<a class="headerlink" href="#models-of-pitch-space" title="Permalink to this headline">¶</a></h2>
 <p>Pitches can be expressed as <span class="math notranslate nohighlight">\(2^x3^y5^z\)</span> for
 <span class="math notranslate nohighlight">\(x,y,z\in \mathbb Q\)</span>
 <a href="#id5"><span class="problematic" id="id6">:raw-latex:`\citep{LonguetHiggins1962a,LonguetHiggins1962b,Mazzola2018}`</span></a>.
@@ -243,7 +241,7 @@ numbers</div>
 than flat (and not balanced!)</div>
 </div>
 <div class="section" id="the-bag-of-notes-model">
-<h3>6.5.1. The bag-of-notes model<a class="headerlink" href="#the-bag-of-notes-model" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">6.5.1. </span>The bag-of-notes model<a class="headerlink" href="#the-bag-of-notes-model" title="Permalink to this headline">¶</a></h3>
 <p>The bag-of-notes model conceives pieces simply counts the occurrences of
 notes without taking into account the order in which they appear in the
 piece.</p>
@@ -277,7 +275,7 @@ instuments) or compositional decisions (such as enharmonic equivalence).</p>
 </div>
 </div>
 <div class="section" id="dataset">
-<h2>6.6. Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.6. </span>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">MusicXML files from diverse sources… - musescore.com</div>
 <div class="line">- ELVIS</div>
@@ -286,9 +284,9 @@ instuments) or compositional decisions (such as enharmonic equivalence).</p>
 <div class="line">- CPDL</div>
 <div class="line">- other websites…</div>
 </div>
-<div class="figure" id="id39">
+<div class="figure align-default" id="id39">
 <img alt="Chronological distribution of pieces in the dataset." src="../img/macro/piece_dist.png" />
-<p class="caption"><span class="caption-text">Chronological distribution of pieces in the dataset.</span></p>
+<p class="caption"><span class="caption-text">Chronological distribution of pieces in the dataset.</span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
 </div>
 <p>In this chapter we look at the historical development of tonality.
 Although the dataset contains ca. 2000 pieces, there are unfortunately
@@ -298,7 +296,7 @@ pieces. If available, we use the year of composition, otherwise the year
 of publication. Where both dates were unavailable, the middle year of
 the composer’s life was chosen to represent the piece. Following this
 procedure leads to only 157 years for which we have pieces in the whole
-range of 582&nbsp;years from 1361 to 1942.</p>
+range of 582 years from 1361 to 1942.</p>
 <p>If the hypothesis is true that tonality is constituted by the pitch
 usage in pieces and that certain compositional assumptions transform
 pitch space, then it should be possible to discover aspects of these
@@ -310,7 +308,7 @@ differences.</p>
 </div>
 </div>
 <div class="section" id="tonal-pitch-class-distributions">
-<h1>7. Tonal pitch-class distributions<a class="headerlink" href="#tonal-pitch-class-distributions" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">7. </span>Tonal pitch-class distributions<a class="headerlink" href="#tonal-pitch-class-distributions" title="Permalink to this headline">¶</a></h1>
 <p>The tonal pitch-class distribution of a musical piece is the relative
 frequency of each tonal pitch class in that piece. Each piece can thus
 be represented as a <span class="math notranslate nohighlight">\(V\)</span>-dimensional vector, where <span class="math notranslate nohighlight">\(V\)</span> is the
@@ -363,7 +361,7 @@ variance in the data but simplify the space from <span class="math notranslate n
 to just two which seems like a good tradeoff.</p>
 </div>
 <div class="section" id="historical-usage-of-tonal-pitch-classes">
-<h1>8. Historical usage of tonal pitch classes<a class="headerlink" href="#historical-usage-of-tonal-pitch-classes" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">8. </span>Historical usage of tonal pitch classes<a class="headerlink" href="#historical-usage-of-tonal-pitch-classes" title="Permalink to this headline">¶</a></h1>
 <p>Apart from counting the number of tonal pitch classes in an individual
 musical piece, comparing these distributions between pieces and across
 historical time is interesting. In the last section we compared a small
@@ -395,7 +393,7 @@ appropriate to inspect the absolute pitch distributions of pieces before
 delving into the issue of relative pitch classes. This is what this
 chapter is about.</p>
 <div class="section" id="modeling-tonal-pitch-class-evolution">
-<h2>8.1. Modeling tonal pitch-class evolution<a class="headerlink" href="#modeling-tonal-pitch-class-evolution" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.1. </span>Modeling tonal pitch-class evolution<a class="headerlink" href="#modeling-tonal-pitch-class-evolution" title="Permalink to this headline">¶</a></h2>
 <p>Tonal pitch classes on the line of fifths can be mapped to integers
 <span class="math notranslate nohighlight">\(k \in \mathbb Z\)</span>. An interval <span class="math notranslate nohighlight">\(I=[a,b]\subseteq\mathbb Z\)</span>
 is called a <strong>line-of-fifths segment</strong> and its length is
@@ -414,7 +412,7 @@ these distributions forms a process</p>
 \[ \begin{align}\begin{aligned}\mathbf{X}=(X^{(1)},\dots,X^{(t)},\dots,X^{(T)})\in \mathbb R^{n\times T},\\such that :math:`\sum_i X_i^{(t)}=1,\forall t`.\end{aligned}\end{align} \]</div>
 </div>
 <div class="section" id="variability-in-tonal-pitch-class-usage">
-<h2>8.2. Variability in tonal pitch-class usage<a class="headerlink" href="#variability-in-tonal-pitch-class-usage" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">8.2. </span>Variability in tonal pitch-class usage<a class="headerlink" href="#variability-in-tonal-pitch-class-usage" title="Permalink to this headline">¶</a></h2>
 <p>We count the occurrence of tonal pitch classes in all pieces and trace
 the change between them across the historical timeline. Based on
 theoretical reasoning <a href="#id23"><span class="problematic" id="id24">:raw-latex:`\citep{Temperley2000,Gardonyi2002}`</span></a>,
@@ -558,9 +556,9 @@ Finzi, …)</p>
 </div>
 </div>
 <div class="section" id="tonal-pitch-class-coevolution">
-<h1>9. Tonal pitch-class coevolution<a class="headerlink" href="#tonal-pitch-class-coevolution" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">9. </span>Tonal pitch-class coevolution<a class="headerlink" href="#tonal-pitch-class-coevolution" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="modeling-tonal-pitch-class-coevolution">
-<h2>9.1. Modeling tonal pitch-class coevolution<a class="headerlink" href="#modeling-tonal-pitch-class-coevolution" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">9.1. </span>Modeling tonal pitch-class coevolution<a class="headerlink" href="#modeling-tonal-pitch-class-coevolution" title="Permalink to this headline">¶</a></h2>
 <p>The change/evolution of each pitch class <span class="math notranslate nohighlight">\(k=i-a\)</span> is given by the
 changes in
 <span class="math notranslate nohighlight">\(\mathbf{X}_i=(X^{1}_i,\dots,X^{t}_i,\dots,X^{T}_i)^\top\in \mathbb{R}^{T}\)</span>.
@@ -581,27 +579,27 @@ correlation coefficient <span class="math notranslate nohighlight">\(\rho\)</spa
 <p>the standard deviation. Figure [fig:coevolution_tpcs] shows the
 pairwise tonal pitch class coevolution values across the entire
 timeline.</p>
-<div class="figure" id="id40">
+<div class="figure align-default" id="id40">
 <img alt="The coevolution of tonal pitch classes." src="../img/macro/tpc_correlations_allpieces.png" />
-<p class="caption"><span class="caption-text">The coevolution of tonal pitch classes.</span></p>
+<p class="caption"><span class="caption-text">The coevolution of tonal pitch classes.</span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></p>
 </div>
 <p>Interesting observations:</p>
 <ol class="arabic simple">
-<li>Three regimes are clearly separated: flats (upper left), diatonics
-(center), and sharps (lower right)</li>
-<li>The chromatic regimes are of roughly the same size, (only visible in
+<li><p>Three regimes are clearly separated: flats (upper left), diatonics
+(center), and sharps (lower right)</p></li>
+<li><p>The chromatic regimes are of roughly the same size, (only visible in
 overall plot; the sharps are slightly larger), i.e. the heatmap has
-two orthogonal symmetry axes</li>
-<li>Moreover, the chromatic notes (flats and sharps) are weakly
-positively correlated</li>
-<li>F<span class="math notranslate nohighlight">\(\flat\flat\)</span> (and more extreme flats) does not occur in the
-entire corpus</li>
-<li>The weakest correlations are highly interesting as well: The weakest
+two orthogonal symmetry axes</p></li>
+<li><p>Moreover, the chromatic notes (flats and sharps) are weakly
+positively correlated</p></li>
+<li><p>F<span class="math notranslate nohighlight">\(\flat\flat\)</span> (and more extreme flats) does not occur in the
+entire corpus</p></li>
+<li><p>The weakest correlations are highly interesting as well: The weakest
 correlation is with the chromatic lower neighbor and the tritone
 (e.g. A vs. A<span class="math notranslate nohighlight">\(\flat\)</span>, E<span class="math notranslate nohighlight">\(\flat\)</span>; E vs
 E<span class="math notranslate nohighlight">\(\flat\)</span>, B<span class="math notranslate nohighlight">\(\flat\)</span>; B vs. B<span class="math notranslate nohighlight">\(\flat\)</span>, F;
 F<span class="math notranslate nohighlight">\(\sharp\)</span> vs. F, C) This is only true for “central” tpcs
-(white keys diatonic)</li>
+(white keys diatonic)</p></li>
 </ol>
 <p>We can use this correlation matrix to plot distances between the pitch
 classes. Restricting the relations to the center of the plot, the
@@ -609,7 +607,7 @@ diatonic notes plus F<span class="math notranslate nohighlight">\(\sharp\)</span
 distances actually approximate the line of fifths!</p>
 </div>
 <div class="section" id="deciphering-pitch-class-coevolution">
-<h2>9.2. Deciphering pitch-class coevolution<a class="headerlink" href="#deciphering-pitch-class-coevolution" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">9.2. </span>Deciphering pitch-class coevolution<a class="headerlink" href="#deciphering-pitch-class-coevolution" title="Permalink to this headline">¶</a></h2>
 <p>The last section presented how strong the evolution of pitch classes
 correlates with each other. The heatmap in Figure
 [fig:coevolution_tpcs] indicated an interesting connection to the
@@ -625,21 +623,21 @@ variance.</p>
 individually and interpret the variance within and between them.</p>
 <p>The results are very interesting:</p>
 <ol class="arabic simple">
-<li>Roughly, 64% of the variance is explained with the diatonic-chromatic
-distinction (PC1)</li>
-<li>About 22% is explained by the sharp-flat distinction (PC2). Note also
+<li><p>Roughly, 64% of the variance is explained with the diatonic-chromatic
+distinction (PC1)</p></li>
+<li><p>About 22% is explained by the sharp-flat distinction (PC2). Note also
 that C is on the zero-line for PC2 (does this really mean
-something?).</li>
-<li>Another 6% of variance is explained by the third principal component.
+something?).</p></li>
+<li><p>Another 6% of variance is explained by the third principal component.
 It roughly corresponds to the numbers of accidentals and follows,
 approximately, a zig-zag pattern for the 5 regions
 <span class="math notranslate nohighlight">\(\flat\flat\)</span>, <span class="math notranslate nohighlight">\(\flat\)</span>, ”, <span class="math notranslate nohighlight">\(\sharp\)</span>, and
-<span class="math notranslate nohighlight">\(\sharp\harp\)</span>.</li>
-<li>PC4 is not easy to interpret, but it still captures a difference
+<span class="math notranslate nohighlight">\(\sharp\harp\)</span>.</p></li>
+<li><p>PC4 is not easy to interpret, but it still captures a difference
 between, flat, diatonic, and sharp tpcs. Indeed, it seems that this
 component captures enharmonic equivalence! The tpcs C, G, D, A, was
 well as their enharmonic sharp and flat equivalents are all separated
-from the other notes. The same goes for F and E# (but not Gbb).</li>
+from the other notes. The same goes for F and E# (but not Gbb).</p></li>
 </ol>
 <p>It seems that the PCA reduction was not only able to capture meaningful
 dimensions, but also a meaningful relation between them, namely the
@@ -657,29 +655,29 @@ tpcs, Fbb–Gbb and Ax–Bx, are located close to the origin of the PCA
 transformed plot. This means that they do not contribute much to the
 variance in the data. These are also precisely the ones outside of the
 enharmonic equivalence shown in PC4.</p>
-<div class="figure" id="id41">
+<div class="figure align-default" id="id41">
 <img alt="Two-dimensional PCA reduction of tpc coevolutions." src="../img/macro/tpc_coevolution_pca2.png" />
-<p class="caption"><span class="caption-text">Two-dimensional PCA reduction of tpc coevolutions.</span></p>
+<p class="caption"><span class="caption-text">Two-dimensional PCA reduction of tpc coevolutions.</span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="tpc-coevolution-per-historical-period">
-<h2>9.3. TPC coevolution per historical period<a class="headerlink" href="#tpc-coevolution-per-historical-period" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">9.3. </span>TPC coevolution per historical period<a class="headerlink" href="#tpc-coevolution-per-historical-period" title="Permalink to this headline">¶</a></h2>
 <p>This “global view” can be broken down to compare how the tpc
 correlations change over time. The next figure shows the correlations
 for 50-year periods</p>
 <ol class="arabic simple">
-<li>1500-1550: Two clusters emerge</li>
-<li>1550-1600: Clear separation between recta and ficta.</li>
-<li>1600-1650: Dahlhaus situates the origin of harmonic tonality in the
+<li><p>1500-1550: Two clusters emerge</p></li>
+<li><p>1550-1600: Clear separation between recta and ficta.</p></li>
+<li><p>1600-1650: Dahlhaus situates the origin of harmonic tonality in the
 early 17th century (Untersuchungen, p. 14), namely (following Fétis)
 in Monteverdi’s Cruda Amarilli SV 94, mm. 9-19, 24-30. Without
 diminishing Monteverdi’s influence we can see here that the first
 half of the 17 century was indeed a time of change, at least with
 respect to the conjunct usage of tones. But note also that the most
 prominent composer in that epoch in the dataset is Gesualdo who is
-well-known for his unusual harmonies.</li>
-<li>1650-1700: Confusion</li>
-<li>1650-1800 The separation between flat, diatonic, and sharp tpcs
+well-known for his unusual harmonies.</p></li>
+<li><p>1650-1700: Confusion</p></li>
+<li><p>1650-1800 The separation between flat, diatonic, and sharp tpcs
 stabilizes. This is the closest to the overall picture above
 (although not as centered). The closest distribution to the overall
 distribution (check!) is the one in the late 18th century. It
@@ -687,11 +685,11 @@ coincides with the common-practice period. Since we see that tpc
 behavior is different before and after, the CPT should not be taken
 as a synonym to tonal music. This affects large portions of empirical
 research of tonality presupposing two modes with clear and stable
-patterns. Review also Harasim et al. (2019)</li>
-<li>1800-1900: Strong correlation between all accidentals vanishes. The
+patterns. Review also Harasim et al. (2019)</p></li>
+<li><p>1800-1900: Strong correlation between all accidentals vanishes. The
 diagonal line is very clear. In this time, all pitch classes exhibit
-the greatest independence historically speaking.</li>
-<li>1900-…: Looks like a mix of CPT and Extended</li>
+the greatest independence historically speaking.</p></li>
+<li><p>1900-…: Looks like a mix of CPT and Extended</p></li>
 </ol>
 <p>Dahlhaus situates the origin of harmonic tonality in the early 17th
 century (Untersuchungen, p. 14), namely (following Fétis) in
@@ -706,76 +704,76 @@ fifth structure! What about thirds?</p>
 </div>
 </div>
 <div class="section" id="diatonicism-chromaticism-enharmonicism">
-<h1>10. Diatonicism – Chromaticism – Enharmonicism<a class="headerlink" href="#diatonicism-chromaticism-enharmonicism" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">10. </span>Diatonicism – Chromaticism – Enharmonicism<a class="headerlink" href="#diatonicism-chromaticism-enharmonicism" title="Permalink to this headline">¶</a></h1>
 <p>“When we think about harmony, we automatically think about chords. In
 fact, we are so fixated on chords that we sometimes forget they tell
 only part of the story” <a href="#id25"><span class="problematic" id="id26">:raw-latex:`\citep[154]{Tymoczko2011}`</span></a></p>
 <p>The development of tonality can also be described as a change in two
 dimensions: key-distance and separatedness (tonal closure/unity).</p>
 <ul class="simple">
-<li>Baroque: Keys are relatively close to each other but changes occur
-frequently, tonicizations are commonplace</li>
-<li>Classic: Keys are relatively close to each other and key sections are
-larger and relatively homogenuous</li>
-<li>early Romantic: Keys are further apart and key sections are larger
-and relatively homogenuous</li>
-<li>late Romantic: Keys are further apart but changes occur frequently</li>
+<li><p>Baroque: Keys are relatively close to each other but changes occur
+frequently, tonicizations are commonplace</p></li>
+<li><p>Classic: Keys are relatively close to each other and key sections are
+larger and relatively homogenuous</p></li>
+<li><p>early Romantic: Keys are further apart and key sections are larger
+and relatively homogenuous</p></li>
+<li><p>late Romantic: Keys are further apart but changes occur frequently</p></li>
 </ul>
 <p>Here a tabular overview of this hypothesis:</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="10%" />
-<col width="21%" />
-<col width="26%" />
-<col width="43%" />
+<col style="width: 10%" />
+<col style="width: 21%" />
+<col style="width: 26%" />
+<col style="width: 43%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>small</td>
-<td>large</td>
-<td>&#160;</td>
+<tr class="row-even"><td></td>
+<td><p>small</p></td>
+<td><p>large</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>small</td>
-<td>Baroque</td>
-<td>Late Romantic</td>
+<tr class="row-odd"><td></td>
+<td><p>small</p></td>
+<td><p>Baroque</p></td>
+<td><p>Late Romantic</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>large</td>
-<td>Classic</td>
-<td>Early Romantic</td>
+<tr class="row-even"><td></td>
+<td><p>large</p></td>
+<td><p>Classic</p></td>
+<td><p>Early Romantic</p></td>
 </tr>
 </tbody>
 </table>
 <p>Table: Stages of Tonality.</p>
 <div class="section" id="expansion-of-tonal-material">
-<h2>10.1. Expansion of tonal material<a class="headerlink" href="#expansion-of-tonal-material" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">10.1. </span>Expansion of tonal material<a class="headerlink" href="#expansion-of-tonal-material" title="Permalink to this headline">¶</a></h2>
 <p>Based on <a href="#id27"><span class="problematic" id="id28">:raw-latex:`\citep{Gardonyi2002}`</span></a>: (see MGG “Diatonik –
 Chromatik – Enharmonik”)</p>
 <ul class="simple">
-<li>same diatonic region on LoF: relative keys/scales - although</li>
+<li><p>same diatonic region on LoF: relative keys/scales - although</p></li>
 </ul>
 <p>theoretically, LoF is equivalent to <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>, composers use
 only a relatively small subset of it</p>
 <ul class="simple">
-<li>individual intervals can be associated with a regime on the</li>
+<li><p>individual intervals can be associated with a regime on the</p></li>
 </ul>
 <p>fifth-width space: m2 (5Q) is diatonic, wheras A1 (7Q) is chromatic, and
 A7<span class="math notranslate nohighlight">\(\approx\)</span>P8 (12Q).e</p>
 <ul class="simple">
-<li>compare with “pitch class circulation”
-<a href="#id29"><span class="problematic" id="id30">:raw-latex:`\citep[158ff.]{Tymoczko2011}`</span></a></li>
-<li>fifth width measures Diatonicism -&gt; Chromaticism -&gt; Enharmonicism
-<a href="#id31"><span class="problematic" id="id32">:raw-latex:`\citep[243]{Gardonyi2002}`</span></a></li>
+<li><p>compare with “pitch class circulation”
+<a href="#id29"><span class="problematic" id="id30">:raw-latex:`\citep[158ff.]{Tymoczko2011}`</span></a></p></li>
+<li><p>fifth width measures Diatonicism -&gt; Chromaticism -&gt; Enharmonicism
+<a href="#id31"><span class="problematic" id="id32">:raw-latex:`\citep[243]{Gardonyi2002}`</span></a></p></li>
 </ul>
 <p><img alt="image" src="img/macro/fifth_widths.png" /></p>
 <ul class="simple">
-<li>Analyze also the variance of fifth-widths, not only the means!</li>
+<li><p>Analyze also the variance of fifth-widths, not only the means!</p></li>
 </ul>
 <p>How can enharmonic exchange (Verwechslung) and enharmonic equivalence
 (Umdeutung) distinguished? The former implies a reinterpretation of
@@ -796,11 +794,11 @@ semiton, which is far away in tonal space (LoF). In the Debussy example,
 the keys are only <span class="math notranslate nohighlight">\(R\)</span> related after applying the equivalence.</p>
 </div>
 <div class="section" id="expansion-of-local-harmonic-content">
-<h2>10.2. Expansion of local harmonic content<a class="headerlink" href="#expansion-of-local-harmonic-content" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">10.2. </span>Expansion of local harmonic content<a class="headerlink" href="#expansion-of-local-harmonic-content" title="Permalink to this headline">¶</a></h2>
 <p>Fifth width per measure in a piece.</p>
 <p>A couple of examples</p>
 <div class="section" id="over-time">
-<h3>10.2.1. Over time<a class="headerlink" href="#over-time" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">10.2.1. </span>Over time<a class="headerlink" href="#over-time" title="Permalink to this headline">¶</a></h3>
 <p>The change in fifth widths is differently on a global (piece) and a
 local (measure) scale. Globally, pieces cross the boundary to
 chromaticism quite early (which can already happen with ficta), and even
@@ -813,7 +811,7 @@ does it mean?). Locally, pieces do not cross the enharmonic threshold
 </div>
 </div>
 <div class="section" id="enharmonic-spectrum">
-<h2>10.3. Enharmonic spectrum<a class="headerlink" href="#enharmonic-spectrum" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">10.3. </span>Enharmonic spectrum<a class="headerlink" href="#enharmonic-spectrum" title="Permalink to this headline">¶</a></h2>
 <p>In the extreme case, for each note, a random tonal representative of the
 neutral pitch class is sampled uniformly. =&gt; unpredictable because
 infinite possibilities.</p>
@@ -829,7 +827,7 @@ would be preferred.</p>
 piece.</p>
 <p>=&gt; <strong>enharmonic pitch-class entropy</strong> is a measure of enharmonicism
 (works obviously only with spelled pitch classes)</p>
-<p>But: Even in a Bach piece (or older), e.g.&nbsp;F<span class="math notranslate nohighlight">\(\sharp\)</span> and
+<p>But: Even in a Bach piece (or older), e.g. F<span class="math notranslate nohighlight">\(\sharp\)</span> and
 G<span class="math notranslate nohighlight">\(\flat\)</span> can co-occur. Because they occur in different contexts
 (different keys/tonal centers), they are <strong>not</strong> enharmonically
 equivalent. In the bag-of-notes model we need to factor in the fact of
@@ -865,16 +863,16 @@ bars.</p>
 <p>Then, segment length <span class="math notranslate nohighlight">\(l\)</span> would be informative about tonal
 stability / rate of tonality changes</p>
 <ul class="simple">
-<li>given the optimal number of clusters from the mixture model, apply
+<li><p>given the optimal number of clusters from the mixture model, apply
 key-scape algorithm. It should give rise to a much clearer
-segmentation with <span class="math notranslate nohighlight">\(K&lt;&lt;24\)</span> components.</li>
-<li>Again, use Information Theory to determine best segmentation. (lowest
-entropy, per segment?, KL divergence with component distributions?)</li>
-<li>How can these differences be measured? (not always binary)</li>
-<li>Horizontally: Streams (<em>Auditory Scene Analysis</em>;
-<a href="#id33"><span class="problematic" id="id34">:raw-latex:`\citep{Bregman1990,Huron2016}`</span></a> Huron, 2016)</li>
-<li>Vertically: Building blocks / units –&gt; Gestalt laws, Segmentation
-<a href="#id35"><span class="problematic" id="id36">:raw-latex:`\citep{Hanninen2012}`</span></a></li>
+segmentation with <span class="math notranslate nohighlight">\(K&lt;&lt;24\)</span> components.</p></li>
+<li><p>Again, use Information Theory to determine best segmentation. (lowest
+entropy, per segment?, KL divergence with component distributions?)</p></li>
+<li><p>How can these differences be measured? (not always binary)</p></li>
+<li><p>Horizontally: Streams (<em>Auditory Scene Analysis</em>;
+<a href="#id33"><span class="problematic" id="id34">:raw-latex:`\citep{Bregman1990,Huron2016}`</span></a> Huron, 2016)</p></li>
+<li><p>Vertically: Building blocks / units –&gt; Gestalt laws, Segmentation
+<a href="#id35"><span class="problematic" id="id36">:raw-latex:`\citep{Hanninen2012}`</span></a></p></li>
 </ul>
 <p>Laws can govern <em>primary parameters</em> which allow for syntactic relations
 between discrete units (such as pitch, or rhythm), and <em>secondary
@@ -882,32 +880,32 @@ parameters</em> which discribe continous dimensions such as timbre,
 dynamics, etc.</p>
 </div>
 <div class="section" id="tonal-centers">
-<h2>10.4. Tonal Centers<a class="headerlink" href="#tonal-centers" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">10.4. </span>Tonal Centers<a class="headerlink" href="#tonal-centers" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="number-of-tonal-centers">
-<h3>10.4.1. Number of Tonal Centers<a class="headerlink" href="#number-of-tonal-centers" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">10.4.1. </span>Number of Tonal Centers<a class="headerlink" href="#number-of-tonal-centers" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="distance-of-tonal-centers">
-<h3>10.4.2. Distance of Tonal Centers<a class="headerlink" href="#distance-of-tonal-centers" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">10.4.2. </span>Distance of Tonal Centers<a class="headerlink" href="#distance-of-tonal-centers" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="divergence-on-the-tonnetz">
-<h3>10.4.3. Divergence on the Tonnetz<a class="headerlink" href="#divergence-on-the-tonnetz" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">10.4.3. </span>Divergence on the Tonnetz<a class="headerlink" href="#divergence-on-the-tonnetz" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
 <div class="section" id="diachronic-and-synchronic-tonal-styles">
-<h1>11. Diachronic and Synchronic Tonal Styles<a class="headerlink" href="#diachronic-and-synchronic-tonal-styles" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">11. </span>Diachronic and Synchronic Tonal Styles<a class="headerlink" href="#diachronic-and-synchronic-tonal-styles" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="clustering">
-<h2>11.1. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">11.1. </span>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="principal-component-analysis">
-<h2>11.2. Principal Component Analysis<a class="headerlink" href="#principal-component-analysis" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">11.2. </span>Principal Component Analysis<a class="headerlink" href="#principal-component-analysis" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="analysis-of-styles">
-<h2>11.3. Analysis of Styles<a class="headerlink" href="#analysis-of-styles" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">11.3. </span>Analysis of Styles<a class="headerlink" href="#analysis-of-styles" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 <div class="section" id="topic-modeling-with-latent-dirichlet-allocation-lda">
-<h1>12. Topic Modeling with Latent Dirichlet Allocation (LDA)<a class="headerlink" href="#topic-modeling-with-latent-dirichlet-allocation-lda" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA)<a class="headerlink" href="#topic-modeling-with-latent-dirichlet-allocation-lda" title="Permalink to this headline">¶</a></h1>
 <p><strong>Topic Models: What are corpora, documents, topics? “Distributional
 hypothesis” (Harris, 1954; Firth, 1957).</strong></p>
 <p>In general, topic models describe the generative process of how
@@ -944,7 +942,7 @@ distribution</a>.</div>
 </div>
 </div></blockquote>
 <div class="section" id="background">
-<h2>12.1. Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.1. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line">- LDA in general (short review of relevant papers), numerous
 extensions of the basic model</div>
@@ -956,7 +954,7 @@ Dirichlet distribution with fixed corpus parameter <span class="math notranslate
 <p>A collection (multiset) of <strong>notes</strong>
 <span class="math notranslate nohighlight">\(\boldsymbol{u}_n = \{u_{n1},\ldots,u_{nL}\}\)</span> defines a
 <strong>segment</strong>. The number of unique notes in a corpus is the <strong>vocabulary
-size</strong> <span class="math notranslate nohighlight">\(V\)</span>. Each segment <span class="math notranslate nohighlight">\({u}_n\)</span> (e.g.&nbsp;beat, slice, bar,
+size</strong> <span class="math notranslate nohighlight">\(V\)</span>. Each segment <span class="math notranslate nohighlight">\({u}_n\)</span> (e.g. beat, slice, bar,
 section, …) is assigned a unique <strong>topic label</strong> <span class="math notranslate nohighlight">\(z\)</span> (key,
 tonality, mode, …). A <strong>piece</strong>
 <span class="math notranslate nohighlight">\(\mathcal P = \{\boldsymbol{u}_1, \ldots, u_N\}\)</span> consists of
@@ -968,43 +966,43 @@ notes. Since there are <span class="math notranslate nohighlight">\(K​\)</span
 <span class="math notranslate nohighlight">\(\beta_{ij}​\)</span> encodes the probability of note <span class="math notranslate nohighlight">\(i\)</span> in topic
 <span class="math notranslate nohighlight">\(j\)</span>.</p>
 <div class="section" id="definitions-and-assumptions">
-<h3>12.1.1. Definitions and Assumptions<a class="headerlink" href="#definitions-and-assumptions" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">12.1.1. </span>Definitions and Assumptions<a class="headerlink" href="#definitions-and-assumptions" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>A <em>note</em> :math:` u in mathbb Z_{12}`.</li>
-<li>A <em>segment</em> <span class="math notranslate nohighlight">\(\mathbf{u}_n = \{u_{n1}, \ldots{}, u_{nL}\}\)</span>. In a
+<li><p>A <em>note</em> :math:` u in mathbb Z_{12}`.</p></li>
+<li><p>A <em>segment</em> <span class="math notranslate nohighlight">\(\mathbf{u}_n = \{u_{n1}, \ldots{}, u_{nL}\}\)</span>. In a
 bag-of-notes (BoN) model, a segment can also be represented by a
 12-dimensional count vector <span class="math notranslate nohighlight">\(x_n\)</span>, where <span class="math notranslate nohighlight">\(x_n^j\)</span> counts
-the number of times note <span class="math notranslate nohighlight">\(j\)</span> occurs.</li>
-<li>A <em>piece</em> <span class="math notranslate nohighlight">\(s\)</span> is a sequence of <span class="math notranslate nohighlight">\(N\)</span> segments:
+the number of times note <span class="math notranslate nohighlight">\(j\)</span> occurs.</p></li>
+<li><p>A <em>piece</em> <span class="math notranslate nohighlight">\(s\)</span> is a sequence of <span class="math notranslate nohighlight">\(N\)</span> segments:
 <span class="math notranslate nohighlight">\(s=\{\mathbf u_1, ..., \mathbf u_N \}\)</span>. Again, in a BoN model a
 piece can be represented as a sequence of count vectors
-<span class="math notranslate nohighlight">\(X=(x_1, ..., x_N)\)</span>.</li>
-<li>A <em>corpus</em> is a collection of <span class="math notranslate nohighlight">\(M\)</span> pieces,
-<span class="math notranslate nohighlight">\(\mathcal S = \{s_1, ..., s_M\}\)</span>.</li>
-<li>Finally, a <em>topic</em> <span class="math notranslate nohighlight">\(z\)</span> is a probability distribution over the
+<span class="math notranslate nohighlight">\(X=(x_1, ..., x_N)\)</span>.</p></li>
+<li><p>A <em>corpus</em> is a collection of <span class="math notranslate nohighlight">\(M\)</span> pieces,
+<span class="math notranslate nohighlight">\(\mathcal S = \{s_1, ..., s_M\}\)</span>.</p></li>
+<li><p>Finally, a <em>topic</em> <span class="math notranslate nohighlight">\(z\)</span> is a probability distribution over the
 12 pitch classes. In their model, a topic models the concept of key
 and each segment is assumed to have precisely one topic/key. Thus,
 the sequence of topics in a given piece is modeled as
-<span class="math notranslate nohighlight">\(\mathbf z = (z_1, ..., z_N)\)</span>.</li>
-<li>They fix the number of topics to <span class="math notranslate nohighlight">\(K=24\)</span>, based on prior music
-theory knowledge.</li>
+<span class="math notranslate nohighlight">\(\mathbf z = (z_1, ..., z_N)\)</span>.</p></li>
+<li><p>They fix the number of topics to <span class="math notranslate nohighlight">\(K=24\)</span>, based on prior music
+theory knowledge.</p></li>
 </ol>
-<div class="figure" id="id42">
+<div class="figure align-default" id="id42">
 <img alt="Graphical model for Latent Dirichlet Allocation (LDA)." src="../img/macro/LDA_model.png" />
-<p class="caption"><span class="caption-text">Graphical model for Latent Dirichlet Allocation (LDA).</span></p>
+<p class="caption"><span class="caption-text">Graphical model for Latent Dirichlet Allocation (LDA).</span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="a-generative-model-for-a-musical-piece">
-<h2>12.2. A generative model for a musical piece<a class="headerlink" href="#a-generative-model-for-a-musical-piece" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.2. </span>A generative model for a musical piece<a class="headerlink" href="#a-generative-model-for-a-musical-piece" title="Permalink to this headline">¶</a></h2>
 <p>Bag of notes model… multinomial distribution… no order/structure
 among the classes (tpcs)</p>
 <ul class="simple">
-<li>Formalization of LDA as a probabilistic graphical model (PGM)</li>
-<li>PGMs are generative models. Toy example to generate pieces.</li>
+<li><p>Formalization of LDA as a probabilistic graphical model (PGM)</p></li>
+<li><p>PGMs are generative models. Toy example to generate pieces.</p></li>
 </ul>
 <ol class="arabic">
-<li><p class="first">For each piece <span class="math notranslate nohighlight">\(s_m\)</span>, <span class="math notranslate nohighlight">\(m=1, ..., M\)</span>, draw a
+<li><p>For each piece <span class="math notranslate nohighlight">\(s_m\)</span>, <span class="math notranslate nohighlight">\(m=1, ..., M\)</span>, draw a
 <span class="math notranslate nohighlight">\(K\)</span>-dimensional topic weight vector <span class="math notranslate nohighlight">\(\theta\)</span> from a
 Dirichlet distribution
 <span class="math notranslate nohighlight">\(\left(\theta \sim \mathrm{Dir}(\alpha)\right)\)</span> to determine
@@ -1016,16 +1014,14 @@ which keys are likely to occur:</p>
 <p>The corpus-level parameter <span class="math notranslate nohighlight">\(\alpha\)</span> determines which topics are
 likely to co-occur in pieces.</p>
 </li>
-<li><p class="first">For each segment <span class="math notranslate nohighlight">\(\mathbf u_n\)</span>, <span class="math notranslate nohighlight">\(n=1, ...N\)</span>, in the
+<li><p>For each segment <span class="math notranslate nohighlight">\(\mathbf u_n\)</span>, <span class="math notranslate nohighlight">\(n=1, ...N\)</span>, in the
 piece, choose topic <span class="math notranslate nohighlight">\(z_n \in \{1, ..., K\}\)</span> from the
-multinomial distribution <span class="math notranslate nohighlight">\(p(z_n=k \mid \theta) = \theta_k\)</span>.</p>
-</li>
-<li><p class="first">For each note <span class="math notranslate nohighlight">\(u_{nl}\)</span> in <span class="math notranslate nohighlight">\(\mathbb u_n\)</span>,
+multinomial distribution <span class="math notranslate nohighlight">\(p(z_n=k \mid \theta) = \theta_k\)</span>.</p></li>
+<li><p>For each note <span class="math notranslate nohighlight">\(u_{nl}\)</span> in <span class="math notranslate nohighlight">\(\mathbb u_n\)</span>,
 <span class="math notranslate nohighlight">\(l=1, ..., L\)</span>, choose a pitch-class from the multinomial
 distribution <span class="math notranslate nohighlight">\(p(u_{nl} = i \mid z_n=k, \beta)=\beta_{ij}\)</span>,
 where <span class="math notranslate nohighlight">\(\beta\)</span> is a <span class="math notranslate nohighlight">\(V \times K\)</span> matrix encoding each
-topic as a distribution over <span class="math notranslate nohighlight">\(V=12\)</span> pitch classes.</p>
-</li>
+topic as a distribution over <span class="math notranslate nohighlight">\(V=12\)</span> pitch classes.</p></li>
 </ol>
 <p>This generative process defines a joint probability distribution over
 observed and latent random variables for each piece in the corpus:</p>
@@ -1035,7 +1031,7 @@ observed and latent random variables for each piece in the corpus:</p>
 <p>In this model, a piece is a bag-of-segments, and segments are
 bags-of-notes.</p>
 <div class="section" id="inference-and-learning">
-<h3>12.2.1. Inference and Learning<a class="headerlink" href="#inference-and-learning" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">12.2.1. </span>Inference and Learning<a class="headerlink" href="#inference-and-learning" title="Permalink to this headline">¶</a></h3>
 <p>The model is fully specified by the corpus-level Dirichlet parameter
 <span class="math notranslate nohighlight">\(\alpha\)</span> and the key-profile matrix <span class="math notranslate nohighlight">\(\beta\)</span>. Under the
 assumption that they are known, key-profiles for segments or pieces can
@@ -1059,118 +1055,120 @@ Gibbs sampling can be understood as a generalization of the EM
 algorithm. Instead of maximizing at each of its two steps (E and M),
 Gibbs sampling uses the conditional distributions and samples from them.</p>
 <ul class="simple">
-<li>Learn model parameters from corpus given a number <span class="math notranslate nohighlight">\(K\)</span> of topics
-via Gibbs sampling.</li>
-<li>Train-test split not self-evident. Possibilities:<ul>
-<li>Train on whole corpus</li>
-<li>Lern topics for different periods separately</li>
+<li><p>Learn model parameters from corpus given a number <span class="math notranslate nohighlight">\(K\)</span> of topics
+via Gibbs sampling.</p></li>
+<li><p>Train-test split not self-evident. Possibilities:</p>
+<ul>
+<li><p>Train on whole corpus</p></li>
+<li><p>Lern topics for different periods separately</p></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <div class="section" id="extension-of-the-lda-music-model">
-<h2>12.3. Extension of the LDA music model<a class="headerlink" href="#extension-of-the-lda-music-model" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.3. </span>Extension of the LDA music model<a class="headerlink" href="#extension-of-the-lda-music-model" title="Permalink to this headline">¶</a></h2>
 <p>Describe potential adaptions of the LDA model. In particular the
 difference to the pitch class representation and the interpretation of
 topics as tone fields, not keys</p>
 <ul class="simple">
-<li>Model notes in <span class="math notranslate nohighlight">\(\mathbb Z\)</span> instead of <span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span>
-(line of fifths instead of circle of fifths).</li>
-<li>Use different segmentations:<ul>
-<li>Slices (onsets)</li>
-<li>Beats</li>
-<li>Bars</li>
-<li>Key-regions (as defined by accidentals)</li>
-<li>entire piece</li>
+<li><p>Model notes in <span class="math notranslate nohighlight">\(\mathbb Z\)</span> instead of <span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span>
+(line of fifths instead of circle of fifths).</p></li>
+<li><p>Use different segmentations:</p>
+<ul>
+<li><p>Slices (onsets)</p></li>
+<li><p>Beats</p></li>
+<li><p>Bars</p></li>
+<li><p>Key-regions (as defined by accidentals)</p></li>
+<li><p>entire piece</p></li>
 </ul>
 </li>
-<li>Allow for more topics. Hypothesis: chromatic passages, hexatonic,
+<li><p>Allow for more topics. Hypothesis: chromatic passages, hexatonic,
 octatonic, pentatonic, and variants of several keys will show up as
-topics.</li>
-<li>Take note-order into account: Griffiths, Steyvers, Blei &amp; Tenenbaum
-(2005), and Andrews &amp; Vigliocco (2010)</li>
-<li>Dynamic Topic Modeling - Changes of topics over time: Blei &amp; Lafferty
-(2006)</li>
+topics.</p></li>
+<li><p>Take note-order into account: Griffiths, Steyvers, Blei &amp; Tenenbaum
+(2005), and Andrews &amp; Vigliocco (2010)</p></li>
+<li><p>Dynamic Topic Modeling - Changes of topics over time: Blei &amp; Lafferty
+(2006)</p></li>
 </ul>
 <p>Other Features / Random Variables</p>
 <ul class="simple">
-<li>Length in notes</li>
-<li>Pitch-class distribution in <span class="math notranslate nohighlight">\(\mathbb Z\)</span> and in
-<span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span></li>
-<li>Number of key changes</li>
-<li>Chromaticism</li>
-<li>Meter / Meter change</li>
+<li><p>Length in notes</p></li>
+<li><p>Pitch-class distribution in <span class="math notranslate nohighlight">\(\mathbb Z\)</span> and in
+<span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span></p></li>
+<li><p>Number of key changes</p></li>
+<li><p>Chromaticism</p></li>
+<li><p>Meter / Meter change</p></li>
 </ul>
 <p>General Notes:</p>
 <ul class="simple">
-<li>Interpretation: Because the musical vocabulary is quite small when
+<li><p>Interpretation: Because the musical vocabulary is quite small when
 notes are the equivalent of words, it is not sufficient to just look
 at the most frequent notes in a topic in order to interpret it but
-rather to inspect the whole distribution over notes.</li>
-<li>Similarity between documents (pieces) and subcorpora –&gt; Clustering</li>
+rather to inspect the whole distribution over notes.</p></li>
+<li><p>Similarity between documents (pieces) and subcorpora –&gt; Clustering</p></li>
 </ul>
 </div>
 <div class="section" id="topics-inferred-from-the-corpus">
-<h2>12.4. Topics inferred from the corpus<a class="headerlink" href="#topics-inferred-from-the-corpus" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.4. </span>Topics inferred from the corpus<a class="headerlink" href="#topics-inferred-from-the-corpus" title="Permalink to this headline">¶</a></h2>
 <p>Figure [fig:topic_dists] shows the note distributions for the
 <span class="math notranslate nohighlight">\(K=7\)</span> inferred topics.</p>
-<div class="figure" id="id43">
+<div class="figure align-default" id="id43">
 <a class="reference internal image-reference" href="../img/macro/topic_0_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_0_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id44">
+<div class="figure align-default" id="id44">
 <a class="reference internal image-reference" href="../img/macro/topic_1_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_1_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id44" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id45">
+<div class="figure align-default" id="id45">
 <a class="reference internal image-reference" href="../img/macro/topic_2_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_2_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id45" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id46">
+<div class="figure align-default" id="id46">
 <a class="reference internal image-reference" href="../img/macro/topic_3_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_3_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id46" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id47">
+<div class="figure align-default" id="id47">
 <a class="reference internal image-reference" href="../img/macro/topic_4_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_4_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id47" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id48">
+<div class="figure align-default" id="id48">
 <a class="reference internal image-reference" href="../img/macro/topic_5_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_5_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id48" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id49">
+<div class="figure align-default" id="id49">
 <a class="reference internal image-reference" href="../img/macro/topic_6_of_7.png"><img alt="The note distributions for the :math:`K=7` topics." src="../img/macro/topic_6_of_7.png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span></p>
+<p class="caption"><span class="caption-text">The note distributions for the <span class="math notranslate nohighlight">\(K=7\)</span> topics.</span><a class="headerlink" href="#id49" title="Permalink to this image">¶</a></p>
 </div>
 <p>The relative weights of the topics in the overall corpus can be seen in
 Figure [fig:topics_weights]. The most common topic is topic 0
 (“(transposed) diatonic”) and the least common is topic 4 (“far-flats”)</p>
-<div class="figure" id="id50">
+<div class="figure align-default" id="id50">
 <img alt="The relative weight of :math:`K=7` topics in the corpus." src="../img/macro/topics_in_corpus.png" />
-<p class="caption"><span class="caption-text">The relative weight of <span class="math notranslate nohighlight">\(K=7\)</span> topics in the corpus.</span></p>
+<p class="caption"><span class="caption-text">The relative weight of <span class="math notranslate nohighlight">\(K=7\)</span> topics in the corpus.</span><a class="headerlink" href="#id50" title="Permalink to this image">¶</a></p>
 </div>
 <p>Besides calculating the overall importance of topics in the corpus, one
 can also look at the relative topic weights within individual pieces.
 Figure [fig:raw_topics] shows this distribution. Analogous to the
 pitch-class evolution from Figure [], pieces that are assigned to the
 same year are accumulated (<strong>Describe procedure!</strong>).</p>
-<div class="figure" id="id51">
+<div class="figure align-default" id="id51">
 <img alt="Historical change of topic weights in pieces." src="../img/macro/raw_topics.png" />
-<p class="caption"><span class="caption-text">Historical change of topic weights in pieces.</span></p>
+<p class="caption"><span class="caption-text">Historical change of topic weights in pieces.</span><a class="headerlink" href="#id51" title="Permalink to this image">¶</a></p>
 </div>
 <p>It is obvious how the lack of data in earlier periods affects the
 pattern we see. Nonetheless, it can be seen, that earlier pieces rarely
 contain the certain topics which only occur later.</p>
 </div>
 <div class="section" id="number-of-topics-reveals-hierarchy-of-tonality">
-<h2>12.5. Number of topics reveals hierarchy of tonality<a class="headerlink" href="#number-of-topics-reveals-hierarchy-of-tonality" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.5. </span>Number of topics reveals hierarchy of tonality<a class="headerlink" href="#number-of-topics-reveals-hierarchy-of-tonality" title="Permalink to this headline">¶</a></h2>
 <p>“Vertical”: Different values of <span class="math notranslate nohighlight">\(K\in [2,12]\)</span> indicate
 hierarchical nature of tonality.</p>
 <ol class="arabic simple">
-<li>Compare topic distributions for different values of <span class="math notranslate nohighlight">\(K\)</span></li>
-<li>Relate topics from different <span class="math notranslate nohighlight">\(K\)</span>-stages with each other: coarse
-to fine, correlations between some topics should increase</li>
+<li><p>Compare topic distributions for different values of <span class="math notranslate nohighlight">\(K\)</span></p></li>
+<li><p>Relate topics from different <span class="math notranslate nohighlight">\(K\)</span>-stages with each other: coarse
+to fine, correlations between some topics should increase</p></li>
 </ol>
 <p>All matrices where based on documents. In the classical LDA setting, a
 corpus is a bag of documents. We are in particular interested in
@@ -1191,26 +1189,26 @@ if there is one for that particular year. If not, we use the same as in
 the year before.</p>
 </div>
 <div class="section" id="historical-inferences-for-each-value-of-k">
-<h2>12.6. Historical inferences for each value of <span class="math notranslate nohighlight">\(K\)</span><a class="headerlink" href="#historical-inferences-for-each-value-of-k" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.6. </span>Historical inferences for each value of <span class="math notranslate nohighlight">\(K\)</span><a class="headerlink" href="#historical-inferences-for-each-value-of-k" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="sliding-windows-reveal-trends">
-<h3>12.6.1. Sliding windows reveal trends<a class="headerlink" href="#sliding-windows-reveal-trends" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">12.6.1. </span>Sliding windows reveal trends<a class="headerlink" href="#sliding-windows-reveal-trends" title="Permalink to this headline">¶</a></h3>
 <p>Figure [fig:raw_topics] takes a very fine-grained view on the evolution
 of the topic distribution because each year is a single data point. In
 order to see larger trends, we can zoom out and look at smoothed
 versions of the same data. We inspect rolling averages with a window
 size of 30, 50, and a hundred years to see generational, epochal and
 secular trends.</p>
-<div class="figure" id="id52">
+<div class="figure align-default" id="id52">
 <a class="reference internal image-reference" href="../img/macro/7_topics_smooth(30).png"><img alt="Historical trends for varying sliding window sizes." src="../img/macro/7_topics_smooth(30).png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">Historical trends for varying sliding window sizes.</span></p>
+<p class="caption"><span class="caption-text">Historical trends for varying sliding window sizes.</span><a class="headerlink" href="#id52" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id53">
+<div class="figure align-default" id="id53">
 <a class="reference internal image-reference" href="../img/macro/7_topics_smooth(50).png"><img alt="Historical trends for varying sliding window sizes." src="../img/macro/7_topics_smooth(50).png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">Historical trends for varying sliding window sizes.</span></p>
+<p class="caption"><span class="caption-text">Historical trends for varying sliding window sizes.</span><a class="headerlink" href="#id53" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id54">
+<div class="figure align-default" id="id54">
 <a class="reference internal image-reference" href="../img/macro/7_topics_smooth(100).png"><img alt="Historical trends for varying sliding window sizes." src="../img/macro/7_topics_smooth(100).png" style="width: 90.0%;" /></a>
-<p class="caption"><span class="caption-text">Historical trends for varying sliding window sizes.</span></p>
+<p class="caption"><span class="caption-text">Historical trends for varying sliding window sizes.</span><a class="headerlink" href="#id54" title="Permalink to this image">¶</a></p>
 </div>
 <p>In these figures we can observe a) the relative topic importances
 (weights) over time, and b) identify breaking points and local extrema.</p>
@@ -1220,18 +1218,18 @@ note-space</p>
 </div>
 </div>
 <div class="section" id="topic-coevolution">
-<h2>12.7. Topic coevolution<a class="headerlink" href="#topic-coevolution" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">12.7. </span>Topic coevolution<a class="headerlink" href="#topic-coevolution" title="Permalink to this headline">¶</a></h2>
 <p>topic correlations motivate hierarchical clustering</p>
-<div class="figure" id="id55">
+<div class="figure align-default" id="id55">
 <img alt="Topic clustering." src="../img/macro/topic_clustering.png" />
-<p class="caption"><span class="caption-text">Topic clustering.</span></p>
+<p class="caption"><span class="caption-text">Topic clustering.</span><a class="headerlink" href="#id55" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="pitch-class-topic-coevolution">
-<h2>12.8. Pitch class – topic coevolution<a class="headerlink" href="#pitch-class-topic-coevolution" title="Permalink to this headline">¶</a></h2>
-<div class="figure" id="id56">
+<h2><span class="section-number">12.8. </span>Pitch class – topic coevolution<a class="headerlink" href="#pitch-class-topic-coevolution" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id56">
 <img alt="Topic clustering." src="../img/macro/tpc_topic_coevolution.png" />
-<p class="caption"><span class="caption-text">Topic clustering.</span></p>
+<p class="caption"><span class="caption-text">Topic clustering.</span><a class="headerlink" href="#id56" title="Permalink to this image">¶</a></p>
 </div>
 <p>Overall Figure [fig:tpc_topic_coevolution] almost looks like a block
 matrix.</p>
@@ -1252,15 +1250,15 @@ diatonic notes than sharp ones.</p>
 </div>
 </div>
 <div class="section" id="beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm">
-<h1>13. Beyond the bag-of-notes model: the Hidden Markov Topic Model (HMTM)<a class="headerlink" href="#beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">13. </span>Beyond the bag-of-notes model: the Hidden Markov Topic Model (HMTM)<a class="headerlink" href="#beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm" title="Permalink to this headline">¶</a></h1>
 <p>Improving the bag-of-notes model with a Hidden Markov Topic Model</p>
-<div class="figure" id="id57">
+<div class="figure align-default" id="id57">
 <img alt="Graphical Model for the Hidden Markov Topic Model (HMTM)." src="../img/macro/HMTM_model.png" />
-<p class="caption"><span class="caption-text">Graphical Model for the Hidden Markov Topic Model (HMTM).</span></p>
+<p class="caption"><span class="caption-text">Graphical Model for the Hidden Markov Topic Model (HMTM).</span><a class="headerlink" href="#id57" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="discussion">
-<h1>14. Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">14. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h1>
 <p>–Result 1: Historically, ever larger portions of pitch space are
 explored</p>
 <p>There is a trend from diatonic &gt; chromatic &gt; enharmonic pieces, but it
@@ -1354,23 +1352,21 @@ is not monotonic. In the 19th century, there are diatonic Lieder
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="4_advanced.html" title="previous chapter">5. Advanced applications</a></li>
+      <li>Previous: <a href="4_advanced.html" title="previous chapter"><span class="section-number">5. </span>Advanced applications</a></li>
       <li>Next: <a href="install.html" title="next chapter">Installation</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
 
 
 
@@ -1387,7 +1383,7 @@ is not monotonic. In the 19th century, there are diatonic Lieder
       &copy;2020, Fabian C. Moss.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

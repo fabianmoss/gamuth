@@ -23,6 +23,7 @@ This project is inspired by a number of great books, e.g.
 * Lewin (1987). *Generalized Intervals and Transformations*.
 * Müller (2015). *Fundamentals of Music Processing*.
 * Straus (2005). *Introduction to Post-Tonal Theory*.
+* :cite:`Lewin1987`
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
 which looks very interesting. 
@@ -66,3 +67,6 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+.. bibliography:: references.bib
