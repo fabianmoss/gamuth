@@ -69,6 +69,11 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = "alabaster"
+html_theme_options = {
+    # 'github_user': 'fabianmoss',
+    # 'github_repo': 'musictheory',
+    "logo": "logo2.png"
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -77,5 +82,3 @@ html_static_path = ['_static']
 
 # link to master doc
 master_doc = 'index'
-
-# html_logo = './_static/logo2.png'

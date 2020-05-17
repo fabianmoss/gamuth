@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>6. Pitch-class based music analysis &#8212; musictheory 0.0.1 documentation</title>
-    <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
@@ -20,30 +20,19 @@
     <link rel="next" title="Installation" href="install.html" />
     <link rel="prev" title="5. Advanced applications" href="4_advanced.html" />
    
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <link media="only screen and (max-device-width: 480px)" href="_static/small_flask.css" type= "text/css" rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="install.html" title="Installation"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="4_advanced.html" title="5. Advanced applications"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">musictheory 0.0.1 documentation</a> &#187;</li> 
-      </ul>
-    </div>  
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
   <div class="section" id="pitch-class-based-music-analysis">
@@ -1282,80 +1271,86 @@ is not monotonic. In the 19th century, there are diatonic Lieder
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">6. Pitch-class based music analysis</a><ul>
-<li><a class="reference internal" href="#frequency-space">6.1. Frequency space</a></li>
-<li><a class="reference internal" href="#pitch-space">6.2. Pitch space</a></li>
-<li><a class="reference internal" href="#transformations-of-tonal-spaces">6.3. Transformations of tonal spaces.</a></li>
-<li><a class="reference internal" href="#generalized-interval-systems">6.4. Generalized Interval Systems</a></li>
-<li><a class="reference internal" href="#models-of-pitch-space">6.5. Models of pitch space</a><ul>
-<li><a class="reference internal" href="#the-bag-of-notes-model">6.5.1. The bag-of-notes model</a></li>
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo2.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="0_intro.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html">2. Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_sequences.html">3. Modeling musical sequences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_representations.html">4. Representations and Formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_advanced.html">5. Advanced applications</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Pitch-class based music analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#frequency-space">6.1. Frequency space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pitch-space">6.2. Pitch space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transformations-of-tonal-spaces">6.3. Transformations of tonal spaces.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generalized-interval-systems">6.4. Generalized Interval Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models-of-pitch-space">6.5. Models of pitch space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dataset">6.6. Dataset</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#dataset">6.6. Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#tonal-pitch-class-distributions">7. Tonal pitch-class distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#historical-usage-of-tonal-pitch-classes">8. Historical usage of tonal pitch classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modeling-tonal-pitch-class-evolution">8.1. Modeling tonal pitch-class evolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variability-in-tonal-pitch-class-usage">8.2. Variability in tonal pitch-class usage</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tonal-pitch-class-distributions">7. Tonal pitch-class distributions</a></li>
-<li><a class="reference internal" href="#historical-usage-of-tonal-pitch-classes">8. Historical usage of tonal pitch classes</a><ul>
-<li><a class="reference internal" href="#modeling-tonal-pitch-class-evolution">8.1. Modeling tonal pitch-class evolution</a></li>
-<li><a class="reference internal" href="#variability-in-tonal-pitch-class-usage">8.2. Variability in tonal pitch-class usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#tonal-pitch-class-coevolution">9. Tonal pitch-class coevolution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modeling-tonal-pitch-class-coevolution">9.1. Modeling tonal pitch-class coevolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deciphering-pitch-class-coevolution">9.2. Deciphering pitch-class coevolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tpc-coevolution-per-historical-period">9.3. TPC coevolution per historical period</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#tonal-pitch-class-coevolution">9. Tonal pitch-class coevolution</a><ul>
-<li><a class="reference internal" href="#modeling-tonal-pitch-class-coevolution">9.1. Modeling tonal pitch-class coevolution</a></li>
-<li><a class="reference internal" href="#deciphering-pitch-class-coevolution">9.2. Deciphering pitch-class coevolution</a></li>
-<li><a class="reference internal" href="#tpc-coevolution-per-historical-period">9.3. TPC coevolution per historical period</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#diatonicism-chromaticism-enharmonicism">10. Diatonicism – Chromaticism – Enharmonicism</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#expansion-of-tonal-material">10.1. Expansion of tonal material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#expansion-of-local-harmonic-content">10.2. Expansion of local harmonic content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enharmonic-spectrum">10.3. Enharmonic spectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tonal-centers">10.4. Tonal Centers</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#diatonicism-chromaticism-enharmonicism">10. Diatonicism – Chromaticism – Enharmonicism</a><ul>
-<li><a class="reference internal" href="#expansion-of-tonal-material">10.1. Expansion of tonal material</a></li>
-<li><a class="reference internal" href="#expansion-of-local-harmonic-content">10.2. Expansion of local harmonic content</a><ul>
-<li><a class="reference internal" href="#over-time">10.2.1. Over time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#diachronic-and-synchronic-tonal-styles">11. Diachronic and Synchronic Tonal Styles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#clustering">11.1. Clustering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#principal-component-analysis">11.2. Principal Component Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#analysis-of-styles">11.3. Analysis of Styles</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#enharmonic-spectrum">10.3. Enharmonic spectrum</a></li>
-<li><a class="reference internal" href="#tonal-centers">10.4. Tonal Centers</a><ul>
-<li><a class="reference internal" href="#number-of-tonal-centers">10.4.1. Number of Tonal Centers</a></li>
-<li><a class="reference internal" href="#distance-of-tonal-centers">10.4.2. Distance of Tonal Centers</a></li>
-<li><a class="reference internal" href="#divergence-on-the-tonnetz">10.4.3. Divergence on the Tonnetz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#topic-modeling-with-latent-dirichlet-allocation-lda">12. Topic Modeling with Latent Dirichlet Allocation (LDA)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#background">12.1. Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#a-generative-model-for-a-musical-piece">12.2. A generative model for a musical piece</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extension-of-the-lda-music-model">12.3. Extension of the LDA music model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#topics-inferred-from-the-corpus">12.4. Topics inferred from the corpus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#number-of-topics-reveals-hierarchy-of-tonality">12.5. Number of topics reveals hierarchy of tonality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#historical-inferences-for-each-value-of-k">12.6. Historical inferences for each value of <span class="math notranslate nohighlight">\(K\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#topic-coevolution">12.7. Topic coevolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pitch-class-topic-coevolution">12.8. Pitch class – topic coevolution</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm">13. Beyond the bag-of-notes model: the Hidden Markov Topic Model (HMTM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#discussion">14. Discussion</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#diachronic-and-synchronic-tonal-styles">11. Diachronic and Synchronic Tonal Styles</a><ul>
-<li><a class="reference internal" href="#clustering">11.1. Clustering</a></li>
-<li><a class="reference internal" href="#principal-component-analysis">11.2. Principal Component Analysis</a></li>
-<li><a class="reference internal" href="#analysis-of-styles">11.3. Analysis of Styles</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#topic-modeling-with-latent-dirichlet-allocation-lda">12. Topic Modeling with Latent Dirichlet Allocation (LDA)</a><ul>
-<li><a class="reference internal" href="#background">12.1. Background</a><ul>
-<li><a class="reference internal" href="#definitions-and-assumptions">12.1.1. Definitions and Assumptions</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#a-generative-model-for-a-musical-piece">12.2. A generative model for a musical piece</a><ul>
-<li><a class="reference internal" href="#inference-and-learning">12.2.1. Inference and Learning</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#extension-of-the-lda-music-model">12.3. Extension of the LDA music model</a></li>
-<li><a class="reference internal" href="#topics-inferred-from-the-corpus">12.4. Topics inferred from the corpus</a></li>
-<li><a class="reference internal" href="#number-of-topics-reveals-hierarchy-of-tonality">12.5. Number of topics reveals hierarchy of tonality</a></li>
-<li><a class="reference internal" href="#historical-inferences-for-each-value-of-k">12.6. Historical inferences for each value of <span class="math notranslate nohighlight">\(K\)</span></a><ul>
-<li><a class="reference internal" href="#sliding-windows-reveal-trends">12.6.1. Sliding windows reveal trends</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#topic-coevolution">12.7. Topic coevolution</a></li>
-<li><a class="reference internal" href="#pitch-class-topic-coevolution">12.8. Pitch class – topic coevolution</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm">13. Beyond the bag-of-notes model: the Hidden Markov Topic Model (HMTM)</a></li>
-<li><a class="reference internal" href="#discussion">14. Discussion</a></li>
-</ul>
+
+<div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
@@ -1363,13 +1358,7 @@ is not monotonic. In the 19th century, there are diatonic Lieder
       <li>Next: <a href="install.html" title="next chapter">Installation</a></li>
   </ul></li>
 </ul>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/5_notes.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
+</div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <div class="searchformwrapper">
@@ -1382,12 +1371,32 @@ is not monotonic. In the 19th century, there are diatonic Lieder
     </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy; Copyright 2020, Fabian C. Moss.
+      &copy;2020, Fabian C. Moss.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/5_notes.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
+
+    
+
+    
   </body>
 </html>
