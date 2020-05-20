@@ -62,6 +62,11 @@ by an integer :math:`k \in \mathbb{Z}_{12}`.
 and usually one sets :math:`0\equiv \text{C}`. This allows to use *modular arithmetic*
 do calculations with pitch classes.
 
+Other invariances
+~~~~~~~~~~~~~~~~~
+
+OPTIC
+
 Frequency / Temperament
 ~~~~~~~~~~~~~~~~~~~~~~~
 
