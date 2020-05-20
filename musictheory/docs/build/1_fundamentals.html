@@ -52,26 +52,86 @@ Does this tone have a pitch? A duration? A velocity (volume)?</p>
 <ul class="simple">
 <li><p>Riemann (1916). <em>Ideen zu einer Lehre von den Tonvorstellungen</em>.</p></li>
 </ul>
-<div class="section" id="pitches-pitch-classes-pitch-class-sets">
-<h3><span class="section-number">2.1.1. </span>Pitches / pitch classes / pitch class sets<a class="headerlink" href="#pitches-pitch-classes-pitch-class-sets" title="Permalink to this headline">¶</a></h3>
-<p>Transformations between representations of tones are actually <em>transformations of tonal space</em>.</p>
-<p>[Diagram of relations between different representations.]</p>
+<div class="section" id="euler-space-tonnetz-tonal-space">
+<h3><span class="section-number">2.1.1. </span>Euler Space / Tonnetz / Tonal Space<a class="headerlink" href="#euler-space-tonnetz-tonal-space" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="pitch-classes">
+<h2><span class="section-number">2.2. </span>Pitch classes<a class="headerlink" href="#pitch-classes" title="Permalink to this headline">¶</a></h2>
+<p>A very common object in music theory is that of a <em>pitch class</em>. Pitch classes
+are equivalence classes of tones that incorporate some kind of invariance.
+The two most common equivalences are <em>octave equivalence</em> and <em>enharmonic equivalence</em>.</p>
+<div class="section" id="octave-equivalence">
+<h3><span class="section-number">2.2.1. </span>Octave equivalence<a class="headerlink" href="#octave-equivalence" title="Permalink to this headline">¶</a></h3>
+<p>Octave equivalance considers all tones to be equivalent that are separated by one or
+multiple octaves, e.g C1, C2, C4, C10 etc. More precisely, all tones whose fundamental frequencies
+are related by multiples of 2 are octave equivalent.</p>
+</div>
+<div class="section" id="enharmonic-equivalence">
+<h3><span class="section-number">2.2.2. </span>Enharmonic equivalence<a class="headerlink" href="#enharmonic-equivalence" title="Permalink to this headline">¶</a></h3>
+<p>If one further assumes enharmonic equivalence, all tones separated by 12 fifths on the line of fifths
+are considered to be equivalent, e.g. A# and Bb, F# and Gb, G#, and Ab etc.</p>
+<p>The notion of a pitch class usually entails both octave and enharmonic equivalence.
+Consequently, there are twelve pitch classes. If not mentioned otherwise, we adopt this convention here.
+The twelve pitch classes are usually referred to by their most simple representatives, i.e.</p>
+<div class="math notranslate nohighlight">
+\[\text{C, C$\sharp$, D, E$\flat$, F, F$\sharp$, G, A$\flat$, A, B$\flat$, B},\]</div>
+<p>but it is more appropriate to use <em>integer notation</em> in which each pitch class is represented
+by an integer <span class="math notranslate nohighlight">\(k \in \mathbb{Z}_{12}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\mathbb{Z}_{12}=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\},\]</div>
+<p>and usually one sets <span class="math notranslate nohighlight">\(0\equiv \text{C}\)</span>. This allows to use <em>modular arithmetic</em>
+do calculations with pitch classes.</p>
 </div>
 <div class="section" id="frequency-temperament">
-<h3><span class="section-number">2.1.2. </span>Frequency / Temperament<a class="headerlink" href="#frequency-temperament" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.2.3. </span>Frequency / Temperament<a class="headerlink" href="#frequency-temperament" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="intervals">
-<h2><span class="section-number">2.2. </span>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Pitch intervals</p></li>
+<li><p>Ordered pitch-class intervals (-&gt; rather directed)</p></li>
+<li><p>Unordered pitch-class intervals</p></li>
+<li><p>Interval classes</p></li>
+<li><p>Interval-class content</p></li>
+<li><p>Interval-class vector</p></li>
+</ul>
 <div class="section" id="giss">
-<h3><span class="section-number">2.2.1. </span>GISs<a class="headerlink" href="#giss" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.3.1. </span>GISs<a class="headerlink" href="#giss" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="euler-space-tonnetz-tonal-space">
-<h3><span class="section-number">2.2.2. </span>Euler Space / Tonnetz / Tonal Space<a class="headerlink" href="#euler-space-tonnetz-tonal-space" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pitch-class-sets">
+<h2><span class="section-number">2.4. </span>Pitch-Class Sets<a class="headerlink" href="#pitch-class-sets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Sets that contain pitch classes</p></li>
+</ul>
+<div class="section" id="normal-form">
+<h3><span class="section-number">2.4.1. </span>Normal Form<a class="headerlink" href="#normal-form" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="transposition">
+<h3><span class="section-number">2.4.2. </span>Transposition<a class="headerlink" href="#transposition" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="inversion">
+<h3><span class="section-number">2.4.3. </span>Inversion<a class="headerlink" href="#inversion" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Inversion In, Ixy</p></li>
+</ul>
+</div>
+<div class="section" id="index-number">
+<h3><span class="section-number">2.4.4. </span>Index number<a class="headerlink" href="#index-number" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="set-class">
+<h3><span class="section-number">2.4.5. </span>Set Class<a class="headerlink" href="#set-class" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="prime-form">
+<h3><span class="section-number">2.4.6. </span>Prime Form<a class="headerlink" href="#prime-form" title="Permalink to this headline">¶</a></h3>
+<p>Transformations between representations of tones are actually <em>transformations of tonal space</em>.</p>
+<p>[Diagram of relations between different representations.]</p>
 </div>
 </div>
 <div class="section" id="western-tonal-music">
-<h2><span class="section-number">2.3. </span>Western tonal music<a class="headerlink" href="#western-tonal-music" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.5. </span>Western tonal music<a class="headerlink" href="#western-tonal-music" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><dl class="simple">
 <dt>scales / scale degrees</dt><dd><ul>
@@ -87,23 +147,30 @@ Does this tone have a pitch? A duration? A velocity (volume)?</p>
 </ul>
 </div>
 <div class="section" id="time">
-<h2><span class="section-number">2.4. </span>Time<a class="headerlink" href="#time" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.6. </span>Time<a class="headerlink" href="#time" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="notes">
-<h3><span class="section-number">2.4.1. </span>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.6.1. </span>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
 <p>(Tones + Duration)
 blablabla…</p>
 </div>
 <div class="section" id="rhythm">
-<h3><span class="section-number">2.4.2. </span>Rhythm<a class="headerlink" href="#rhythm" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.6.2. </span>Rhythm<a class="headerlink" href="#rhythm" title="Permalink to this headline">¶</a></h3>
 <p>(Duration patterns)</p>
 </div>
 <div class="section" id="meter">
-<h3><span class="section-number">2.4.3. </span>Meter<a class="headerlink" href="#meter" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.6.3. </span>Meter<a class="headerlink" href="#meter" title="Permalink to this headline">¶</a></h3>
 <p>(Hierarchy)</p>
 </div>
 <div class="section" id="musical-time-vs-performance-time">
-<h3><span class="section-number">2.4.4. </span>Musical time vs. performance time<a class="headerlink" href="#musical-time-vs-performance-time" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.6.4. </span>Musical time vs. performance time<a class="headerlink" href="#musical-time-vs-performance-time" title="Permalink to this headline">¶</a></h3>
 </div>
+</div>
+<div class="section" id="notes-on-segmentation">
+<h2><span class="section-number">2.7. </span>Notes on Segmentation<a class="headerlink" href="#notes-on-segmentation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Straus 2005</p></li>
+<li><p>Hanninen 2012</p></li>
+</ul>
 </div>
 </div>
 
@@ -133,9 +200,12 @@ blablabla…</p>
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">1. Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2. Fundamentals</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#tones">2.1. Tones</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#intervals">2.2. Intervals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#western-tonal-music">2.3. Western tonal music</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#time">2.4. Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pitch-classes">2.2. Pitch classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intervals">2.3. Intervals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pitch-class-sets">2.4. Pitch-Class Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#western-tonal-music">2.5. Western tonal music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#time">2.6. Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notes-on-segmentation">2.7. Notes on Segmentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="2_sequences.html">3. Modeling musical sequences</a></li>
@@ -150,10 +220,6 @@ blablabla…</p>
 <li class="toctree-l1"><a class="reference internal" href="5_notes.html#topic-modeling-with-latent-dirichlet-allocation-lda">12. Topic Modeling with Latent Dirichlet Allocation (LDA)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5_notes.html#beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm">13. Beyond the bag-of-notes model: the Hidden Markov Topic Model (HMTM)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5_notes.html#discussion">14. Discussion</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 </ul>
 
 <div class="relations">

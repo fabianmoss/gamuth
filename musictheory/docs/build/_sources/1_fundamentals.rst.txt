@@ -21,12 +21,44 @@ Does this tone have a pitch? A duration? A velocity (volume)?
 
 * Riemann (1916). *Ideen zu einer Lehre von den Tonvorstellungen*.
 
-Pitches / pitch classes / pitch class sets
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Euler Space / Tonnetz / Tonal Space
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Transformations between representations of tones are actually *transformations of tonal space*.
+Pitch classes
+-------------
 
-[Diagram of relations between different representations.]
+A very common object in music theory is that of a *pitch class*. Pitch classes
+are equivalence classes of tones that incorporate some kind of invariance.
+The two most common equivalences are *octave equivalence* and *enharmonic equivalence*.
+
+Octave equivalence
+~~~~~~~~~~~~~~~~~~
+
+Octave equivalance considers all tones to be equivalent that are separated by one or
+multiple octaves, e.g C1, C2, C4, C10 etc. More precisely, all tones whose fundamental frequencies
+are related by multiples of 2 are octave equivalent.
+
+Enharmonic equivalence
+~~~~~~~~~~~~~~~~~~~~~~
+
+If one further assumes enharmonic equivalence, all tones separated by 12 fifths on the line of fifths
+are considered to be equivalent, e.g. A# and Bb, F# and Gb, G#, and Ab etc.
+
+The notion of a pitch class usually entails both octave and enharmonic equivalence.
+Consequently, there are twelve pitch classes. If not mentioned otherwise, we adopt this convention here.
+The twelve pitch classes are usually referred to by their most simple representatives, i.e.
+
+.. math::
+   \text{C, C$\sharp$, D, E$\flat$, F, F$\sharp$, G, A$\flat$, A, B$\flat$, B},
+
+but it is more appropriate to use *integer notation* in which each pitch class is represented
+by an integer :math:`k \in \mathbb{Z}_{12}`.
+
+.. math::
+   \mathbb{Z}_{12}=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\},
+
+and usually one sets :math:`0\equiv \text{C}`. This allows to use *modular arithmetic*
+do calculations with pitch classes.
 
 Frequency / Temperament
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -34,11 +66,45 @@ Frequency / Temperament
 Intervals
 ---------
 
+- Pitch intervals
+- Ordered pitch-class intervals (-> rather directed)
+- Unordered pitch-class intervals
+- Interval classes
+- Interval-class content
+- Interval-class vector
+
 GISs
 ~~~~
 
-Euler Space / Tonnetz / Tonal Space
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pitch-Class Sets
+----------------
+
+- Sets that contain pitch classes
+
+Normal Form 
+~~~~~~~~~~~
+
+Transposition
+~~~~~~~~~~~~~
+
+Inversion
+~~~~~~~~~
+
+- Inversion In, Ixy
+
+Index number 
+~~~~~~~~~~~~
+
+Set Class
+~~~~~~~~~
+
+Prime Form 
+~~~~~~~~~~
+
+
+Transformations between representations of tones are actually *transformations of tonal space*.
+
+[Diagram of relations between different representations.]
 
 Western tonal music
 -------------------
@@ -83,3 +149,9 @@ Meter
 
 Musical time vs. performance time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Notes on Segmentation
+---------------------
+
+- Straus 2005
+- Hanninen 2012
