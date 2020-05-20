@@ -19,7 +19,9 @@ Let's start with a mental exercise: imagine a tone.
 Contemplate for a while what this means.
 Does this tone have a pitch? A duration? A velocity (volume)?
 
-* Riemann (1916). *Ideen zu einer Lehre von den Tonvorstellungen*.
+* Riemann (1916). *Ideen zu einer Lehre von den Tonvorstellungen*:
+
+"The ultimate elements of the tonal imagination are single tones." (Wason & Martin, 1992, 92)
 
 Euler Space / Tonnetz / Tonal Space
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
