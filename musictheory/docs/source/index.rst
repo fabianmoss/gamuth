@@ -50,11 +50,10 @@ Feel free to `contact me`_ with your questions and suggestions!
 
    0_intro
    1_fundamentals
-   2_sequences
-   3_representations
-   4_advanced
-   5_notes
-
+..    2_sequences
+..    3_representations
+..    4_advanced
+..    5_notes
 
 .. Developers
 .. ----------
