@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./../../src/'))
+# sys.path.insert(0, os.path.abspath('./../../src/'))
 sys.path.insert(0, os.path.abspath('./../../src/musictheory'))
 # directory relative to this conf file
 CURDIR = os.path.abspath(os.path.dirname(__file__))

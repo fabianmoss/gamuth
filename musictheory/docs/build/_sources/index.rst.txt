@@ -55,19 +55,19 @@ Feel free to `contact me`_ with your questions and suggestions!
 ..    4_advanced
 ..    5_notes
 
-
-.. Developers
-.. ----------
-
-.. .. toctree::
-..    :maxdepth: 2
-
-..    install
-..    api
-
 Indices and tables
 ------------------
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+
+.. * :ref:`modindex`
+
+Developers
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   install
+   api

@@ -28,34 +28,31 @@ conceptualize ("vorstellen" in Riemann's terminology) a *tone location* ("Tonort
 There are many different ways to do this. In fact, the way we specify the location of a tone 
 defines the tonal space in which it is situated.
 
+Frequencies
+~~~~~~~~~~~
+
+Each tone corresponds to some *fundamental frequency* :math:`f` in Hertz (Hz),
+oscillations per second.
+
+- Overtone series
+- frequency ratios 
+- logarithm: multiplication => addition
+
 Euler Space 
 ~~~~~~~~~~~
 
 One option is to locate a tone `t` as a point :math:`p=(o, q, t)` in Euler Space, defined by
- a number of octaves `o`, fifths `q`, and thirds `t`.
+a number of octaves `o`, fifths `q`, and thirds `t`. We will use the :class:`musictheory.Tone`
+class for this
 
 .. code-block:: python
 
-   t = Tone(o, q, t)
+   from musictheory import Tone
+
+   t = Tone(o=0, q=0, t=0)
 
 From this representation we can derive a variety of others, corrsponding to transformations of 
 tonal space.
-
-Tonnetz
-~~~~~~~
-
-The *Tonnetz* does not contain octaves and thus corresponds to a projection 
-
-.. math::
-   
-   \pi: (o, q, t) \mapsto (q, t)
-
-Pitch classes
--------------
-
-A very common object in music theory is that of a *pitch class*. Pitch classes
-are equivalence classes of tones that incorporate some kind of invariance.
-The two most common equivalences are *octave equivalence* and *enharmonic equivalence*.
 
 Octave equivalence
 ~~~~~~~~~~~~~~~~~~
@@ -64,11 +61,30 @@ Octave equivalance considers all tones to be equivalent that are separated by on
 multiple octaves, e.g C1, C2, C4, C10 etc. More precisely, all tones whose fundamental frequencies
 are related by multiples of 2 are octave equivalent.
 
+Tonnetz
+~~~~~~~
+
+The *Tonnetz* does not contain octaves and thus corresponds to a projection 
+
+.. math::
+   
+   \pi: (o, q, t) \mapsto (q, t).
+
+Pitch classes
+-------------
+
+A very common object in music theory is that of a *pitch class*. Pitch classes
+are equivalence classes of tones that incorporate some kind of invariance.
+The two most common equivalences are *octave equivalence* and *enharmonic equivalence*.
+
+
 Enharmonic equivalence
 ~~~~~~~~~~~~~~~~~~~~~~
 
-If one further assumes enharmonic equivalence, all tones separated by 12 fifths on the line of fifths
-are considered to be equivalent, e.g. A# and Bb, F# and Gb, G#, and Ab etc.
+If, in addition to octave equivalence, one further assumes enharmonic equivalence, 
+all tones separated by 12 fifths on the line of fifths
+are considered to be equivalent, e.g. :math:`\text{A}\sharp` and :math:`\text{B}\flat`, 
+:math:`\text{F}\sharp` and :math:`\text{G}\flat`, :math:`\text{G}\sharp`, and :math:`\text{A}\flat` etc.
 
 The notion of a pitch class usually entails both octave and enharmonic equivalence.
 Consequently, there are twelve pitch classes. If not mentioned otherwise, we adopt this convention here.
@@ -91,7 +107,7 @@ Other invariances
 
 OPTIC
 
-Frequency / Temperament
+Tuning / Temperament
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Intervals
@@ -140,12 +156,50 @@ Transformations between representations of tones are actually *transformations o
 Western tonal music
 -------------------
 
-- scales / scale degrees
-   - diatonic
-   - chromatic
-   - hexatonic/octatonic
-- modes
-- keys
+The diatonic scale
+~~~~~~~~~~~~~~~~~~
+
+Music in the Western tradition fundamentally builds on
+so-called *diatonic* scales, an arrangement of seven tones
+that are named with latin letters from A to G. "Diatonic" can 
+be roughly translated into "through all tones". Within this scale,
+no tone is privileged, so the diatonic scale can be appropriately 
+represented by a circle with seven points on it. Mathemacally, 
+this structure is equivalent to :math:`\mathbb{Z}_7`.
+
+[tikz figure here]
+
+Now, if we want to determine the relative relations between the tones, 
+it is necessary to assign a reference tone that is commonly called the *tonic*, 
+or *finalis* in older music.
+
+For example, if the tone D is the tonic, we can determine all other scale degrees 
+as distance to this tone. Scale degrees are commonly notated with arabic numbers with a caret:
+
+.. math::
+   \text{D}: \hat{1}\\
+   \text{E}: \hat{2}\\
+   \text{F}: \hat{3}\\
+   \text{G}: \hat{4}\\
+   \text{A}: \hat{5}\\
+   \text{B}: \hat{6}\\
+   \text{C}: \hat{7}\\
+
+Modes
+~~~~~
+
+scale plus order plus hierarchy (but order already defined above?)
+
+Keys
+~~~~
+
+Other scales
+~~~~~~~~~~~~
+
+- chromatic
+- hexatonic
+- octatonic
+- whole tone
 
 Time
 ----
