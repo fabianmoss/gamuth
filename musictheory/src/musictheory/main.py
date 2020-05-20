@@ -200,8 +200,7 @@ class Tone:
     #     assert self.name == self.inferred_name
 
 class PitchClass():
-    """PitchClass instance in Z12."""
-
+    """Pitch class instance in Z12."""
     def __init__(self,tone):
         self.pitch_class = tone % 12
 
