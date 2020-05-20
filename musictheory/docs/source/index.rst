@@ -52,14 +52,14 @@ Feel free to `contact me`_ with your questions and suggestions!
    5_notes
 
 
-Developers
-----------
+.. Developers
+.. ----------
 
-.. toctree::
-   :maxdepth: 2
+.. .. toctree::
+..    :maxdepth: 2
 
-   install
-   api
+..    install
+..    api
 
 Indices and tables
 ------------------
