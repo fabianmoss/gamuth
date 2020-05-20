@@ -10,8 +10,7 @@ This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
 The logo, a `hemidemisemiquaver`_ (or a sixty-fourth note), 
-symbolically reflects this level of difficulty. A PDF version of the contents
-of this page can be found :download:`here <_static/musictheory.pdf>`.
+symbolically reflects this level of difficulty. 
 
 .. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
 
@@ -23,6 +22,12 @@ This project is inspired by a number of great books, e.g.
 * Lewin (1987). *Generalized Intervals and Transformations*.
 * Müller (2015). *Fundamentals of Music Processing*.
 * Straus (2005). *Introduction to Post-Tonal Theory*.
+
+What is new and unique about the approach taken here is that we take 
+a computational perspective and implement all introduced concepts.
+This does not only provide us with sharp and unequivocal definitions,
+but also allows us to scale music theory up from the analysis of individual 
+bars, sections, or pieces to that of entire repertoires and corpora!
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
 which looks very interesting. 
