@@ -199,6 +199,12 @@ class Tone:
     # if all(v is not None for v in [self.octave, self.fifth, self.third, self.name]):
     #     assert self.name == self.inferred_name
 
+class PitchClass():
+    """PitchClass instance in Z12."""
+
+    def __init__(self,tone):
+        self.pitch_class = tone % 12
+
 
 class Interval:
     """ Class for an interval between two tones `s` (source) and `t` (target). """
