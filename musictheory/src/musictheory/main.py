@@ -34,7 +34,7 @@ class Tone:
 
     def get_accidentals(self):
         '''
-        Gets the accidentals of the tone (flats (`b`) or sharps (`#`))..
+        Gets the accidentals of the tone (flats (:math:`\\flat`) or sharps (:math:`\\sharp`))..
 
         Args:
             None
@@ -201,7 +201,7 @@ class Tone:
     #     assert self.name == self.inferred_name
 
 class PitchClass(Tone):
-    """Pitch class instance in Z12."""
+    """Pitch class instance in :math:`\mathbb{Z}_{12}`."""
     def __init__(self):
         self.pitch_class = self.get_pitch_class()
 

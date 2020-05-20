@@ -3,14 +3,9 @@ API
 
 The entire ``musictheory`` API.
 
-Tone
-----
 
-.. autoclass:: main.Tone
-   :members:
+musictheory
+-----------
 
-Interval
---------
-
-.. autoclass:: main.Interval
+.. automodule:: main
    :members:
