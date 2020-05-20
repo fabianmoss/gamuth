@@ -1,9 +1,6 @@
 API
 ===
 
-The entire ``musictheory`` API.
-
-
 musictheory
 -----------
 
