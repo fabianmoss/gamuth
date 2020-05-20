@@ -53,8 +53,27 @@ Does this tone have a pitch? A duration? A velocity (volume)?</p>
 <li><p>Riemann (1916). <em>Ideen zu einer Lehre von den Tonvorstellungen</em>:</p></li>
 </ul>
 <p>“The ultimate elements of the tonal imagination are single tones.” (Wason &amp; Martin, 1992, 92)</p>
-<div class="section" id="euler-space-tonnetz-tonal-space">
-<h3><span class="section-number">2.1.1. </span>Euler Space / Tonnetz / Tonal Space<a class="headerlink" href="#euler-space-tonnetz-tonal-space" title="Permalink to this headline">¶</a></h3>
+<p>Bearing that in mind, let’s create (or <em>instantiate</em>) a tone. To do so, we need to
+conceptualize (“vorstellen” in Riemann’s terminology) a <em>tone location</em> (“Tonort”, Mazzola 1985, 241).
+There are many different ways to do this. In fact, the way we specify the location of a tone
+defines the tonal space in which it is situated.</p>
+<div class="section" id="euler-space">
+<h3><span class="section-number">2.1.1. </span>Euler Space<a class="headerlink" href="#euler-space" title="Permalink to this headline">¶</a></h3>
+<dl class="simple">
+<dt>One option is to locate a tone <cite>t</cite> as a point <span class="math notranslate nohighlight">\(p=(o, q, t)\)</span> in Euler Space, defined by</dt><dd><p>a number of octaves <cite>o</cite>, fifths <cite>q</cite>, and thirds <cite>t</cite>.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="n">o</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>From this representation we can derive a variety of others, corrsponding to transformations of
+tonal space.</p>
+</div>
+<div class="section" id="tonnetz">
+<h3><span class="section-number">2.1.2. </span>Tonnetz<a class="headerlink" href="#tonnetz" title="Permalink to this headline">¶</a></h3>
+<p>The <em>Tonnetz</em> does not contain octaves and thus corresponds to a projection</p>
+<div class="math notranslate nohighlight">
+\[\pi: (o, q, t) \mapsto (q, t)\]</div>
 </div>
 </div>
 <div class="section" id="pitch-classes">

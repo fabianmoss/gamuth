@@ -23,8 +23,32 @@ Does this tone have a pitch? A duration? A velocity (volume)?
 
 "The ultimate elements of the tonal imagination are single tones." (Wason & Martin, 1992, 92)
 
-Euler Space / Tonnetz / Tonal Space
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Bearing that in mind, let's create (or *instantiate*) a tone. To do so, we need to 
+conceptualize ("vorstellen" in Riemann's terminology) a *tone location* ("Tonort", Mazzola 1985, 241).
+There are many different ways to do this. In fact, the way we specify the location of a tone 
+defines the tonal space in which it is situated.
+
+Euler Space 
+~~~~~~~~~~~
+
+One option is to locate a tone `t` as a point :math:`p=(o, q, t)` in Euler Space, defined by
+ a number of octaves `o`, fifths `q`, and thirds `t`.
+
+.. code-block:: python
+
+   t = Tone(o, q, t)
+
+From this representation we can derive a variety of others, corrsponding to transformations of 
+tonal space.
+
+Tonnetz
+~~~~~~~
+
+The *Tonnetz* does not contain octaves and thus corresponds to a projection 
+
+.. math::
+   
+   \pi: (o, q, t) \mapsto (q, t)
 
 Pitch classes
 -------------
