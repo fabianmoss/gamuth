@@ -3,7 +3,6 @@ Learn music theory the hard way!
 
 .. warning::
     The content on these pages is very much under construction!
-    TEST
 
 Welcome!
 

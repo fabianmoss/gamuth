@@ -116,24 +116,6 @@ class Interval:
         else: 
             return np.abs(s)
 
-class PitchClass(Tone):
-    """Pitch class instance in :math:`\mathbb{Z}_{12}`."""
-    def __init__(self):
-        self.pitch_class = self.get_pitch_class()
-
-class PitchClassSet:
-    """Pitch class sets"""
-    def ___init___(self, lst):
-        self.size = size(self.lst)
-
-    def interval_vector(self):
-        """
-        Interval vector given a pitch-class set.
-        """
-        iv = ()
-        return iv
-
-
 class Tone:
     """ Class for tones. """
 
@@ -327,3 +309,20 @@ class Tone:
 
     # if all(v is not None for v in [self.octave, self.fifth, self.third, self.name]):
     #     assert self.name == self.inferred_name
+
+    class PitchClass(Tone):
+    """Pitch class instance in :math:`\mathbb{Z}_{12}`."""
+    def ___init___(self):
+        self.pitch_class = self.get_pitch_class()
+
+class PitchClassSet:
+    """Pitch class sets"""
+    def ___init___(self, lst):
+        self.size = len(self.lst)
+
+    def interval_vector(self):
+        """
+        Interval vector given a pitch-class set.
+        """
+        iv = ()
+        return iv
