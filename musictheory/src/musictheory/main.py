@@ -202,7 +202,10 @@ class Tone:
 class PitchClass():
     """Pitch class instance in Z12."""
     def __init__(self,tone):
-        self.pitch_class = tone % 12
+        self.pitch_class = tone.get_pitch_class()
+
+    def testfunc():
+        return "O"
 
 
 class Interval:
