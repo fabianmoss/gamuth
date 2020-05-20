@@ -8,11 +8,12 @@
 import numpy as np
 import re
 
-diatonic = np.array(list("FCGDAEB"))
-accidentals = ["#", "b"]
-
 class Tone:
     """ Class for tones. """
+
+    diatonic = np.array(list("FCGDAEB"))
+    accidentals = ["#", "b"]
+
     def __init__(self, octave=None, fifth=None, third=None, name=None):
         # coordinates
         self.octave = octave
@@ -199,14 +200,22 @@ class Tone:
     # if all(v is not None for v in [self.octave, self.fifth, self.third, self.name]):
     #     assert self.name == self.inferred_name
 
-class PitchClass():
+class PitchClass(Tone):
     """Pitch class instance in Z12."""
-    def __init__(self,tone):
-        self.pitch_class = tone.get_pitch_class()
+    def __init__(self):
+        self.pitch_class = self.get_pitch_class()
 
-    def testfunc():
-        return "O"
+class PitchClassSet:
+    """Pitch class sets"""
+    def ___init___(self, size=None):
+        self.size = None
 
+    def interval_vector(self):
+        """
+        Interval vector given a pitch-class set.
+        """
+        iv = ()
+        return iv
 
 class Interval:
     """ Class for an interval between two tones `s` (source) and `t` (target). """
