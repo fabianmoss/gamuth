@@ -73,7 +73,7 @@ html_theme = "alabaster"
 html_theme_options = {
     # 'github_user': 'fabianmoss',
     # 'github_repo': 'musictheory',
-    "logo": "logo.png"
+    "logo": "logo2.png"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
