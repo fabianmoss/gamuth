@@ -36,8 +36,9 @@ The Python project `musthe`_ also seems to pursue a similar goal.
 .. _`Music for Geeks and Nerds`: https://pedrokroger.net/mfgan/
 .. _`musthe`: https://github.com/gciruelos/musthe
 
-Since this is ongoing work, I can give no guarantee for completeness or accuracy.
-Feel free to `contact me`_ with your questions and suggestions!
+.. note::
+   Since this is ongoing work, I can give no guarantee for completeness or accuracy.
+   Feel free to `contact me`_ with your questions and suggestions!
 
 .. _contact me: fabianmoss@gmail.com
 
