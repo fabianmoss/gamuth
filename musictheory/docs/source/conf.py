@@ -40,6 +40,7 @@ extensions = [
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon',
     'sphinx.ext.mathjax',
+    # 'sphinxcontrib.lilypond'
     # 'sphinxcontrib.bibtex'
 ]
 
@@ -54,6 +55,9 @@ mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 #     'style': 'numbers',
 #     'sort': True,
 # }
+
+# pnglily_fontsize = ['6', '-3'] # The first value is for 'lily' role setting in absolute fontsize. 
+# The second value is for 'lily' directive setting in relative fontsize.
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

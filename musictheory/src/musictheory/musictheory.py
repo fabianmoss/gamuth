@@ -310,10 +310,8 @@ class Tone:
     # if all(v is not None for v in [self.octave, self.fifth, self.third, self.name]):
     #     assert self.name == self.inferred_name
 
-    class PitchClass(Tone):
-    """
-    Pitch class instance in :math:`\mathbb{Z}_{12}`.
-    """
+class PitchClass():
+    """Pitch class instance in :math:`\mathbb{Z}_{12}`."""
     def ___init___(self):
         self.pitch_class = self.get_pitch_class()
 
