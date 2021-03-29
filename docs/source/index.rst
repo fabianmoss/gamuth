@@ -52,11 +52,12 @@ The Python project `musthe`_ also seems to pursue a similar goal.
    0_intro
    1_fundamentals
    3_set_theory
-   4_Fourier_pitch_space
-..    2_sequences
-..    3_representations
-..    4_advanced
-..    5_notes
+
+.. 4_Fourier_pitch_space
+.. 2_sequences
+.. 3_representations
+.. 4_advanced
+.. 5_notes
 
 Indices and tables
 ------------------

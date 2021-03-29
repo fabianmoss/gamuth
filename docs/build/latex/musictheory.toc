@@ -40,14 +40,9 @@
 \contentsline {section}{\numberline {3.4}Relationships}{10}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Advanced concepts}{10}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Twelve\sphinxhyphen {}tone theory}{10}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Fourier Pitch Space}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}A hierarchy of pitch\sphinxhyphen {}class vectors}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Discrete Fourier Transform}{11}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Color mapping of Fourier coefficients}{12}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Wavescapes}{13}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Indices and tables}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Developers}{17}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Installation}{17}{section.6.1}%
-\contentsline {section}{\numberline {6.2}API \sphinxhyphen {} musictheory}{17}{section.6.2}%
-\contentsline {chapter}{Python Module Index}{23}{section*.19}%
-\contentsline {chapter}{Index}{25}{section*.20}%
+\contentsline {chapter}{\numberline {4}Indices and tables}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Developers}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Installation}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}API \sphinxhyphen {} musictheory}{13}{section.5.2}%
+\contentsline {chapter}{Python Module Index}{19}{section*.19}%
+\contentsline {chapter}{Index}{21}{section*.20}%
