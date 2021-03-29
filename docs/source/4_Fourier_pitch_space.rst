@@ -51,8 +51,7 @@ where the :math:`k`-th component of the complex-valued vector :math:`X` is defin
 .. math::
 
     X[k]= \sum\limits_{n=0}^{11}x[n]e^{-i2\pi n \frac{k}{12}},\;
-    % \forall 
-    k \in [0,\mathrel{{.}\,{.}\,{.}}\;, 11]. \label{eqn:dft}
+     \forall k \in [0,\mathrel{{.}\,{.}\,{.}}\;, 11]. \label{eqn:dft}
 
 The values of :math:`X[k]` are referred to as *Fourier coefficients*, or simply *coefficients*. 
 The zeroeth coefficient :math:`X[0]` is always equal to the sum of :math:`x`. 
@@ -148,7 +147,7 @@ More precisely, the wavescape for the :math:`k`-th Fourier coefficient is given 
     W_k: \mathbb{N}^2 &\longrightarrow [0,1]^3 \times [0,1]\\
     W_k[n,m] &= (C_k \circ F \circ P)[n,m], \nonumber
 
-for segment indices :math:`$n,m \in \mathbb{N}` with :math:`0 \leq n\leq m < N`. 
+for segment indices :math:`n,m \in \mathbb{N}` with :math:`0 \leq n\leq m < N`. 
 Following the hierarchical visual structure in Figure~\ref{tab:visuhierarchy}, 
 wavescapes are displayed as triangles of colors, similarly to keyscapes (Sapp).
 
