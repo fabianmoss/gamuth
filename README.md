@@ -2,6 +2,6 @@
 
 Docs here: https://musictheory.readthedocs.io/en/latest/?badge=latest
 
-Build with `sphinx-build docs/source/ docs/build/html`
+To build `cd docs` and run `make` to see possible target formats. Generally, use `make html` and `make latexpdf`.
 
 [![Documentation Status](https://readthedocs.org/projects/musictheory/badge/?version=latest)](https://musictheory.readthedocs.io/en/latest/?badge=latest)
