@@ -9,10 +9,10 @@ Welcome!
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-The logo, a `hemidemisemiquaver`_ (or a sixty-fourth note), 
+The logo, a `maxima`_ (the longest note value in medieval music), 
 symbolically reflects this level of difficulty. 
 
-.. _hemidemisemiquaver: https://en.wikipedia.org/wiki/Sixty-fourth_note
+.. _maxima: https://en.wikipedia.org/wiki/Maxima_(music)
 
 This project is inspired by a number of great books, e.g.
 
@@ -52,11 +52,12 @@ The Python project `musthe`_ also seems to pursue a similar goal.
    0_intro
    1_fundamentals
    3_set_theory
+   4_advanced
 
 .. 4_Fourier_pitch_space
 .. 2_sequences
 .. 3_representations
-.. 4_advanced
+
 .. 5_notes
 
 Indices and tables

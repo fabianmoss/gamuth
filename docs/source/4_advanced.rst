@@ -1,6 +1,11 @@
 Advanced applications
 =====================
 
+.. _Pitch spelling:
+
+Pitch Spelling 
+--------------
+
 Style (classification)
 ----------------------
 

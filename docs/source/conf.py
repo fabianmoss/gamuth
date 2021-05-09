@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'ext
 # -- Project information -----------------------------------------------------
 
 project = 'musictheory'
-copyright = '2020, Fabian C. Moss'
+copyright = '2021, Fabian C. Moss'
 author = 'Fabian C. Moss'
 
 # The full version, including alpha/beta/rc tags
@@ -77,7 +77,7 @@ html_theme = "alabaster"
 html_theme_options = {
     # 'github_user': 'fabianmoss',
     # 'github_repo': 'musictheory',
-    "logo": "logo2.png"
+    "logo": "maxima.png"
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

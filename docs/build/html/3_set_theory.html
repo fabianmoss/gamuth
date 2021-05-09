@@ -15,7 +15,7 @@
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Installation" href="install.html" />
+    <link rel="next" title="4. Advanced applications" href="4_advanced.html" />
     <link rel="prev" title="2. Fundamentals" href="1_fundamentals.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -38,17 +38,66 @@
 <p>Content adapted from Straus (2005). In this chapter, “pitch class” always entails octave <em>and</em> enharmonic equicalenve.</p>
 <div class="section" id="pitch-classes">
 <h2><span class="section-number">3.1. </span>Pitch classes<a class="headerlink" href="#pitch-classes" title="Permalink to this headline">¶</a></h2>
-<p>Octave equivalence</p>
-<p>Enharmonic equivalence</p>
+<div class="section" id="octave-equivalence">
+<h3><span class="section-number">3.1.1. </span>Octave equivalence<a class="headerlink" href="#octave-equivalence" title="Permalink to this headline">¶</a></h3>
+<p>Octave equivalence maps all pitch classes with the same label/name to one class,
+e.g. all C’s on the piano get mapped to pitch class C, all Ab’s get mapped to pitch class Ab,
+and all G#’s get mapped to G#.</p>
+<p>Octave equivalence has perceptual correlates (cite paper) and is frequently employed in composition.
+For instance, the double bass sounds an octave lower as a cello but they are notated identically,
+or a fugue subject enters in different registers.
+The octave is the most fundamental interval with a frequency ratio of 2:1.
+Octave equivalence transforms the Euler space to the Tonnetz <span class="math notranslate nohighlight">\(\mathbb{Z}\times\mathbb{Z}\)</span>.</p>
+<p>[diagram]</p>
+</div>
+<div class="section" id="enharmonic-equivalence">
+<h3><span class="section-number">3.1.2. </span>Enharmonic equivalence<a class="headerlink" href="#enharmonic-equivalence" title="Permalink to this headline">¶</a></h3>
+<p>Enharmonic equivalence describes the identification of pitches like F#4 and G#4.
+Enharmonic equivalence transforms the Euler Space to a tube, namely <span class="math notranslate nohighlight">\(\mathbb{Z}_{12} \times \mathbb{Z}\)</span>
+(the chromatic circle and the octave line).</p>
+<p>[diagram]</p>
+<p>Taking octave equivalence and enharmonic equivalence together,
+we arrive at the torus that contains all twelve enharmonic (and octave-related) pitch classes,
+and which can be represented by numbers <span class="math notranslate nohighlight">\(k\in \mathbb{Z}_{12}\)</span></p>
+<p>[diagram]</p>
+<p>Both equivalences are indepentend of one another, i.e. we have the following commuting diagram between tonal spaces:</p>
+<p>[diagram]</p>
+<p>Assuming enharmonic equivalence has a number of implications:</p>
+<ul class="simple">
+<li><p>we cannot distinguish between diatonic and chromatic semitones</p></li>
+<li><p>we cannot distinguish between augmented fourths and diminished fifths</p></li>
+<li><p>we cannot distinguish between dominant seventh chords and augmented sixth chords</p></li>
+<li><p>and more</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Describe relation to equal temperament.</p>
+</div>
+<p>For the remainder of this chapter, pitch classes designate entities for which both equivalences are assumed.
+It is thus appropriate to represent them on a circle. Since each pitch class can have infinitely many spellings,
+going the reverse direction is a difficult inference problem, for which a number of algorithms have been proposed
+(see advanced chapter on <a class="reference internal" href="4_advanced.html#pitch-spelling"><span class="std std-ref">Pitch Spelling</span></a>).</p>
+</div>
 </div>
 <div class="section" id="intervals">
 <h2><span class="section-number">3.2. </span>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h2>
-<p>Pitch Intervals</p>
+<p>Generally, intervals describe the distance between two points (see Chapter <a class="reference internal" href="1_fundamentals.html#intervals"><span class="std std-ref">Intervals</span></a>).
+But depending on which representation for tones we chose (or, equivalently, which equivalences we assume)
+the types of the intervals changes as well.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Add paragraph about what types are.</p>
+</div>
+<div class="section" id="pitch-intervals">
+<h3><span class="section-number">3.2.1. </span>Pitch Intervals<a class="headerlink" href="#pitch-intervals" title="Permalink to this headline">¶</a></h3>
+<p>Pitch intervals describe the distance between two pitches in semitones. That is, we do assume enharmonic equivalence
+but not octave equivalence. Consequently, we can visualize pitch intervals in</p>
 <p>Ordered pitch-class intervals</p>
 <p>Unordered pitch-class intervals</p>
 <p>Interval class</p>
 <p>Interval class content</p>
 <p>Interval class vector</p>
+</div>
 </div>
 <div class="section" id="pitch-class-sets">
 <h2><span class="section-number">3.3. </span>Pitch-class sets<a class="headerlink" href="#pitch-class-sets" title="Permalink to this headline">¶</a></h2>
@@ -107,7 +156,7 @@
         <div class="sphinxsidebarwrapper">
 <p class="logo">
   <a href="index.html">
-    <img class="logo" src="_static/logo2.png" alt="Logo"/>
+    <img class="logo" src="_static/maxima.png" alt="Logo"/>
     
   </a>
 </p>
@@ -132,6 +181,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#twelve-tone-theory">3.6. Twelve-tone theory</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="4_advanced.html">4. Advanced applications</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
@@ -143,7 +193,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="1_fundamentals.html" title="previous chapter"><span class="section-number">2. </span>Fundamentals</a></li>
-      <li>Next: <a href="install.html" title="next chapter">Installation</a></li>
+      <li>Next: <a href="4_advanced.html" title="next chapter"><span class="section-number">4. </span>Advanced applications</a></li>
   </ul></li>
 </ul>
 </div>
@@ -170,7 +220,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2020, Fabian C. Moss.
+      &copy;2021, Fabian C. Moss.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>

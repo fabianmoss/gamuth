@@ -110,6 +110,8 @@ OPTIC
 Tuning / Temperament
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+.. _Intervals:
+
 Intervals
 ---------
 
