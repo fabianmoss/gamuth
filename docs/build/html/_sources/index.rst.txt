@@ -49,7 +49,9 @@ The Python project `musthe`_ also seems to pursue a similar goal.
    0_intro
    1_fundamentals
    3_set_theory
-   4_advanced
+   4_harmony 
+   5_segmentation
+   6_advanced
 
    8_bibliography
 

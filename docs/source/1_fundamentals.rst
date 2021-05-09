@@ -236,9 +236,3 @@ Meter
 
 Musical time vs. performance time
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Notes on Segmentation
----------------------
-
-- Straus 2005
-- Hanninen 2012

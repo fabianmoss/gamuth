@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex musictheory.idx"] 1620580810 "musictheory.idx" "musictheory.ind" "musictheory" 1620580817
-  "musictheory.idx" 1620580811 2340 b3def3cbffe821380b4acd48df170df9 "pdflatex"
+["makeindex musictheory.idx"] 1620581796 "musictheory.idx" "musictheory.ind" "musictheory" 1620581803
+  "musictheory.idx" 1620581803 2340 1098099667739f1ebe0832a320be3768 "pdflatex"
   (generated)
-  "musictheory.ind"
   "musictheory.ilg"
-["pdflatex"] 1620580810 "musictheory.tex" "musictheory.pdf" "musictheory" 1620580817
+  "musictheory.ind"
+["pdflatex"] 1620581803 "musictheory.tex" "musictheory.pdf" "musictheory" 1620581803
   "/etc/texmf/web2c/texmf.cnf" 1614885187 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/fmoss/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk" 1617045378 8308 40f7383b3778c57d6d625e4487f718ad ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -173,20 +173,20 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1614885193 128028 f533b797fba58d231669ea19e894e23e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1614886031 4791331 b10ad612781e1d1ed9f24eb8e160ce32 ""
   "footnotehyper-sphinx.sty" 1611821497 8888 1bbd7bdeae8c8bed1d10d551bddb1cc9 ""
-  "musictheory.aux" 1620580811 15725 0797039d17bcccf6d0b957a23ae98872 "pdflatex"
-  "musictheory.ind" 1620580811 1790 95b0b0d0c9fb508ece7b768f9618acb1 "makeindex musictheory.idx"
-  "musictheory.out" 1620580811 3660 c7337cdff9a7d3785fac4a99a9307a6b "pdflatex"
-  "musictheory.tex" 1620580809 46003 29beee72c282684346b8ab0c3db1d542 ""
-  "musictheory.toc" 1620580811 4498 22ce87e5c3662d5800666a47d99c6005 "pdflatex"
+  "musictheory.aux" 1620581803 17025 e9e00a4f56c3de5749455d758714946c "pdflatex"
+  "musictheory.ind" 1620581796 1790 c23e4ada3c9b1b35bebb028dd4965755 "makeindex musictheory.idx"
+  "musictheory.out" 1620581803 4349 55859eff92a289e71f9834112e528db4 "pdflatex"
+  "musictheory.tex" 1620581796 47067 6ed213dc2845c61e56e6bb56e7423428 ""
+  "musictheory.toc" 1620581803 4882 9f3951d188779945aa79375163f5515e "pdflatex"
   "sphinx.sty" 1611821497 82250 00bd36f302b7cc8960761f445d02b13e ""
-  "sphinxhighlight.sty" 1620580816 8137 38a433148fcb7611515a989ff1750dd5 ""
+  "sphinxhighlight.sty" 1620581802 8137 38a433148fcb7611515a989ff1750dd5 ""
   "sphinxmanual.cls" 1611821497 4236 124cd90deb92742b5d3922bfc2cd70c0 ""
-  "sphinxmessages.sty" 1620580817 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1620581803 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxmulticell.sty" 1611821497 14606 0b6edc2b1a83546ed92026d1f6a311b5 ""
   (generated)
   "musictheory.aux"
-  "musictheory.pdf"
   "musictheory.log"
-  "musictheory.toc"
-  "musictheory.out"
   "musictheory.idx"
+  "musictheory.pdf"
+  "musictheory.out"
+  "musictheory.toc"

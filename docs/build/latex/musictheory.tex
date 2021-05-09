@@ -490,17 +490,6 @@ blablabla…
 \subsection{Musical time vs. performance time}
 \label{\detokenize{1_fundamentals:musical-time-vs-performance-time}}
 
-\section{Notes on Segmentation}
-\label{\detokenize{1_fundamentals:notes-on-segmentation}}\begin{itemize}
-\item {} 
-Straus 2005
-
-\item {} 
-Hanninen 2012
-
-\end{itemize}
-
-
 \chapter{Pitch\sphinxhyphen{}Class Set Theory}
 \label{\detokenize{3_set_theory:pitch-class-set-theory}}\label{\detokenize{3_set_theory::doc}}
 Content adapted from Forte {[}\sphinxcite{8_bibliography:id7}{]}, Straus {[}\sphinxcite{8_bibliography:id3}{]}.
@@ -566,7 +555,7 @@ Describe relation to equal temperament.
 For the remainder of this chapter, pitch classes designate entities for which both equivalences are assumed.
 It is thus appropriate to represent them on a circle. Since each pitch class can have infinitely many spellings,
 going the reverse direction is a difficult inference problem, for which a number of algorithms have been proposed
-(see advanced chapter on {\hyperref[\detokenize{4_advanced:pitch-spelling}]{\sphinxcrossref{\DUrole{std,std-ref}{Pitch Spelling}}}}).
+(see advanced chapter on {\hyperref[\detokenize{6_advanced:pitch-spelling}]{\sphinxcrossref{\DUrole{std,std-ref}{Pitch Spelling}}}}).
 
 
 \section{Intervals}
@@ -676,11 +665,69 @@ Subset structure
 Invariants
 
 
+\chapter{Harmony}
+\label{\detokenize{4_harmony:harmony}}\label{\detokenize{4_harmony::doc}}\begin{itemize}
+\item {} 
+major\sphinxhyphen{}minor tonality
+
+\item {} 
+chords:
+\sphinxhyphen{} root on (altered) diatonic scale degree
+\sphinxhyphen{} stack of thirds
+\sphinxhyphen{} chromatic alterations
+
+\end{itemize}
+
+First note based (Tone\sphinxhyphen{}based)
+
+Then arrive at annotation standard (simple version)
+and do simple regex filtering (find all Vs…)
+
+
+\chapter{Segmentation}
+\label{\detokenize{5_segmentation:segmentation}}\label{\detokenize{5_segmentation::doc}}
+
+\section{Free segmentation}
+\label{\detokenize{5_segmentation:free-segmentation}}
+(pc set analysis)
+\begin{itemize}
+\item {} 
+Straus 2005
+
+\item {} 
+Hanninen 2012
+
+\end{itemize}
+
+relating segments creates specific graph structure
+
+
+\section{Contiguous segmentation}
+\label{\detokenize{5_segmentation:contiguous-segmentation}}
+chord labels, Roman numerals, etc.
+
+graph: chain
+
+
+\section{Hierarchical segmentation}
+\label{\detokenize{5_segmentation:hierarchical-segmentation}}
+CFGs, Schenker
+
+graph: tree
+
+
+\section{Exhaustive segmentation}
+\label{\detokenize{5_segmentation:exhaustive-segmentation}}
+Keyscapes, Pitchscapes, Wavescapes
+
+See also Müller (form)
+
+
 \chapter{Advanced applications}
-\label{\detokenize{4_advanced:advanced-applications}}\label{\detokenize{4_advanced::doc}}
+\label{\detokenize{6_advanced:advanced-applications}}\label{\detokenize{6_advanced::doc}}
 
 \section{Pitch Spelling}
-\label{\detokenize{4_advanced:pitch-spelling}}\label{\detokenize{4_advanced:id1}}
+\label{\detokenize{6_advanced:pitch-spelling}}\label{\detokenize{6_advanced:id1}}
 Meredith {[}\sphinxcite{8_bibliography:id9}{]}, Meredith and Wiggins {[}\sphinxcite{8_bibliography:id8}{]}
 Cambouropoulos {[}\sphinxcite{8_bibliography:id10}{]}, Chew and Chen {[}\sphinxcite{8_bibliography:id11}{]}
 Stoddard \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id12}{]}
@@ -688,18 +735,18 @@ Temperley {[}\sphinxcite{8_bibliography:id13}{]}
 
 
 \section{Style (classification)}
-\label{\detokenize{4_advanced:style-classification}}
+\label{\detokenize{6_advanced:style-classification}}
 
 \subsection{Feature clustering}
-\label{\detokenize{4_advanced:feature-clustering}}
+\label{\detokenize{6_advanced:feature-clustering}}
 (k\sphinxhyphen{}means, PCA, …)
 
 
 \subsection{Hierarchical clustering}
-\label{\detokenize{4_advanced:hierarchical-clustering}}
+\label{\detokenize{6_advanced:hierarchical-clustering}}
 
 \section{History}
-\label{\detokenize{4_advanced:history}}
+\label{\detokenize{6_advanced:history}}
 (regression, GPs)
 \begin{itemize}
 \item {} 
@@ -709,7 +756,7 @@ trends (maybe with a non note\sphinxhyphen{}based dataset e.g. metadata)
 
 
 \section{Performance}
-\label{\detokenize{4_advanced:performance}}\begin{itemize}
+\label{\detokenize{6_advanced:performance}}\begin{itemize}
 \item {} 
 Spotify API to compare different recordings
 
