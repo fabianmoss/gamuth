@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Pitch-Class Set Theory &#8212; musictheory 0.0.1 documentation</title>
+    <title>4. Pitch-Class Set Theory &#8212; musictheory 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. Advanced applications" href="4_advanced.html" />
-    <link rel="prev" title="2. Fundamentals" href="1_fundamentals.html" />
+    <link rel="next" title="5. Harmony" href="4_harmony.html" />
+    <link rel="prev" title="2. Fundamentals I" href="1_fundamentals.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,13 +34,13 @@
           <div class="body" role="main">
             
   <div class="section" id="pitch-class-set-theory">
-<h1><span class="section-number">3. </span>Pitch-Class Set Theory<a class="headerlink" href="#pitch-class-set-theory" title="Permalink to this headline">¶</a></h1>
-<p>Content adapted from <span id="id1"></span>.
+<h1><span class="section-number">4. </span>Pitch-Class Set Theory<a class="headerlink" href="#pitch-class-set-theory" title="Permalink to this headline">¶</a></h1>
+<p>Content adapted from <span id="id1">Forte [<a class="reference internal" href="8_bibliography.html#id7">5</a>], Straus [<a class="reference internal" href="8_bibliography.html#id3">16</a>]</span>.
 In this chapter, “pitch class” always entails octave <em>and</em> enharmonic equicalenve.</p>
 <div class="section" id="pitch-classes">
-<h2><span class="section-number">3.1. </span>Pitch classes<a class="headerlink" href="#pitch-classes" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.1. </span>Pitch classes<a class="headerlink" href="#pitch-classes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="octave-equivalence">
-<h3><span class="section-number">3.1.1. </span>Octave equivalence<a class="headerlink" href="#octave-equivalence" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.1. </span>Octave equivalence<a class="headerlink" href="#octave-equivalence" title="Permalink to this headline">¶</a></h3>
 <p>Octave equivalence maps all pitch classes with the same label/name to one class,
 e.g. all C’s on the piano get mapped to pitch class C, all Ab’s get mapped to pitch class Ab,
 and all G#’s get mapped to G#.</p>
@@ -52,7 +52,7 @@ Octave equivalence transforms the Euler space to the Tonnetz <span class="math n
 <p>[diagram]</p>
 </div>
 <div class="section" id="enharmonic-equivalence">
-<h3><span class="section-number">3.1.2. </span>Enharmonic equivalence<a class="headerlink" href="#enharmonic-equivalence" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.2. </span>Enharmonic equivalence<a class="headerlink" href="#enharmonic-equivalence" title="Permalink to this headline">¶</a></h3>
 <p>Enharmonic equivalence describes the identification of pitches like F#4 and G#4.
 Enharmonic equivalence transforms the Euler Space to a tube, namely <span class="math notranslate nohighlight">\(\mathbb{Z}_{12} \times \mathbb{Z}\)</span>
 (the chromatic circle and the octave line).</p>
@@ -77,11 +77,11 @@ and which can be represented by numbers <span class="math notranslate nohighligh
 <p>For the remainder of this chapter, pitch classes designate entities for which both equivalences are assumed.
 It is thus appropriate to represent them on a circle. Since each pitch class can have infinitely many spellings,
 going the reverse direction is a difficult inference problem, for which a number of algorithms have been proposed
-(see advanced chapter on <a class="reference internal" href="4_advanced.html#pitch-spelling"><span class="std std-ref">Pitch Spelling</span></a>).</p>
+(see advanced chapter on <a class="reference internal" href="6_advanced.html#pitch-spelling"><span class="std std-ref">Pitch Spelling</span></a>).</p>
 </div>
 </div>
 <div class="section" id="intervals">
-<h2><span class="section-number">3.2. </span>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.2. </span>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h2>
 <p>Generally, intervals describe the distance between two points (see Chapter <a class="reference internal" href="1_fundamentals.html#intervals"><span class="std std-ref">Intervals</span></a>).
 But depending on which representation for tones we chose (or, equivalently, which equivalences we assume)
 the types of the intervals changes as well.</p>
@@ -90,7 +90,7 @@ the types of the intervals changes as well.</p>
 <p>Add paragraph about what types are.</p>
 </div>
 <div class="section" id="pitch-intervals">
-<h3><span class="section-number">3.2.1. </span>Pitch Intervals<a class="headerlink" href="#pitch-intervals" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.2.1. </span>Pitch Intervals<a class="headerlink" href="#pitch-intervals" title="Permalink to this headline">¶</a></h3>
 <p>Pitch intervals describe the distance between two pitches in semitones. That is, we do assume enharmonic equivalence
 but not octave equivalence. Consequently, we can visualize pitch intervals in</p>
 <p>Ordered pitch-class intervals</p>
@@ -101,7 +101,7 @@ but not octave equivalence. Consequently, we can visualize pitch intervals in</p
 </div>
 </div>
 <div class="section" id="pitch-class-sets">
-<h2><span class="section-number">3.3. </span>Pitch-class sets<a class="headerlink" href="#pitch-class-sets" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.3. </span>Pitch-class sets<a class="headerlink" href="#pitch-class-sets" title="Permalink to this headline">¶</a></h2>
 <p>Normal form</p>
 <p>Transposition</p>
 <p>Inversion I</p>
@@ -112,7 +112,7 @@ but not octave equivalence. Consequently, we can visualize pitch intervals in</p
 <p>Segmentation and analysis</p>
 </div>
 <div class="section" id="relationships">
-<h2><span class="section-number">3.4. </span>Relationships<a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.4. </span>Relationships<a class="headerlink" href="#relationships" title="Permalink to this headline">¶</a></h2>
 <p>Common tones under transposition</p>
 <p>Transpositional symmetry</p>
 <p>Common tones under inversion</p>
@@ -127,7 +127,7 @@ but not octave equivalence. Consequently, we can visualize pitch intervals in</p
 <p>Atonal pitch space</p>
 </div>
 <div class="section" id="advanced-concepts">
-<h2><span class="section-number">3.5. </span>Advanced concepts<a class="headerlink" href="#advanced-concepts" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.5. </span>Advanced concepts<a class="headerlink" href="#advanced-concepts" title="Permalink to this headline">¶</a></h2>
 <p>Tonality</p>
 <p>Centricity</p>
 <p>Inversional axis</p>
@@ -140,7 +140,7 @@ but not octave equivalence. Consequently, we can visualize pitch intervals in</p
 <p>Triadic post-tonality</p>
 </div>
 <div class="section" id="twelve-tone-theory">
-<h2><span class="section-number">3.6. </span>Twelve-tone theory<a class="headerlink" href="#twelve-tone-theory" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.6. </span>Twelve-tone theory<a class="headerlink" href="#twelve-tone-theory" title="Permalink to this headline">¶</a></h2>
 <p>Twelve-tone series</p>
 <p>Basic operations</p>
 <p>Subset structure</p>
@@ -172,18 +172,21 @@ but not octave equivalence. Consequently, we can visualize pitch intervals in</p
 <h3>Navigation</h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html">2. Fundamentals</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Pitch-Class Set Theory</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#pitch-classes">3.1. Pitch classes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#intervals">3.2. Intervals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pitch-class-sets">3.3. Pitch-class sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#relationships">3.4. Relationships</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#advanced-concepts">3.5. Advanced concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#twelve-tone-theory">3.6. Twelve-tone theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html">2. Fundamentals I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html#fundamentals-ii">3. Fundamentals II</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Pitch-Class Set Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pitch-classes">4.1. Pitch classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intervals">4.2. Intervals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pitch-class-sets">4.3. Pitch-class sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#relationships">4.4. Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-concepts">4.5. Advanced concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#twelve-tone-theory">4.6. Twelve-tone theory</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="4_advanced.html">4. Advanced applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8_bibliography.html">5. Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_harmony.html">5. Harmony</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_segmentation.html">6. Segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_advanced.html">7. Advanced applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8_bibliography.html">8. Bibliography</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
@@ -194,8 +197,8 @@ but not octave equivalence. Consequently, we can visualize pitch intervals in</p
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="1_fundamentals.html" title="previous chapter"><span class="section-number">2. </span>Fundamentals</a></li>
-      <li>Next: <a href="4_advanced.html" title="next chapter"><span class="section-number">4. </span>Advanced applications</a></li>
+      <li>Previous: <a href="1_fundamentals.html" title="previous chapter"><span class="section-number">2. </span>Fundamentals I</a></li>
+      <li>Next: <a href="4_harmony.html" title="next chapter"><span class="section-number">5. </span>Harmony</a></li>
   </ul></li>
 </ul>
 </div>

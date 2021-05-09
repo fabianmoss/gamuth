@@ -1,5 +1,5 @@
-Fundamentals
-============
+Fundamentals I 
+==============
 
 The theory presented in here can be described as a *tonal theory* in the sense 
 that its most fundamental objects are *tones*, discrete musical entities that have
@@ -125,41 +125,24 @@ Intervals
 GISs
 ~~~~
 
-Pitch-Class Sets
-----------------
-
-- Sets that contain pitch classes
-
-Normal Form 
-~~~~~~~~~~~
-
-Transposition
-~~~~~~~~~~~~~
-
-Inversion
-~~~~~~~~~
-
-- Inversion In, Ixy
-
-Index number 
-~~~~~~~~~~~~
-
-Set Class
-~~~~~~~~~
-
-Prime Form 
-~~~~~~~~~~
-
-
 Transformations between representations of tones are actually *transformations of tonal space*.
 
 [Diagram of relations between different representations.]
 
-Western tonal music
--------------------
+Fundamentals II 
+===============
+
+Scales and Modes
+----------------
+
+Indian classical music
+~~~~~~~~~~~~~~~~~~~~~~
+
+Western classical music
+~~~~~~~~~~~~~~~~~~~~~~~
 
 The diatonic scale
-~~~~~~~~~~~~~~~~~~
+..................
 
 Music in the Western tradition fundamentally builds on
 so-called *diatonic* scales, an arrangement of seven tones
@@ -188,11 +171,14 @@ as distance to this tone. Scale degrees are commonly notated with arabic numbers
    \text{C}: \hat{7}\\
 
 Modes
-~~~~~
+.....
 
 scale plus order plus hierarchy (but order already defined above?)
 
 Keys
+....
+
+Jazz 
 ~~~~
 
 Other scales
@@ -202,9 +188,14 @@ Other scales
 - hexatonic
 - octatonic
 - whole tone
+- Messiaen
 
 Time
 ----
+
+- beats 
+- seconds 
+- onsets
 
 Notes
 ~~~~~
