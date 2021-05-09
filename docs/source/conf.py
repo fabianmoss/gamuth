@@ -45,8 +45,8 @@ extensions = [
 ]
 
 bibtex_bibfiles = ['references.bib']
-# bibtex_reference_style = 'author_year'
-# bibtex_default_style = 'plain'
+#bibtex_reference_style = 'author_year'
+bibtex_default_style = 'plain'
 
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 

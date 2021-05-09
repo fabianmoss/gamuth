@@ -8,12 +8,15 @@
 \indexentry{get\_specific\_interval() (musictheory.Interval method)@\spxentry{get\_specific\_interval()}\spxextra{musictheory.Interval method}|hyperpage}{22}
 \indexentry{PitchClass (class in musictheory)@\spxentry{PitchClass}\spxextra{class in musictheory}|hyperpage}{22}
 \indexentry{PitchClassSet (class in musictheory)@\spxentry{PitchClassSet}\spxextra{class in musictheory}|hyperpage}{22}
-\indexentry{interval\_vector() (musictheory.PitchClassSet method)@\spxentry{interval\_vector()}\spxextra{musictheory.PitchClassSet method}|hyperpage}{22}
-\indexentry{Tone (class in musictheory)@\spxentry{Tone}\spxextra{class in musictheory}|hyperpage}{22}
-\indexentry{get\_accidentals() (musictheory.Tone method)@\spxentry{get\_accidentals()}\spxextra{musictheory.Tone method}|hyperpage}{22}
+\indexentry{interval\_class\_vector() (musictheory.PitchClassSet method)@\spxentry{interval\_class\_vector()}\spxextra{musictheory.PitchClassSet method}|hyperpage}{22}
+\indexentry{invert() (musictheory.PitchClassSet method)@\spxentry{invert()}\spxextra{musictheory.PitchClassSet method}|hyperpage}{22}
+\indexentry{normal\_form() (musictheory.PitchClassSet method)@\spxentry{normal\_form()}\spxextra{musictheory.PitchClassSet method}|hyperpage}{23}
+\indexentry{transpose() (musictheory.PitchClassSet method)@\spxentry{transpose()}\spxextra{musictheory.PitchClassSet method}|hyperpage}{23}
+\indexentry{Tone (class in musictheory)@\spxentry{Tone}\spxextra{class in musictheory}|hyperpage}{23}
+\indexentry{get\_accidentals() (musictheory.Tone method)@\spxentry{get\_accidentals()}\spxextra{musictheory.Tone method}|hyperpage}{23}
 \indexentry{get\_frequency() (musictheory.Tone method)@\spxentry{get\_frequency()}\spxextra{musictheory.Tone method}|hyperpage}{23}
-\indexentry{get\_label() (musictheory.Tone method)@\spxentry{get\_label()}\spxextra{musictheory.Tone method}|hyperpage}{23}
-\indexentry{get\_midi\_pitch() (musictheory.Tone method)@\spxentry{get\_midi\_pitch()}\spxextra{musictheory.Tone method}|hyperpage}{23}
+\indexentry{get\_label() (musictheory.Tone method)@\spxentry{get\_label()}\spxextra{musictheory.Tone method}|hyperpage}{24}
+\indexentry{get\_midi\_pitch() (musictheory.Tone method)@\spxentry{get\_midi\_pitch()}\spxextra{musictheory.Tone method}|hyperpage}{24}
 \indexentry{get\_pitch\_class() (musictheory.Tone method)@\spxentry{get\_pitch\_class()}\spxextra{musictheory.Tone method}|hyperpage}{24}
-\indexentry{get\_step() (musictheory.Tone method)@\spxentry{get\_step()}\spxextra{musictheory.Tone method}|hyperpage}{24}
-\indexentry{get\_syntonic() (musictheory.Tone method)@\spxentry{get\_syntonic()}\spxextra{musictheory.Tone method}|hyperpage}{24}
+\indexentry{get\_step() (musictheory.Tone method)@\spxentry{get\_step()}\spxextra{musictheory.Tone method}|hyperpage}{25}
+\indexentry{get\_syntonic() (musictheory.Tone method)@\spxentry{get\_syntonic()}\spxextra{musictheory.Tone method}|hyperpage}{25}

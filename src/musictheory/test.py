@@ -1,3 +1,5 @@
+# %%
+
 from main import Tone, Interval
 import numpy as np
 
@@ -30,3 +32,4 @@ if __name__ == "__main__":
     # print(i.source.euler_coordinate)
     # print(i.interval)
     # print(i.euclidean_distance())
+# %%

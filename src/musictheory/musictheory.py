@@ -6,6 +6,7 @@
 """
 
 import numpy as np
+import itertools
 import re
 
 class Interval:
@@ -139,6 +140,7 @@ class Tone:
         # other representations
         self.midi_pitch = self.get_midi_pitch()
         self.frequency = self.get_frequency()
+        self.pitch_class = self.get_pitch_class()
 
     def get_accidentals(self):
         '''
@@ -258,7 +260,7 @@ class Tone:
             >>> t.get_step()
             `C`
         '''
-        return diatonic[ (np.divmod(self.fifths_pos, 7)[1] + 1) % 7 ] # shift 0 to "C"
+        return self.diatonic[ (np.divmod(self.fifths_pos, 7)[1] + 1) % 7 ] # shift 0 to "C"
 
     def get_syntonic(self):
         '''
@@ -312,17 +314,87 @@ class Tone:
 
 class PitchClass(Tone):
     """Pitch class instance in :math:`\mathbb{Z}_{12}`."""
-    def ___init___(self):
+    def __init__(self):
         self.pitch_class = self.get_pitch_class()
 
-class PitchClassSet(Tone):
-    """Pitch class sets"""
-    def ___init___(self, lst):
-        self.size = len(self.lst)
 
-    def interval_vector(self):
+
+class PitchClassSet:
+    """Pitch class sets"""
+    def __init__(self, st):
+        assert isinstance(st, set)
+        self.set = set(st)
+        self.size = len(self.set)
+        self.complement = set(range(12)).difference(self.set)
+
+    def transpose(self, t):
+        """Transposition by `t` semitones.
+
+        Args:
+            t (int): number of semitones to transpose up
+
+        Returns:
+            set: transposed pitch-class set
         """
-        Interval vector given a pitch-class set.
+        
+        assert isinstance(t, int)
+        return {(p + t) % 12 for p in self.set}
+
+    def invert(self, t=0):
+        """Invert pitch-class set. If the inversion pc is not specified, it is set to 0 by default.
+
+        Args:
+            t (int): inversion pitch class (default: 0)
+
+        Returns:
+            set: inverted pitch-class set
         """
-        iv = ()
-        return iv
+        
+        return {(-p + t) % 12 for p in self.set}
+
+    def interval_class_vector(self):
+        """Interval-class vector for given pitch-class set
+
+        Returns:
+            list: interval-class vector
+        """
+        icv = np.zeros(6, dtype=int)
+
+        diffs = [(b - a) % 12 for (a, b) in itertools.combinations(self.set, 2) if a != b]
+        diffs = [ d if d <=6 else 12 - d for d in diffs]
+
+        for d in diffs:
+            icv[d-1] += 1
+
+        return icv
+
+    def normal_form(self):
+        """Normal form of pitch-class set
+
+        Returns:
+            set: Normal form
+        """
+
+        s = sorted(self.set)
+
+        rotations = np.asarray([ s[i:len(s)] + s[0:i] for i in range(len(s))])
+
+        for i in range(rotations.shape[1]-1, 0, -1):
+            min_diff  = min([ (r[i] - r[0]) % 12 for r in rotations ])
+            mask = (rotations[:,i] - rotations[:,0]) % 12 == min_diff 
+
+            if np.array_equal(rotations, rotations[mask]):
+                return rotations[0,:]
+            elif rotations.shape[0] > 1:
+                rotations = rotations[mask]
+                pass
+            else:
+                return rotations.flatten()
+
+    # def prime_form(self):
+
+    #     norm = self.normal_form()
+    #     inv = self.invert()
+    #     norm_inv = inv.normal_form()
+
+    #     return pf

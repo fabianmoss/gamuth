@@ -100,7 +100,7 @@ Welcome!
 This is not a pedagogical resource for basic music theory concepts
 but an in\sphinxhyphen{}depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-The logo, a \sphinxhref{https://en.wikipedia.org/wiki/Maxima\_(music)}{maxima} (the longest note value in medieval music),
+The logo, a \sphinxhref{https://en.wikipedia.org/wiki/Maxima\_(music)}{maxima}, the longest note value in medieval music,
 symbolically reflects this level of difficulty.
 
 This project is inspired by a number of great books, e.g.
@@ -914,7 +914,7 @@ int
 \index{PitchClass (class in musictheory)@\spxentry{PitchClass}\spxextra{class in musictheory}}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClass}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClass}}}{\emph{\DUrole{n}{octave}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{fifth}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{third}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name}\DUrole{o}{=}\DUrole{default_value}{None}}}{}
+\phantomsection\label{\detokenize{api:musictheory.PitchClass}}\pysigline{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClass}}}
 Pitch class instance in \(\mathbb{Z}_{12}\).
 
 \end{fulllineitems}
@@ -922,13 +922,75 @@ Pitch class instance in \(\mathbb{Z}_{12}\).
 \index{PitchClassSet (class in musictheory)@\spxentry{PitchClassSet}\spxextra{class in musictheory}}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClassSet}}}{\emph{\DUrole{n}{octave}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{fifth}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{third}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name}\DUrole{o}{=}\DUrole{default_value}{None}}}{}
+\phantomsection\label{\detokenize{api:musictheory.PitchClassSet}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClassSet}}}{\emph{\DUrole{n}{st}}}{}
 Pitch class sets
-\index{interval\_vector() (musictheory.PitchClassSet method)@\spxentry{interval\_vector()}\spxextra{musictheory.PitchClassSet method}}
+\index{interval\_class\_vector() (musictheory.PitchClassSet method)@\spxentry{interval\_class\_vector()}\spxextra{musictheory.PitchClassSet method}}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.interval_vector}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{interval\_vector}}}{}{}
-Interval vector given a pitch\sphinxhyphen{}class set.
+\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.interval_class_vector}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{interval\_class\_vector}}}{}{}
+Interval\sphinxhyphen{}class vector for given pitch\sphinxhyphen{}class set
+\begin{quote}\begin{description}
+\item[{Returns}] \leavevmode
+interval\sphinxhyphen{}class vector
+
+\item[{Return type}] \leavevmode
+list
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{invert() (musictheory.PitchClassSet method)@\spxentry{invert()}\spxextra{musictheory.PitchClassSet method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.invert}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{invert}}}{\emph{\DUrole{n}{t}}}{}
+Invert pitch\sphinxhyphen{}class set
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{t}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} inversion pitch class
+
+\item[{Returns}] \leavevmode
+inverted pitch\sphinxhyphen{}class set
+
+\item[{Return type}] \leavevmode
+set
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{normal\_form() (musictheory.PitchClassSet method)@\spxentry{normal\_form()}\spxextra{musictheory.PitchClassSet method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.normal_form}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{normal\_form}}}{}{}
+Normal form of pitch\sphinxhyphen{}class set
+\begin{quote}\begin{description}
+\item[{Returns}] \leavevmode
+Normal form
+
+\item[{Return type}] \leavevmode
+set
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{transpose() (musictheory.PitchClassSet method)@\spxentry{transpose()}\spxextra{musictheory.PitchClassSet method}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.transpose}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{transpose}}}{\emph{\DUrole{n}{t}}}{}
+Transposition by \sphinxtitleref{t} semitones.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{t}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} number of semitones to transpose up
+
+\item[{Returns}] \leavevmode
+transposed pitch\sphinxhyphen{}class set
+
+\item[{Return type}] \leavevmode
+set
+
+\end{description}\end{quote}
 
 \end{fulllineitems}
 

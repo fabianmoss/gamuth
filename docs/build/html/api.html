@@ -138,18 +138,74 @@ with coordinates in Euler space.</p>
 
 <dl class="py class">
 <dt id="musictheory.PitchClass">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">octave</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fifth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">third</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClass" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClass</code><a class="headerlink" href="#musictheory.PitchClass" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pitch class instance in <span class="math notranslate nohighlight">\(\mathbb{Z}_{12}\)</span>.</p>
 </dd></dl>
 
 <dl class="py class">
 <dt id="musictheory.PitchClassSet">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClassSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">octave</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fifth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">third</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClassSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">st</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Pitch class sets</p>
 <dl class="py method">
-<dt id="musictheory.PitchClassSet.interval_vector">
-<code class="sig-name descname">interval_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.interval_vector" title="Permalink to this definition">¶</a></dt>
-<dd><p>Interval vector given a pitch-class set.</p>
+<dt id="musictheory.PitchClassSet.interval_class_vector">
+<code class="sig-name descname">interval_class_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.interval_class_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interval-class vector for given pitch-class set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>interval-class vector</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="musictheory.PitchClassSet.invert">
+<code class="sig-name descname">invert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.invert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invert pitch-class set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>t</strong> (<em>int</em>) – inversion pitch class</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>inverted pitch-class set</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="musictheory.PitchClassSet.normal_form">
+<code class="sig-name descname">normal_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.normal_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normal form of pitch-class set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Normal form</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>set</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="musictheory.PitchClassSet.transpose">
+<code class="sig-name descname">transpose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.transpose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transposition by <cite>t</cite> semitones.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>t</strong> (<em>int</em>) – number of semitones to transpose up</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>transposed pitch-class set</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>set</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -363,10 +419,13 @@ and those above or below this line with <cite>‘</cite> or <cite>,</cite>, resp
 <h3>Navigation</h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="0_intro.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html">2. Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_set_theory.html">3. Pitch-Class Set Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_advanced.html">4. Advanced applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8_bibliography.html">5. Bibliography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html">2. Fundamentals I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html#fundamentals-ii">3. Fundamentals II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_set_theory.html">4. Pitch-Class Set Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_harmony.html">5. Harmony</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_segmentation.html">6. Segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_advanced.html">7. Advanced applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8_bibliography.html">8. Bibliography</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>

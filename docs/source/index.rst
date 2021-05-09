@@ -13,7 +13,7 @@ Welcome!
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-The logo, a `maxima`_ (the longest note value in medieval music), 
+The logo, a `maxima`_, the longest note value in medieval music, 
 symbolically reflects this level of difficulty. 
 
 .. _maxima: https://en.wikipedia.org/wiki/Maxima_(music)

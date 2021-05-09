@@ -55,6 +55,6 @@
 \contentsline {chapter}{\numberline {8}Developers}{21}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Installation}{21}{section.8.1}%
 \contentsline {section}{\numberline {8.2}API \sphinxhyphen {} musictheory}{21}{section.8.2}%
-\contentsline {chapter}{Bibliography}{27}{chapter*.23}%
-\contentsline {chapter}{Python Module Index}{29}{section*.24}%
-\contentsline {chapter}{Index}{31}{section*.25}%
+\contentsline {chapter}{Bibliography}{27}{chapter*.26}%
+\contentsline {chapter}{Python Module Index}{29}{section*.27}%
+\contentsline {chapter}{Index}{31}{section*.28}%
