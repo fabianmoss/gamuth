@@ -2,7 +2,11 @@ Learn music theory the hard way!
 ================================
 
 .. warning::
-    The content on these pages is very much under construction!
+   The content on these pages is very much under construction!
+   Since this is ongoing work, I can give no guarantee for completeness or accuracy.
+   Feel free to `contact me`_ with your questions and suggestions!
+
+.. _contact me: fabianmoss@gmail.com
 
 Welcome!
 
@@ -16,12 +20,11 @@ symbolically reflects this level of difficulty.
 
 This project is inspired by a number of great books, e.g.
 
-* Aldwell & Schachter (2010). *Harmony and Voice Leading*.
-* Cadwallader & Gagné (1998). *Analysis of Tonal Music. A Schenkerian Approach*.
-* Forte (1977). *The Structure of Atonal Music*.
-* Lewin (1987). *Generalized Intervals and Transformations*.
-* Müller (2015). *Fundamentals of Music Processing*.
-* Straus (2005). *Introduction to Post-Tonal Theory*.
+- :cite:t:`Aldwell2010`
+- :cite:t:`Lewin1987`
+- :cite:t:`Straus2005`
+- :cite:t:`Cadwallader1998`
+- :cite:t:`Mueller2015`
 
 What is new and unique about the approach taken here is that we take 
 a computational perspective and implement all introduced concepts.
@@ -36,12 +39,6 @@ The Python project `musthe`_ also seems to pursue a similar goal.
 .. _`Music for Geeks and Nerds`: https://pedrokroger.net/mfgan/
 .. _`musthe`: https://github.com/gciruelos/musthe
 
-.. note::
-   Since this is ongoing work, I can give no guarantee for completeness or accuracy.
-   Feel free to `contact me`_ with your questions and suggestions!
-
-.. _contact me: fabianmoss@gmail.com
-
 .. Overview
 .. --------
 
@@ -54,17 +51,20 @@ The Python project `musthe`_ also seems to pursue a similar goal.
    3_set_theory
    4_advanced
 
+   8_bibliography
+
 .. 4_Fourier_pitch_space
 .. 2_sequences
 .. 3_representations
+.. 8_bibliography
 
 .. 5_notes
 
-Indices and tables
-------------------
+.. Indices and tables
+.. ------------------
 
-* :ref:`genindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`search`
 
 .. * :ref:`modindex`
 

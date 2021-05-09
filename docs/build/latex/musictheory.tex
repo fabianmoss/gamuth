@@ -73,7 +73,7 @@
 
 
 \title{musictheory}
-\date{Mar 29, 2021}
+\date{May 09, 2021}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -91,6 +91,8 @@
 
 \begin{sphinxadmonition}{warning}{Warning:}
 The content on these pages is very much under construction!
+Since this is ongoing work, I can give no guarantee for completeness or accuracy.
+Feel free to \sphinxhref{mailto:fabianmoss@gmail.com}{contact me} with your questions and suggestions!
 \end{sphinxadmonition}
 
 Welcome!
@@ -98,28 +100,25 @@ Welcome!
 This is not a pedagogical resource for basic music theory concepts
 but an in\sphinxhyphen{}depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-The logo, a \sphinxhref{https://en.wikipedia.org/wiki/Sixty-fourth\_note}{hemidemisemiquaver} (or a sixty\sphinxhyphen{}fourth note),
+The logo, a \sphinxhref{https://en.wikipedia.org/wiki/Maxima\_(music)}{maxima} (the longest note value in medieval music),
 symbolically reflects this level of difficulty.
 
 This project is inspired by a number of great books, e.g.
 \begin{itemize}
 \item {} 
-Aldwell \& Schachter (2010). \sphinxstyleemphasis{Harmony and Voice Leading}.
+Aldwell \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id4}{]}
 
 \item {} 
-Cadwallader \& Gagné (1998). \sphinxstyleemphasis{Analysis of Tonal Music. A Schenkerian Approach}.
+Lewin {[}\sphinxcite{8_bibliography:id2}{]}
 
 \item {} 
-Forte (1977). \sphinxstyleemphasis{The Structure of Atonal Music}.
+Straus {[}\sphinxcite{8_bibliography:id3}{]}
 
 \item {} 
-Lewin (1987). \sphinxstyleemphasis{Generalized Intervals and Transformations}.
+Cadwallader and Gagné {[}\sphinxcite{8_bibliography:id5}{]}
 
 \item {} 
-Müller (2015). \sphinxstyleemphasis{Fundamentals of Music Processing}.
-
-\item {} 
-Straus (2005). \sphinxstyleemphasis{Introduction to Post\sphinxhyphen{}Tonal Theory}.
+Müller {[}\sphinxcite{8_bibliography:id6}{]}
 
 \end{itemize}
 
@@ -132,11 +131,6 @@ bars, sections, or pieces to that of entire repertoires and corpora!
 I recently also discovered \sphinxhref{https://pedrokroger.net/mfgan/}{Music for Geeks and Nerds} by Pedro Kroger
 which looks very interesting.
 The Python project \sphinxhref{https://github.com/gciruelos/musthe}{musthe} also seems to pursue a similar goal.
-
-\begin{sphinxadmonition}{note}{Note:}
-Since this is ongoing work, I can give no guarantee for completeness or accuracy.
-Feel free to \sphinxhref{mailto:fabianmoss@gmail.com}{contact me} with your questions and suggestions!
-\end{sphinxadmonition}
 
 
 \chapter{Introduction}
@@ -358,7 +352,7 @@ OPTIC
 \label{\detokenize{1_fundamentals:tuning-temperament}}
 
 \section{Intervals}
-\label{\detokenize{1_fundamentals:intervals}}\begin{itemize}
+\label{\detokenize{1_fundamentals:intervals}}\label{\detokenize{1_fundamentals:id1}}\begin{itemize}
 \item {} 
 Pitch intervals
 
@@ -509,19 +503,87 @@ Hanninen 2012
 
 \chapter{Pitch\sphinxhyphen{}Class Set Theory}
 \label{\detokenize{3_set_theory:pitch-class-set-theory}}\label{\detokenize{3_set_theory::doc}}
-Content adapted from Straus (2005). In this chapter, “pitch class” always entails octave \sphinxstyleemphasis{and} enharmonic equicalenve.
+Content adapted from Forte {[}\sphinxcite{8_bibliography:id7}{]}, Straus {[}\sphinxcite{8_bibliography:id3}{]}.
+In this chapter, “pitch class” always entails octave \sphinxstyleemphasis{and} enharmonic equicalenve.
 
 
 \section{Pitch classes}
 \label{\detokenize{3_set_theory:pitch-classes}}
-Octave equivalence
 
-Enharmonic equivalence
+\subsection{Octave equivalence}
+\label{\detokenize{3_set_theory:octave-equivalence}}
+Octave equivalence maps all pitch classes with the same label/name to one class,
+e.g. all C’s on the piano get mapped to pitch class C, all Ab’s get mapped to pitch class Ab,
+and all G\#’s get mapped to G\#.
+
+Octave equivalence has perceptual correlates (cite paper) and is frequently employed in composition.
+For instance, the double bass sounds an octave lower as a cello but they are notated identically,
+or a fugue subject enters in different registers.
+The octave is the most fundamental interval with a frequency ratio of 2:1.
+Octave equivalence transforms the Euler space to the Tonnetz \(\mathbb{Z}\times\mathbb{Z}\).
+
+{[}diagram{]}
+
+
+\subsection{Enharmonic equivalence}
+\label{\detokenize{3_set_theory:enharmonic-equivalence}}
+Enharmonic equivalence describes the identification of pitches like F\#4 and G\#4.
+Enharmonic equivalence transforms the Euler Space to a tube, namely \(\mathbb{Z}_{12} \times \mathbb{Z}\)
+(the chromatic circle and the octave line).
+
+{[}diagram{]}
+
+Taking octave equivalence and enharmonic equivalence together,
+we arrive at the torus that contains all twelve enharmonic (and octave\sphinxhyphen{}related) pitch classes,
+and which can be represented by numbers \(k\in \mathbb{Z}_{12}\)
+
+{[}diagram{]}
+
+Both equivalences are indepentend of one another, i.e. we have the following commuting diagram between tonal spaces:
+
+{[}diagram{]}
+
+Assuming enharmonic equivalence has a number of implications:
+\begin{itemize}
+\item {} 
+we cannot distinguish between diatonic and chromatic semitones
+
+\item {} 
+we cannot distinguish between augmented fourths and diminished fifths
+
+\item {} 
+we cannot distinguish between dominant seventh chords and augmented sixth chords
+
+\item {} 
+and more
+
+\end{itemize}
+
+\begin{sphinxadmonition}{note}{Note:}
+Describe relation to equal temperament.
+\end{sphinxadmonition}
+
+For the remainder of this chapter, pitch classes designate entities for which both equivalences are assumed.
+It is thus appropriate to represent them on a circle. Since each pitch class can have infinitely many spellings,
+going the reverse direction is a difficult inference problem, for which a number of algorithms have been proposed
+(see advanced chapter on {\hyperref[\detokenize{4_advanced:pitch-spelling}]{\sphinxcrossref{\DUrole{std,std-ref}{Pitch Spelling}}}}).
 
 
 \section{Intervals}
 \label{\detokenize{3_set_theory:intervals}}
-Pitch Intervals
+Generally, intervals describe the distance between two points (see Chapter {\hyperref[\detokenize{1_fundamentals:intervals}]{\sphinxcrossref{\DUrole{std,std-ref}{Intervals}}}}).
+But depending on which representation for tones we chose (or, equivalently, which equivalences we assume)
+the types of the intervals changes as well.
+
+\begin{sphinxadmonition}{note}{Note:}
+Add paragraph about what types are.
+\end{sphinxadmonition}
+
+
+\subsection{Pitch Intervals}
+\label{\detokenize{3_set_theory:pitch-intervals}}
+Pitch intervals describe the distance between two pitches in semitones. That is, we do assume enharmonic equivalence
+but not octave equivalence. Consequently, we can visualize pitch intervals in
 
 Ordered pitch\sphinxhyphen{}class intervals
 
@@ -614,15 +676,54 @@ Subset structure
 Invariants
 
 
-\chapter{Indices and tables}
-\label{\detokenize{index:indices-and-tables}}\begin{itemize}
-\item {} 
-\DUrole{xref,std,std-ref}{genindex}
+\chapter{Advanced applications}
+\label{\detokenize{4_advanced:advanced-applications}}\label{\detokenize{4_advanced::doc}}
 
+\section{Pitch Spelling}
+\label{\detokenize{4_advanced:pitch-spelling}}\label{\detokenize{4_advanced:id1}}
+Meredith {[}\sphinxcite{8_bibliography:id9}{]}, Meredith and Wiggins {[}\sphinxcite{8_bibliography:id8}{]}
+Cambouropoulos {[}\sphinxcite{8_bibliography:id10}{]}, Chew and Chen {[}\sphinxcite{8_bibliography:id11}{]}
+Stoddard \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id12}{]}
+Temperley {[}\sphinxcite{8_bibliography:id13}{]}
+
+
+\section{Style (classification)}
+\label{\detokenize{4_advanced:style-classification}}
+
+\subsection{Feature clustering}
+\label{\detokenize{4_advanced:feature-clustering}}
+(k\sphinxhyphen{}means, PCA, …)
+
+
+\subsection{Hierarchical clustering}
+\label{\detokenize{4_advanced:hierarchical-clustering}}
+
+\section{History}
+\label{\detokenize{4_advanced:history}}
+(regression, GPs)
+\begin{itemize}
 \item {} 
-\DUrole{xref,std,std-ref}{search}
+trends (maybe with a non note\sphinxhyphen{}based dataset e.g. metadata)
 
 \end{itemize}
+
+
+\section{Performance}
+\label{\detokenize{4_advanced:performance}}\begin{itemize}
+\item {} 
+Spotify API to compare different recordings
+
+\end{itemize}
+
+\cleardoublepage
+\begingroup
+\renewcommand\chapter[1]{\endgroup}
+\phantomsection
+
+
+\chapter{Bibliography}
+\label{\detokenize{8_bibliography:bibliography}}\label{\detokenize{8_bibliography::doc}}
+
 
 
 \chapter{Developers}
@@ -1001,6 +1102,33 @@ int
 
 \end{fulllineitems}
 
+
+\begin{sphinxthebibliography}{10}
+\bibitem[1]{8_bibliography:id4}
+Edward Aldwell, Carl Schachter, and Allen Cadwallader. \sphinxstyleemphasis{Harmony and Voice Leading}. Cengage Learning, 4th edition, 2010.
+\bibitem[2]{8_bibliography:id5}
+Allen Cadwallader and David Gagné. \sphinxstyleemphasis{Analysis of Tonal Music. A Schenkerian Approach}. Oxford University Press, 1998.
+\bibitem[3]{8_bibliography:id10}
+Emilios Cambouropoulos. Pitch Spelling: A Computational Model. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 20(4):411\textendash{}429, June 2003. \sphinxhref{https://doi.org/10.1525/mp.2003.20.4.411}{doi:10.1525/mp.2003.20.4.411}.
+\bibitem[4]{8_bibliography:id11}
+Elaine Chew and Yun\sphinxhyphen{}Ching Chen. Real\sphinxhyphen{}Time Pitch Spelling Using the Spiral Array. \sphinxstyleemphasis{Computer Music Journal}, 29(2):61\textendash{}76, June 2005. \sphinxhref{https://doi.org/10.1162/0148926054094378}{doi:10.1162/0148926054094378}.
+\bibitem[5]{8_bibliography:id7}
+Allen Forte. \sphinxstyleemphasis{The Structure of Atonal Music}. Yale University Press, New Haven and London, 1977.
+\bibitem[6]{8_bibliography:id2}
+David Lewin. \sphinxstyleemphasis{Generalized Musical Intervals and Transformations}. Oxford University Press, Oxford, 1987.
+\bibitem[7]{8_bibliography:id9}
+David Meredith. The ps13 pitch spelling algorithm. \sphinxstyleemphasis{Journal of New Music Research}, 35(2):121\textendash{}159, June 2006. \sphinxhref{https://doi.org/10.1080/09298210600834961}{doi:10.1080/09298210600834961}.
+\bibitem[8]{8_bibliography:id8}
+David Meredith and Geraint A Wiggins. Comparing Pitch Spelling Algorithms. \sphinxstyleemphasis{Proceedings of the International Symposium on Music Information Retrieval (ISMIR)}, pages 280\textendash{}287, 2005. \sphinxhref{https://doi.org/10.1007/978-3-540-31807-1\_14}{doi:10.1007/978\sphinxhyphen{}3\sphinxhyphen{}540\sphinxhyphen{}31807\sphinxhyphen{}1\_14}.
+\bibitem[9]{8_bibliography:id6}
+Meinhard Müller. \sphinxstyleemphasis{Fundamentals of Music Processing}. Springer, 2015.
+\bibitem[10]{8_bibliography:id12}
+Joshua Stoddard, Christopher Raphael, and Paul E Utgoff. Well\sphinxhyphen{}tempered spelling: A key\sphinxhyphen{}invariant pitch spelling algorithm. In \sphinxstyleemphasis{Proceedings of the 5th International Conference on Music Information Retrieval (ISMIR 2004)}. Barcelona, Spain, 2004.
+\bibitem[11]{8_bibliography:id3}
+Joseph Nathan Straus. \sphinxstyleemphasis{Introduction to post\sphinxhyphen{}tonal theory}. Pearson Prentice Hall, New York, 3rd edition, 2005.
+\bibitem[12]{8_bibliography:id13}
+David Temperley. \sphinxstyleemphasis{The Cognition of Basic Musical Structures}. MIT Press, 2001.
+\end{sphinxthebibliography}
 
 
 \renewcommand{\indexname}{Python Module Index}

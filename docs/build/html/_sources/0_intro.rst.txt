@@ -65,5 +65,3 @@ General remark: Create excercises with listening, composing and analyzing tasks.
   - MIDI
   - modern Western notation
   - different keys (not only treble and bass)
-
-  .. bibliography:: references.bib

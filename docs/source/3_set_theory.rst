@@ -1,7 +1,8 @@
 Pitch-Class Set Theory
 ======================
 
-Content adapted from Straus (2005). In this chapter, "pitch class" always entails octave *and* enharmonic equicalenve.
+Content adapted from :cite:t:`Straus2005,Forte1977`. 
+In this chapter, "pitch class" always entails octave *and* enharmonic equicalenve.
 
 Pitch classes
 -------------

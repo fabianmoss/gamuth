@@ -6,6 +6,11 @@ Advanced applications
 Pitch Spelling 
 --------------
 
+:cite:t:`Meredith2005_ComparingPitchSpelling,Meredith2006_Ps13PitchSpelling`
+:cite:t:`Cambouropoulos2003_PitchSpellingComputational,Chew2005_RealTimePitchSpelling`
+:cite:t:`Stoddard2004_WelltemperedSpellingKeyinvariant`
+:cite:t:`Temperley2001_CognitionBasicMusical`
+
 Style (classification)
 ----------------------
 

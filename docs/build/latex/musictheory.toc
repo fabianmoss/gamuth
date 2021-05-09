@@ -35,14 +35,24 @@
 \contentsline {section}{\numberline {2.7}Notes on Segmentation}{8}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Pitch\sphinxhyphen {}Class Set Theory}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Pitch classes}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Intervals}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Pitch\sphinxhyphen {}class sets}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Relationships}{10}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Advanced concepts}{10}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Twelve\sphinxhyphen {}tone theory}{10}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Indices and tables}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Developers}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Installation}{13}{section.5.1}%
-\contentsline {section}{\numberline {5.2}API \sphinxhyphen {} musictheory}{13}{section.5.2}%
-\contentsline {chapter}{Python Module Index}{19}{section*.19}%
-\contentsline {chapter}{Index}{21}{section*.20}%
+\contentsline {subsection}{\numberline {3.1.1}Octave equivalence}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Enharmonic equivalence}{9}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Intervals}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Pitch Intervals}{10}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Pitch\sphinxhyphen {}class sets}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Relationships}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Advanced concepts}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Twelve\sphinxhyphen {}tone theory}{11}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Advanced applications}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pitch Spelling}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Style (classification)}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Feature clustering}{13}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Hierarchical clustering}{13}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}History}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Performance}{13}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Developers}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Installation}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}API \sphinxhyphen {} musictheory}{15}{section.5.2}%
+\contentsline {chapter}{Bibliography}{21}{chapter*.20}%
+\contentsline {chapter}{Python Module Index}{23}{section*.21}%
+\contentsline {chapter}{Index}{25}{section*.22}%
