@@ -206,6 +206,10 @@ Other scales
 Time
 ----
 
+- beats 
+- seconds 
+- onsets
+
 Notes
 ~~~~~
 

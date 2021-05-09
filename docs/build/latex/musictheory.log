@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.4)  9 MAY 2021 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.4)  9 MAY 2021 20:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -717,29 +717,29 @@ Chapter 6.
 ]
 Chapter 7.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 818.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 820.
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 8
-19.
+21.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 819.
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 821.
  [19
 
 ] [20]
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 965.
+(textcomp)                Default family used instead on input line 967.
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-65.
+67.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-965.
+967.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -747,77 +747,82 @@ File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 965.
+(textcomp)                Default family used instead on input line 967.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1024.
+(textcomp)                Default family used instead on input line 1026.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1024.
+(textcomp)                Default family used instead on input line 1026.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1024.
+(textcomp)                Default family used instead on input line 1026.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1024.
+(textcomp)                Default family used instead on input line 1026.
 
 [21]
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1114.
+(textcomp)                Default family used instead on input line 1116.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1114.
+(textcomp)                Default family used instead on input line 1116.
 
 [22]
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1144.
+(textcomp)                Default family used instead on input line 1146.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1144.
+(textcomp)                Default family used instead on input line 1146.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1144.
+(textcomp)                Default family used instead on input line 1146.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1144.
+(textcomp)                Default family used instead on input line 1146.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1144.
+(textcomp)                Default family used instead on input line 1146.
 
 
 Package textcomp Warning: Symbol \textasciigrave not provided by
 (textcomp)                font family pcr in TS1 encoding.
-(textcomp)                Default family used instead on input line 1144.
+(textcomp)                Default family used instead on input line 1146.
 
 [23] [24
 
-] [25
+]
+Underfull \hbox (badness 6575) in paragraph at lines 1183--1184
+[]\T1/ptm/m/n/10 Craig Stu-art Sapp. Vi-sual hi-er-ar-chi-cal key anal-y-sis. \
+T1/ptm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/ptm/m/n/10 , 3(4):3, 2005.
+ []
 
-] [26
+[25
 
-] [27
+] [26] [27
+
 
 
 ] (./musictheory.ind [28
@@ -845,21 +850,21 @@ ry.PitchClassSet
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1190.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1190.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1204.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1204.
  (./musictheory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1190.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1190.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1204.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1204.
 
 Package rerunfilecheck Info: File `musictheory.out' has not changed.
 (rerunfilecheck)             Checksum: 55859EFF92A289E71F9834112E528DB4;4349.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1190.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1204.
  ) 
 Here is how much of TeX's memory you used:
- 13742 strings out of 483183
- 195457 string characters out of 5966293
- 477058 words of memory out of 5000000
- 28282 multiletter control sequences out of 15000+600000
+ 13754 strings out of 483183
+ 195727 string characters out of 5966293
+ 477310 words of memory out of 5000000
+ 28288 multiletter control sequences out of 15000+600000
  585190 words of font info for 92 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,20n,49p,554b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -879,10 +884,10 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on musictheory.pdf (33 pages, 207363 bytes).
+Output written on musictheory.pdf (33 pages, 209497 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 131 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

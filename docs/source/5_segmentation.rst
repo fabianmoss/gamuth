@@ -7,8 +7,8 @@ Free segmentation
 
 (pc set analysis)
 
-- Straus 2005
-- Hanninen 2012
+- :cite:t:`Straus2005`
+- :cite:t:`Hanninen2001_OrientationsCriteriaSegments,Hanninen2012_TheoryMusicAnalysis`
 
 relating segments creates specific graph structure 
 
@@ -29,6 +29,8 @@ graph: tree
 Exhaustive segmentation 
 -----------------------
 
-Keyscapes, Pitchscapes, Wavescapes 
+Keyscapes :cite:t:`Sapp2001_HarmonicVisualizationsTonala,Sapp2005_VisualHierarchicalKey`, 
+Pitchscapes :cite:t:`Lieck2020_ModellingHierarchicalKey`, 
+Wavescapes :cite:t:`Viaccoz2021_WavescapesVisualHierarchical`
 
 See also Müller (form)
