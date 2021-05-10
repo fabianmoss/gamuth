@@ -317,10 +317,11 @@ class PitchClass(Tone):
     def __init__(self):
         self.pitch_class = self.get_pitch_class()
 
-
-
 class PitchClassSet:
-    """Pitch class sets"""
+    """Pitch class sets
+    # For multiple constructors see: https://pythonconquerstheuniverse.wordpress.com/2010/03/17/multiple-constructors-in-a-python-class/ 
+    """
+
     def __init__(self, st):
         assert isinstance(st, set)
         self.set = set(st)
