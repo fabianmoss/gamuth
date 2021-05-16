@@ -34,13 +34,13 @@
             
   <div class="section" id="module-musictheory">
 <span id="api-musictheory"></span><h1>API - musictheory<a class="headerlink" href="#module-musictheory" title="Permalink to this headline">¶</a></h1>
-<span class="target" id="module-0"></span><dl class="py class">
-<dt id="musictheory.Interval">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">target</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Interval" title="Permalink to this definition">¶</a></dt>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">target</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Class for an interval between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
 <dl class="py method">
-<dt id="musictheory.Interval.get_euclidean_distance">
-<code class="sig-name descname">get_euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">precision</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Interval.get_euclidean_distance" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">precision</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Calculates the Euclidean distance between two tones
 with coordinates in Euler space.</p>
 <dl class="field-list simple">
@@ -65,8 +65,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Interval.get_generic_interval">
-<code class="sig-name descname">get_generic_interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directed</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">octaves</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Interval.get_generic_interval" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_generic_interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directed</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">octaves</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Generic interval (directed) between two tones.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -103,8 +103,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Interval.get_specific_interval">
-<code class="sig-name descname">get_specific_interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directed</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">octaves</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Interval.get_specific_interval" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_specific_interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">directed</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">octaves</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Specific interval (directed) between two tones.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -137,18 +137,19 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="musictheory.PitchClass">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClass</code><a class="headerlink" href="#musictheory.PitchClass" title="Permalink to this definition">¶</a></dt>
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClass</code></dt>
 <dd><p>Pitch class instance in <span class="math notranslate nohighlight">\(\mathbb{Z}_{12}\)</span>.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="musictheory.PitchClassSet">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClassSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">st</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet" title="Permalink to this definition">¶</a></dt>
-<dd><p>Pitch class sets</p>
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">PitchClassSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">st</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Pitch class sets
+# For multiple constructors see: <a class="reference external" href="https://pythonconquerstheuniverse.wordpress.com/2010/03/17/multiple-constructors-in-a-python-class/">https://pythonconquerstheuniverse.wordpress.com/2010/03/17/multiple-constructors-in-a-python-class/</a></p>
 <dl class="py method">
-<dt id="musictheory.PitchClassSet.interval_class_vector">
-<code class="sig-name descname">interval_class_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.interval_class_vector" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">interval_class_vector</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Interval-class vector for given pitch-class set</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -161,8 +162,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.PitchClassSet.invert">
-<code class="sig-name descname">invert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.invert" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">invert</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Invert pitch-class set. If the inversion pc is not specified, it is set to 0 by default.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -178,8 +179,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.PitchClassSet.normal_form">
-<code class="sig-name descname">normal_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.normal_form" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">normal_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Normal form of pitch-class set</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -192,8 +193,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.PitchClassSet.transpose">
-<code class="sig-name descname">transpose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.PitchClassSet.transpose" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">transpose</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Transposition by <cite>t</cite> semitones.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -211,12 +212,12 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="musictheory.Tone">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">octave</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fifth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">third</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone" title="Permalink to this definition">¶</a></dt>
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">musictheory.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">octave</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fifth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">third</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Class for tones.</p>
 <dl class="py method">
-<dt id="musictheory.Tone.get_accidentals">
-<code class="sig-name descname">get_accidentals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_accidentals" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_accidentals</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the accidentals of the tone (flats (<span class="math notranslate nohighlight">\(\flat\)</span>) or sharps (<span class="math notranslate nohighlight">\(\sharp\)</span>))..</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -238,8 +239,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Tone.get_frequency">
-<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">chamber_tone</span><span class="o">=</span><span class="default_value">440.0</span></em>, <em class="sig-param"><span class="n">precision</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_frequency" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">chamber_tone</span><span class="o">=</span><span class="default_value">440.0</span></em>, <em class="sig-param"><span class="n">precision</span><span class="o">=</span><span class="default_value">2</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Get the frequency of the tone.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -264,8 +265,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Tone.get_label">
-<code class="sig-name descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_label" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the complete label of the tone, consisting of its note name, syntonic position, and octave.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -288,8 +289,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Tone.get_midi_pitch">
-<code class="sig-name descname">get_midi_pitch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_midi_pitch" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_midi_pitch</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Get the MIDI pitch of the tone.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -311,8 +312,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Tone.get_pitch_class">
-<code class="sig-name descname">get_pitch_class</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">'chromatic'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_pitch_class" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_pitch_class</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">order</span><span class="o">=</span><span class="default_value">'chromatic'</span></em><span class="sig-paren">)</span></dt>
 <dd><p>Get the pitch-class number on the circle of fifths or the chromatic circle.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -342,8 +343,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Tone.get_step">
-<code class="sig-name descname">get_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_step" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the diatonic letter name (C, D, E, F, G, A, or B) of the tone <em>without</em> accidentals.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -365,8 +366,8 @@ with coordinates in Euler space.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="musictheory.Tone.get_syntonic">
-<code class="sig-name descname">get_syntonic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.Tone.get_syntonic" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="sig-name descname">get_syntonic</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
 <dd><p>Gets the value of the syntonic level in Euler space.
 Tones on the same syntonic line as central C are marked with <cite>_</cite>,
 and those above or below this line with <cite>‘</cite> or <cite>,</cite>, respectively.</p>

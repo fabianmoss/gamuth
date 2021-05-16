@@ -390,7 +390,7 @@ class PitchClassSet:
                 rotations = rotations[mask]
                 pass
             else:
-                return rotations.flatten()
+                return rotations.flatten() 
 
     # def prime_form(self):
 

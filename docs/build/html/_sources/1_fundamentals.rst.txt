@@ -138,8 +138,23 @@ Scales and Modes
 Indian classical music
 ~~~~~~~~~~~~~~~~~~~~~~
 
+Turkish Maqam
+~~~~~~~~~~~~~
+
+`Makam Dataset <https://ratioscore.humdrum.org/turkish/>`_ :cite:p:`Karaosmanoglu2012_TurkishMakamMusic`
+
+Arab-Andalusian music
+~~~~~~~~~~~~~~~~~~~~~
+
+:cite:t:`Nuttall2021_ComputationalExplorationMelodica`
+
 Western classical music
 ~~~~~~~~~~~~~~~~~~~~~~~
+
+- Ancient Greek modes :cite:p:`Nowacki2020_LatinGreekMusic`
+- Ecclesiastic modes 
+- Major and minor 
+- Modes of limited transposition
 
 The diatonic scale
 ..................

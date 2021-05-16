@@ -73,7 +73,7 @@
 
 
 \title{musictheory}
-\date{May 09, 2021}
+\date{May 16, 2021}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -287,7 +287,7 @@ logarithm: multiplication =\textgreater{} addition
 \subsection{Euler Space}
 \label{\detokenize{1_fundamentals:euler-space}}
 One option is to locate a tone \sphinxtitleref{t} as a point \(p=(o, q, t)\) in Euler Space, defined by
-a number of octaves \sphinxtitleref{o}, fifths \sphinxtitleref{q}, and thirds \sphinxtitleref{t}. We will use the {\hyperref[\detokenize{api:musictheory.Tone}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{musictheory.Tone}}}}}
+a number of octaves \sphinxtitleref{o}, fifths \sphinxtitleref{q}, and thirds \sphinxtitleref{t}. We will use the \sphinxcode{\sphinxupquote{musictheory.Tone}}
 class for this
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -390,8 +390,32 @@ Transformations between representations of tones are actually \sphinxstyleemphas
 \subsection{Indian classical music}
 \label{\detokenize{1_fundamentals:indian-classical-music}}
 
+\subsection{Turkish Maqam}
+\label{\detokenize{1_fundamentals:turkish-maqam}}
+\sphinxhref{https://ratioscore.humdrum.org/turkish/}{Makam Dataset} {[}\sphinxcite{8_bibliography:id22}{]}
+
+
+\subsection{Arab\sphinxhyphen{}Andalusian music}
+\label{\detokenize{1_fundamentals:arab-andalusian-music}}
+Nuttall \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id23}{]}
+
+
 \subsection{Western classical music}
-\label{\detokenize{1_fundamentals:western-classical-music}}
+\label{\detokenize{1_fundamentals:western-classical-music}}\begin{itemize}
+\item {} 
+Ancient Greek modes {[}\sphinxcite{8_bibliography:id21}{]}
+
+\item {} 
+Ecclesiastic modes
+
+\item {} 
+Major and minor
+
+\item {} 
+Modes of limited transposition
+
+\end{itemize}
+
 
 \subsubsection{The diatonic scale}
 \label{\detokenize{1_fundamentals:the-diatonic-scale}}
@@ -678,7 +702,7 @@ First note based (Tone\sphinxhyphen{}based)
 Then arrive at annotation standard (simple version)
 and do simple regex filtering (find all Vs…)
 
-Moss \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id20}{]}, Neuwirth \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id21}{]}
+Moss \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id20}{]}, Neuwirth \sphinxstyleemphasis{et al.} {[}\sphinxcite{8_bibliography:id24}{]}
 
 
 \chapter{Segmentation}
@@ -789,15 +813,15 @@ To install the Python library \sphinxcode{\sphinxupquote{musictheory}}, type the
 
 
 \section{API \sphinxhyphen{} musictheory}
-\label{\detokenize{api:module-musictheory}}\label{\detokenize{api:api-musictheory}}\label{\detokenize{api::doc}}\index{module@\spxentry{module}!musictheory@\spxentry{musictheory}}\index{musictheory@\spxentry{musictheory}!module@\spxentry{module}}\phantomsection\label{\detokenize{api:module-0}}\index{module@\spxentry{module}!musictheory@\spxentry{musictheory}}\index{musictheory@\spxentry{musictheory}!module@\spxentry{module}}\index{Interval (class in musictheory)@\spxentry{Interval}\spxextra{class in musictheory}}
+\label{\detokenize{api:module-musictheory}}\label{\detokenize{api:api-musictheory}}\label{\detokenize{api::doc}}\index{module@\spxentry{module}!musictheory@\spxentry{musictheory}}\index{musictheory@\spxentry{musictheory}!module@\spxentry{module}}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Interval}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{Interval}}}{\emph{\DUrole{n}{source}}, \emph{\DUrole{n}{target}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{Interval}}}{\emph{\DUrole{n}{source}}, \emph{\DUrole{n}{target}}}{}
 Class for an interval between two tones \sphinxtitleref{s} (source) and \sphinxtitleref{t} (target).
-\index{get\_euclidean\_distance() (musictheory.Interval method)@\spxentry{get\_euclidean\_distance()}\spxextra{musictheory.Interval method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Interval.get_euclidean_distance}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_euclidean\_distance}}}{\emph{\DUrole{n}{precision}\DUrole{o}{=}\DUrole{default_value}{2}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_euclidean\_distance}}}{\emph{\DUrole{n}{precision}\DUrole{o}{=}\DUrole{default_value}{2}}}{}
 Calculates the Euclidean distance between two tones
 with coordinates in Euler space.
 \begin{quote}\begin{description}
@@ -823,10 +847,10 @@ float
 
 \end{fulllineitems}
 
-\index{get\_generic\_interval() (musictheory.Interval method)@\spxentry{get\_generic\_interval()}\spxextra{musictheory.Interval method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Interval.get_generic_interval}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_generic\_interval}}}{\emph{\DUrole{n}{directed}\DUrole{o}{=}\DUrole{default_value}{True}}, \emph{\DUrole{n}{octaves}\DUrole{o}{=}\DUrole{default_value}{True}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_generic\_interval}}}{\emph{\DUrole{n}{directed}\DUrole{o}{=}\DUrole{default_value}{True}}, \emph{\DUrole{n}{octaves}\DUrole{o}{=}\DUrole{default_value}{True}}}{}
 Generic interval (directed) between two tones.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -869,10 +893,10 @@ int
 
 \end{fulllineitems}
 
-\index{get\_specific\_interval() (musictheory.Interval method)@\spxentry{get\_specific\_interval()}\spxextra{musictheory.Interval method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Interval.get_specific_interval}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_specific\_interval}}}{\emph{\DUrole{n}{directed}\DUrole{o}{=}\DUrole{default_value}{True}}, \emph{\DUrole{n}{octaves}\DUrole{o}{=}\DUrole{default_value}{True}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_specific\_interval}}}{\emph{\DUrole{n}{directed}\DUrole{o}{=}\DUrole{default_value}{True}}, \emph{\DUrole{n}{octaves}\DUrole{o}{=}\DUrole{default_value}{True}}}{}
 Specific interval (directed) between two tones.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -911,23 +935,24 @@ int
 
 \end{fulllineitems}
 
-\index{PitchClass (class in musictheory)@\spxentry{PitchClass}\spxextra{class in musictheory}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClass}}\pysigline{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClass}}}
+\pysigline{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClass}}}
 Pitch class instance in \(\mathbb{Z}_{12}\).
 
 \end{fulllineitems}
 
-\index{PitchClassSet (class in musictheory)@\spxentry{PitchClassSet}\spxextra{class in musictheory}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClassSet}}}{\emph{\DUrole{n}{st}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{PitchClassSet}}}{\emph{\DUrole{n}{st}}}{}
 Pitch class sets
-\index{interval\_class\_vector() (musictheory.PitchClassSet method)@\spxentry{interval\_class\_vector()}\spxextra{musictheory.PitchClassSet method}}
+\# For multiple constructors see: \sphinxurl{https://pythonconquerstheuniverse.wordpress.com/2010/03/17/multiple-constructors-in-a-python-class/}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.interval_class_vector}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{interval\_class\_vector}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{interval\_class\_vector}}}{}{}
 Interval\sphinxhyphen{}class vector for given pitch\sphinxhyphen{}class set
 \begin{quote}\begin{description}
 \item[{Returns}] \leavevmode
@@ -940,10 +965,10 @@ list
 
 \end{fulllineitems}
 
-\index{invert() (musictheory.PitchClassSet method)@\spxentry{invert()}\spxextra{musictheory.PitchClassSet method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.invert}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{invert}}}{\emph{\DUrole{n}{t}\DUrole{o}{=}\DUrole{default_value}{0}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{invert}}}{\emph{\DUrole{n}{t}\DUrole{o}{=}\DUrole{default_value}{0}}}{}
 Invert pitch\sphinxhyphen{}class set. If the inversion pc is not specified, it is set to 0 by default.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -959,10 +984,10 @@ set
 
 \end{fulllineitems}
 
-\index{normal\_form() (musictheory.PitchClassSet method)@\spxentry{normal\_form()}\spxextra{musictheory.PitchClassSet method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.normal_form}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{normal\_form}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{normal\_form}}}{}{}
 Normal form of pitch\sphinxhyphen{}class set
 \begin{quote}\begin{description}
 \item[{Returns}] \leavevmode
@@ -975,10 +1000,10 @@ set
 
 \end{fulllineitems}
 
-\index{transpose() (musictheory.PitchClassSet method)@\spxentry{transpose()}\spxextra{musictheory.PitchClassSet method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.PitchClassSet.transpose}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{transpose}}}{\emph{\DUrole{n}{t}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{transpose}}}{\emph{\DUrole{n}{t}}}{}
 Transposition by \sphinxtitleref{t} semitones.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -997,15 +1022,15 @@ set
 
 \end{fulllineitems}
 
-\index{Tone (class in musictheory)@\spxentry{Tone}\spxextra{class in musictheory}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{Tone}}}{\emph{\DUrole{n}{octave}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{fifth}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{third}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name}\DUrole{o}{=}\DUrole{default_value}{None}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{musictheory.}}\sphinxbfcode{\sphinxupquote{Tone}}}{\emph{\DUrole{n}{octave}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{fifth}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{third}\DUrole{o}{=}\DUrole{default_value}{None}}, \emph{\DUrole{n}{name}\DUrole{o}{=}\DUrole{default_value}{None}}}{}
 Class for tones.
-\index{get\_accidentals() (musictheory.Tone method)@\spxentry{get\_accidentals()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_accidentals}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_accidentals}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_accidentals}}}{}{}
 Gets the accidentals of the tone (flats (\(\flat\)) or sharps (\(\sharp\)))..
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1028,10 +1053,10 @@ str
 
 \end{fulllineitems}
 
-\index{get\_frequency() (musictheory.Tone method)@\spxentry{get\_frequency()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_frequency}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_frequency}}}{\emph{\DUrole{n}{chamber\_tone}\DUrole{o}{=}\DUrole{default_value}{440.0}}, \emph{\DUrole{n}{precision}\DUrole{o}{=}\DUrole{default_value}{2}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_frequency}}}{\emph{\DUrole{n}{chamber\_tone}\DUrole{o}{=}\DUrole{default_value}{440.0}}, \emph{\DUrole{n}{precision}\DUrole{o}{=}\DUrole{default_value}{2}}}{}
 Get the frequency of the tone.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -1060,10 +1085,10 @@ float
 
 \end{fulllineitems}
 
-\index{get\_label() (musictheory.Tone method)@\spxentry{get\_label()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_label}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_label}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_label}}}{}{}
 Gets the complete label of the tone, consisting of its note name, syntonic position, and octave.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1087,10 +1112,10 @@ str
 
 \end{fulllineitems}
 
-\index{get\_midi\_pitch() (musictheory.Tone method)@\spxentry{get\_midi\_pitch()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_midi_pitch}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_midi\_pitch}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_midi\_pitch}}}{}{}
 Get the MIDI pitch of the tone.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1113,10 +1138,10 @@ int
 
 \end{fulllineitems}
 
-\index{get\_pitch\_class() (musictheory.Tone method)@\spxentry{get\_pitch\_class()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_pitch_class}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_pitch\_class}}}{\emph{\DUrole{n}{start}\DUrole{o}{=}\DUrole{default_value}{0}}, \emph{\DUrole{n}{order}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}chromatic\textquotesingle{}}}}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_pitch\_class}}}{\emph{\DUrole{n}{start}\DUrole{o}{=}\DUrole{default_value}{0}}, \emph{\DUrole{n}{order}\DUrole{o}{=}\DUrole{default_value}{\textquotesingle{}chromatic\textquotesingle{}}}}{}
 Get the pitch\sphinxhyphen{}class number on the circle of fifths or the chromatic circle.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -1151,10 +1176,10 @@ int
 
 \end{fulllineitems}
 
-\index{get\_step() (musictheory.Tone method)@\spxentry{get\_step()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_step}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_step}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_step}}}{}{}
 Gets the diatonic letter name (C, D, E, F, G, A, or B) of the tone \sphinxstyleemphasis{without} accidentals.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1177,10 +1202,10 @@ str
 
 \end{fulllineitems}
 
-\index{get\_syntonic() (musictheory.Tone method)@\spxentry{get\_syntonic()}\spxextra{musictheory.Tone method}}
+
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{api:musictheory.Tone.get_syntonic}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_syntonic}}}{}{}
+\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{get\_syntonic}}}{}{}
 Gets the value of the syntonic level in Euler space.
 Tones on the same syntonic line as central C are marked with \sphinxtitleref{\_},
 and those above or below this line with \sphinxtitleref{‘} or \sphinxtitleref{,}, respectively.
@@ -1226,31 +1251,37 @@ Allen Forte. \sphinxstyleemphasis{The Structure of Atonal Music}. Yale Universit
 Dora A Hanninen. Orientations, Criteria, Segments: A General Theory of Segmentation for Music Analysis. \sphinxstyleemphasis{Journal of Music Theory}, 45(2):345\textendash{}433, 2001.
 \bibitem[7]{8_bibliography:id19}
 Dora A. Hanninen. \sphinxstyleemphasis{A Theory of Music Analysis: On Segmentation and Associative Organization}. University of Rochester Press, Rochester, NY, first edition, December 2012.
-\bibitem[8]{8_bibliography:id2}
+\bibitem[8]{8_bibliography:id22}
+M Kemal Karaosmanoğlu. A Turkish Makam Music Symbolic Database for Music Information Retrieval: SymbTr. In \sphinxstyleemphasis{ISMIR}, 6. 2012.
+\bibitem[9]{8_bibliography:id2}
 David Lewin. \sphinxstyleemphasis{Generalized Musical Intervals and Transformations}. Oxford University Press, Oxford, 1987.
-\bibitem[9]{8_bibliography:id14}
+\bibitem[10]{8_bibliography:id14}
 Robert Lieck and Martin Rohrmeier. Modelling Hierarchical Key Structure with Pitch Scapes. In \sphinxstyleemphasis{Proceedings of the 21st International Society for Music Information Retrieval Conference (ISMIR 2020)}, 811\textendash{}818. Montreal, Canada, 2020. \sphinxhref{https://doi.org/10.5281/zenodo.4245558}{doi:10.5281/zenodo.4245558}.
-\bibitem[10]{8_bibliography:id9}
+\bibitem[11]{8_bibliography:id9}
 David Meredith. The ps13 pitch spelling algorithm. \sphinxstyleemphasis{Journal of New Music Research}, 35(2):121\textendash{}159, June 2006. \sphinxhref{https://doi.org/10.1080/09298210600834961}{doi:10.1080/09298210600834961}.
-\bibitem[11]{8_bibliography:id8}
+\bibitem[12]{8_bibliography:id8}
 David Meredith and Geraint A Wiggins. Comparing Pitch Spelling Algorithms. \sphinxstyleemphasis{Proceedings of the International Symposium on Music Information Retrieval (ISMIR)}, pages 280\textendash{}287, 2005. \sphinxhref{https://doi.org/10.1007/978-3-540-31807-1\_14}{doi:10.1007/978\sphinxhyphen{}3\sphinxhyphen{}540\sphinxhyphen{}31807\sphinxhyphen{}1\_14}.
-\bibitem[12]{8_bibliography:id20}
+\bibitem[13]{8_bibliography:id20}
 Fabian C. Moss, Markus Neuwirth, Daniel Harasim, and Martin Rohrmeier. Statistical characteristics of tonal harmony: a corpus study of Beethoven\textquotesingle{}s string quartets. \sphinxstyleemphasis{PLoS ONE}, 14(6):e0217242, 2019. \sphinxhref{https://doi.org/10.1371/journal.pone.0217242}{doi:10.1371/journal.pone.0217242}.
-\bibitem[13]{8_bibliography:id6}
+\bibitem[14]{8_bibliography:id6}
 Meinhard Müller. \sphinxstyleemphasis{Fundamentals of Music Processing}. Springer, 2015.
-\bibitem[14]{8_bibliography:id21}
+\bibitem[15]{8_bibliography:id24}
 Markus Neuwirth, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 5(July):1\textendash{}5, 2018. \sphinxhref{https://doi.org/10.3389/fdigh.2018.00016}{doi:10.3389/fdigh.2018.00016}.
-\bibitem[15]{8_bibliography:id15}
+\bibitem[16]{8_bibliography:id21}
+Edward Nowacki. \sphinxstyleemphasis{Latin and Greek Music Theory}. Eastman Studies in Music. University of Rochester Press, Rochester, 2020.
+\bibitem[17]{8_bibliography:id23}
+Thomas Nuttall, Miguel G. Casado, Andres Ferraro, Darrell Conklin, and Rafael Caro Repetto. A computational exploration of melodic patterns in Arab\sphinxhyphen{}Andalusian music. \sphinxstyleemphasis{Journal of Mathematics and Music}, 0(0):1\textendash{}13, May 2021. \sphinxhref{https://doi.org/10.1080/17459737.2021.1917010}{doi:10.1080/17459737.2021.1917010}.
+\bibitem[18]{8_bibliography:id15}
 Craig Stuart Sapp. Harmonic Visualizations of Tonal Music. In \sphinxstyleemphasis{The International Computer Music Conference (ICMC)}, 423\textendash{}430. 2001.
-\bibitem[16]{8_bibliography:id16}
+\bibitem[19]{8_bibliography:id16}
 Craig Stuart Sapp. Visual hierarchical key analysis. \sphinxstyleemphasis{Computers in Entertainment}, 3(4):3, 2005. \sphinxhref{https://doi.org/10.1145/1095534.1095544}{doi:10.1145/1095534.1095544}.
-\bibitem[17]{8_bibliography:id12}
+\bibitem[20]{8_bibliography:id12}
 Joshua Stoddard, Christopher Raphael, and Paul E Utgoff. Well\sphinxhyphen{}tempered spelling: A key\sphinxhyphen{}invariant pitch spelling algorithm. In \sphinxstyleemphasis{Proceedings of the 5th International Conference on Music Information Retrieval (ISMIR 2004)}. Barcelona, Spain, 2004.
-\bibitem[18]{8_bibliography:id3}
+\bibitem[21]{8_bibliography:id3}
 Joseph Nathan Straus. \sphinxstyleemphasis{Introduction to post\sphinxhyphen{}tonal theory}. Pearson Prentice Hall, New York, 3rd edition, 2005.
-\bibitem[19]{8_bibliography:id13}
+\bibitem[22]{8_bibliography:id13}
 David Temperley. \sphinxstyleemphasis{The Cognition of Basic Musical Structures}. MIT Press, 2001.
-\bibitem[20]{8_bibliography:id17}
+\bibitem[23]{8_bibliography:id17}
 Cédric Viaccoz, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. Wavescapes: A Visual Hierarchical Analysis of Tonality using the Discrete Fourier Transformation. \sphinxstyleemphasis{Musicae Scientiae}, 2021.
 \end{sphinxthebibliography}
 
@@ -1259,7 +1290,7 @@ Cédric Viaccoz, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. Wavescap
 \begin{sphinxtheindex}
 \let\bigletter\sphinxstyleindexlettergroup
 \bigletter{m}
-\item\relax\sphinxstyleindexentry{musictheory}\sphinxstyleindexpageref{api:\detokenize{module-0}}
+\item\relax\sphinxstyleindexentry{musictheory}\sphinxstyleindexpageref{api:\detokenize{module-musictheory}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}
