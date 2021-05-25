@@ -153,7 +153,7 @@ Western classical music
 
 - Ancient Greek modes :cite:p:`Nowacki2020_LatinGreekMusic`
 - Ecclesiastic modes :cite:p:`Wiering2001_LanguageModesStudies,Parncutt2019_PitchclassPrevalencePlainchant,Delviniotis2021_NewMethodByzantine,BasCornelissen2020_ModeClassificationNatural,Angel2020_ExploringMusicalizationTexts`
-- Major and minor 
+- Major and minor :cite:p:`Harasim2021_ExploringFoundationsTonality`
 - Modes of limited transposition
 
 The diatonic scale
