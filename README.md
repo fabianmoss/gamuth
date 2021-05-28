@@ -1,4 +1,4 @@
-# Learn music theory the hard way!
+# Guide to Advanced Music Theory (GAMuTh)
 
 Docs here: https://musictheory.readthedocs.io/en/latest/?badge=latest
 
