@@ -148,6 +148,11 @@ Arab-Andalusian music
 
 :cite:t:`Nuttall2021_ComputationalExplorationMelodica`
 
+Persian Music 
+~~~~~~~~~~~~~
+
+:cite:t:`Sanati2020_InvestigationValueIntervals`
+
 Western classical music
 ~~~~~~~~~~~~~~~~~~~~~~~
 
