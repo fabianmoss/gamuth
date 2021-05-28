@@ -151,7 +151,7 @@ Arab-Andalusian music
 Persian Music 
 ~~~~~~~~~~~~~
 
-:cite:t:`Sanati2020_InvestigationValueIntervals`
+:cite:t:`Sanati2020_InvestigationValueIntervals,FamourZadeh2005_MusiquePersaneFormalisation`
 
 Western classical music
 ~~~~~~~~~~~~~~~~~~~~~~~
