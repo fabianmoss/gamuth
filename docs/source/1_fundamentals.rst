@@ -135,6 +135,8 @@ Fundamentals II
 Scales and Modes
 ----------------
 
+:cite:t:`Powers2001_Mode` 
+
 Indian classical music
 ~~~~~~~~~~~~~~~~~~~~~~
 
