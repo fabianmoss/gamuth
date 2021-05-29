@@ -1,6 +1,6 @@
 # Guide to Advanced Music Theory (GAMuTh)
 
-Docs here: https://musictheory.readthedocs.io/en/latest/?badge=latest
+
 
 To build `cd docs` and run `make` to see possible target formats. Generally, use `make html` and `make latexpdf`.
 
