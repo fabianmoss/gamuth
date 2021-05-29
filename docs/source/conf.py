@@ -13,7 +13,7 @@
 import os
 import sys
 # sys.path.insert(0, os.path.abspath('./../../src/'))
-sys.path.insert(0, os.path.abspath('./../../src/musictheory'))
+sys.path.insert(0, os.path.abspath('./../../src/gamuth'))
 # directory relative to this conf file
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 # add custom extensions directory to python path
@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'ext
 
 # -- Project information -----------------------------------------------------
 
-project = 'musictheory'
+project = 'GAMuTh' # musictheory
 copyright = '2021, Fabian C. Moss'
 author = 'Fabian C. Moss'
 

@@ -1,5 +1,8 @@
-Learn music theory the hard way!
-================================
+Guide to Advanced Music Theory (GAMuTh)
+=======================================
+
+.. Learn music theory the hard way!
+.. --------------------------------
 
 .. warning::
    The content on these pages is very much under construction!

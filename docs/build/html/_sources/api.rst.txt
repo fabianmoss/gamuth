@@ -1,6 +1,6 @@
 API - musictheory
 =================
 
-.. automodule:: musictheory
+.. automodule:: gamuth
    :members:
    :noindex:
