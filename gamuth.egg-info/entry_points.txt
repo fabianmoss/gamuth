@@ -1,0 +1,3 @@
+[console_scripts]
+gamuth = gamuth.__main__:main
+
