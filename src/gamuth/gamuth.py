@@ -1,5 +1,5 @@
 """
-.. module:: musictheory
+.. module:: gamuth
     :synopsis: a python module for music theory
  
 .. moduleauthor:: Fabian C. Moss <fabianmoss@gmail.com>

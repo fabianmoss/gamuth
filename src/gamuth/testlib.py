@@ -1,5 +1,5 @@
 # %%
-from musictheory import Tone, Interval, PitchClassSet
+from gamuth import Tone, Interval, PitchClassSet
 # %%
 
 s = Tone(0,1,1)
