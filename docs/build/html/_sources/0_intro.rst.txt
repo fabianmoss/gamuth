@@ -6,16 +6,16 @@ What is CM?
 ~~~~~~~~~~~
 
 - Description and relation to related fields
-  -- musicology
-  -- music theory
-  -- music information retrieval
-  -- music cognition
-  -- music psychology
+  - musicology
+  - music theory
+  - music information retrieval
+  - music cognition
+  - music psychology
 - modeling (!!!) very important chapter, maybe deserves its own paragraph. Modeling as a form of question/hypothesis guided research as opposed to wild tool application (''We did machine learning!'')
 - How to do CM? conferences, journals, twitter, GitHub repositories, libraries
 - which language to use? Matlab, R, Python, Julia...
-
-- Music as the "missing Humboldt system" (Merker, 2002) with its "orthogonal discretization of spectro-temporal space" (Merker, 2002:4)
+- Music as the "missing Humboldt system" (Merker, 2002) with its "orthogonal discretization of spectro-temporal space" (Merker, 2002:4); 
+- similarly, ancient remark by Sun Tzu "There are not more than five musical notes, yet the combinations of these five give rise to more melodies than can ever be heard." :cite:p:`Tzu1910_ArtWar` (5.7). 
 
 General notes
 ~~~~~~~~~~~~~

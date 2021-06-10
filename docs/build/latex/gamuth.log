@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.4)  29 MAY 2021 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.3.4)  10 JUN 2021 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,7 +689,7 @@ Chapter 1.
 [3] [4]
 Chapter 2.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 29
-0.
+3.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [5
@@ -725,27 +725,27 @@ Chapter 8.
 ] [25
 
 ]
-Underfull \hbox (badness 6575) in paragraph at lines 881--882
+Underfull \hbox (badness 6575) in paragraph at lines 884--885
 []\T1/ptm/m/n/10 Craig Stu-art Sapp. Vi-sual hi-er-ar-chi-cal key anal-y-sis. \
 T1/ptm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/ptm/m/n/10 , 3(4):3, 2005.
  []
 
 (./gamuth.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 898.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 903.
  [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 898.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 903.
  (./gamuth.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 898.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 898.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 903.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 903.
 Package rerunfilecheck Info: File `gamuth.out' has not changed.
 (rerunfilecheck)             Checksum: 2ED8DA3F9AFC12AC24441501E29FC01D;4285.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 898.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 903.
  ) 
 Here is how much of TeX's memory you used:
- 13670 strings out of 483183
- 193907 string characters out of 5966293
- 465189 words of memory out of 5000000
- 28233 multiletter control sequences out of 15000+600000
+ 13672 strings out of 483183
+ 193952 string characters out of 5966293
+ 465231 words of memory out of 5000000
+ 28234 multiletter control sequences out of 15000+600000
  580393 words of font info for 80 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  38i,20n,49p,512b,550s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -761,10 +761,10 @@ blic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on gamuth.pdf (30 pages, 169406 bytes).
+Output written on gamuth.pdf (30 pages, 170192 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 505 PDF objects out of 1000 (max. 8388607)
+ 451 compressed objects within 5 object streams
+ 126 named destinations out of 1000 (max. 500000)
  293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
