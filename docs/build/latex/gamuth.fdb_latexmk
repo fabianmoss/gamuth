@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex gamuth.idx"] 1622294265 "gamuth.idx" "gamuth.ind" "gamuth" 1623310323
-  "gamuth.idx" 1623310321 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex gamuth.idx"] 1622294265 "gamuth.idx" "gamuth.ind" "gamuth" 1623310524
+  "gamuth.idx" 1623310524 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "gamuth.ind"
   "gamuth.ilg"
-["pdflatex"] 1623310321 "gamuth.tex" "gamuth.pdf" "gamuth" 1623310323
+  "gamuth.ind"
+["pdflatex"] 1623310524 "gamuth.tex" "gamuth.pdf" "gamuth" 1623310524
   "/etc/texmf/web2c/texmf.cnf" 1614885187 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/fmoss/.texlive2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1621166895 195578 494a6049d61b43315d62002c417b9fab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -152,20 +152,20 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1614886031 4791331 b10ad612781e1d1ed9f24eb8e160ce32 ""
   "footnotehyper-sphinx.sty" 1611821497 8888 1bbd7bdeae8c8bed1d10d551bddb1cc9 ""
-  "gamuth.aux" 1623310321 16820 79c2fd7b2de5eb774336baca56d45a28 "pdflatex"
+  "gamuth.aux" 1623310524 16885 703205e3896f7f8692a8e4e17bc6ae0c "pdflatex"
   "gamuth.ind" 1622294265 0 d41d8cd98f00b204e9800998ecf8427e "makeindex gamuth.idx"
-  "gamuth.out" 1623310321 4285 2ed8da3f9afc12ac24441501e29fc01d "pdflatex"
-  "gamuth.tex" 1623310316 34318 0ef85fafc037aa6cba99d52468fe6fc0 ""
-  "gamuth.toc" 1623310321 4845 5cc2a74bff36f5fe589357769ac7eb15 "pdflatex"
+  "gamuth.out" 1623310524 4285 2ed8da3f9afc12ac24441501e29fc01d "pdflatex"
+  "gamuth.tex" 1623310524 34582 e9d79ab0aa74ce46f5a31f2a458dd12f ""
+  "gamuth.toc" 1623310524 4845 5cc2a74bff36f5fe589357769ac7eb15 "pdflatex"
   "sphinx.sty" 1611821497 82250 00bd36f302b7cc8960761f445d02b13e ""
-  "sphinxhighlight.sty" 1623310323 6615 02ef3c01e6bb67d3cc0658d354509680 ""
+  "sphinxhighlight.sty" 1623310523 6615 02ef3c01e6bb67d3cc0658d354509680 ""
   "sphinxmanual.cls" 1611821497 4236 124cd90deb92742b5d3922bfc2cd70c0 ""
-  "sphinxmessages.sty" 1623310323 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1623310524 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxmulticell.sty" 1611821497 14606 0b6edc2b1a83546ed92026d1f6a311b5 ""
   (generated)
-  "gamuth.pdf"
-  "gamuth.out"
-  "gamuth.toc"
-  "gamuth.aux"
-  "gamuth.idx"
   "gamuth.log"
+  "gamuth.pdf"
+  "gamuth.aux"
+  "gamuth.toc"
+  "gamuth.out"
+  "gamuth.idx"
