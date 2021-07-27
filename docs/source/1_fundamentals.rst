@@ -42,12 +42,12 @@ Euler Space
 ~~~~~~~~~~~
 
 One option is to locate a tone `t` as a point :math:`p=(o, q, t)` in Euler Space, defined by
-a number of octaves `o`, fifths `q`, and thirds `t`. We will use the :class:`musictheory.Tone`
+a number of octaves `o`, fifths `q`, and thirds `t`. We will use the :class:`gamuth.Tone`
 class for this
 
 .. code-block:: python
 
-   from musictheory import Tone
+   from gamuth import Tone
 
    t = Tone(o=0, q=0, t=0)
 
