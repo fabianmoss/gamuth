@@ -13,7 +13,7 @@
 import os
 import sys
 # sys.path.insert(0, os.path.abspath('./../../src/'))
-sys.path.insert(0, os.path.abspath('./../../src/gamuth'))
+sys.path.insert(0, os.path.abspath('./../../gamuth'))
 # directory relative to this conf file
 CURDIR = os.path.abspath(os.path.dirname(__file__))
 # add custom extensions directory to python path
@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), 'ext
 
 # -- Project information -----------------------------------------------------
 
-project = 'GAMuTh' # musictheory
+project = 'GAMuTh: Guide to Advanced Music Theory'
 copyright = '2021, Fabian C. Moss'
 author = 'Fabian C. Moss'
 
@@ -40,8 +40,10 @@ extensions = [
     'sphinx.ext.coverage', 
     'sphinx.ext.napoleon',
     'sphinx.ext.mathjax',
-    # 'sphinxcontrib.lilypond'
-    'sphinxcontrib.bibtex'
+    'sphinxnotes.lilypond', # https://sphinx-notes.github.io/lilypond/index.html
+    'sphinxcontrib.bibtex',
+    'sphinx_exercise',
+    'sphinxcontrib.tikz' # https://sphinxcontrib-tikz.readthedocs.io/en/latest/
 ]
 
 bibtex_bibfiles = ['references.bib']
@@ -49,6 +51,8 @@ bibtex_bibfiles = ['references.bib']
 bibtex_default_style = 'plain'
 
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+
+tikz_libraries = ["arrows"]
 
 # # configures bibliography
 # # see http://wnielson.bitbucket.org/projects/sphinx-natbib/
@@ -77,12 +81,14 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "alabaster"
-html_theme_options = {
-    # 'github_user': 'fabianmoss',
-    # 'github_repo': 'musictheory',
-    "logo": "maxima.png"
-}
+# html_theme = "alabaster"
+html_theme = "press"
+# html_theme = "karma_sphinx_theme"
+# html_theme_options = {
+#     # 'github_user': 'fabianmoss',
+#     # 'github_repo': 'musictheory',
+#     "logo": "maxima.png"
+# }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

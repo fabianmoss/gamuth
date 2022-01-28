@@ -1,5 +1,7 @@
-API - musictheory
-=================
+.. _api:
+
+API - gamuth
+============
 
 .. automodule:: gamuth
    :members:

@@ -1,0 +1,16 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter G
+  \item \spxentry{gamuth}
+    \subitem \spxentry{module}, \hyperpage{53}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{module}
+    \subitem \spxentry{gamuth}, \hyperpage{53}
+
+\end{sphinxtheindex}

@@ -31,6 +31,6 @@ Exhaustive segmentation
 
 Keyscapes :cite:t:`Sapp2001_HarmonicVisualizationsTonala,Sapp2005_VisualHierarchicalKey`, 
 Pitchscapes :cite:t:`Lieck2020_ModellingHierarchicalKey`, 
-Wavescapes :cite:t:`Viaccoz2021_WavescapesVisualHierarchical`
+Wavescapes :cite:t:`Viaccoz2022_WavescapesVisualHierarchical`
 
 See also Müller (form)

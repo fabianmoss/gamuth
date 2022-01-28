@@ -17,3 +17,5 @@ and do simple regex filtering (find all Vs...)
 
 Transformational theory 
 -----------------------
+
+We have already talked about GISs in :numref:`sec_gis`
