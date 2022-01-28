@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>11. Diatonicism — Chromaticism — Enharmonicism</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="12. Topic Modeling with Latent Dirichlet Allocation (LDA)" href="topic_modeling.html" />
+  <link rel="prev" title="10. Tonal pitch-class coevolution" href="coevolution.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#expansion-of-tonal-material" class="reference internal">Expansion of tonal material</a></li>
+                
+                  <li class="toctree-l2"><a href="#expansion-of-local-harmonic-content" class="reference internal">Expansion of local harmonic content</a></li>
+                
+                  <li class="toctree-l2"><a href="#enharmonic-spectrum" class="reference internal">Enharmonic spectrum</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">11. </span>Diatonicism — Chromaticism — Enharmonicism</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="coevolution.html"
+       title="previous chapter">← <span class="section-number">10. </span>Tonal pitch-class coevolution</a>
+  </li>
+  <li class="next">
+    <a href="topic_modeling.html"
+       title="next chapter"><span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA) →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="diatonicism-chromaticism-enharmonicism">
+<h1><span class="section-number">11. </span>Diatonicism — Chromaticism — Enharmonicism<a class="headerlink" href="#diatonicism-chromaticism-enharmonicism" title="Permalink to this headline">¶</a></h1>
+<p>“When we think about harmony, we automatically think about chords. In
+fact, we are so fixated on chords that we sometimes forget they tell
+only part of the story” <span id="id1">Tymoczko [<a class="reference internal" href="8_bibliography.html#id57" title="Dmitri Tymoczko. A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice. Oxford University Press, Oxford, 2011.">62</a>]</span>, p. 154.</p>
+<p>The development of tonality can also be described as a change in two
+dimensions: key-distance and separatedness (tonal closure/unity).</p>
+<ul class="simple">
+<li><p>Baroque: Keys are relatively close to each other but changes occur
+frequently, tonicizations are commonplace</p></li>
+<li><p>Classic: Keys are relatively close to each other and key sections are
+larger and relatively homogenuous</p></li>
+<li><p>early Romantic: Keys are further apart and key sections are larger
+and relatively homogenuous</p></li>
+<li><p>late Romantic: Keys are further apart but changes occur frequently</p></li>
+</ul>
+<p>Here a tabular overview of this hypothesis:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 21%" />
+<col style="width: 26%" />
+<col style="width: 43%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>small</p></td>
+<td><p>large</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>small</p></td>
+<td><p>Baroque</p></td>
+<td><p>Late Romantic</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>large</p></td>
+<td><p>Classic</p></td>
+<td><p>Early Romantic</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table: Stages of Tonality.</p>
+<div class="section" id="expansion-of-tonal-material">
+<h2><span class="section-number">11.1. </span>Expansion of tonal material<a class="headerlink" href="#expansion-of-tonal-material" title="Permalink to this headline">¶</a></h2>
+<p>Based on <span id="id2">[<a class="reference internal" href="8_bibliography.html#id61" title="Zsolt Gárdonyi and Hubert Nordhoff. Harmonik. Möseler Verlag, Wolfenbüttel, 2002.">18</a>]</span>: (see MGG “Diatonik –
+Chromatik – Enharmonik”)</p>
+<ul class="simple">
+<li><p>same diatonic region on LoF: relative keys/scales - although
+theoretically, LoF is equivalent to <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span>, composers use
+only a relatively small subset of it</p></li>
+<li><p>individual intervals can be associated with a regime on the
+fifth-width space: m2 (5Q) is diatonic, wheras A1 (7Q) is chromatic, and
+A7<span class="math notranslate nohighlight">\(\approx\)</span>P8 (12Q).e</p></li>
+<li><p>compare with “pitch class circulation” <span id="id3">[<a class="reference internal" href="8_bibliography.html#id57" title="Dmitri Tymoczko. A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice. Oxford University Press, Oxford, 2011.">62</a>]</span>, p. 158ff.</p></li>
+<li><p>fifth width measures Diatonicism -&gt; Chromaticism -&gt; Enharmonicism, <span id="id4">[<a class="reference internal" href="8_bibliography.html#id61" title="Zsolt Gárdonyi and Hubert Nordhoff. Harmonik. Möseler Verlag, Wolfenbüttel, 2002.">18</a>]</span>, p. 243</p></li>
+</ul>
+<p>[Insert image from SysMus tutorial]</p>
+<ul class="simple">
+<li><p>Analyze also the variance of fifth-widths, not only the means!</p></li>
+</ul>
+<p>How can enharmonic exchange (Verwechslung) and enharmonic equivalence
+(Umdeutung) distinguished? The former implies a reinterpretation of
+tonal pitch classes, i.e. a transition to a different location in tonal
+space, whereas the former is only motivated by notational constraints
+(parsimony) and tonal/diatonic relations remain constant.</p>
+<p>For example, in Debussy’s <em>Claire de lune</em>. It is in D<span class="math notranslate nohighlight">\(\flat\)</span>
+major with a middle segment in C<span class="math notranslate nohighlight">\(\sharp\)</span> minor which is
+enharmonically equivalent to D<span class="math notranslate nohighlight">\(\flat\)</span> minor but only has four
+sharps instead of eight flats.</p>
+<p>First, enharmonic equivalence should only be invoked to render notation
+easier, not more difficult. This means, that the number of accidentals
+has to be reduced by the transformation.</p>
+<p>Second, the key in question should be in a direct relation with the
+preceding and/or consequent key. In the case of the reinterpretation of
+the German sixth chord as a dominant chord effects a key shift by a
+semiton, which is far away in tonal space (LoF). In the Debussy example,
+the keys are only <span class="math notranslate nohighlight">\(R\)</span> related after applying the equivalence.</p>
+</div>
+<div class="section" id="expansion-of-local-harmonic-content">
+<h2><span class="section-number">11.2. </span>Expansion of local harmonic content<a class="headerlink" href="#expansion-of-local-harmonic-content" title="Permalink to this headline">¶</a></h2>
+<p>Fifth width per measure in a piece.</p>
+<p>A couple of examples</p>
+<div class="section" id="over-time">
+<h3><span class="section-number">11.2.1. </span>Over time<a class="headerlink" href="#over-time" title="Permalink to this headline">¶</a></h3>
+<p>The change in fifth widths is differently on a global (piece) and a
+local (measure) scale. Globally, pieces cross the boundary to
+chromaticism quite early (which can already happen with ficta), and even
+to enharmonicism (because modulations to distant keys takes place). At
+the same time looking on a local harmonic scale we see that chromatic
+(“dissonant”) harmonies are rare on average (mode, mean, median) but are
+increasing historically (with an interesting wavelike pattern - what
+does it mean?). Locally, pieces do not cross the enharmonic threshold
+(on average)</p>
+</div>
+</div>
+<div class="section" id="enharmonic-spectrum">
+<h2><span class="section-number">11.3. </span>Enharmonic spectrum<a class="headerlink" href="#enharmonic-spectrum" title="Permalink to this headline">¶</a></h2>
+<p>In the extreme case, for each note, a random tonal representative of the
+neutral pitch class is sampled uniformly. =&gt; unpredictable because
+infinite possibilities.</p>
+<p>In practice, only a few representatives are likely candidates: not
+uniform prior on representatives but concentrated (has <em>a lot</em> to do
+with surrounding notes–context–but this is not possible on the
+bag-of-notes model).</p>
+<p>Anyway, <em>if</em> absolute enharmonicism would prevail, the prior on the
+representatives would be flat (but this does not even happen in 12-tone
+music, show some examples). In “moderate” enharmonicism, some candidates
+would be preferred.</p>
+<p>I can measure hoe many representatives of a pitch class occur in a
+piece.</p>
+<p>=&gt; <strong>enharmonic pitch-class entropy</strong> is a measure of enharmonicism
+(works obviously only with spelled pitch classes)</p>
+<p>But: Even in a Bach piece (or older), e.g. F<span class="math notranslate nohighlight">\(\sharp\)</span> and
+G<span class="math notranslate nohighlight">\(\flat\)</span> can co-occur. Because they occur in different contexts
+(different keys/tonal centers), they are <strong>not</strong> enharmonically
+equivalent. In the bag-of-notes model we need to factor in the fact of
+how likely it is to belong to a tonal center:</p>
+<p>Which I already can estimate because of the mixture/topic model!</p>
+<p>Thus, <strong>enharmonicism</strong> can be operationalized as the pitch-class
+entropy, weighted by the likelihood to belong to different
+tonalities/clusters/keys/tone fields.</p>
+<p>=&gt; maybe inverse weight, because: higher weights of F# and Gb in a Bach
+piece should trigger a new mixture component whereas in an extended
+tonal piece it might just adjust the parameters of existing components
+(variance)</p>
+<p>[By the way, enharmonic distance is 12n (in fifths)]</p>
+<p>But maybe also: actually inverse because in tonal music, enharmonic
+notes are outliers whereas in enharmonic music they get a lot of
+probability mass.</p>
+<p>But then: How to distinguish enharmonically equivalent tonal regions
+from random enharmonicity?</p>
+<p>—&gt; entropy might help</p>
+<p>If entropy is low, they should be outliers. If it is high, enharmonicism
+can be assumed.</p>
+<p>Entropy is <strong>highest</strong> when all representatives are equally likely
+(ideally, 12-tone music).</p>
+<p>Thus: the higher the enharmonic pitch-class entropy the higher is
+enharmonicism.</p>
+<p><strong>Hypothesis:</strong> EPCE increases over time (and is maximal with 12-tone
+compositions)</p>
+<hr class="docutils" />
+<p>Segmentation can be either achieved in a fixed manner by bars, groups of
+bars, or segmentation sign posts such as key-signature changes or double
+bars.</p>
+<p>A data-driven segmentation could use the notes themselves.</p>
+<p>Then, segment length <span class="math notranslate nohighlight">\(l\)</span> would be informative about tonal
+stability / rate of tonality changes</p>
+<ul class="simple">
+<li><p>given the optimal number of clusters from the mixture model, apply
+key-scape algorithm. It should give rise to a much clearer
+segmentation with <span class="math notranslate nohighlight">\(K&lt;&lt;24\)</span> components.</p></li>
+<li><p>Again, use Information Theory to determine best segmentation. (lowest
+entropy, per segment?, KL divergence with component distributions?)</p></li>
+<li><p>How can these differences be measured? (not always binary)</p></li>
+</ul>
+<p>Laws can govern <em>primary parameters</em> which allow for syntactic relations
+between discrete units (such as pitch, or rhythm), and <em>secondary
+parameters</em> which discribe continous dimensions such as timbre,
+dynamics, etc.</p>
+<p><strong>Tonal Centers</strong></p>
+<ul class="simple">
+<li><p>Number of Tonal Centers</p></li>
+<li><p>Distance of Tonal Centers</p></li>
+<li><p>Divergence on the Tonnetz</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="coevolution.html"
+       title="previous chapter">← <span class="section-number">10. </span>Tonal pitch-class coevolution</a>
+  </li>
+  <li class="next">
+    <a href="topic_modeling.html"
+       title="next chapter"><span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA) →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

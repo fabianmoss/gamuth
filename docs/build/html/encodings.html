@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-      <title>13. Digital encodings of music</title>
+      <title>6. Music Encoding</title>
     
           <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
           <link rel="stylesheet" href="_static/theme.css " type="text/css" />
@@ -22,8 +22,8 @@
     
   <link rel="index" title="Index" href="genindex.html" />
   <link rel="search" title="Search" href="search.html" />
-  <link rel="next" title="14. Segmentation" href="5_segmentation.html" />
-  <link rel="prev" title="6. Pitch-class based music analysis" href="5_notes.html" /> 
+  <link rel="next" title="7. Pitch-class based music analysis" href="5_notes.html" />
+  <link rel="prev" title="5. Harmony" href="4_harmony.html" /> 
   </head>
 
   <body>
@@ -151,6 +151,27 @@
           </li>
 
         
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Music Encoding</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#audio" class="reference internal">Audio</a></li>
+                
+                  <li class="toctree-l2"><a href="#common-western-music-notation" class="reference internal">Common Western Music Notation</a></li>
+                
+                  <li class="toctree-l2"><a href="#symbolic" class="reference internal">Symbolic</a></li>
+                
+                  <li class="toctree-l2"><a href="#video" class="reference internal">Video</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
           <li class="toctree-l1 ">
             
               <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
@@ -160,19 +181,47 @@
           </li>
 
         
-          <li class="toctree-l1 current">
+          <li class="toctree-l1 ">
             
-              <a href="#" class="reference internal current">Digital encodings of music</a>
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
             
 
             
-              <ul>
-                
-                  <li class="toctree-l2"><a href="#audio" class="reference internal">Audio</a></li>
-                
-                  <li class="toctree-l2"><a href="#symbolic" class="reference internal">Symbolic</a></li>
-                
-              </ul>
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
             
           </li>
 
@@ -188,7 +237,7 @@
         
           <li class="toctree-l1 ">
             
-              <a href="6_advanced.html" class="reference internal ">Advanced applications</a>
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
             
 
             
@@ -234,18 +283,18 @@
   <ul class="breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
     
-    <li><span class="section-number">13. </span>Digital encodings of music</li>
+    <li><span class="section-number">6. </span>Music Encoding</li>
   </ul>
   
 
   <ul class="page-nav">
   <li class="prev">
-    <a href="5_notes.html"
-       title="previous chapter">← <span class="section-number">6. </span>Pitch-class based music analysis</a>
+    <a href="4_harmony.html"
+       title="previous chapter">← <span class="section-number">5. </span>Harmony</a>
   </li>
   <li class="next">
-    <a href="5_segmentation.html"
-       title="next chapter"><span class="section-number">14. </span>Segmentation →</a>
+    <a href="5_notes.html"
+       title="next chapter"><span class="section-number">7. </span>Pitch-class based music analysis →</a>
   </li>
 </ul>
   
@@ -253,24 +302,46 @@
 <hr>
           <div class="content" role="main" v-pre>
             
-  <div class="section" id="digital-encodings-of-music">
-<h1><span class="section-number">13. </span>Digital encodings of music<a class="headerlink" href="#digital-encodings-of-music" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="music-encoding">
+<h1><span class="section-number">6. </span>Music Encoding<a class="headerlink" href="#music-encoding" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="audio">
-<h2><span class="section-number">13.1. </span>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.1. </span>Audio<a class="headerlink" href="#audio" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>WAV</p></li>
 <li><p>MP3</p></li>
 </ul>
 </div>
+<div class="section" id="common-western-music-notation">
+<h2><span class="section-number">6.2. </span>Common Western Music Notation<a class="headerlink" href="#common-western-music-notation" title="Permalink to this headline">¶</a></h2>
+<p>Also known as the <em>score</em>.</p>
+<p>Basic elements</p>
+<ul class="simple">
+<li><p>lines and spaces -&gt; generic intervals</p></li>
+<li><p>noteheads and beams -&gt; durations</p></li>
+<li><p>time signature –&gt; meter</p></li>
+<li><p>key signature</p></li>
+</ul>
+<p>lead sheets</p>
+</div>
 <div class="section" id="symbolic">
-<h2><span class="section-number">13.2. </span>Symbolic<a class="headerlink" href="#symbolic" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">6.3. </span>Symbolic<a class="headerlink" href="#symbolic" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>MIDI</p></li>
 <li><p>MusicXML</p></li>
 <li><p>MEI</p></li>
 <li><p>humdrum **kern</p></li>
+<li><p>ABC</p></li>
+<li><p>Volpiano</p></li>
 <li><p>…</p></li>
 </ul>
+</div>
+<div class="section" id="video">
+<h2><span class="section-number">6.4. </span>Video<a class="headerlink" href="#video" title="Permalink to this headline">¶</a></h2>
+<p>Normally, video is not taken into account when talking about music encodings.
+But the visual aspect is very important, in particular when the music involves forms of
+bodily expression such as dance or celebrations at a festival, as well as light shows.
+In certain music genres, especially since the late 20th century, music and video
+are inseparable.  (also research on Motion Capture <span id="id1">[<a class="reference internal" href="8_bibliography.html#id13" title="Anne Danielsen, Mari Romarheim Haugen, and Alexander Refsum Jensenius. Moving to the Beat: Studying Entrainment to Micro-Rhythmic Changes in Pulse by Motion Capture. Timing &amp; Time Perception, 3(1-2):133–154, May 2015. doi:10.1163/22134468-00002043.">11</a>]</span>).</p>
 </div>
 </div>
 
@@ -279,12 +350,12 @@
           <div class="page-nav">
             <div class="inner"><ul class="page-nav">
   <li class="prev">
-    <a href="5_notes.html"
-       title="previous chapter">← <span class="section-number">6. </span>Pitch-class based music analysis</a>
+    <a href="4_harmony.html"
+       title="previous chapter">← <span class="section-number">5. </span>Harmony</a>
   </li>
   <li class="next">
-    <a href="5_segmentation.html"
-       title="next chapter"><span class="section-number">14. </span>Segmentation →</a>
+    <a href="5_notes.html"
+       title="next chapter"><span class="section-number">7. </span>Pitch-class based music analysis →</a>
   </li>
 </ul><div class="footer" role="contentinfo">
       &#169; Copyright 2021, Fabian C. Moss.

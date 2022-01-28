@@ -83,19 +83,20 @@ See the documentation :ref:`api` for examples how to use the library, its classe
    3_set_theory
    4_time
    4_harmony 
-   5_notes
    encodings
+   5_notes
+   pc_distributions
+   history
+   coevolution
+   diatonicism_chromaticism
+   topic_modeling
    5_segmentation
    6_advanced
 
    8_bibliography
 
 .. 4_Fourier_pitch_space
-.. 2_sequences
 .. 3_representations
-.. 8_bibliography
-
-.. 5_notes
 
 .. Indices and tables
 .. ------------------

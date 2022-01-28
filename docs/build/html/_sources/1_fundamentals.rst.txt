@@ -17,14 +17,15 @@ Edgar Varèse, see also :cite:`Yust2018_OrganizedTimeRhythm`).
 Later we will see that this description falls short of encompassing many central aspects to music
 but it provides a good starting point for our considerations. Taking this definition for granted
 means that we can conceptualize music within a two-dimensional framework, where the axes 
-represent sound and time, respectively (see :numref:`fig_soundtime`).
+represent sound and time, respectively (see :numref:`fig_soundtime`). Note that only the x-axis ("Time") 
+is not represented as an arrow to indicate that in music (as in life) we can only move forward.
 
 .. _fig_soundtime:
 
 .. tikz:: Two-dimensional depiction of music: music as sound organized in time. 
 
-   \draw[thick,->,>=stealth] (-0.3,0) -- (8,0) node[midway,below] {Time};
-   \draw[thick,->,>=stealth] (0,-0.3) -- (0,3) node[midway,above,sloped] {Sound};
+   \draw[thick,->,>=stealth] (-0.3,0) -- (8,0) node[midway,below] {Time}; 
+   \draw[thick] (0,-0.3) -- (0,3) node[midway,above,sloped] {Sound};
 
 This is also the way music is usually displayed in *Digital Audio Workstations* (DAW) that feature
 a master window where music blocks can be arranged along a fixed timeline. Producing music in 
@@ -130,28 +131,25 @@ by an integer :math:`k \in \mathbb{Z}_{12}`.
    \mathbb{Z}_{12}=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\},
 
 and usually one sets :math:`0\equiv \text{C}`. This allows to use *modular arithmetic*
-do calculations with pitch classes.
+do calculations with pitch classes. In standard music notation, this would be rendered as 
+
+.. NOTE: currently, LaTeX output for Lilypond scores doesn't work yet. 
+   A workaround is to compile the .ly files separately (externally) and then include them as .pdf
 
 .. only:: html
 
-   In standard music notation, this would be rendered as 
-
-   .. lily::
-      :noedge:
+   .. lilyinclude:: ./lilypond/chromatic.ly
       :nofooter:
+      :noedge:
       :audio:
 
-      \version "2.20.0"
-      \header {
-      }
-      \score {
-      <<
-         \new Staff \relative c' {
-         \tempo 4 = 120
-            c4 cis d ees e f fis g aes a bes b
-      }
-      >>
-      }
+.. only:: latex
+
+   .. figure:: ./lilypond/chromatic.pdf
+
+      The chromatic scale. 
+
+
 
 Other invariances
 ~~~~~~~~~~~~~~~~~

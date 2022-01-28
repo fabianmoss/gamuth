@@ -1,4 +1,4 @@
-Advanced applications
+Advanced topics
 =====================
 
 .. _Pitch spelling:
@@ -81,3 +81,9 @@ More advanced models
 ....................
 
 Neural nets
+
+Music analysis with the discrete Fourier transform
+--------------------------------------------------
+
+Topic modeling 
+--------------

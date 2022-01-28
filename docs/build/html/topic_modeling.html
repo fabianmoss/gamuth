@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>12. Topic Modeling with Latent Dirichlet Allocation (LDA)</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="13. Segmentation" href="5_segmentation.html" />
+  <link rel="prev" title="11. Diatonicism — Chromaticism — Enharmonicism" href="diatonicism_chromaticism.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#background" class="reference internal">Background</a></li>
+                
+                  <li class="toctree-l2"><a href="#a-generative-model-for-a-musical-piece" class="reference internal">A generative model for a musical piece</a></li>
+                
+                  <li class="toctree-l2"><a href="#extension-of-the-lda-music-model" class="reference internal">Extension of the LDA music model</a></li>
+                
+                  <li class="toctree-l2"><a href="#topics-inferred-from-the-corpus" class="reference internal">Topics inferred from the corpus</a></li>
+                
+                  <li class="toctree-l2"><a href="#number-of-topics-reveals-hierarchy-of-tonality" class="reference internal">Number of topics reveals hierarchy of tonality</a></li>
+                
+                  <li class="toctree-l2"><a href="#historical-inferences-for-each-value-of-k" class="reference internal">Historical inferences for each value of K</a></li>
+                
+                  <li class="toctree-l2"><a href="#topic-coevolution" class="reference internal">Topic coevolution</a></li>
+                
+                  <li class="toctree-l2"><a href="#pitch-class-topic-coevolution" class="reference internal">Pitch class – topic coevolution</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA)</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="diatonicism_chromaticism.html"
+       title="previous chapter">← <span class="section-number">11. </span>Diatonicism — Chromaticism — Enharmonicism</a>
+  </li>
+  <li class="next">
+    <a href="5_segmentation.html"
+       title="next chapter"><span class="section-number">13. </span>Segmentation →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="topic-modeling-with-latent-dirichlet-allocation-lda">
+<h1><span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA)<a class="headerlink" href="#topic-modeling-with-latent-dirichlet-allocation-lda" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rework this chapter based on the pedagogical introduction
+in <span id="id1">[<a class="reference internal" href="8_bibliography.html#id15" title="Fabian C. Moss and Martin Rohrmeier. Discovering Tonal Profiles with Latent Dirichlet Allocation. Music &amp; Science, 4:20592043211048827, January 2021. doi:10.1177/20592043211048827.">40</a>]</span>.</p>
+</div>
+<p><strong>Topic Models: What are corpora, documents, topics? “Distributional
+hypothesis” (Harris, 1954; Firth, 1957).</strong></p>
+<p>In general, topic models describe the generative process of how
+documents (viewed as bags of words) have been created. A document is
+defined as a distribution over topics and a topic is defined as a
+distribution over words. To generate a new document, one first chooses a
+distribution over topics, and for each word in the document choose a
+topic from this distribution. The word is then sampled from the
+distribution over words of this topic.</p>
+<p>A generative model for documents is based on simple probabilistic
+sampling rules that describe how words in documents might be
+generated on the basis of latent (random) variables. When fitting a
+generative model, the goal is to find the best set of latent
+variables that can explain the observed data (i.e., observed words
+in documents), assuming that the model actually generated the data.
+(Steyvers &amp; Griffiths, 2007)</p>
+<div class="section" id="background">
+<h2><span class="section-number">12.1. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>LDA in general (short review of relevant papers), numerous
+extensions of the basic model</p></li>
+<li><p>application to music, review model of
+<span id="id2">[<a class="reference internal" href="8_bibliography.html#id59" title="Diane J Hu and Lawrence K Saul. A probabilistic topic model for unsupervised learning of musical key-profiles. In Proceedings of the 10th International Society for Music Information Retrieval Conference (ISMIR 2009), 441–446. Kobe, Japan, October 2009. doi:10.1.1.174.7644.">23</a>, <a class="reference internal" href="8_bibliography.html#id60" title="Diane J Hu and Lawrence K Saul. A Probabilistic Topic Model for Music Analysis. In Y. Bengio, D. Schuurmans, J. D. Lafferty, C. K. I. Williams, and A. Culotta, editors, Proceedings of the 22nd Conference on Neural Information Processing Systems 22 (NIPS 2009), 1–4. Vancouver, Canada, 2009.">24</a>]</span></p></li>
+</ul>
+<p>A <strong>corpus</strong> <span class="math notranslate nohighlight">\(\mathcal C\)</span> is a set of <span class="math notranslate nohighlight">\(M\)</span> pieces. For each
+piece, the <strong>distribution of topics</strong> <span class="math notranslate nohighlight">\(\theta\)</span> is drawn from a
+Dirichlet distribution with fixed corpus parameter <span class="math notranslate nohighlight">\(\alpha.\)</span></p>
+<p>A collection (multiset) of <strong>notes</strong>
+<span class="math notranslate nohighlight">\(\boldsymbol{u}_n = \{u_{n1},\ldots,u_{nL}\}\)</span> defines a
+<strong>segment</strong>. The number of unique notes in a corpus is the <strong>vocabulary
+size</strong> <span class="math notranslate nohighlight">\(V\)</span>. Each segment <span class="math notranslate nohighlight">\({u}_n\)</span> (e.g. beat, slice, bar,
+section, …) is assigned a unique <strong>topic label</strong> <span class="math notranslate nohighlight">\(z\)</span> (key,
+tonality, mode, …). A <strong>piece</strong>
+<span class="math notranslate nohighlight">\(\mathcal P = \{\boldsymbol{u}_1, \ldots, u_N\}\)</span> consists of
+<span class="math notranslate nohighlight">\(N\)</span> segments with associated topic labels. A piece can have at
+most <span class="math notranslate nohighlight">\(N\)</span> topics, if <span class="math notranslate nohighlight">\(N\leq V\)</span>, otherwise at most <span class="math notranslate nohighlight">\(V\)</span>
+topics. <strong>Topics</strong> <span class="math notranslate nohighlight">\(\beta\)</span> are defined as distributions over
+notes.
+Since there are <span class="math notranslate nohighlight">\(K\)</span> topics and <span class="math notranslate nohighlight">\(V\)</span> distinct notes,
+<span class="math notranslate nohighlight">\(\beta\)</span> can be represented as a <span class="math notranslate nohighlight">\(V \times K\)</span> matrix where
+<span class="math notranslate nohighlight">\(\beta_{ij}\)</span> encodes the probability of note <span class="math notranslate nohighlight">\(i\)</span> in topic
+<span class="math notranslate nohighlight">\(j\)</span>.</p>
+<div class="section" id="definitions-and-assumptions">
+<h3><span class="section-number">12.1.1. </span>Definitions and Assumptions<a class="headerlink" href="#definitions-and-assumptions" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>A <em>note</em> <span class="math notranslate nohighlight">\(u \in \mathbb Z_{12}\)</span>.</p></li>
+<li><p>A <em>segment</em> <span class="math notranslate nohighlight">\(\mathbf{u}_n = \{u_{n1}, \ldots{}, u_{nL}\}\)</span>. In a
+bag-of-notes (BoN) model, a segment can also be represented by a
+12-dimensional count vector <span class="math notranslate nohighlight">\(x_n\)</span>, where <span class="math notranslate nohighlight">\(x_n^j\)</span> counts
+the number of times note <span class="math notranslate nohighlight">\(j\)</span> occurs.</p></li>
+<li><p>A <em>piece</em> <span class="math notranslate nohighlight">\(s\)</span> is a sequence of <span class="math notranslate nohighlight">\(N\)</span> segments:
+<span class="math notranslate nohighlight">\(s=\{\mathbf u_1, ..., \mathbf u_N \}\)</span>. Again, in a BoN model a
+piece can be represented as a sequence of count vectors
+<span class="math notranslate nohighlight">\(X=(x_1, ..., x_N)\)</span>.</p></li>
+<li><p>A <em>corpus</em> is a collection of <span class="math notranslate nohighlight">\(M\)</span> pieces,
+<span class="math notranslate nohighlight">\(\mathcal S = \{s_1, ..., s_M\}\)</span>.</p></li>
+<li><p>Finally, a <em>topic</em> <span class="math notranslate nohighlight">\(z\)</span> is a probability distribution over the
+12 pitch classes. In their model, a topic models the concept of key
+and each segment is assumed to have precisely one topic/key. Thus,
+the sequence of topics in a given piece is modeled as
+<span class="math notranslate nohighlight">\(\mathbf z = (z_1, ..., z_N)\)</span>.</p></li>
+<li><p>They fix the number of topics to <span class="math notranslate nohighlight">\(K=24\)</span>, based on prior music
+theory knowledge.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="a-generative-model-for-a-musical-piece">
+<h2><span class="section-number">12.2. </span>A generative model for a musical piece<a class="headerlink" href="#a-generative-model-for-a-musical-piece" title="Permalink to this headline">¶</a></h2>
+<p>Bag of notes model… multinomial distribution… no order/structure
+among the classes (tpcs)</p>
+<ul class="simple">
+<li><p>Formalization of LDA as a probabilistic graphical model (PGM)</p></li>
+<li><p>PGMs are generative models. Toy example to generate pieces.</p></li>
+</ul>
+<ol class="arabic">
+<li><p>For each piece <span class="math notranslate nohighlight">\(s_m\)</span>, <span class="math notranslate nohighlight">\(m=1, ..., M\)</span>, draw a
+<span class="math notranslate nohighlight">\(K\)</span>-dimensional topic weight vector <span class="math notranslate nohighlight">\(\theta\)</span> from a
+Dirichlet distribution
+<span class="math notranslate nohighlight">\(\left(\theta \sim \mathrm{Dir}(\alpha)\right)\)</span> to determine
+which keys are likely to occur:</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+    p(\theta \mid \alpha) = \frac{\Gamma\left(\sum_i \alpha_i\right)}{\prod_i \Gamma \left(\alpha_i\right)}\prod_i \theta^{\alpha_i - 1}.
+    \end{aligned}\]</div>
+<p>The corpus-level parameter <span class="math notranslate nohighlight">\(\alpha\)</span> determines which topics are
+likely to co-occur in pieces.</p>
+</li>
+<li><p>For each segment <span class="math notranslate nohighlight">\(\mathbf u_n\)</span>, <span class="math notranslate nohighlight">\(n=1, ...N\)</span>, in the
+piece, choose topic <span class="math notranslate nohighlight">\(z_n \in \{1, ..., K\}\)</span> from the
+multinomial distribution <span class="math notranslate nohighlight">\(p(z_n=k \mid \theta) = \theta_k\)</span>.</p></li>
+<li><p>For each note <span class="math notranslate nohighlight">\(u_{nl}\)</span> in <span class="math notranslate nohighlight">\(\mathbb u_n\)</span>,
+<span class="math notranslate nohighlight">\(l=1, ..., L\)</span>, choose a pitch-class from the multinomial
+distribution <span class="math notranslate nohighlight">\(p(u_{nl} = i \mid z_n=k, \beta)=\beta_{ij}\)</span>,
+where <span class="math notranslate nohighlight">\(\beta\)</span> is a <span class="math notranslate nohighlight">\(V \times K\)</span> matrix encoding each
+topic as a distribution over <span class="math notranslate nohighlight">\(V=12\)</span> pitch classes.</p></li>
+</ol>
+<p>This generative process defines a joint probability distribution over
+observed and latent random variables for each piece in the corpus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+    p(\theta, \mathbf z, s \mid \alpha, \beta) = p(\theta \mid \alpha)\prod_{n=1}^N p(z_n \mid \theta) \prod_{l=1}^L p(u_{nl} \mid z_n, \beta).\end{aligned}\]</div>
+<p>In this model, a piece is a bag-of-segments, and segments are
+bags-of-notes.</p>
+<div class="section" id="inference-and-learning">
+<h3><span class="section-number">12.2.1. </span>Inference and Learning<a class="headerlink" href="#inference-and-learning" title="Permalink to this headline">¶</a></h3>
+<p>The model is fully specified by the corpus-level Dirichlet parameter
+<span class="math notranslate nohighlight">\(\alpha\)</span> and the key-profile matrix <span class="math notranslate nohighlight">\(\beta\)</span>. Under the
+assumption that they are known, key-profiles for segments or pieces can
+be inferred by computing the posterior distribution</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+    p(\theta, \mathbf z \mid \alpha, \beta, s) = \frac{p(\theta, \mathbf z, s \mid \alpha, \beta)}{p(s\mid \alpha, \beta)},\end{aligned}\]</div>
+<p>according to Bayes’ rule.</p>
+<p>The denominator in the last equation is called the <em>marginal
+distribution</em> or <em>likelihood</em> of a piece. The learning problem for the
+present setting is to maximize the log-likelihood of all pieces in the
+corpus (“Which combination of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> make it
+most likely that these pieces were generated?”). Thus, we want to
+maximize</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+\mathcal L(\alpha, \beta) = \int d\theta p(\theta \mid \alpha) \prod_{n=1}^N \sum_{z_n=1}^K p(z_n \mid \theta) \prod_{l=1}^L p(u_{nl}\mid z_k, \beta).\end{aligned}\]</div>
+<p>The simplest learning algorithm for this task is the expectation
+maximization (EM) algorithm. Since this is not tractable, it has to be
+approximated. They use variational approximation. I use Gibbs sampling.
+Gibbs sampling can be understood as a generalization of the EM
+algorithm. Instead of maximizing at each of its two steps (E and M),
+Gibbs sampling uses the conditional distributions and samples from them.</p>
+<ul class="simple">
+<li><p>Learn model parameters from corpus given a number <span class="math notranslate nohighlight">\(K\)</span> of topics
+via Gibbs sampling.</p></li>
+<li><p>Train-test split not self-evident. Possibilities:</p>
+<ul>
+<li><p>Train on whole corpus</p></li>
+<li><p>Lern topics for different periods separately</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="extension-of-the-lda-music-model">
+<h2><span class="section-number">12.3. </span>Extension of the LDA music model<a class="headerlink" href="#extension-of-the-lda-music-model" title="Permalink to this headline">¶</a></h2>
+<p>Describe potential adaptions of the LDA model. In particular the
+difference to the pitch class representation and the interpretation of
+topics as tone fields, not keys</p>
+<ul class="simple">
+<li><p>Model notes in <span class="math notranslate nohighlight">\(\mathbb Z\)</span> instead of <span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span>
+(line of fifths instead of circle of fifths).</p></li>
+<li><p>Use different segmentations:</p>
+<ul>
+<li><p>Slices (onsets)</p></li>
+<li><p>Beats</p></li>
+<li><p>Bars</p></li>
+<li><p>Key-regions (as defined by accidentals)</p></li>
+<li><p>entire piece</p></li>
+</ul>
+</li>
+<li><p>Allow for more topics. Hypothesis: chromatic passages, hexatonic,
+octatonic, pentatonic, and variants of several keys will show up as
+topics.</p></li>
+<li><p>Take note-order into account: Griffiths, Steyvers, Blei &amp; Tenenbaum
+(2005), and Andrews &amp; Vigliocco (2010)</p></li>
+<li><p>Dynamic Topic Modeling - Changes of topics over time: Blei &amp; Lafferty
+(2006)</p></li>
+</ul>
+<p>Other Features / Random Variables</p>
+<ul class="simple">
+<li><p>Length in notes</p></li>
+<li><p>Pitch-class distribution in <span class="math notranslate nohighlight">\(\mathbb Z\)</span> and in
+<span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span></p></li>
+<li><p>Number of key changes</p></li>
+<li><p>Chromaticism</p></li>
+<li><p>Meter / Meter change</p></li>
+</ul>
+<p>General Notes:</p>
+<ul class="simple">
+<li><p>Interpretation: Because the musical vocabulary is quite small when
+notes are the equivalent of words, it is not sufficient to just look
+at the most frequent notes in a topic in order to interpret it but
+rather to inspect the whole distribution over notes.</p></li>
+<li><p>Similarity between documents (pieces) and subcorpora –&gt; Clustering</p></li>
+</ul>
+</div>
+<div class="section" id="topics-inferred-from-the-corpus">
+<h2><span class="section-number">12.4. </span>Topics inferred from the corpus<a class="headerlink" href="#topics-inferred-from-the-corpus" title="Permalink to this headline">¶</a></h2>
+<p>Figure [fig:topic_dists] shows the note distributions for the
+<span class="math notranslate nohighlight">\(K=7\)</span> inferred topics.</p>
+<p>The relative weights of the topics in the overall corpus can be seen in
+Figure [fig:topics_weights]. The most common topic is topic 0
+(“(transposed) diatonic”) and the least common is topic 4 (“far-flats”)</p>
+<p>Besides calculating the overall importance of topics in the corpus, one
+can also look at the relative topic weights within individual pieces.
+Figure [fig:raw_topics] shows this distribution. Analogous to the
+pitch-class evolution from Figure [], pieces that are assigned to the
+same year are accumulated (<strong>Describe procedure!</strong>).</p>
+<p>It is obvious how the lack of data in earlier periods affects the
+pattern we see. Nonetheless, it can be seen, that earlier pieces rarely
+contain the certain topics which only occur later.</p>
+</div>
+<div class="section" id="number-of-topics-reveals-hierarchy-of-tonality">
+<h2><span class="section-number">12.5. </span>Number of topics reveals hierarchy of tonality<a class="headerlink" href="#number-of-topics-reveals-hierarchy-of-tonality" title="Permalink to this headline">¶</a></h2>
+<p>“Vertical”: Different values of <span class="math notranslate nohighlight">\(K\in [2,12]\)</span> indicate
+hierarchical nature of tonality.</p>
+<ol class="arabic simple">
+<li><p>Compare topic distributions for different values of <span class="math notranslate nohighlight">\(K\)</span></p></li>
+<li><p>Relate topics from different <span class="math notranslate nohighlight">\(K\)</span>-stages with each other: coarse
+to fine, correlations between some topics should increase</p></li>
+</ol>
+<p>All matrices where based on documents. In the classical LDA setting, a
+corpus is a bag of documents. We are in particular interested in
+historical developments, so the chronological order is important.
+Moreover, we do not a piece for each year and for some years we have
+many pieces. The first step is to re-assign each piece its “display
+year” (composition, publication, of composer half-life). Then we average
+all pieces in the same year. We now have at most one topic distribution
+per year in the corpus.</p>
+<p>…</p>
+<p>But there are still years for which we do not have data, in particular
+in the earlier periods. Pragmatically, if we do not have a topic
+distribution for a given year, we take the one from the previous year.
+To that end, we create a time index ranging from the earliest to the
+latest date in the corpus.</p>
+<p>We then iterate over all years and use the inferred topic distributions
+if there is one for that particular year. If not, we use the same as in
+the year before.</p>
+</div>
+<div class="section" id="historical-inferences-for-each-value-of-k">
+<h2><span class="section-number">12.6. </span>Historical inferences for each value of <span class="math notranslate nohighlight">\(K\)</span><a class="headerlink" href="#historical-inferences-for-each-value-of-k" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sliding-windows-reveal-trends">
+<h3><span class="section-number">12.6.1. </span>Sliding windows reveal trends<a class="headerlink" href="#sliding-windows-reveal-trends" title="Permalink to this headline">¶</a></h3>
+<p>Figure [fig:raw_topics] takes a very fine-grained view on the evolution
+of the topic distribution because each year is a single data point. In
+order to see larger trends, we can zoom out and look at smoothed
+versions of the same data. We inspect rolling averages with a window
+size of 30, 50, and a hundred years to see generational, epochal and
+secular trends.</p>
+<p>In these figures we can observe a) the relative topic importances
+(weights) over time, and b) identify breaking points and local extrema.</p>
+<p>Moreover, the entropy of these distributions is informative!</p>
+<p>Todo: PCA shows relation between topics and documents in (reduced)
+note-space</p>
+</div>
+</div>
+<div class="section" id="topic-coevolution">
+<h2><span class="section-number">12.7. </span>Topic coevolution<a class="headerlink" href="#topic-coevolution" title="Permalink to this headline">¶</a></h2>
+<p>topic correlations motivate hierarchical clustering</p>
+</div>
+<div class="section" id="pitch-class-topic-coevolution">
+<h2><span class="section-number">12.8. </span>Pitch class – topic coevolution<a class="headerlink" href="#pitch-class-topic-coevolution" title="Permalink to this headline">¶</a></h2>
+<p>Overall Figure [fig:tpc_topic_coevolution] almost looks like a block
+matrix.</p>
+<p>Locally, the fifths order is preserved, especially the diatonic, as seen
+by the row clusters! Regarding the topics, we see two major clusters.
+The left most one is “chromatic notes” and the right one is “diatonic
+plus”. The diatonic cluster contains the diatonic notes without F, which
+get clustered with F but without B (note also that when B is included,
+Bb is most negatively correlated, and, when F is included, F# is most
+negatively correlated). The tritone is the condition to separate these
+as well as the chromatic semitone. Then it gets extended by sharps up to
+G# which makes sense because of the dominant of a minor. The last topic
+to join this cluster extends it into the flat direction. We have already
+noted that tonal music is generally sharpwards oriented so it makes
+sense that the evolution of flat notes is weaker correlated with
+diatonic notes than sharp ones.</p>
+<p>The second cluster…</p>
+<div class="section" id="beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm">
+<h3><span class="section-number">12.8.1. </span>Beyond the bag-of-notes model: the Hidden Markov Topic Model (HMTM)<a class="headerlink" href="#beyond-the-bag-of-notes-model-the-hidden-markov-topic-model-hmtm" title="Permalink to this headline">¶</a></h3>
+<p>Improving the bag-of-notes model with a Hidden Markov Topic Model</p>
+</div>
+<div class="section" id="discussion">
+<h3><span class="section-number">12.8.2. </span>Discussion<a class="headerlink" href="#discussion" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Result 1: Historically, ever larger portions of pitch space are explored</p></li>
+<li><p>There is a trend from diatonic &gt; chromatic &gt; enharmonic pieces, but it
+is not monotonic. In the 19th century, there are diatonic Lieder
+(composer) and Alkan, who has the greatest tonality range
+(diatonic-enharmonic).</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="diatonicism_chromaticism.html"
+       title="previous chapter">← <span class="section-number">11. </span>Diatonicism — Chromaticism — Enharmonicism</a>
+  </li>
+  <li class="next">
+    <a href="5_segmentation.html"
+       title="next chapter"><span class="section-number">13. </span>Segmentation →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
