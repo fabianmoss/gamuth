@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {9.1}Modeling tonal pitch\sphinxhyphen {}class coevolution}{31}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Deciphering pitch\sphinxhyphen {}class coevolution}{32}{section.9.2}%
 \contentsline {section}{\numberline {9.3}TPC coevolution per historical period}{32}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Diatonicism \textendash {} Chromaticism \textendash {} Enharmonicism}{35}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Diatonicism — Chromaticism — Enharmonicism}{35}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Expansion of tonal material}{35}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Expansion of local harmonic content}{36}{section.10.2}%
 \contentsline {subsection}{\numberline {10.2.1}Over time}{36}{subsection.10.2.1}%
@@ -83,28 +83,31 @@
 \contentsline {section}{\numberline {12.8}Pitch class \textendash {} topic coevolution}{45}{section.12.8}%
 \contentsline {subsection}{\numberline {12.8.1}Beyond the bag\sphinxhyphen {}of\sphinxhyphen {}notes model: the Hidden Markov Topic Model (HMTM)}{45}{subsection.12.8.1}%
 \contentsline {subsection}{\numberline {12.8.2}Discussion}{45}{subsection.12.8.2}%
-\contentsline {chapter}{\numberline {13}Segmentation}{47}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Free segmentation}{47}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Contiguous segmentation}{47}{section.13.2}%
-\contentsline {section}{\numberline {13.3}Hierarchical segmentation}{47}{section.13.3}%
-\contentsline {section}{\numberline {13.4}Exhaustive segmentation}{47}{section.13.4}%
-\contentsline {chapter}{\numberline {14}Advanced applications}{49}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Pitch Spelling}{49}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Style (classification)}{49}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Feature clustering}{49}{subsection.14.2.1}%
-\contentsline {subsection}{\numberline {14.2.2}Hierarchical clustering}{49}{subsection.14.2.2}%
-\contentsline {section}{\numberline {14.3}History}{49}{section.14.3}%
-\contentsline {section}{\numberline {14.4}Performance}{49}{section.14.4}%
-\contentsline {section}{\numberline {14.5}Modeling musical sequences}{49}{section.14.5}%
-\contentsline {subsection}{\numberline {14.5.1}Hierarchical theories}{49}{subsection.14.5.1}%
-\contentsline {subsection}{\numberline {14.5.2}Formal models for music sequences}{50}{subsection.14.5.2}%
-\contentsline {subsubsection}{Regular Expressions}{50}{subsubsection*.5}%
-\contentsline {subsubsection}{n\sphinxhyphen {}gram models}{50}{subsubsection*.6}%
-\contentsline {subsubsection}{Hidden Markov models}{50}{subsubsection*.7}%
-\contentsline {subsubsection}{Probabilistic Context\sphinxhyphen {}Free Grammars}{50}{subsubsection*.8}%
-\contentsline {subsubsection}{More advanced models}{50}{subsubsection*.9}%
-\contentsline {chapter}{\numberline {15}Developers}{53}{chapter.15}%
-\contentsline {section}{\numberline {15.1}API \sphinxhyphen {} gamuth}{53}{section.15.1}%
-\contentsline {chapter}{Bibliography}{59}{chapter*.11}%
-\contentsline {chapter}{Python Module Index}{63}{section*.12}%
-\contentsline {chapter}{Index}{65}{section*.13}%
+\contentsline {chapter}{\numberline {13}Digital encodings of music}{47}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Audio}{47}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Symbolic}{47}{section.13.2}%
+\contentsline {chapter}{\numberline {14}Segmentation}{49}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Free segmentation}{49}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Contiguous segmentation}{49}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Hierarchical segmentation}{49}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Exhaustive segmentation}{49}{section.14.4}%
+\contentsline {chapter}{\numberline {15}Advanced applications}{51}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Pitch Spelling}{51}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Style (classification)}{51}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}Feature clustering}{51}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Hierarchical clustering}{51}{subsection.15.2.2}%
+\contentsline {section}{\numberline {15.3}History}{51}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Performance}{51}{section.15.4}%
+\contentsline {section}{\numberline {15.5}Modeling musical sequences}{51}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}Hierarchical theories}{51}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.2}Formal models for music sequences}{52}{subsection.15.5.2}%
+\contentsline {subsubsection}{Regular Expressions}{52}{subsubsection*.5}%
+\contentsline {subsubsection}{n\sphinxhyphen {}gram models}{52}{subsubsection*.6}%
+\contentsline {subsubsection}{Hidden Markov models}{52}{subsubsection*.7}%
+\contentsline {subsubsection}{Probabilistic Context\sphinxhyphen {}Free Grammars}{52}{subsubsection*.8}%
+\contentsline {subsubsection}{More advanced models}{52}{subsubsection*.9}%
+\contentsline {chapter}{\numberline {16}Developers}{55}{chapter.16}%
+\contentsline {section}{\numberline {16.1}API \sphinxhyphen {} gamuth}{55}{section.16.1}%
+\contentsline {chapter}{Bibliography}{61}{chapter*.11}%
+\contentsline {chapter}{Python Module Index}{65}{section*.12}%
+\contentsline {chapter}{Index}{67}{section*.13}%

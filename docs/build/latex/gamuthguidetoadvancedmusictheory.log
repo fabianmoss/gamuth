@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.1.19)  28 JAN 2022 10:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.1.19)  28 JAN 2022 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1208,22 +1208,7 @@ Chapter 5.
 
 ]
 Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 907--911
-[]\T1/qtm/m/n/10 The fact that $\OML/cmm/m/it/10 o; q; t$ \T1/qtm/m/n/10 are $\
-OMS/cmsy/m/n/10 2 \U/msb/m/n/10 Q$ \T1/qtm/m/n/10 al-lows for unique so-lu-tion
- of the equa-tions []\T1/qtm/b/n/10 :raw-
- []
-
-[19] [20]
-Overfull \hbox (63.62006pt too wide) in paragraph at lines 1032--1047
-\T1/qtm/m/n/10 Pitches can be ex-pressed as $\OT1/cmr/m/n/10 2[]3[]5[]$ \T1/qtm
-/m/n/10 for $\OML/cmm/m/it/10 x; y; z \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 Q$ []\T1
-/qtm/b/n/10 :raw-latex:\TS1/qtm/b/n/10 `\T1/qtm/b/n/10 \citep{LonguetHiggins196
-2a,LonguetHiggins1962b,Mazzola2018}\TS1/qtm/b/n/10 `[]\T1/qtm/m/n/10 .
- []
-
-[21] [22] [23] [24
+[19] [20] [21] [22] [23] [24
 
 ]
 Chapter 7.
@@ -1240,22 +1225,22 @@ Chapter 9.
 ]
 Chapter 10.
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 1819--1819
+Overfull \hbox (5.6pt too wide) in paragraph at lines 1837--1837
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 1819--1819
+Overfull \hbox (5.6pt too wide) in paragraph at lines 1837--1837
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 1819--1819
+Overfull \hbox (5.6pt too wide) in paragraph at lines 1837--1837
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 1819--1819
+Overfull \hbox (5.6pt too wide) in paragraph at lines 1837--1837
 []| 
  []
 
@@ -1267,19 +1252,10 @@ Chapter 11.
 
 ]
 Chapter 12.
-[41]
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2272.
-
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2272.
-
-
-[42] [43]
+[41] [42] [43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2481.
+(hyperref)                removing `math shift' on input line 2487.
 
 [44] [45] [46
 
@@ -1289,54 +1265,57 @@ Chapter 13.
 
 ]
 Chapter 14.
-[49] [50] [51
-
-] [52
+[49] [50
 
 ]
 Chapter 15.
+[51] [52] [53
+
+] [54
+
+]
+Chapter 16.
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-2762.
+2802.
 (/home/fmoss/texmf/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <10> not available
-(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2762
+(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2802
 .
- [53] [54] [55] [56] [57]
-[58
+ [55] [56] [57] [58] [59]
+[60
 
-] [59
+] [61
 
-] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 3323--3325
+] [62]
+Underfull \hbox (badness 10000) in paragraph at lines 3399--3401
 []\T1/qtm/m/n/10 Craig Stu-art Sapp. Vi-sual hi-er-ar-chi-cal key anal-y-sis. \
 T1/qtm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/qtm/m/n/10 , 3(4):3, 2005.
  []
 
-[61] [62
-
-] [63
+[63] [64] [65
 
 
-] (./gamuthguidetoadvancedmusictheory.ind [64
+
+] (./gamuthguidetoadvancedmusictheory.ind [66
 
 
-] [65
+] [67
 
 
 ])
 (./gamuthguidetoadvancedmusictheory.aux)
 Package rerunfilecheck Info: File `gamuthguidetoadvancedmusictheory.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 940254A8CDB16483815B24B9569AC6C2;17991.
+(rerunfilecheck)             Checksum: DD8B4D58F50491E692A8AA0E8BE17B20;18357.
  ) 
 Here is how much of TeX's memory you used:
- 35212 strings out of 480313
- 803005 string characters out of 5897497
- 1195858 words of memory out of 5000000
- 52086 multiletter control sequences out of 15000+600000
- 469097 words of font info for 93 fonts, out of 8000000 for 9000
+ 35252 strings out of 480313
+ 803837 string characters out of 5897497
+ 1196668 words of memory out of 5000000
+ 52107 multiletter control sequences out of 15000+600000
+ 468719 words of font info for 92 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  99i,25n,94p,746b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/fmoss/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/home/fmoss/texmf/fonts
@@ -1361,11 +1340,11 @@ type1/public/tex-gyre/qtmri.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t
 1xbtt.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/
 texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/texmf/fonts/type1/publi
 c/txfonts/tcxtt.pfb></home/fmoss/texmf/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gamuthguidetoadvancedmusictheory.pdf (69 pages, 444602 bytes)
+Output written on gamuthguidetoadvancedmusictheory.pdf (71 pages, 448196 bytes)
 .
 PDF statistics:
- 1166 PDF objects out of 1200 (max. 8388607)
- 1048 compressed objects within 11 object streams
- 256 named destinations out of 1000 (max. 500000)
- 905 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1238 PDF objects out of 1440 (max. 8388607)
+ 1118 compressed objects within 12 object streams
+ 276 named destinations out of 1000 (max. 500000)
+ 929 words of extra memory for PDF output out of 10000 (max. 10000000)
 
