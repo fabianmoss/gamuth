@@ -115,3 +115,9 @@ one of the most famous musical scale systems (at least among music academics): B
 
 Balinese Pelog and Slendro
 --------------------------
+
+Gamelan 
+
+See descriptions of tunings `here <http://www.aawmjournal.com/articles/2021b/Vitale_Sethares_AAWM_Vol_9_2.pdf>`_ 
+and data `here <http://www.aawmjournal.com/supplemental/2021b/TothGongKebyarSpreadsheets.zip>`_ 
+:cite:`Vitale2021_BalineseGamelanTuning,Wendt2019_AnalysisPerceptionJavanese`.
