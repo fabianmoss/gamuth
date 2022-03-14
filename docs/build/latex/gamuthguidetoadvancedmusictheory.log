@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.1.19)  1 FEB 2022 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.2.7)  14 MAR 2022 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -118,7 +118,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: babel 2021/11/29 3.67 The Babel package
 \babel@savecnt=\count270
 \U@D=\dimen148
-\l@unhyphenated=\language3
+\l@unhyphenated=\language8
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -1189,13 +1189,15 @@ LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
 (/home/fmoss/texmf/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [3] [4]
-<chromatic.pdf, id=611, 216.81pt x 53.19875pt>
-File: chromatic.pdf Graphic file (type pdf)
-<use chromatic.pdf>
-Package pdftex.def Info: chromatic.pdf  used on input line 315.
-(pdftex.def)             Requested size: 216.80946pt x 53.19861pt.
- [5 <./chromatic.pdf>]
-[6]
+<./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png, id=611, 215.60
+55pt x 41.4348pt>
+File: ./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png Graphic fi
+le (type png)
+<use ./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png>
+Package pdftex.def Info: ./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/m
+usic.png  used on input line 311.
+(pdftex.def)             Requested size: 215.60497pt x 41.43468pt.
+ [5 <./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png>] [6]
 Chapter 2.
 [7
 
@@ -1236,22 +1238,22 @@ Chapter 10.
 ]
 Chapter 11.
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2001--2001
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2000--2000
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2001--2001
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2000--2000
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2001--2001
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2000--2000
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2001--2001
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2000--2000
 []| 
  []
 
@@ -1262,7 +1264,7 @@ Chapter 12.
 [41] [42] [43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2624.
+(hyperref)                removing `math shift' on input line 2623.
 
 [44] [45] [46
 
@@ -1279,12 +1281,12 @@ Chapter 14.
 ]
 Chapter 15.
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-2904.
+2903.
 (/home/fmoss/texmf/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <10> not available
-(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2904
+(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2903
 .
  [53] [54] [55] [56] [57]
 [58
@@ -1292,7 +1294,7 @@ LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <10> not available
 ] [59
 
 ] [60]
-Underfull \hbox (badness 10000) in paragraph at lines 3522--3524
+Underfull \hbox (badness 10000) in paragraph at lines 3521--3523
 []\T1/qtm/m/n/10 Craig Stu-art Sapp. Vi-sual hi-er-ar-chi-cal key anal-y-sis. \
 T1/qtm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/qtm/m/n/10 , 3(4):3, 2005.
  []
@@ -1314,10 +1316,10 @@ t changed.
 (rerunfilecheck)             Checksum: D7EC7F6AE74A5D6C2C8AAF71F7D33522;17860.
  ) 
 Here is how much of TeX's memory you used:
- 35282 strings out of 480313
- 804677 string characters out of 5897497
- 1197306 words of memory out of 5000000
- 52128 multiletter control sequences out of 15000+600000
+ 35282 strings out of 480260
+ 805019 string characters out of 5895089
+ 1197536 words of memory out of 5000000
+ 52143 multiletter control sequences out of 15000+600000
  468719 words of font info for 92 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
  99i,25n,94p,746b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1343,11 +1345,11 @@ type1/public/tex-gyre/qtmri.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t
 1xbtt.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/
 texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/texmf/fonts/type1/publi
 c/txfonts/tcxtt.pfb></home/fmoss/texmf/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gamuthguidetoadvancedmusictheory.pdf (69 pages, 459891 bytes)
+Output written on gamuthguidetoadvancedmusictheory.pdf (69 pages, 456536 bytes)
 .
 PDF statistics:
- 1256 PDF objects out of 1440 (max. 8388607)
- 1136 compressed objects within 12 object streams
- 284 named destinations out of 1000 (max. 500000)
+ 1250 PDF objects out of 1440 (max. 8388607)
+ 1131 compressed objects within 12 object streams
+ 283 named destinations out of 1000 (max. 500000)
  926 words of extra memory for PDF output out of 10000 (max. 10000000)
 

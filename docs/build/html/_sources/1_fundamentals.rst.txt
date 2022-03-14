@@ -133,23 +133,10 @@ by an integer :math:`k \in \mathbb{Z}_{12}`.
 and usually one sets :math:`0\equiv \text{C}`. This allows to use *modular arithmetic*
 do calculations with pitch classes. In standard music notation, this would be rendered as 
 
-.. NOTE: currently, LaTeX output for Lilypond scores doesn't work yet. 
-   A workaround is to compile the .ly files separately (externally) and then include them as .pdf
-
-.. only:: html
-
-   .. lilyinclude:: ./lilypond/chromatic.ly
-      :nofooter:
-      :noedge:
-      :audio:
-
-.. only:: latex
-
-   .. figure:: ./lilypond/chromatic.pdf
-
-      The chromatic scale. 
-
-
+.. lilyinclude:: ./lilypond/chromatic.ly
+   :nofooter:
+   :noedge:
+   :audio:
 
 Other invariances
 ~~~~~~~~~~~~~~~~~

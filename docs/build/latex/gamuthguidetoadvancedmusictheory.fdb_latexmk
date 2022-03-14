@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex gamuthguidetoadvancedmusictheory.idx"] 1643711284 "gamuthguidetoadvancedmusictheory.idx" "gamuthguidetoadvancedmusictheory.ind" "gamuthguidetoadvancedmusictheory" 1643711522
-  "gamuthguidetoadvancedmusictheory.idx" 1643711522 154 7418f93cd72cec9d073b5db7b6795713 "pdflatex"
+["makeindex gamuthguidetoadvancedmusictheory.idx"] 1643711284 "gamuthguidetoadvancedmusictheory.idx" "gamuthguidetoadvancedmusictheory.ind" "gamuthguidetoadvancedmusictheory" 1647248739
+  "gamuthguidetoadvancedmusictheory.idx" 1647248739 154 7418f93cd72cec9d073b5db7b6795713 "pdflatex"
   (generated)
   "gamuthguidetoadvancedmusictheory.ilg"
   "gamuthguidetoadvancedmusictheory.ind"
-["pdflatex"] 1643711521 "gamuthguidetoadvancedmusictheory.tex" "gamuthguidetoadvancedmusictheory.pdf" "gamuthguidetoadvancedmusictheory" 1643711522
+["pdflatex"] 1647248737 "gamuthguidetoadvancedmusictheory.tex" "gamuthguidetoadvancedmusictheory.pdf" "gamuthguidetoadvancedmusictheory" 1647248739
   "/etc/texmf/web2c/texmf.cnf" 1642591251 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/fmoss/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/home/fmoss/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -276,16 +276,16 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1639782424 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1639782424 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1642591677 4034052 f65d0930bf50c61c554b98380f08fc91 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1642591760 1428965 671d7673ddd56b1fc52e7c836a5962ba ""
-  "chromatic.pdf" 1643376893 10373 8008a8fdac22b217ca8ae5f431fe86a7 ""
-  "gamuthguidetoadvancedmusictheory.aux" 1643711522 31864 cf23ab452eb04e3204cc52628c8930d6 "pdflatex"
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1644236703 1873389 1b106e801ac1de9903a2a1b2a162f9bb ""
+  "_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png" 1647243858 6059 a7ccb0d2bce6b3949230bcebd59566a0 ""
+  "gamuthguidetoadvancedmusictheory.aux" 1647248739 31654 5aa10c53b839ec08300ddac62a294d03 "pdflatex"
   "gamuthguidetoadvancedmusictheory.ind" 1643711284 394 972e72a1fe808a02a02b32a707e21f41 "makeindex gamuthguidetoadvancedmusictheory.idx"
-  "gamuthguidetoadvancedmusictheory.out" 1643711522 17860 d7ec7f6ae74a5d6c2c8aaf71f7d33522 "pdflatex"
-  "gamuthguidetoadvancedmusictheory.tex" 1643711521 145819 48d5b35348dcf311cb03862254eb2595 ""
-  "gamuthguidetoadvancedmusictheory.toc" 1643711522 9498 2bd35ae565aec99d50e16ae4ae272ff7 "pdflatex"
+  "gamuthguidetoadvancedmusictheory.out" 1647248739 17860 d7ec7f6ae74a5d6c2c8aaf71f7d33522 "pdflatex"
+  "gamuthguidetoadvancedmusictheory.tex" 1647248736 145807 72699911c214dfcadd846297744cc2f3 ""
+  "gamuthguidetoadvancedmusictheory.toc" 1647248739 9498 2bd35ae565aec99d50e16ae4ae272ff7 "pdflatex"
   "sphinx.sty" 1643192731 13262 0226aaccc1147ed884a3946fce78a6d2 ""
   "sphinxcontribtikz.sty" 1643711281 118 872790ba858f7874317b1bbb31abde23 ""
-  "sphinxhighlight.sty" 1643711520 6679 76d10c62e0f0661410b46f5db6118e26 ""
+  "sphinxhighlight.sty" 1647248735 6679 76d10c62e0f0661410b46f5db6118e26 ""
   "sphinxlatexadmonitions.sty" 1643192731 6238 2d867d769abf3f72abc17ef52adff78b ""
   "sphinxlatexcontainers.sty" 1643192731 901 d3a3a1b7b2547f47ade2499350b5c420 ""
   "sphinxlatexgraphics.sty" 1643192731 4840 a9578332b6f3b35e198751fb632c9b79 ""
@@ -300,7 +300,7 @@
   "sphinxlatexstyletext.sty" 1643192731 6177 c18841ce3fafc366cd3b145f8faa4c37 ""
   "sphinxlatextables.sty" 1643192731 21848 2827eb0b11b99b185a8b77317d3e131c ""
   "sphinxmanual.cls" 1643192731 4241 7b0d7a37df7b5715fb0dbd585c52ecdb ""
-  "sphinxmessages.sty" 1643711521 745 3f5fcd6cdd7964ed608767954a8ced6f ""
+  "sphinxmessages.sty" 1647248736 745 3f5fcd6cdd7964ed608767954a8ced6f ""
   "sphinxoptionsgeometry.sty" 1643192731 2061 47bb34b8ed8a78823eb0c886abfb9f4d ""
   "sphinxoptionshyperref.sty" 1643192731 1094 79beb8b8a3f10784f8cce804e0f9d3aa ""
   "sphinxpackagefootnote.sty" 1643192731 13248 e2c77871396275ccf592403f8130f6f2 ""
