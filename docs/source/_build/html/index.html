@@ -1,390 +1,474 @@
-
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
   <head>
-    <meta charset="utf-8" />
-    <title>Learn music theory the hard way! &#8212; musictheory 0.0.1 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>GAMuTh: Guide to Advanced Music Theory</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
 
-  </head><body>
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="1. Fundamentals" href="1_fundamentals.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="#" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="#gamuth-guide-to-advanced-music-theory"
+         class="nav-link ">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
   
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
           
-
-          <div class="body" role="main">
+          <navlinks>
             
-  <div class="section" id="learn-music-theory-the-hard-way">
-<h1>Learn music theory the hard way!<a class="headerlink" href="#learn-music-theory-the-hard-way" title="Permalink to this headline">¶</a></h1>
+
+  
+    <div class="nav-item">
+      <a href="#gamuth-guide-to-advanced-music-theory"
+         class="nav-link ">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="#">Docs</a> &raquo;</li>
+    
+    <li>GAMuTh: Guide to Advanced Music Theory</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="next">
+    <a href="1_fundamentals.html"
+       title="next chapter"><span class="section-number">1. </span>Fundamentals →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="gamuth-guide-to-advanced-music-theory">
+<h1>GAMuTh: Guide to Advanced Music Theory<a class="headerlink" href="#gamuth-guide-to-advanced-music-theory" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The content on these pages is very much under construction!
+Since this is ongoing work, I can give no guarantee for completeness or accuracy.
+Feel free to <a class="reference external" href="mailto:fabianmoss&#37;&#52;&#48;gmail&#46;com">contact me</a> with your questions and suggestions!</p>
+</div>
+<p>Welcome!</p>
 <p>This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-The logo, a <a class="reference external" href="https://en.wikipedia.org/wiki/Sixty-fourth_note">hemidemisemiquaver</a> (or a sixty-fourth note),
+The logo, a <a class="reference external" href="https://en.wikipedia.org/wiki/Maxima_(music)">maxima</a>, the longest note value in medieval music,
 symbolically reflects this level of difficulty.</p>
-<p>This project has been inspired by this great book:</p>
-<ul class="simple">
-<li><p>Lewin, D. (2007). <em>Generalized Intervals and Transformations</em>.
-Oxford: Oxford University Press.</p></li>
-</ul>
-<p>Since this is ongoing work, I can give no guarantee for completeness or accuracy.
-Feel free to <a class="reference external" href="mailto:fabianmoss&#37;&#52;&#48;gmail&#46;com">contact me</a> with your questions and suggestions!</p>
+<p>The content presented on these pages is inspired by a number
+of great books, e.g.
+<span id="id1">Aldwell <em>et al.</em> [<a class="reference internal" href="8_bibliography.html#id12" title="Edward Aldwell, Carl Schachter, and Allen Cadwallader. Harmony and Voice Leading. Cengage Learning, 4th edition, 2010.">1</a>]</span>, <span id="id2">Lewin [<a class="reference internal" href="8_bibliography.html#id2" title="David Lewin. Generalized Musical Intervals and Transformations. Oxford University Press, Oxford, 1987.">27</a>]</span>, <span id="id3">Straus [<a class="reference internal" href="8_bibliography.html#id3" title="Joseph Nathan Straus. Introduction to post-tonal theory. Pearson Prentice Hall, New York, 3rd edition, 2005.">58</a>]</span>,
+<span id="id4">Cadwallader and Gagné [<a class="reference internal" href="8_bibliography.html#id18" title="Allen Cadwallader and David Gagné. Analysis of Tonal Music. A Schenkerian Approach. Oxford University Press, 1998.">5</a>]</span>, and <span id="id5">Müller [<a class="reference internal" href="8_bibliography.html#id24" title="Meinhard Müller. Fundamentals of Music Processing. Springer, 2015.">43</a>]</span>.
+What is new and unique about the approach taken here is that we take
+a computational perspective and implement all introduced concepts.
+This does not only provide us with sharp and unequivocal definitions,
+but also allows us to scale music theory up from the analysis of individual
+bars, sections, or pieces to that of entire repertoires and corpora!</p>
+<p>I recently also discovered <a class="reference external" href="https://pedrokroger.net/mfgan/">Music for Geeks and Nerds</a> by Pedro Kroger
+which looks very interesting.
+The Python project <a class="reference external" href="https://github.com/gciruelos/musthe">musthe</a> also seems to pursue a similar goal.</p>
+<p class="rubric">Quickstart</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These instructions may not work yet.</p>
+</div>
+<p>Installation of the <cite>gamuth</cite> Python library is as easy as it can be. Just
+type the following in your terminal:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">gamuth</span>
+</pre></div>
+</div>
+<p>Then, in a Python script or Jupyter notebook,
+import the library or individual classes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">gamuth</span> <span class="kn">import</span> <span class="n">Tone</span><span class="p">,</span> <span class="n">Interval</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="n">octave</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fifth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">third</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="n">octave</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">fifth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">third</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># E</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">specific</span> <span class="n">interval</span><span class="p">)</span> <span class="c1"># directed interval in semitones (major third)</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+<p>See the documentation <a class="reference internal" href="api.html#api"><span class="std std-ref">API - gamuth</span></a> for examples how to use the library,
+its classes and their methods.</p>
+<p class="rubric">Table of contents</p>
 <div class="toctree-wrapper compound">
-</div>
-<div class="section" id="module-musictheory.main">
-<span id="intervals-and-tones"></span><h2>Intervals and Tones<a class="headerlink" href="#module-musictheory.main" title="Permalink to this headline">¶</a></h2>
-<span class="target" id="module-musictheory"></span><dl class="class">
-<dt id="musictheory.main.Interval">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Interval</code><span class="sig-paren">(</span><em class="sig-param">source</em>, <em class="sig-param">target</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval" title="Permalink to this definition">¶</a></dt>
-<dd><p>Class for an interval between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
-<dl class="method">
-<dt id="musictheory.main.Interval.get_directed_generic_interval">
-<code class="sig-name descname">get_directed_generic_interval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_directed_generic_interval" title="Permalink to this definition">¶</a></dt>
-<dd><p>Generic interval (directed) between two tones.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Directed generic interval between <cite>s</cite> and <cite>t</cite>.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between Db0 and B1 is an ascending thirteenth</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">()</span>
-<span class="go">13</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># B&#39;0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Db,0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="c1"># the interval between B1 and Db0 is a descending thirteenth</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">generic_interval</span><span class="p">()</span>
-<span class="go">-13</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Interval.get_euclidean_distance">
-<code class="sig-name descname">get_euclidean_distance</code><span class="sig-paren">(</span><em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Interval.get_euclidean_distance" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculates the Euclidean distance between two tones
-with coordinates in Euler space.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>precision</strong> (<em>int</em>) – Rounding precision.</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The Euclidean distance between two tones <cite>s</cite> (source) and <cite>t</cite> (target).</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C_0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># D&#39;1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">Interval</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span><span class="o">.</span><span class="n">get_euclidean_distance</span><span class="p">()</span>
-<span class="go">2.45</span>
-</pre></div>
-</div>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="musictheory.main.Tone">
-<em class="property">class </em><code class="sig-prename descclassname">musictheory.main.</code><code class="sig-name descname">Tone</code><span class="sig-paren">(</span><em class="sig-param">octave=None</em>, <em class="sig-param">fifth=None</em>, <em class="sig-param">third=None</em>, <em class="sig-param">name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone" title="Permalink to this definition">¶</a></dt>
-<dd><p>Class for tones.</p>
-<dl class="method">
-<dt id="musictheory.main.Tone.get_accidentals">
-<code class="sig-name descname">get_accidentals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_accidentals" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets the accidentals of the tone (flats (<cite>b</cite>) or sharps (<cite>#</cite>))..</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The accidentals of the tone.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_accidentals</span><span class="p">()</span>
-<span class="go">`#`</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_frequency">
-<code class="sig-name descname">get_frequency</code><span class="sig-paren">(</span><em class="sig-param">chamber_tone=440.0</em>, <em class="sig-param">precision=2</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_frequency" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the frequency of the tone.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>chamber_tone</strong> (<em>float</em>) – The frequency in Hz of the chamber tone. Default: 440.0 (A)</p></li>
-<li><p><strong>precision</strong> (<em>int</em>) – Rounding precision.</p></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="1_fundamentals.html">1. Fundamentals</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_fundamentals.html#tones">1.1. Tones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_fundamentals.html#pitch-classes">1.2. Pitch classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_fundamentals.html#intervals">1.3. Intervals</a></li>
 </ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The frequency of the tone in Hertz (Hz).</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>float</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_frequency</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="go">261.626</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_label">
-<code class="sig-name descname">get_label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets the complete label of the tone, consisting of its note name, syntonic position, and octave.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The accidentals of the tone.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ab</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">get_label</span><span class="p">(),</span> <span class="n">ab</span><span class="o">.</span><span class="n">get_label</span><span class="p">()</span>
-<span class="go">`C_0` `Ab,1`</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_midi_pitch">
-<code class="sig-name descname">get_midi_pitch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_midi_pitch" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the MIDI pitch of the tone.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The MIDI pitch of the tone if it is in MIDI pitch range (0–128)</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_midi_pitch</span><span class="p">()</span>
-<span class="go">60</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_pitch_class_chromatic">
-<code class="sig-name descname">get_pitch_class_chromatic</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_chromatic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the pitch class on the tone on the chromatic circle.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>start</strong> (<em>int</em>) – Tone that that gets mapped to 0 (default: C=0).</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The pitch class of the tone on the chromatic circle.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class_chromatic</span><span class="p">()</span>
-<span class="go">7</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_pitch_class_fifths">
-<code class="sig-name descname">get_pitch_class_fifths</code><span class="sig-paren">(</span><em class="sig-param">start=0</em><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_pitch_class_fifths" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the pitch class on the tone on the circle of fifths.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>start</strong> (<em>int</em>) – Line-of-fifths number of the tone that gets mapped to 0 (default: C=0).</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The pitch class of the tone on the circle of fifths.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_pitch_class_fifths</span><span class="p">()</span>
-<span class="go">1</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_step">
-<code class="sig-name descname">get_step</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_step" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets the diatonic letter name (C, D, E, F, G, A, or B) of the tone <em>without</em> accidentals.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The diatonic step of the tone.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># C sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span><span class="o">.</span><span class="n">get_step</span><span class="p">()</span>
-<span class="go">`C`</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
-<dt id="musictheory.main.Tone.get_syntonic">
-<code class="sig-name descname">get_syntonic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#musictheory.main.Tone.get_syntonic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Gets the value of the syntonic level in Euler space.
-Tones on the same syntonic line as central C are marked with <cite>_</cite>,
-and those above or below this line with <cite>‘</cite> or <cite>,</cite>, respectively.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>None</strong> – </p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The number of thirds above or below the central C.</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>int</p>
-</dd>
-</dl>
-<p class="rubric">Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">e1</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Pythagorean major third above C</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">e2</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Just major third above C</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">e3</span> <span class="o">=</span> <span class="n">Tone</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Just major third below G sharp</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">e1</span><span class="o">.</span><span class="n">get_syntonic</span><span class="p">(),</span> <span class="n">e2</span><span class="o">.</span><span class="n">get_syntonic</span><span class="p">(),</span> <span class="n">e3</span><span class="o">.</span><span class="n">get_syntonic</span><span class="p">()</span>
-<span class="go">`&#39;` `_` `,`</span>
-</pre></div>
-</div>
-</dd></dl>
-
-</dd></dl>
-
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2_scales_modes.html">2. Scales and Modes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#indian-classical-music">2.1. Indian classical music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#turkish-maqam">2.2. Turkish Maqam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#arab-andalusian-music">2.3. Arab-Andalusian music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#persian-music">2.4. Persian Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#western-classical-music">2.5. Western classical music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#jazz">2.6. Jazz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#other-scales">2.7. Other scales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scales_modes.html#balinese-pelog-and-slendro">2.8. Balinese Pelog and Slendro</a></li>
 </ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3_set_theory.html">3. Pitch-Class Set Theory</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3_set_theory.html#pitch-classes">3.1. Pitch classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_set_theory.html#intervals">3.2. Intervals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_set_theory.html#pitch-class-sets">3.3. Pitch-class sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_set_theory.html#relationships">3.4. Relationships</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_set_theory.html#advanced-concepts">3.5. Advanced concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_set_theory.html#twelve-tone-theory">3.6. Twelve-tone theory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4_time.html">4. Time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_time.html#notes">4.1. Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_time.html#performance">4.2. Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_time.html#rhythm">4.3. Rhythm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_time.html#meter">4.4. Meter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4_harmony.html">5. Harmony</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_harmony.html#transformational-theory">5.1. Transformational theory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="encodings.html">6. Music Encoding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="encodings.html#audio">6.1. Audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encodings.html#common-western-music-notation">6.2. Common Western Music Notation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encodings.html#symbolic">6.3. Symbolic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encodings.html#video">6.4. Video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="5_notes.html">7. Pitch-class based music analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_notes.html#frequency-space">7.1. Frequency space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_notes.html#pitch-space">7.2. Pitch space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_notes.html#transformations-of-tonal-spaces">7.3. Transformations of tonal spaces.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_notes.html#generalized-interval-systems">7.4. Generalized Interval Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_notes.html#models-of-pitch-space">7.5. Models of pitch space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_notes.html#dataset">7.6. Dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pc_distributions.html">8. Tonal pitch-class distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">9. Historical usage of tonal pitch classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="history.html#modeling-tonal-pitch-class-evolution">9.1. Modeling tonal pitch-class evolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="history.html#variability-in-tonal-pitch-class-usage">9.2. Variability in tonal pitch-class usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coevolution.html">10. Tonal pitch-class coevolution</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coevolution.html#modeling-tonal-pitch-class-coevolution">10.1. Modeling tonal pitch-class coevolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coevolution.html#deciphering-pitch-class-coevolution">10.2. Deciphering pitch-class coevolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coevolution.html#tpc-coevolution-per-historical-period">10.3. TPC coevolution per historical period</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="diatonicism_chromaticism.html">11. Diatonicism — Chromaticism — Enharmonicism</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="diatonicism_chromaticism.html#expansion-of-tonal-material">11.1. Expansion of tonal material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diatonicism_chromaticism.html#expansion-of-local-harmonic-content">11.2. Expansion of local harmonic content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diatonicism_chromaticism.html#enharmonic-spectrum">11.3. Enharmonic spectrum</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="topic_modeling.html">12. Topic Modeling with Latent Dirichlet Allocation (LDA)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#background">12.1. Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#a-generative-model-for-a-musical-piece">12.2. A generative model for a musical piece</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#extension-of-the-lda-music-model">12.3. Extension of the LDA music model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#topics-inferred-from-the-corpus">12.4. Topics inferred from the corpus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#number-of-topics-reveals-hierarchy-of-tonality">12.5. Number of topics reveals hierarchy of tonality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#historical-inferences-for-each-value-of-k">12.6. Historical inferences for each value of <span class="math notranslate nohighlight">\(K\)</span></a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#topic-coevolution">12.7. Topic coevolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topic_modeling.html#pitch-class-topic-coevolution">12.8. Pitch class – topic coevolution</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="5_segmentation.html">13. Segmentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_segmentation.html#free-segmentation">13.1. Free segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_segmentation.html#contiguous-segmentation">13.2. Contiguous segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_segmentation.html#hierarchical-segmentation">13.3. Hierarchical segmentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_segmentation.html#exhaustive-segmentation">13.4. Exhaustive segmentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="6_advanced.html">14. Advanced topics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#pitch-spelling">14.1. Pitch Spelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#style-classification">14.2. Style (classification)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#history">14.3. History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#performance">14.4. Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#modeling-musical-sequences">14.5. Modeling musical sequences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#music-analysis-with-the-discrete-fourier-transform">14.6. Music analysis with the discrete Fourier transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6_advanced.html#topic-modeling">14.7. Topic modeling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="8_bibliography.html">15. Bibliography</a></li>
+</ul>
+</div>
+<div class="section" id="developers">
+<h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API - gamuth</a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
           </div>
-          
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="#">
-              <img class="logo" src="_static/logo2.png" alt="Logo"/>
-            </a></p>
-<h1 class="logo"><a href="#">musictheory</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
-</ul>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="next">
+    <a href="1_fundamentals.html"
+       title="next chapter"><span class="section-number">1. </span>Fundamentals →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, Fabian C. Moss.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-      
-      |
-      <a href="_sources/index.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
+            </div>
+          </div>
+      </page>
+    </div></div>
     
-
     
   </body>
 </html>

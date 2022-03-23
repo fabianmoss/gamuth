@@ -13,22 +13,23 @@ Welcome!
 This is not a pedagogical resource for basic music theory concepts
 but an in-depth introduction into the structures of Western music,
 built axiomatically from tones and their relations.
-The logo, a `maxima`_, the longest note value in medieval music, 
-symbolically reflects this level of difficulty. 
+The logo, a `maxima`_, the longest note value in medieval music,
+symbolically reflects this level of difficulty.
 
 .. _maxima: https://en.wikipedia.org/wiki/Maxima_(music)
 
-The content presented on these pages is inspired by a number of great books, e.g. 
+The content presented on these pages is inspired by a number
+of great books, e.g.
 :cite:t:`Aldwell2010`, :cite:t:`Lewin1987`, :cite:t:`Straus2005`,
 :cite:t:`Cadwallader1998`, and :cite:t:`Mueller2015`.
-What is new and unique about the approach taken here is that we take 
+What is new and unique about the approach taken here is that we take
 a computational perspective and implement all introduced concepts.
 This does not only provide us with sharp and unequivocal definitions,
-but also allows us to scale music theory up from the analysis of individual 
+but also allows us to scale music theory up from the analysis of individual
 bars, sections, or pieces to that of entire repertoires and corpora!
 
 I recently also discovered `Music for Geeks and Nerds`_ by Pedro Kroger
-which looks very interesting. 
+which looks very interesting.
 The Python project `musthe`_ also seems to pursue a similar goal.
 
 .. _`Music for Geeks and Nerds`: https://pedrokroger.net/mfgan/
@@ -37,37 +38,39 @@ The Python project `musthe`_ also seems to pursue a similar goal.
 .. only:: latex
 
    .. note::
-      Some content is only available in the online HTML version and not in the PDF, 
+      Some content is only available in the online HTML version and not in the PDF,
       e.g. scores rendered with Lilypond. Please visit the **website** to see the full version.
 
    .. note::
-      
+
       TODO: add link to website
 
 
 .. rubric:: Quickstart
 
 .. warning::
-   These instructions may not work yet. 
+   These instructions may not work yet.
 
-Installation of the `gamuth` Python library is as easy as it can be. Just 
+Installation of the `gamuth` Python library is as easy as it can be. Just
 type the following in your terminal::
 
-   pip install gamuth 
+   pip install gamuth
 
-Then, in a Python script or Jupyter notebook, import the library or individual classes::
+Then, in a Python script or Jupyter notebook,
+import the library or individual classes::
 
    >>> from gamuth import Tone, Interval
 
    >>> t = Tone(octave=0, fifth=0, third=0) # C
    >>> s = Tone(octave=0, fifth=0, third=1) # E
 
-   >>> i = Interval(t, s) 
+   >>> i = Interval(t, s)
 
    >>> print(i.specific interval) # directed interval in semitones (major third)
-   4 
+   4
 
-See the documentation :ref:`api` for examples how to use the library, its classes and their methods.
+See the documentation :ref:`api` for examples how to use the library,
+its classes and their methods.
 
 
 .. only:: html

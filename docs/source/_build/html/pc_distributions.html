@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>8. Tonal pitch-class distributions</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="9. Historical usage of tonal pitch classes" href="history.html" />
+  <link rel="prev" title="7. Pitch-class based music analysis" href="5_notes.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Tonal pitch-class distributions</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#tonal-pitch-class-distributions" class="reference internal">Tonal pitch-class distributions</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">8. </span>Tonal pitch-class distributions</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="5_notes.html"
+       title="previous chapter">← <span class="section-number">7. </span>Pitch-class based music analysis</a>
+  </li>
+  <li class="next">
+    <a href="history.html"
+       title="next chapter"><span class="section-number">9. </span>Historical usage of tonal pitch classes →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="tonal-pitch-class-distributions">
+<h1><span class="section-number">8. </span>Tonal pitch-class distributions<a class="headerlink" href="#tonal-pitch-class-distributions" title="Permalink to this headline">¶</a></h1>
+<p>The tonal pitch-class distribution of a musical piece is the relative
+frequency of each tonal pitch class in that piece. Each piece can thus
+be represented as a <span class="math notranslate nohighlight">\(V\)</span>-dimensional vector, where <span class="math notranslate nohighlight">\(V\)</span> is the
+number of different pitch classes in the corpus, and that sums to one.
+In this view, pieces are points in a <span class="math notranslate nohighlight">\(V\)</span>-dimensional vector space.</p>
+<p>In this space, pieces that have similar tonal pitch-class distributions
+will be close together whereas pieces with very different tonal
+pitch-class distributions will be more distant.</p>
+<p>If all pieces are transposed to the same root, clusters in this space
+correspond to different types of distributions that can be interpreted
+as modes (take root out). This fact has been used in
+<span id="id1">[<a class="reference internal" href="8_bibliography.html#id75" title="Daniel Harasim, Fabian C. Moss, Matthias Ramirez, and Martin Rohrmeier. Exploring the foundations of tonality: statistical cognitive modeling of modes in the history of Western classical music. Humanities and Social Sciences Communications, 8(1):1–11, January 2021. doi:10.1057/s41599-020-00678-6.">23</a>]</span>
+and also shown that there are historical developments.</p>
+<p>If one does not transpose pieces, pieces that have similar root and mode
+(and, accordingly, similar distributions) should cluster together. Since
+<span class="math notranslate nohighlight">\(V\)</span> is usually quite large, it is difficult to visualize these
+clusters. One can use methods for dimensionality reduction to represent
+the data in lower-dimensional spaces (2D or 3D) in order to visualize
+them while at the same time maintaining characteristic properties of the
+original space.</p>
+<p>One of the most popular and classic methods is <strong>principal component
+analysis</strong> <span id="id2">[<a class="reference internal" href="8_bibliography.html#id71" title="Christopher M Bishop. Pattern Recognition and Machine Learning. Springer, 2006.">3</a>]</span>, that can be used to project
+the data onto a two-dimensional plane while keeping as much of the
+variance in the data as possible. A more recent method for
+dimensionality is called <span class="math notranslate nohighlight">\(t\)</span>-distributed stochastic neighbor
+embedding (<span class="math notranslate nohighlight">\(t\)</span>-SNE) <span id="id3">[<a class="reference internal" href="8_bibliography.html#id73" title="Laurens Van Der Maaten and Geoffrey Hinton. Visualizing Data using t-SNE. Journal of Machine Learning Research, 9(November):2579–2605, 2008.">64</a>]</span>. PCA is
+better to get a global understanding of the structure of the space and
+<span class="math notranslate nohighlight">\(t\)</span>-SNE is better in illustrating local relationships. Figure
+[fig:tsne_pca] shows the data reduced to the Euclidean plane by both
+methods.</p>
+<p>A more modern method is UMAP <span id="id4">[<a class="reference internal" href="8_bibliography.html#id72" title="Leland McInnes, John Healy, and James Melville. UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. arXiv:1802.03426 [cs, stat], September 2020. arXiv:1802.03426.">34</a>]</span>, much faster but conceptually different!</p>
+<p>The reduction using <span class="math notranslate nohighlight">\(t\)</span>-SNE (top panel) shows that there are many
+clusters that are relatively homogenuous with respect to their coloring.
+The PCA reduction on the bottom panel of Figure [fig:tsne_pca] also
+shows that pieces with similar coloring are close together but
+additionally shows that the colors are ordered along the line of fifths.
+This means that pieces in keys that are close on the line of fifths have
+similar tonal pitch-class distributions. Another advantage of PCA is
+that the axes, called the principal components, have clear
+interpretations. They reflect how much the data varies in this
+direction. Applying this interpretation to the right panel of Figure
+[fig:tsne_pca], one can see that the first principal component (“PC1”)
+roughly represents the “distance to C” or “diatonic” pieces (white or
+very light colors) of more chromatic ones (darker shades). This
+distinction accounts for 55 percent of the variance in the data. The
+second principal component (“PC2”) distinguishes sharp from flat keys
+(red vs. blue coloring) which is responsible for 21 percent of the data
+variance.</p>
+<p>These two principal components together account for 76 percent of the
+variance in the data but simplify the space from <span class="math notranslate nohighlight">\(V=35\)</span> dimensions
+to just two which seems like a good tradeoff.</p>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="5_notes.html"
+       title="previous chapter">← <span class="section-number">7. </span>Pitch-class based music analysis</a>
+  </li>
+  <li class="next">
+    <a href="history.html"
+       title="next chapter"><span class="section-number">9. </span>Historical usage of tonal pitch classes →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

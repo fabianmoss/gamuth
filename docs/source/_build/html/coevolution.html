@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>10. Tonal pitch-class coevolution</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="11. Diatonicism — Chromaticism — Enharmonicism" href="diatonicism_chromaticism.html" />
+  <link rel="prev" title="9. Historical usage of tonal pitch classes" href="history.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Tonal pitch-class coevolution</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#modeling-tonal-pitch-class-coevolution" class="reference internal">Modeling tonal pitch-class coevolution</a></li>
+                
+                  <li class="toctree-l2"><a href="#deciphering-pitch-class-coevolution" class="reference internal">Deciphering pitch-class coevolution</a></li>
+                
+                  <li class="toctree-l2"><a href="#tpc-coevolution-per-historical-period" class="reference internal">TPC coevolution per historical period</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">10. </span>Tonal pitch-class coevolution</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="history.html"
+       title="previous chapter">← <span class="section-number">9. </span>Historical usage of tonal pitch classes</a>
+  </li>
+  <li class="next">
+    <a href="diatonicism_chromaticism.html"
+       title="next chapter"><span class="section-number">11. </span>Diatonicism — Chromaticism — Enharmonicism →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="tonal-pitch-class-coevolution">
+<h1><span class="section-number">10. </span>Tonal pitch-class coevolution<a class="headerlink" href="#tonal-pitch-class-coevolution" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="modeling-tonal-pitch-class-coevolution">
+<h2><span class="section-number">10.1. </span>Modeling tonal pitch-class coevolution<a class="headerlink" href="#modeling-tonal-pitch-class-coevolution" title="Permalink to this headline">¶</a></h2>
+<p>The change/evolution of each pitch class <span class="math notranslate nohighlight">\(k=i-a\)</span> is given by the
+changes in
+<span class="math notranslate nohighlight">\(\mathbf{X}_i=(X^{1}_i,\dots,X^{t}_i,\dots,X^{T}_i)^\top\in \mathbb{R}^{T}\)</span>.
+The pitch-class coevolution matrix is given by</p>
+<div class="math notranslate nohighlight">
+\[\mathbf\Sigma=\left(\mathrm{corr}(\mathbf{X}_i, \mathbf{X}_j)\right)_{ij}\in[-1,1]^{n\times n}\]</div>
+<p>and reflects the similarity of the diachronic change of pitch-classes.</p>
+<p>These upper subplot in Figure [fig:evolution_tpcs] have shown the
+changes in the usage of each pitch-class over time. The coloring and
+ordering suggests indeed a coevolution but recall that the ordering was
+put in manually. The question is whether we can learn something about
+the structure from the data by analyzing the coevolution of the tpcs
+which is operationalized as the pairwise correlation (the Pearson
+correlation coefficient <span class="math notranslate nohighlight">\(\rho\)</span>) (maybe use sample coefficient
+<span class="math notranslate nohighlight">\(r\)</span>?) of two pc-evolution vectors <span class="math notranslate nohighlight">\(p\)</span> and <span class="math notranslate nohighlight">\(q\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+\rho_{p,q} = \frac{\mathrm{cov}(p,q)}{\sigma_p\sigma_q},\end{aligned}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathrm{cov}(p,q)\)</span> is the covariance and <span class="math notranslate nohighlight">\(\sigma\)</span>
+the standard deviation. Figure [fig:coevolution_tpcs] shows the
+pairwise tonal pitch class coevolution values across the entire
+timeline.</p>
+<p>Interesting observations:</p>
+<ol class="arabic simple">
+<li><p>Three regimes are clearly separated: flats (upper left), diatonics
+(center), and sharps (lower right)</p></li>
+<li><p>The chromatic regimes are of roughly the same size, (only visible in
+overall plot; the sharps are slightly larger), i.e. the heatmap has
+two orthogonal symmetry axes</p></li>
+<li><p>Moreover, the chromatic notes (flats and sharps) are weakly
+positively correlated</p></li>
+<li><p>F<span class="math notranslate nohighlight">\(\flat\flat\)</span> (and more extreme flats) does not occur in the
+entire corpus</p></li>
+<li><p>The weakest correlations are highly interesting as well: The weakest
+correlation is with the chromatic lower neighbor and the tritone
+(e.g. A vs. A<span class="math notranslate nohighlight">\(\flat\)</span>, E<span class="math notranslate nohighlight">\(\flat\)</span>; E vs
+E<span class="math notranslate nohighlight">\(\flat\)</span>, B<span class="math notranslate nohighlight">\(\flat\)</span>; B vs. B<span class="math notranslate nohighlight">\(\flat\)</span>, F;
+F<span class="math notranslate nohighlight">\(\sharp\)</span> vs. F, C) This is only true for “central” tpcs
+(white keys diatonic)</p></li>
+</ol>
+<p>We can use this correlation matrix to plot distances between the pitch
+classes. Restricting the relations to the center of the plot, the
+diatonic notes plus F<span class="math notranslate nohighlight">\(\sharp\)</span> and B<span class="math notranslate nohighlight">\(\flat\)</span> these
+distances actually approximate the line of fifths!</p>
+</div>
+<div class="section" id="deciphering-pitch-class-coevolution">
+<h2><span class="section-number">10.2. </span>Deciphering pitch-class coevolution<a class="headerlink" href="#deciphering-pitch-class-coevolution" title="Permalink to this headline">¶</a></h2>
+<p>The last section presented how strong the evolution of pitch classes
+correlates with each other. The heatmap in Figure
+[fig:coevolution_tpcs] indicated an interesting connection to the
+ordering of tpcs on the line of fifths. But this ordering was achieved
+manually, based on theoretical knowledge. How strong is this connection
+based on the available data?</p>
+<p>One way to investigate this is to reduce the high-dimensional space to a
+smaller one. A common method to achieve this is <strong>principal component
+analysis</strong> (PCA). PCA analyzes the variance in the data and projects the
+data to a lower-dimensional space while maximizing the retained
+variance.</p>
+<p>Subsequently, one can inspect the individual principal components
+individually and interpret the variance within and between them.</p>
+<p>The results are very interesting:</p>
+<ol class="arabic simple">
+<li><p>Roughly, 64% of the variance is explained with the diatonic-chromatic
+distinction (PC1)</p></li>
+<li><p>About 22% is explained by the sharp-flat distinction (PC2). Note also
+that C is on the zero-line for PC2 (does this really mean
+something?).</p></li>
+<li><p>Another 6% of variance is explained by the third principal component.
+It roughly corresponds to the numbers of accidentals and follows,
+approximately, a zig-zag pattern for the 5 regions
+<span class="math notranslate nohighlight">\(\flat\flat\)</span>, <span class="math notranslate nohighlight">\(\flat\)</span>, ”, <span class="math notranslate nohighlight">\(\sharp\)</span>, and
+<span class="math notranslate nohighlight">\(\sharp\sharp\)</span>.</p></li>
+<li><p>PC4 is not easy to interpret, but it still captures a difference
+between, flat, diatonic, and sharp tpcs. Indeed, it seems that this
+component captures enharmonic equivalence! The tpcs C, G, D, A, was
+well as their enharmonic sharp and flat equivalents are all separated
+from the other notes. The same goes for F and E# (but not Gbb).</p></li>
+</ol>
+<p>It seems that the PCA reduction was not only able to capture meaningful
+dimensions, but also a meaningful relation between them, namely the
+hierarchical one depicted in Figure [fig:pca_hierarchy].</p>
+<p>The variance explained by each of the components can be interpreted as
+the weight or importance of these dimensions for the data. The two most
+important principal components are PC1 and PC2, together contributing
+approximately 86% of variance to the data. Figure [fig:PCA_2dim] shows
+how these two dimensions interact. Largely speaking, diatonic and
+chromatic tpcs can be separated by a vertical line (not exactly),
+whereas sharpward and flatward tpcs can be separated by a horizontal
+line, with C, the only tpc that is neither flatwards nor sharpwards,
+being exactly on the axis. Moreover, the three respectively most extreme
+tpcs, Fbb–Gbb and Ax–Bx, are located close to the origin of the PCA
+transformed plot. This means that they do not contribute much to the
+variance in the data. These are also precisely the ones outside of the
+enharmonic equivalence shown in PC4.</p>
+</div>
+<div class="section" id="tpc-coevolution-per-historical-period">
+<h2><span class="section-number">10.3. </span>TPC coevolution per historical period<a class="headerlink" href="#tpc-coevolution-per-historical-period" title="Permalink to this headline">¶</a></h2>
+<p>This “global view” can be broken down to compare how the tpc
+correlations change over time. The next figure shows the correlations
+for 50-year periods</p>
+<ol class="arabic simple">
+<li><p>1500-1550: Two clusters emerge</p></li>
+<li><p>1550-1600: Clear separation between recta and ficta.</p></li>
+<li><p>1600-1650: Dahlhaus situates the origin of harmonic tonality in the
+early 17th century (Untersuchungen, p. 14), namely (following Fétis)
+in Monteverdi’s Cruda Amarilli SV 94, mm. 9-19, 24-30. Without
+diminishing Monteverdi’s influence we can see here that the first
+half of the 17 century was indeed a time of change, at least with
+respect to the conjunct usage of tones. But note also that the most
+prominent composer in that epoch in the dataset is Gesualdo who is
+well-known for his unusual harmonies.</p></li>
+<li><p>1650-1700: Confusion</p></li>
+<li><p>1650-1800 The separation between flat, diatonic, and sharp tpcs
+stabilizes. This is the closest to the overall picture above
+(although not as centered). The closest distribution to the overall
+distribution (check!) is the one in the late 18th century. It
+coincides with the common-practice period. Since we see that tpc
+behavior is different before and after, the CPT should not be taken
+as a synonym to tonal music. This affects large portions of empirical
+research of tonality presupposing two modes with clear and stable
+patterns. Review also Harasim et al. (2019)</p></li>
+<li><p>1800-1900: Strong correlation between all accidentals vanishes. The
+diagonal line is very clear. In this time, all pitch classes exhibit
+the greatest independence historically speaking.</p></li>
+<li><p>1900-…: Looks like a mix of CPT and Extended</p></li>
+</ol>
+<p>Dahlhaus situates the origin of harmonic tonality in the early 17th
+century (Untersuchungen, p. 14), namely (following Fétis) in
+Monteverdi’s *Cruda Amarilli* SV 94, mm. 9-19, 24-30. Without
+diminishing Monteverdi’s influence we can see here that the first half
+of the 17 century was indeed a time of change, at least with respect to
+the conjunct usage of tones. But note also that the most prominent
+composer in that epoch in the dataset is Gesualdo who is well-known for
+his unusual harmonies.</p>
+<p>Turn argument around: Use inter-pc correlations to show importance of
+fifth structure! What about thirds?</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="history.html"
+       title="previous chapter">← <span class="section-number">9. </span>Historical usage of tonal pitch classes</a>
+  </li>
+  <li class="next">
+    <a href="diatonicism_chromaticism.html"
+       title="next chapter"><span class="section-number">11. </span>Diatonicism — Chromaticism — Enharmonicism →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

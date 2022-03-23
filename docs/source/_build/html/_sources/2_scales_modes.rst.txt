@@ -1,0 +1,123 @@
+Scales and Modes
+================
+
+A vast majority of musical cultures globally have some notion or concept of organization systems 
+for discrete tones :cite:p:`Brown2013_UniversalsWorldMusics`. Those can be called *scales* or *modes*. 
+While this general description holds, the musical reality is incredibly diverse and seems to defy 
+uniform analytical approaches :cite:p:`Mehr2019_UniversalityDiversityHuman`. 
+
+In this chapter, we are going to learn some tonal characteristics and organization systems from a range of
+musical cultures from different continents. While this will already hint at the global variation,
+it is by no means exhaustive. Nor are the descriptions below meant to entirely represent those cultures.
+Many factors, especially contextual sociopolitical ones, are out of the scope of this book, and we 
+restrict the descriptions to what we can model using the approch established in the earlier chapter: 
+a formal description of tonal relations.
+
+:cite:t:`Powers2001_Mode` 
+
+Indian classical music
+----------------------
+
+Turkish Maqam
+-------------
+
+`Makam Dataset <https://ratioscore.humdrum.org/turkish/>`_ :cite:p:`Karaosmanoglu2012_TurkishMakamMusic`
+
+Arab-Andalusian music
+---------------------
+
+:cite:t:`Nuttall2021_ComputationalExplorationMelodica`
+
+Persian Music 
+-------------
+
+:cite:t:`Sanati2020_InvestigationValueIntervals,FamourZadeh2005_MusiquePersaneFormalisation`
+
+Western classical music
+-----------------------
+
+- Ancient Greek modes :cite:p:`Nowacki2020_LatinGreekMusic`
+- Ecclesiastic modes :cite:p:`Wiering2001_LanguageModesStudies,Parncutt2019_PitchclassPrevalencePlainchant,Delviniotis2021_NewMethodByzantine,BasCornelissen2020_ModeClassificationNatural,Angel2020_ExploringMusicalizationTexts`
+- Major and minor :cite:p:`Harasim2021_ExploringFoundationsTonality`
+- Modes of limited transposition
+- Georgian liturgic chorales (quartal harmonies) :cite:p:`Rosenzweig2020_ErkomaishviliDatasetCurated`
+
+The diatonic scale
+~~~~~~~~~~~~~~~~~~
+
+Music in the Western tradition fundamentally builds on
+so-called *diatonic* scales, an arrangement of seven tones
+that are named with latin letters from A to G. "Diatonic" can 
+be roughly translated into "through all tones". Within this scale,
+no tone is privileged, so the diatonic scale can be appropriately 
+represented by a circle with seven points on it. Mathemacally, 
+this structure is equivalent to :math:`\mathbb{Z}_7`.
+
+[tikz figure here]
+
+Now, if we want to determine the relative relations between the tones, 
+it is necessary to assign a reference tone that is commonly called the *tonic*, 
+or *finalis* in older music.
+
+For example, if the tone D is the tonic, we can determine all other scale degrees 
+as distance to this tone. Scale degrees are commonly notated with arabic numbers with a caret:
+
+.. math::
+   \text{D}: \hat{1}\\
+   \text{E}: \hat{2}\\
+   \text{F}: \hat{3}\\
+   \text{G}: \hat{4}\\
+   \text{A}: \hat{5}\\
+   \text{B}: \hat{6}\\
+   \text{C}: \hat{7}\\
+
+Taking these seven notes in scalar order, they can be converted to their *fifth order* via 
+
+.. math::
+   \phi: t \mapsto 4t \mod 7
+
+because the octave is divided into 7 steps and there and a fifths consists of 4 steps.
+Under this view the diatonic scale is a subsegment 
+of the *line of fifths* :cite:p:`Temperley2000_LineFifths,Mossaccepted_LineFifthsCoevolution`
+
+.. exercise::
+   :label: ex:tonnetz
+
+   How does the fifth order relate to the Euler Space / Tonnetz mentioned earlier?
+
+.. solution:: ex:tonnetz
+   :label: sol:tonnetz 
+
+   This is the solution
+
+Modes
+~~~~~
+
+scale plus order plus hierarchy (but order already defined above?)
+
+Keys
+~~~~
+
+Jazz 
+----
+
+Other scales
+------------
+
+- chromatic
+- hexatonic
+- octatonic
+- whole tone
+- Messiaen
+
+Before we move on to another important musical dimension, time, we have to consider 
+one of the most famous musical scale systems (at least among music academics): Balinese Pelog and Slendro.
+
+Balinese Pelog and Slendro
+--------------------------
+
+Gamelan 
+
+See descriptions of tunings `here <http://www.aawmjournal.com/articles/2021b/Vitale_Sethares_AAWM_Vol_9_2.pdf>`_ 
+and data `here <http://www.aawmjournal.com/supplemental/2021b/TothGongKebyarSpreadsheets.zip>`_ 
+:cite:`Vitale2021_BalineseGamelanTuning,Wendt2019_AnalysisPerceptionJavanese`.

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>7. Pitch-class based music analysis</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="8. Tonal pitch-class distributions" href="pc_distributions.html" />
+  <link rel="prev" title="6. Music Encoding" href="encodings.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Pitch-class based music analysis</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#frequency-space" class="reference internal">Frequency space</a></li>
+                
+                  <li class="toctree-l2"><a href="#pitch-space" class="reference internal">Pitch space</a></li>
+                
+                  <li class="toctree-l2"><a href="#transformations-of-tonal-spaces" class="reference internal">Transformations of tonal spaces.</a></li>
+                
+                  <li class="toctree-l2"><a href="#generalized-interval-systems" class="reference internal">Generalized Interval Systems</a></li>
+                
+                  <li class="toctree-l2"><a href="#models-of-pitch-space" class="reference internal">Models of pitch space</a></li>
+                
+                  <li class="toctree-l2"><a href="#dataset" class="reference internal">Dataset</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">7. </span>Pitch-class based music analysis</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="encodings.html"
+       title="previous chapter">← <span class="section-number">6. </span>Music Encoding</a>
+  </li>
+  <li class="next">
+    <a href="pc_distributions.html"
+       title="next chapter"><span class="section-number">8. </span>Tonal pitch-class distributions →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="pitch-class-based-music-analysis">
+<h1><span class="section-number">7. </span>Pitch-class based music analysis<a class="headerlink" href="#pitch-class-based-music-analysis" title="Permalink to this headline">¶</a></h1>
+<p>Musical pieces are made up of notes. This almost trivial truth is the
+starting point for this endeavour: to uncover hidden patterns in
+compositions dispersed through the centuries from the late middle ages
+to modern times.</p>
+<p>First, we will develop an understanding which notes exist and what their
+mutual relations are. We will then proceed to use this information to
+discover aspects of the structural relations between them and how the
+constitute musical spaces (generalized interval systems).</p>
+<p>We will see that musical notes in compositions are used far from
+randomly and that the order encoded in musical pieces reveals
+acquaintances between composers that sometimes transcends separation in
+time.</p>
+<p>Finally, we will see how the usage of musical notes changes over the
+course of history. Observing large-scale changes in compositional style
+we will be able to distinguish historical trends.</p>
+<p>…</p>
+<p>The study is based on the music as it is notated. Moreover, we assume
+octave equivalence. These two assumptions–one given by the
+representation of notes in the data, the other based on theory and
+previous literature–leads to the Spiral Array representation of tonal
+space.</p>
+<p>Tonality is constituted by the ways composers navigate pitch space in
+their compositions. This is, of course, hierarchal. Each piece
+constitutes a unique instance of tonality which nonetheless shares many
+properties with “similar” compositions (similar in style).</p>
+<p>But what is pitch space?</p>
+<div class="section" id="frequency-space">
+<h2><span class="section-number">7.1. </span>Frequency space<a class="headerlink" href="#frequency-space" title="Permalink to this headline">¶</a></h2>
+<p>A frequency <span class="math notranslate nohighlight">\(f\)</span> is measured in Hertz (1/sec). We can represent the
+set of fundamental frequencies as
+<span class="math notranslate nohighlight">\(F=\{ K \cdot 2^o \cdot 3^q \cdot 5^t\mid o, q, t \in \mathbb Q \}\)</span>
+for a fixed <em>Kammerton</em> <span class="math notranslate nohighlight">\(K\)</span>, and <span class="math notranslate nohighlight">\(o, q, t\in \mathbb Q\)</span>. K
+has been standardized to <span class="math notranslate nohighlight">\(K=440~\text{Hz}\)</span> in 1939. Hence, each
+fundamental frequency can be represented as
+<span class="math notranslate nohighlight">\(f=440 \text{ Hz} \cdot 2^o \cdot 3^q \cdot 5^t\)</span>. Here, 2, 3, and
+5 are arbitrary pairwise coprime integers (See Mazzola, 1985, p. 26) but
+this choice relates to the numerators of the fundamental frequency
+ratios of the music theoretical basic intervals of two frequencies
+<span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(g\)</span> in just intonation:</p>
+<ul class="simple">
+<li><p>octave: <span class="math notranslate nohighlight">\(f:g = 2:1\)</span></p></li>
+<li><p>fifth: <span class="math notranslate nohighlight">\(f:g=3:2\)</span></p></li>
+<li><p>major third: <span class="math notranslate nohighlight">\(f:g = 5:4\)</span></p></li>
+</ul>
+<p>The fact that <span class="math notranslate nohighlight">\(o, q, t\)</span> are <span class="math notranslate nohighlight">\(\in \mathbb Q\)</span> allows for
+unique solution of the equations
+<span id="id1">[<a class="reference internal" href="8_bibliography.html#id47" title="Christopher Longuet-Higgins. The Three Dimensions of Harmony. In Mental Processes: Studies in Cognitive Science, pages 59–63. MIT Press, Cambridge, MA, 1987.">30</a>, <a class="reference internal" href="8_bibliography.html#id46" title="Guerino Mazzola. Geometrie der Töne: Elemente der Mathematischen Musiktheorie. Birkhäuser, Basel, 1990.">32</a>, <a class="reference internal" href="8_bibliography.html#id4" title="Guerino Mazzola. The Euler Space. In Basic Music Technology, pages 51–61. Springer, 2018. doi:10.1007/978-3-030-00982-3_6.">33</a>]</span>.</p>
+</div>
+<div class="section" id="pitch-space">
+<h2><span class="section-number">7.2. </span>Pitch space<a class="headerlink" href="#pitch-space" title="Permalink to this headline">¶</a></h2>
+<p><em>Pitch</em> (or <em>pitch height</em>) is the perceptual correlate to a fundamental
+frequency and is measured on a linear scale. It can be calculated as
+<span class="math notranslate nohighlight">\(p(f) = 69.0 + 12 \cdot \log\_2(f/440 \text{ Hz}) \)</span>, and 12 is the
+size of the octave in the unit of <span class="math notranslate nohighlight">\(p\)</span>. The formula thus gives the
+distance from the reference pitch (69=A4) as a proportion
+(<span class="math notranslate nohighlight">\(\log_2(f/g)\)</span>) of the octave (12). In this representation middle
+C (C4) gets the pitch number 60.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}.. \begin{aligned}
+ p(f) &amp; = c_1+c_2\cdot \log_2\left(\frac{440 \text{ Hz}\cdot 2^o \cdot 3^q \cdot 5^t}{440\text{ Hz}}\right)\\
+      &amp; = c_1+c_2\cdot \log_2\left(2^o\cdot3^q\cdot5^t\right) \\
+            &amp; = c_1+c_2 \cdot (o\cdot\log_2(2) + q\cdot \log_2(3) + t\cdot\log_2(5) ).
+.. \end{aligned}\end{split}\]</div>
+<p>Equivalently,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+  p(f)- c_1 = c_2 \cdot (o\cdot\log_2(2) + q\cdot \log_2(3) + t\cdot\log_2(5) )\end{aligned}\]</div>
+<p>Accordingly, each frequency <span class="math notranslate nohighlight">\(f\)</span> or equivalently each tone
+<span class="math notranslate nohighlight">\(t\)</span> can be conceived as a point
+<span class="math notranslate nohighlight">\(x = (p, s, r) \in \mathbb Q^3\)</span>. And vice versa, each point is
+associated with its fundamental frequency
+<span class="math notranslate nohighlight">\(f(x) = f(p, s, r) = 440 \text{Hz} \cdot 2^p \cdot 3^s \cdot 5^r\)</span>.
+In this representation,
+<span class="math notranslate nohighlight">\(p = o \cdot \log_2(2) + q\cdot \log_2(3) + t\cdot \log_2(5)\)</span> is a
+linear combination from the basis vectors over
+<span class="math notranslate nohighlight">\(\mathbb Q^3 = \mathbb T^3\)</span> with coefficients <span class="math notranslate nohighlight">\(o, q, t\)</span>, and
+<span class="math notranslate nohighlight">\(\mathbb T^3\)</span> is a module over the ring <span class="math notranslate nohighlight">\(\mathbb Z\)</span> of
+integers. Another way to state this is that octave, fifth and major
+third are the basis vectors of tonal space.</p>
+</div>
+<div class="section" id="transformations-of-tonal-spaces">
+<h2><span class="section-number">7.3. </span>Transformations of tonal spaces.<a class="headerlink" href="#transformations-of-tonal-spaces" title="Permalink to this headline">¶</a></h2>
+<p>For a fixed (arbitrary) reference tone (e.g. chamber tone A4=440Hz), and
+for integers <span class="math notranslate nohighlight">\(o, q, t \in \mathbb Z\)</span> we can represent all tones in
+just intonation. The integer lattice
+<span class="math notranslate nohighlight">\(\mathbb Z^3 \subseteq \mathbb Q^3\)</span> corresponds to Euler’s
+representation <span id="id2">[<a class="reference internal" href="8_bibliography.html#id5" title="Leonhard Euler. Tentamen Novae Theoriae Musicae Ex Certissimis Harmoniae Principiis Dilucide Expositae. Ex Typographia Academiae Scientiarum, St. Petersburg, 1739.">15</a>]</span> and we will denote it with
+<span class="math notranslate nohighlight">\(\mathbb T^3\)</span>, the tonal space incorporating the three dimensions
+of the octave <span class="math notranslate nohighlight">\(o\)</span>, the pure fifth <span class="math notranslate nohighlight">\(q\)</span> and the pure major
+third <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<p>Usually, descriptions of musical space do not consider octaves and
+octave-related tones are subsumed into equivalence classes (chroma
+classes or pitch classes); <span class="math notranslate nohighlight">\(\pi_O: \mathbb T^3 \to \mathbb T^2\)</span> ;
+<span class="math notranslate nohighlight">\((o, q, t) \mapsto (q, t)\)</span></p>
+<p>Notes are abstract symbolic representations of tones. They can be
+modeled as pairs <span class="math notranslate nohighlight">\(n=(p, d)\in \mathbb T^3 \times \mathbb R\)</span> where
+<span class="math notranslate nohighlight">\(p\)</span> encodes <em>pitch</em> and <span class="math notranslate nohighlight">\(d\)</span> <em>duration</em>. The pitch
+dimension can be represented in one of the tonal pitch spaces (TPS).</p>
+</div>
+<div class="section" id="generalized-interval-systems">
+<h2><span class="section-number">7.4. </span>Generalized Interval Systems<a class="headerlink" href="#generalized-interval-systems" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>(GIS) maps a TPS representation to an appropriate mathematical space</p></li>
+<li><p>A <em>Generalized Interval System</em> (GIS) is an ordered triple
+<span class="math notranslate nohighlight">\((S, (G, \circ), \text{int})\)</span>, where <span class="math notranslate nohighlight">\(S\)</span> is a musical
+space, <span class="math notranslate nohighlight">\((G, \circ)\)</span> is a group, and <span class="math notranslate nohighlight">\(\text{int}\)</span> is an
+interval function that maps <span class="math notranslate nohighlight">\(S \times S \to G\)</span>. Common
+instances for <span class="math notranslate nohighlight">\(G\)</span> are <span class="math notranslate nohighlight">\((\mathbb Z, +)\)</span> (suitable for the
+line of fifth) or <span class="math notranslate nohighlight">\((\mathbb{Z}_{12}, +)\)</span> (suitable for the
+circle of fifths).</p></li>
+<li><p>…. many names: Pitch Space, Tonal Space, Tonal Pitch Space, Music
+Space, Musical Space….</p></li>
+</ul>
+<p>These models of tonal space (line of fifths, circle of fifths, tonnetz,
+torus) can serve as support for probability distributions. These in turn
+describe the generative process for tonal pieces.</p>
+<p>For the scope of this dissertation, the bag-of-notes model is assumed.
+Meaning, that the grammar <span class="math notranslate nohighlight">\(G\)</span> responsible for the sequential
+arrangement of notes is factored out.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Problem: “Theorizing in the wrong space” <span id="id3">[<a class="reference internal" href="8_bibliography.html#id10" title="Geraint A. Wiggins. Music, mind and mathematics: theory, reality and formality. Journal of Mathematics and Music, 6(2):111–123, 2012. doi:10.1080/17459737.2012.694710.">70</a>]</span></p>
+</div>
+<p>Pitch space encompasses the pitches and their mutual relations, the
+intervals. Certain assumptions about pitches transform pitch space.</p>
+<p>There are numerous theoretical models of pitch space.</p>
+<div class="line-block">
+<div class="line">- Euler space</div>
+<div class="line">- Tonnetz</div>
+<div class="line">- Line of fifths</div>
+<div class="line">- Circle of fifths</div>
+<div class="line">- Spiral Array</div>
+<div class="line">- MIDI</div>
+</div>
+</div>
+<div class="section" id="models-of-pitch-space">
+<h2><span class="section-number">7.5. </span>Models of pitch space<a class="headerlink" href="#models-of-pitch-space" title="Permalink to this headline">¶</a></h2>
+<p>Pitches can be expressed as <span class="math notranslate nohighlight">\(2^x3^y5^z\)</span> for
+<span class="math notranslate nohighlight">\(x,y,z\in \mathbb Q\)</span> “Fundamental theorem of harmony”
+<span id="id4">[<a class="reference internal" href="8_bibliography.html#id47" title="Christopher Longuet-Higgins. The Three Dimensions of Harmony. In Mental Processes: Studies in Cognitive Science, pages 59–63. MIT Press, Cambridge, MA, 1987.">30</a>, <a class="reference internal" href="8_bibliography.html#id48" title="Christopher Longuet-Higgins. Two Letters to a Musical Friend. In Mental Processes: Studies in Cognitive Science, pages 64–81. MIT Press, Cambridge, MA, 1987.">31</a>, <a class="reference internal" href="8_bibliography.html#id46" title="Guerino Mazzola. Geometrie der Töne: Elemente der Mathematischen Musiktheorie. Birkhäuser, Basel, 1990.">32</a>]</span>.
+Pitches thus form a
+3-dimensional space, also called the Euler space that incorporates just
+intonation (pure integer ratios of frequencies). Distances between
+pitches in this space are called intervals. Music theorists consider a
+number of equivalence relations that transform the space. The most
+common equivalence relation is octave equivalence that identifies all
+pitches that are related by frequency ratios of 2, effectively
+projecting the 3-dimensional Euler space to the plane given by
+<span class="math notranslate nohighlight">\(3^y5^z\)</span>. This plane is commonly called the Tonnetz and has
+numerous historical precursors in the 19th century.</p>
+<p>Since the Tonnetz expresses just intonation, one can distinguish, for
+instance, between the just third E above C and the Pythagorean third E’
+that lies four fifths. The difference between the just and the
+Pythagorean third is called the syntonic comma,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+    4/5 : (2/3)^4 &amp;= 4/5 : 16/81\\
+                                &amp;= 4/5 \cdot 81/16\\
+                                &amp;= 81/80 \\
+                                \approx 1.0125.\end{aligned}\end{split}\]</div>
+<p>Identifying just and Pythoagorean thirds wraps the Tonnetz to a
+cylinder, also called the <em>Spiral Array</em>
+<span id="id5">[<a class="reference internal" href="8_bibliography.html#id42" title="Elaine Chew. Towards a Mathematical Model of Tonality. PhD thesis, Massachusetts Institute of Technology, 2000.">7</a>, <a class="reference internal" href="8_bibliography.html#id44" title="Elaine Chew. Mathematical and Computational Modeling of Tonality. Volume 204. Springer, 2014. ISBN 978-1-4614-9474-4. doi:10.1007/978-1-4614-9475-1.">8</a>]</span></p>
+<p>[Tikz Picture of Spiral Array]</p>
+<p>On this cylinder, the line of fifths wraps around in such a way that
+every fourth fifth coincides with a third. This also means that all
+points on this cylinder lie on this line of fifths. The pitches in this
+space are sometimes called tonal pitch classes
+<span id="id6">[<a class="reference internal" href="8_bibliography.html#id45" title="Fabian C Moss, Markus Neuwirth, and Martin Rohrmeier. The line of fifths and the co-evolution of tonal pitch classes. Journal of Mathematics and Music, accepted.">38</a>, <a class="reference internal" href="8_bibliography.html#id41" title="David Temperley. The Line of Fifths. Music Analysis, 19(3):289–319, 2000. doi:10.2307/854457.">59</a>, <a class="reference internal" href="8_bibliography.html#id31" title="David Temperley. The Cognition of Basic Musical Structures. MIT Press, 2001.">60</a>]</span>.
+The line of
+fifths is sufficient to capture all TPCs but the 2-dimensional surface
+of the cylinder emphasizes triadic relations. Moreover, a segment of six
+fifths contains all notes of a major or a (natural) minor scale and
+hence all pitches and intervals in a key. The triads within a key form
+Moebius strip <span id="id7">[<a class="reference internal" href="8_bibliography.html#id46" title="Guerino Mazzola. Geometrie der Töne: Elemente der Mathematischen Musiktheorie. Birkhäuser, Basel, 1990.">32</a>, <a class="reference internal" href="8_bibliography.html#id43" title="Thomas Noll. Die Vernunft in der Tradition: Neue mathematische Untersuchungen zu den alten Begriffen der Diatonizität. Zeitschrift der Gesellschaft für Musiktheorie, 2016.">45</a>]</span>.
+Closing this segment to a circle involves only diatonic fifths, but one of them is
+diminshed (B–F in C major). This pitch set can be mapped to
+<span class="math notranslate nohighlight">\(\mathbb Z_7\)</span>.</p>
+<p>[FIGURE: Diatonic chord sequence C-a-F-d-bo-G-e-C]</p>
+<p>[FIGURE: Moebius strip embedded in <span class="math notranslate nohighlight">\(\mathbb Z_7\)</span>]</p>
+<p>Finally, another importent equivalence relation is that of enharmonic
+equivalence. Enharmonic equivalence identifies octaves and augmented
+sevenths,</p>
+<div class="math notranslate nohighlight">
+\[\begin{aligned}
+    (1/2)^7 : (2/3)^12 \approx 1.0136.\end{aligned}\]</div>
+<p>This equivalence relations transforms the cylindrical pitch space to a
+torus, and the line wrapped around the cylinder to a circle, the circle
+of fifths. The tonal pitch classes are transformed into neutral pitch
+classes, or simply pitch classes.</p>
+<p>The pitch classes on the circle of fifths can be reorderd to the
+chromatic circle by</p>
+<div class="math notranslate nohighlight">
+\[p\mapsto 7p\mod 12,\]</div>
+<p>resulting in the order on which the keys within one octave occur in the
+piano. Both the chromatic circle and the circle of fifths can be
+identified with <span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span>.</p>
+<p>Especiall, review line of
+fifths, center of gravity and describe it in the language of
+distributions. Discuss also, why D is the center and not C!</p>
+<ul class="simple">
+<li><p>distinction tonal/spelled vs. (neutral) pcs</p></li>
+<li><p>explain mapping to <span class="math notranslate nohighlight">\(\mathbb Z_{12}\)</span></p></li>
+<li><p>sharp tpcs are mapped to positive numbers, flat tpcs to negative numbers</p></li>
+<li><p>already by this definition, the white-note diatonic is more sharp than flat (and not balanced!)</p></li>
+</ul>
+<div class="section" id="the-bag-of-notes-model">
+<h3><span class="section-number">7.5.1. </span>The bag-of-notes model<a class="headerlink" href="#the-bag-of-notes-model" title="Permalink to this headline">¶</a></h3>
+<p>The bag-of-notes model conceives pieces simply counts the occurrences of
+notes without taking into account the order in which they appear in the
+piece.</p>
+<p>It is in this sense a much more general model than the theoretically
+motivated ones that we have seen in the previous section. This model
+does not make any specific assumptions about the relations between notes
+other than that their respective frequency is relevant.</p>
+<p>In the terminology of probability theory, relative note frequencies
+derived from note counts under the bag-of-words model correspond to
+multinomial distributions.</p>
+<p>Take for example the first movement of Alkan’s <em>Concerto for Solo
+Piano</em>, op. 39, No. 8, in G<span class="math notranslate nohighlight">\(\sharp\)</span> minor. Figure
+[fig:Alkan_39-8_freqs] shows the note counts, weighted by duration
+(CHECK) and ranked by frequency.</p>
+<p>One can see an almost linear relation between frequency and rank.</p>
+<p>Only towards the end of the movement the key signature changes from five
+sharps (G sharp minor) to four flats Ab major but even in the sharp
+parts of the movement the notated score changes to flats where
+convenient.</p>
+<p>Since musical pieces can have very different lengths–some pieces last
+only a few minutes while others may last more than an hour–it is useful
+to normalize the note counts and to derive the relative frequencies.</p>
+<p>Interpret as distributions, show pitchplots… compare to Figure
+[fig:tonal_spaces].</p>
+<p>These and many more conceivable transformations of tonal space do not
+serve the goal of merely reflecting abstract algebraic or geometric
+relations. It is important to emphasize that these transformations
+reflect rather practical assumptions for performance and instrument
+construction (such as dealing with the syntonic comma for keyboard
+instuments) or compositional decisions (such as enharmonic equivalence).</p>
+</div>
+</div>
+<div class="section" id="dataset">
+<h2><span class="section-number">7.6. </span>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">MusicXML files from diverse sources… - musescore.com</div>
+<div class="line">- ELVIS</div>
+<div class="line">- Humdrum</div>
+<div class="line">- DCML transcriptions</div>
+<div class="line">- CPDL</div>
+<div class="line">- other websites…</div>
+</div>
+<p>In this chapter we look at the historical development of tonality.
+Although the dataset contains ca. 2000 pieces, there are unfortunately
+huge gaps in the timeline as can be seen in Figure [fig:piece_dist].
+Attributing one year to a piece is not easy, in particular for older
+pieces. If available, we use the year of composition, otherwise the year
+of publication. Where both dates were unavailable, the middle year of
+the composer’s life was chosen to represent the piece. Following this
+procedure leads to only 157 years for which we have pieces in the whole
+range of 582 years from 1361 to 1942.</p>
+<p>If the hypothesis is true that tonality is constituted by the pitch
+usage in pieces and that certain compositional assumptions transform
+pitch space, then it should be possible to discover aspects of these
+assumptions and the structure of pitch space by analyzing the usage of
+pitches in musical compositions.</p>
+<p>Moreover, comparing different sets of pieces, e.g. from different time
+periods or composers, should reveal historical and stylistic
+differences.</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="encodings.html"
+       title="previous chapter">← <span class="section-number">6. </span>Music Encoding</a>
+  </li>
+  <li class="next">
+    <a href="pc_distributions.html"
+       title="next chapter"><span class="section-number">8. </span>Tonal pitch-class distributions →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
