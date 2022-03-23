@@ -14,6 +14,9 @@ Pitch Spelling
 Style (classification)
 ----------------------
 
+Classification of SNES games music. See dataset here: https://github.com/chrisdonahue/nesmdb
+and this paper :cite:p:`donahue_nes_2018`
+
 Feature clustering
 ~~~~~~~~~~~~~~~~~~
 

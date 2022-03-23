@@ -95,8 +95,8 @@
 \contentsline {subsection}{\numberline {14.2.2}Hierarchical clustering}{49}{subsection.14.2.2}%
 \contentsline {section}{\numberline {14.3}History}{49}{section.14.3}%
 \contentsline {section}{\numberline {14.4}Performance}{49}{section.14.4}%
-\contentsline {section}{\numberline {14.5}Modeling musical sequences}{49}{section.14.5}%
-\contentsline {subsection}{\numberline {14.5.1}Hierarchical theories}{49}{subsection.14.5.1}%
+\contentsline {section}{\numberline {14.5}Modeling musical sequences}{50}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}Hierarchical theories}{50}{subsection.14.5.1}%
 \contentsline {subsection}{\numberline {14.5.2}Formal models for music sequences}{50}{subsection.14.5.2}%
 \contentsline {subsubsection}{Regular Expressions}{50}{subsubsection*.5}%
 \contentsline {subsubsection}{n\sphinxhyphen {}gram models}{50}{subsubsection*.6}%
