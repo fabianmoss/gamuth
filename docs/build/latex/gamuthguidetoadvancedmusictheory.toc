@@ -105,6 +105,7 @@
 \contentsline {subsubsection}{More advanced models}{50}{subsubsection*.9}%
 \contentsline {section}{\numberline {14.6}Music analysis with the discrete Fourier transform}{50}{section.14.6}%
 \contentsline {section}{\numberline {14.7}Topic modeling}{50}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Networks}{50}{section.14.8}%
 \contentsline {chapter}{\numberline {15}Developers}{53}{chapter.15}%
 \contentsline {section}{\numberline {15.1}API \sphinxhyphen {} gamuth}{53}{section.15.1}%
 \contentsline {chapter}{Bibliography}{59}{chapter*.11}%

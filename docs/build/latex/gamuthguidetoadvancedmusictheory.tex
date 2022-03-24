@@ -61,7 +61,7 @@
 
 
 \title{GAMuTh: Guide to Advanced Music Theory}
-\date{Mar 23, 2022}
+\date{Mar 24, 2022}
 \release{0.0.1}
 \author{Fabian C.\@{} Moss}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -95,9 +95,10 @@ The logo, a \sphinxhref{https://en.wikipedia.org/wiki/Maxima\_(music)}{maxima}, 
 symbolically reflects this level of difficulty.
 
 \sphinxAtStartPar
-The content presented on these pages is inspired by a number of great books, e.g.
-Aldwell \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id12}{1}{]}, Lewin {[}\hyperlink{cite.8_bibliography:id2}{27}{]}, Straus {[}\hyperlink{cite.8_bibliography:id3}{58}{]},
-Cadwallader and Gagné {[}\hyperlink{cite.8_bibliography:id18}{5}{]}, and Müller {[}\hyperlink{cite.8_bibliography:id24}{43}{]}.
+The content presented on these pages is inspired by a number
+of great books, e.g.
+Aldwell \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id12}{1}{]}, Lewin {[}\hyperlink{cite.8_bibliography:id2}{28}{]}, Straus {[}\hyperlink{cite.8_bibliography:id3}{59}{]},
+Cadwallader and Gagné {[}\hyperlink{cite.8_bibliography:id18}{5}{]}, and Müller {[}\hyperlink{cite.8_bibliography:id24}{44}{]}.
 What is new and unique about the approach taken here is that we take
 a computational perspective and implement all introduced concepts.
 This does not only provide us with sharp and unequivocal definitions,
@@ -135,7 +136,8 @@ type the following in your terminal:
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
-Then, in a Python script or Jupyter notebook, import the library or individual classes:
+Then, in a Python script or Jupyter notebook,
+import the library or individual classes:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{from} \PYG{n+nn}{gamuth} \PYG{k+kn}{import} \PYG{n}{Tone}\PYG{p}{,} \PYG{n}{Interval}
@@ -150,7 +152,8 @@ Then, in a Python script or Jupyter notebook, import the library or individual c
 \end{sphinxVerbatim}
 
 \sphinxAtStartPar
-See the documentation {\hyperref[\detokenize{api:api}]{\sphinxcrossref{\DUrole{std,std-ref}{API \sphinxhyphen{} gamuth}}}} for examples how to use the library, its classes and their methods.
+See the documentation {\hyperref[\detokenize{api:api}]{\sphinxcrossref{\DUrole{std,std-ref}{API \sphinxhyphen{} gamuth}}}} for examples how to use the library,
+its classes and their methods.
 
 
 \chapter{Fundamentals}
@@ -170,7 +173,7 @@ tradition but extends well to virtually all musical cultures where a tone is a m
 
 \sphinxAtStartPar
 Perhaps the most simple description of music is \sphinxstyleemphasis{sound organized in time} (attributed to
-Edgar Varèse, see also {[}\hyperlink{cite.8_bibliography:id40}{71}{]}).
+Edgar Varèse, see also {[}\hyperlink{cite.8_bibliography:id41}{72}{]}).
 Later we will see that this description falls short of encompassing many central aspects to music
 but it provides a good starting point for our considerations. Taking this definition for granted
 means that we can conceptualize music within a two\sphinxhyphen{}dimensional framework, where the axes
@@ -201,15 +204,15 @@ Riemann (1916). \sphinxstyleemphasis{Ideen zu einer Lehre von den Tonvorstellung
 
 \sphinxAtStartPar
 “The ultimate elements of the tonal imagination are single tones.”
-(Wason and Marvin {[}\hyperlink{cite.8_bibliography:id19}{67}{]}, p. 92).
+(Wason and Marvin {[}\hyperlink{cite.8_bibliography:id19}{68}{]}, p. 92).
 
 \sphinxAtStartPar
 Bearing that in mind, let’s create (or \sphinxstyleemphasis{instantiate}) a tone. To do so, we need to
 conceptualize (“vorstellen” in Riemann’s terminology) a \sphinxstyleemphasis{tone location}
-(“Tonort”, Mazzola {[}\hyperlink{cite.8_bibliography:id46}{32}{]}, p. 241).
+(“Tonort”, Mazzola {[}\hyperlink{cite.8_bibliography:id47}{33}{]}, p. 241).
 There are many different ways to do this. In fact, the way we specify the location of a tone
 defines the tonal space in which it is situated.
-The figure below is an adaptation from Lewin {[}\hyperlink{cite.8_bibliography:id2}{27}{]}.
+The figure below is an adaptation from Lewin {[}\hyperlink{cite.8_bibliography:id2}{28}{]}.
 \begin{figure}[htbp]\centering\capstart\begin{tikzpicture}
 \node[circle,fill,inner sep=0pt,minimum size=5pt,label={below: $s$}] (s) at (0,0) [below] {};
 \node[circle,fill,inner sep=0pt,minimum size=5pt,label={below: $t$}] (t) at (4,1.5) {};
@@ -217,7 +220,7 @@ The figure below is an adaptation from Lewin {[}\hyperlink{cite.8_bibliography:i
 \end{tikzpicture}\caption{Two abstract tones \(s\) and \(t\), and the interval \(i\) between them.}\label{\detokenize{1_fundamentals:id8}}\end{figure}
 \sphinxAtStartPar
 The fact that music operates with discrete pitches has also been argued to be crucial for its
-evolution {[}\hyperlink{cite.8_bibliography:id49}{61}{]}.
+evolution {[}\hyperlink{cite.8_bibliography:id50}{62}{]}.
 
 
 \subsection{Frequencies}
@@ -366,9 +369,9 @@ Transformations between representations of tones are actually \sphinxstyleemphas
 \label{\detokenize{2_scales_modes:scales-and-modes}}\label{\detokenize{2_scales_modes::doc}}
 \sphinxAtStartPar
 A vast majority of musical cultures globally have some notion or concept of organization systems
-for discrete tones {[}\hyperlink{cite.8_bibliography:id50}{4}{]}. Those can be called \sphinxstyleemphasis{scales} or \sphinxstyleemphasis{modes}.
+for discrete tones {[}\hyperlink{cite.8_bibliography:id51}{4}{]}. Those can be called \sphinxstyleemphasis{scales} or \sphinxstyleemphasis{modes}.
 While this general description holds, the musical reality is incredibly diverse and seems to defy
-uniform analytical approaches {[}\hyperlink{cite.8_bibliography:id51}{35}{]}.
+uniform analytical approaches {[}\hyperlink{cite.8_bibliography:id52}{36}{]}.
 
 \sphinxAtStartPar
 In this chapter, we are going to learn some tonal characteristics and organization systems from a range of
@@ -379,7 +382,7 @@ restrict the descriptions to what we can model using the approch established in 
 a formal description of tonal relations.
 
 \sphinxAtStartPar
-Powers \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id23}{50}{]}
+Powers \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id23}{51}{]}
 
 
 \section{Indian classical music}
@@ -388,34 +391,34 @@ Powers \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id23}{50}{
 \section{Turkish Maqam}
 \label{\detokenize{2_scales_modes:turkish-maqam}}
 \sphinxAtStartPar
-\sphinxhref{https://ratioscore.humdrum.org/turkish/}{Makam Dataset} {[}\hyperlink{cite.8_bibliography:id57}{26}{]}
+\sphinxhref{https://ratioscore.humdrum.org/turkish/}{Makam Dataset} {[}\hyperlink{cite.8_bibliography:id58}{27}{]}
 
 
 \section{Arab\sphinxhyphen{}Andalusian music}
 \label{\detokenize{2_scales_modes:arab-andalusian-music}}
 \sphinxAtStartPar
-Nuttall \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id76}{47}{]}
+Nuttall \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id77}{48}{]}
 
 
 \section{Persian Music}
 \label{\detokenize{2_scales_modes:persian-music}}
 \sphinxAtStartPar
-FamourZadeh {[}\hyperlink{cite.8_bibliography:id74}{16}{]}, Sanati {[}\hyperlink{cite.8_bibliography:id70}{54}{]}
+FamourZadeh {[}\hyperlink{cite.8_bibliography:id75}{16}{]}, Sanati {[}\hyperlink{cite.8_bibliography:id71}{55}{]}
 
 
 \section{Western classical music}
 \label{\detokenize{2_scales_modes:western-classical-music}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Ancient Greek modes {[}\hyperlink{cite.8_bibliography:id56}{46}{]}
+Ancient Greek modes {[}\hyperlink{cite.8_bibliography:id57}{47}{]}
 
 \item {} 
 \sphinxAtStartPar
-Ecclesiastic modes {[}\hyperlink{cite.8_bibliography:id59}{2}, \hyperlink{cite.8_bibliography:id67}{10}, \hyperlink{cite.8_bibliography:id68}{12}, \hyperlink{cite.8_bibliography:id69}{48}, \hyperlink{cite.8_bibliography:id58}{69}{]}
+Ecclesiastic modes {[}\hyperlink{cite.8_bibliography:id60}{2}, \hyperlink{cite.8_bibliography:id68}{10}, \hyperlink{cite.8_bibliography:id69}{12}, \hyperlink{cite.8_bibliography:id70}{49}, \hyperlink{cite.8_bibliography:id59}{70}{]}
 
 \item {} 
 \sphinxAtStartPar
-Major and minor {[}\hyperlink{cite.8_bibliography:id75}{23}{]}
+Major and minor {[}\hyperlink{cite.8_bibliography:id76}{24}{]}
 
 \item {} 
 \sphinxAtStartPar
@@ -423,7 +426,7 @@ Modes of limited transposition
 
 \item {} 
 \sphinxAtStartPar
-Georgian liturgic chorales (quartal harmonies) {[}\hyperlink{cite.8_bibliography:id20}{53}{]}
+Georgian liturgic chorales (quartal harmonies) {[}\hyperlink{cite.8_bibliography:id20}{54}{]}
 
 \end{itemize}
 
@@ -467,7 +470,7 @@ Taking these seven notes in scalar order, they can be converted to their \sphinx
 \sphinxAtStartPar
 because the octave is divided into 7 steps and there and a fifths consists of 4 steps.
 Under this view the diatonic scale is a subsegment
-of the \sphinxstyleemphasis{line of fifths} {[}\hyperlink{cite.8_bibliography:id45}{38}, \hyperlink{cite.8_bibliography:id41}{59}{]}
+of the \sphinxstyleemphasis{line of fifths} {[}\hyperlink{cite.8_bibliography:id46}{39}, \hyperlink{cite.8_bibliography:id42}{60}{]}
 \phantomsection \label{exercise:ex:tonnetz}
 
 \begin{sphinxadmonition}{note}{Exercise 2.1}
@@ -537,13 +540,13 @@ Gamelan
 \sphinxAtStartPar
 See descriptions of tunings \sphinxhref{http://www.aawmjournal.com/articles/2021b/Vitale\_Sethares\_AAWM\_Vol\_9\_2.pdf}{here}
 and data \sphinxhref{http://www.aawmjournal.com/supplemental/2021b/TothGongKebyarSpreadsheets.zip}{here}
-{[}\hyperlink{cite.8_bibliography:id34}{66}, \hyperlink{cite.8_bibliography:id35}{68}{]}.
+{[}\hyperlink{cite.8_bibliography:id35}{67}, \hyperlink{cite.8_bibliography:id36}{69}{]}.
 
 
 \chapter{Pitch\sphinxhyphen{}Class Set Theory}
 \label{\detokenize{3_set_theory:pitch-class-set-theory}}\label{\detokenize{3_set_theory::doc}}
 \sphinxAtStartPar
-Content adapted from Forte {[}\hyperlink{cite.8_bibliography:id25}{17}{]}, Straus {[}\hyperlink{cite.8_bibliography:id3}{58}{]}.
+Content adapted from Forte {[}\hyperlink{cite.8_bibliography:id25}{17}{]}, Straus {[}\hyperlink{cite.8_bibliography:id3}{59}{]}.
 In this chapter, “pitch class” always entails octave \sphinxstyleemphasis{and} enharmonic equicalenve.
 
 
@@ -831,7 +834,7 @@ complex than this simple picture conveys.
 \subsection{African rhythms}
 \label{\detokenize{4_time:african-rhythms}}
 \sphinxAtStartPar
-including afro\sphinxhyphen{}american (Brazil, Cuba, …) Black Atlantic {[}\hyperlink{cite.8_bibliography:id6}{18}{]}.
+including afro\sphinxhyphen{}american (Brazil, Cuba, …) Black Atlantic {[}\hyperlink{cite.8_bibliography:id6}{19}{]}.
 
 
 \subsection{Balkan rhythms}
@@ -847,7 +850,7 @@ Hierarchy… GTTM
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Discussion of long\sphinxhyphen{}short (middle?) ratios {[}\hyperlink{cite.8_bibliography:id8}{29}{]}
+Discussion of long\sphinxhyphen{}short (middle?) ratios {[}\hyperlink{cite.8_bibliography:id8}{30}{]}
 
 \item {} 
 \sphinxAtStartPar
@@ -859,15 +862,15 @@ Loud rest
 
 \item {} 
 \sphinxAtStartPar
-small integer ratios Desain and Honing {[}\hyperlink{cite.8_bibliography:id11}{13}{]}, Ravignani \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id9}{51}{]}
+small integer ratios Desain and Honing {[}\hyperlink{cite.8_bibliography:id11}{13}{]}, Ravignani \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id9}{52}{]}
 
 \item {} 
 \sphinxAtStartPar
-Malian music: Polak \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id7}{49}{]}
+Malian music: Polak \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id7}{50}{]}
 
 \item {} 
 \sphinxAtStartPar
-Learning of metrical categories (analogous to relativ pitch): {[}\hyperlink{cite.8_bibliography:id36}{22}, \hyperlink{cite.8_bibliography:id37}{62}{]}
+Learning of metrical categories (analogous to relativ pitch): {[}\hyperlink{cite.8_bibliography:id37}{23}, \hyperlink{cite.8_bibliography:id38}{63}{]}
 
 \end{itemize}
 
@@ -895,7 +898,7 @@ Then arrive at annotation standard (simple version)
 and do simple regex filtering (find all Vs…)
 
 \sphinxAtStartPar
-Moss \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id55}{40}{]}, Neuwirth \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id77}{44}{]}
+Moss \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id56}{41}{]}, Neuwirth \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id78}{45}{]}
 
 
 \section{Transformational theory}
@@ -1070,7 +1073,7 @@ major third: \(f:g = 5:4\)
 \sphinxAtStartPar
 The fact that \(o, q, t\) are \(\in \mathbb Q\) allows for
 unique solution of the equations
-{[}\hyperlink{cite.8_bibliography:id47}{30}, \hyperlink{cite.8_bibliography:id46}{32}, \hyperlink{cite.8_bibliography:id4}{33}{]}.
+{[}\hyperlink{cite.8_bibliography:id48}{31}, \hyperlink{cite.8_bibliography:id47}{33}, \hyperlink{cite.8_bibliography:id4}{34}{]}.
 
 
 \section{Pitch space}
@@ -1171,7 +1174,7 @@ arrangement of notes is factored out.
 
 \begin{sphinxadmonition}{important}{Important:}
 \sphinxAtStartPar
-Problem: “Theorizing in the wrong space” {[}\hyperlink{cite.8_bibliography:id10}{70}{]}
+Problem: “Theorizing in the wrong space” {[}\hyperlink{cite.8_bibliography:id10}{71}{]}
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
@@ -1196,7 +1199,7 @@ There are numerous theoretical models of pitch space.
 \sphinxAtStartPar
 Pitches can be expressed as \(2^x3^y5^z\) for
 \(x,y,z\in \mathbb Q\) “Fundamental theorem of harmony”
-{[}\hyperlink{cite.8_bibliography:id47}{30}, \hyperlink{cite.8_bibliography:id48}{31}, \hyperlink{cite.8_bibliography:id46}{32}{]}.
+{[}\hyperlink{cite.8_bibliography:id48}{31}, \hyperlink{cite.8_bibliography:id49}{32}, \hyperlink{cite.8_bibliography:id47}{33}{]}.
 Pitches thus form a
 3\sphinxhyphen{}dimensional space, also called the Euler space that incorporates just
 intonation (pure integer ratios of frequencies). Distances between
@@ -1223,7 +1226,7 @@ Pythagorean third is called the syntonic comma,
 \sphinxAtStartPar
 Identifying just and Pythoagorean thirds wraps the Tonnetz to a
 cylinder, also called the \sphinxstyleemphasis{Spiral Array}
-{[}\hyperlink{cite.8_bibliography:id42}{7}, \hyperlink{cite.8_bibliography:id44}{8}{]}
+{[}\hyperlink{cite.8_bibliography:id43}{7}, \hyperlink{cite.8_bibliography:id45}{8}{]}
 
 \sphinxAtStartPar
 {[}Tikz Picture of Spiral Array{]}
@@ -1233,13 +1236,13 @@ On this cylinder, the line of fifths wraps around in such a way that
 every fourth fifth coincides with a third. This also means that all
 points on this cylinder lie on this line of fifths. The pitches in this
 space are sometimes called tonal pitch classes
-{[}\hyperlink{cite.8_bibliography:id45}{38}, \hyperlink{cite.8_bibliography:id41}{59}, \hyperlink{cite.8_bibliography:id31}{60}{]}.
+{[}\hyperlink{cite.8_bibliography:id46}{39}, \hyperlink{cite.8_bibliography:id42}{60}, \hyperlink{cite.8_bibliography:id31}{61}{]}.
 The line of
 fifths is sufficient to capture all TPCs but the 2\sphinxhyphen{}dimensional surface
 of the cylinder emphasizes triadic relations. Moreover, a segment of six
 fifths contains all notes of a major or a (natural) minor scale and
 hence all pitches and intervals in a key. The triads within a key form
-Moebius strip {[}\hyperlink{cite.8_bibliography:id46}{32}, \hyperlink{cite.8_bibliography:id43}{45}{]}.
+Moebius strip {[}\hyperlink{cite.8_bibliography:id47}{33}, \hyperlink{cite.8_bibliography:id44}{46}{]}.
 Closing this segment to a circle involves only diatonic fifths, but one of them is
 diminshed (B\textendash{}F in C major). This pitch set can be mapped to
 \(\mathbb Z_7\).
@@ -1403,7 +1406,7 @@ pitch\sphinxhyphen{}class distributions will be more distant.
 If all pieces are transposed to the same root, clusters in this space
 correspond to different types of distributions that can be interpreted
 as modes (take root out). This fact has been used in
-{[}\hyperlink{cite.8_bibliography:id75}{23}{]}
+{[}\hyperlink{cite.8_bibliography:id76}{24}{]}
 and also shown that there are historical developments.
 
 \sphinxAtStartPar
@@ -1417,18 +1420,18 @@ original space.
 
 \sphinxAtStartPar
 One of the most popular and classic methods is \sphinxstylestrong{principal component
-analysis} {[}\hyperlink{cite.8_bibliography:id71}{3}{]}, that can be used to project
+analysis} {[}\hyperlink{cite.8_bibliography:id72}{3}{]}, that can be used to project
 the data onto a two\sphinxhyphen{}dimensional plane while keeping as much of the
 variance in the data as possible. A more recent method for
 dimensionality is called \(t\)\sphinxhyphen{}distributed stochastic neighbor
-embedding (\(t\)\sphinxhyphen{}SNE) {[}\hyperlink{cite.8_bibliography:id73}{64}{]}. PCA is
+embedding (\(t\)\sphinxhyphen{}SNE) {[}\hyperlink{cite.8_bibliography:id74}{65}{]}. PCA is
 better to get a global understanding of the structure of the space and
 \(t\)\sphinxhyphen{}SNE is better in illustrating local relationships. Figure
 {[}fig:tsne\_pca{]} shows the data reduced to the Euclidean plane by both
 methods.
 
 \sphinxAtStartPar
-A more modern method is UMAP {[}\hyperlink{cite.8_bibliography:id72}{34}{]}, much faster but conceptually different!
+A more modern method is UMAP {[}\hyperlink{cite.8_bibliography:id73}{35}{]}, much faster but conceptually different!
 
 \sphinxAtStartPar
 The reduction using \(t\)\sphinxhyphen{}SNE (top panel) shows that there are many
@@ -1524,7 +1527,7 @@ such that :math:`\sum_i X_i^{(t)}=1,\forall t`.\\
 \sphinxAtStartPar
 We count the occurrence of tonal pitch classes in all pieces and trace
 the change between them across the historical timeline. Based on
-theoretical reasoning {[}\hyperlink{cite.8_bibliography:id64}{19}, \hyperlink{cite.8_bibliography:id41}{59}{]},
+theoretical reasoning {[}\hyperlink{cite.8_bibliography:id65}{20}, \hyperlink{cite.8_bibliography:id42}{60}{]},
 we have already seen in section {[}sec:bagofwords{]} that it seems to be the
 case that sorting pitch classes along the line of fifths reveals
 structural connections between the pitch classes. For that reason we
@@ -1933,7 +1936,7 @@ fifth structure! What about thirds?
 \sphinxAtStartPar
 “When we think about harmony, we automatically think about chords. In
 fact, we are so fixated on chords that we sometimes forget they tell
-only part of the story” Tymoczko {[}\hyperlink{cite.8_bibliography:id60}{63}{]}, p. 154.
+only part of the story” Tymoczko {[}\hyperlink{cite.8_bibliography:id61}{64}{]}, p. 154.
 
 \sphinxAtStartPar
 The development of tonality can also be described as a change in two
@@ -2008,7 +2011,7 @@ Table: Stages of Tonality.
 \section{Expansion of tonal material}
 \label{\detokenize{diatonicism_chromaticism:expansion-of-tonal-material}}
 \sphinxAtStartPar
-Based on {[}\hyperlink{cite.8_bibliography:id64}{19}{]}: (see MGG “Diatonik \textendash{}
+Based on {[}\hyperlink{cite.8_bibliography:id65}{20}{]}: (see MGG “Diatonik \textendash{}
 Chromatik \textendash{} Enharmonik”)
 \begin{itemize}
 \item {} 
@@ -2025,11 +2028,11 @@ A7\(\approx\)P8 (12Q).e
 
 \item {} 
 \sphinxAtStartPar
-compare with “pitch class circulation” {[}\hyperlink{cite.8_bibliography:id60}{63}{]}, p. 158ff.
+compare with “pitch class circulation” {[}\hyperlink{cite.8_bibliography:id61}{64}{]}, p. 158ff.
 
 \item {} 
 \sphinxAtStartPar
-fifth width measures Diatonicism \sphinxhyphen{}\textgreater{} Chromaticism \sphinxhyphen{}\textgreater{} Enharmonicism, {[}\hyperlink{cite.8_bibliography:id64}{19}{]}, p. 243
+fifth width measures Diatonicism \sphinxhyphen{}\textgreater{} Chromaticism \sphinxhyphen{}\textgreater{} Enharmonicism, {[}\hyperlink{cite.8_bibliography:id65}{20}{]}, p. 243
 
 \end{itemize}
 
@@ -2232,7 +2235,7 @@ Divergence on the Tonnetz
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
 Rework this chapter based on the pedagogical introduction
-in {[}\hyperlink{cite.8_bibliography:id15}{41}{]}.
+in {[}\hyperlink{cite.8_bibliography:id15}{42}{]}.
 \end{sphinxadmonition}
 
 \sphinxAtStartPar
@@ -2268,7 +2271,7 @@ extensions of the basic model
 \item {} 
 \sphinxAtStartPar
 application to music, review model of
-{[}\hyperlink{cite.8_bibliography:id62}{24}, \hyperlink{cite.8_bibliography:id63}{25}{]}
+{[}\hyperlink{cite.8_bibliography:id63}{25}, \hyperlink{cite.8_bibliography:id64}{26}{]}
 
 \end{itemize}
 
@@ -2708,11 +2711,11 @@ is not monotonic. In the 19th century, there are diatonic Lieder
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Straus {[}\hyperlink{cite.8_bibliography:id3}{58}{]}
+Straus {[}\hyperlink{cite.8_bibliography:id3}{59}{]}
 
 \item {} 
 \sphinxAtStartPar
-Hanninen {[}\hyperlink{cite.8_bibliography:id53}{20}{]}, Hanninen {[}\hyperlink{cite.8_bibliography:id54}{21}{]}
+Hanninen {[}\hyperlink{cite.8_bibliography:id54}{21}{]}, Hanninen {[}\hyperlink{cite.8_bibliography:id55}{22}{]}
 
 \end{itemize}
 
@@ -2741,9 +2744,9 @@ graph: tree
 \section{Exhaustive segmentation}
 \label{\detokenize{5_segmentation:exhaustive-segmentation}}
 \sphinxAtStartPar
-Keyscapes Sapp {[}\hyperlink{cite.8_bibliography:id38}{55}{]}, Sapp {[}\hyperlink{cite.8_bibliography:id39}{56}{]},
-Pitchscapes Lieck and Rohrmeier {[}\hyperlink{cite.8_bibliography:id32}{28}{]},
-Wavescapes Viaccoz \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id52}{65}{]}
+Keyscapes Sapp {[}\hyperlink{cite.8_bibliography:id39}{56}{]}, Sapp {[}\hyperlink{cite.8_bibliography:id40}{57}{]},
+Pitchscapes Lieck and Rohrmeier {[}\hyperlink{cite.8_bibliography:id33}{29}{]},
+Wavescapes Viaccoz \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id53}{66}{]}
 
 \sphinxAtStartPar
 See also Müller (form)
@@ -2755,17 +2758,17 @@ See also Müller (form)
 \section{Pitch Spelling}
 \label{\detokenize{6_advanced:pitch-spelling}}\label{\detokenize{6_advanced:id1}}
 \sphinxAtStartPar
-Meredith {[}\hyperlink{cite.8_bibliography:id27}{36}{]}, Meredith and Wiggins {[}\hyperlink{cite.8_bibliography:id26}{37}{]}
+Meredith {[}\hyperlink{cite.8_bibliography:id27}{37}{]}, Meredith and Wiggins {[}\hyperlink{cite.8_bibliography:id26}{38}{]}
 Cambouropoulos {[}\hyperlink{cite.8_bibliography:id28}{6}{]}, Chew and Chen {[}\hyperlink{cite.8_bibliography:id29}{9}{]}
-Stoddard \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id30}{57}{]}
-Temperley {[}\hyperlink{cite.8_bibliography:id31}{60}{]}
+Stoddard \sphinxstyleemphasis{et al.} {[}\hyperlink{cite.8_bibliography:id30}{58}{]}
+Temperley {[}\hyperlink{cite.8_bibliography:id31}{61}{]}
 
 
 \section{Style (classification)}
 \label{\detokenize{6_advanced:style-classification}}
 \sphinxAtStartPar
 Classification of SNES games music. See dataset here: \sphinxurl{https://github.com/chrisdonahue/nesmdb}
-and this paper {[}\hyperlink{cite.8_bibliography:id33}{14}{]}
+and this paper {[}\hyperlink{cite.8_bibliography:id34}{14}{]}
 
 
 \subsection{Feature clustering}
@@ -2819,7 +2822,7 @@ only exists in diatonic spaces.
 \subsection{Formal models for music sequences}
 \label{\detokenize{6_advanced:formal-models-for-music-sequences}}
 \sphinxAtStartPar
-See overview in {[}\hyperlink{cite.8_bibliography:id17}{52}{]}
+See overview in {[}\hyperlink{cite.8_bibliography:id17}{53}{]}
 
 
 \subsubsection{Regular Expressions}
@@ -2843,7 +2846,7 @@ See overview in {[}\hyperlink{cite.8_bibliography:id17}{52}{]}
 \subsubsection{Probabilistic Context\sphinxhyphen{}Free Grammars}
 \label{\detokenize{6_advanced:probabilistic-context-free-grammars}}
 \sphinxAtStartPar
-(form; choro) {[}\hyperlink{cite.8_bibliography:id14}{39}, \hyperlink{cite.8_bibliography:id16}{42}{]}
+(form; choro) {[}\hyperlink{cite.8_bibliography:id14}{40}, \hyperlink{cite.8_bibliography:id16}{43}{]}
 
 
 \subsubsection{More advanced models}
@@ -2857,6 +2860,12 @@ Neural nets
 
 \section{Topic modeling}
 \label{\detokenize{6_advanced:topic-modeling}}
+
+\section{Networks}
+\label{\detokenize{6_advanced:networks}}
+\sphinxAtStartPar
+Building networks of creative influence: {[}\hyperlink{cite.8_bibliography:id32}{18}{]}
+
 \cleardoublepage
 \begingroup
 \renewcommand\chapter[1]{\endgroup}
@@ -3362,13 +3371,13 @@ int
 \bibitem[1]{8_bibliography:id12}
 \sphinxAtStartPar
 Edward Aldwell, Carl Schachter, and Allen Cadwallader. \sphinxstyleemphasis{Harmony and Voice Leading}. Cengage Learning, 4th edition, 2010.
-\bibitem[2]{8_bibliography:id59}
+\bibitem[2]{8_bibliography:id60}
 \sphinxAtStartPar
 Hernandez Benavides Miguel Angel and Galpin Ixent. Exploring the musicalization of texts in Gregorian Chant using Data Analytics. Technical Report, Universitaria de Bogotá Jorge Tadeo Lozano, 2020.
-\bibitem[3]{8_bibliography:id71}
+\bibitem[3]{8_bibliography:id72}
 \sphinxAtStartPar
 Christopher M Bishop. \sphinxstyleemphasis{Pattern Recognition and Machine Learning}. Springer, 2006.
-\bibitem[4]{8_bibliography:id50}
+\bibitem[4]{8_bibliography:id51}
 \sphinxAtStartPar
 S. Brown and J. Jordania. Universals in the world\textquotesingle{}s musics. \sphinxstyleemphasis{Psychology of Music}, 41(2):229\textendash{}248, 2013. \sphinxhref{https://doi.org/10.1177/0305735611425896}{doi:10.1177/0305735611425896}.
 \bibitem[5]{8_bibliography:id18}
@@ -3377,199 +3386,202 @@ Allen Cadwallader and David Gagné. \sphinxstyleemphasis{Analysis of Tonal Music
 \bibitem[6]{8_bibliography:id28}
 \sphinxAtStartPar
 Emilios Cambouropoulos. Pitch Spelling: A Computational Model. \sphinxstyleemphasis{Music Perception: An Interdisciplinary Journal}, 20(4):411\textendash{}429, June 2003. \sphinxhref{https://doi.org/10.1525/mp.2003.20.4.411}{doi:10.1525/mp.2003.20.4.411}.
-\bibitem[7]{8_bibliography:id42}
+\bibitem[7]{8_bibliography:id43}
 \sphinxAtStartPar
 Elaine Chew. \sphinxstyleemphasis{Towards a Mathematical Model of Tonality}. PhD thesis, Massachusetts Institute of Technology, 2000.
-\bibitem[8]{8_bibliography:id44}
+\bibitem[8]{8_bibliography:id45}
 \sphinxAtStartPar
 Elaine Chew. \sphinxstyleemphasis{Mathematical and Computational Modeling of Tonality}. Volume 204. Springer, 2014. ISBN 978\sphinxhyphen{}1\sphinxhyphen{}4614\sphinxhyphen{}9474\sphinxhyphen{}4. \sphinxhref{https://doi.org/10.1007/978-1-4614-9475-1}{doi:10.1007/978\sphinxhyphen{}1\sphinxhyphen{}4614\sphinxhyphen{}9475\sphinxhyphen{}1}.
 \bibitem[9]{8_bibliography:id29}
 \sphinxAtStartPar
 Elaine Chew and Yun\sphinxhyphen{}Ching Chen. Real\sphinxhyphen{}Time Pitch Spelling Using the Spiral Array. \sphinxstyleemphasis{Computer Music Journal}, 29(2):61\textendash{}76, June 2005. \sphinxhref{https://doi.org/10.1162/0148926054094378}{doi:10.1162/0148926054094378}.
-\bibitem[10]{8_bibliography:id67}
+\bibitem[10]{8_bibliography:id68}
 \sphinxAtStartPar
 Bas Cornelissen, Willem Zuidema, and John Ashley Burgoyne. Mode classification and natural units in plainchant. In \sphinxstyleemphasis{Proceedings of the 21st International Society for Music Information Retrieval Conference}, 869\textendash{}875. Montreal, Canada, October 2020. ISMIR. \sphinxhref{https://doi.org/10.5281/zenodo.4245572}{doi:10.5281/zenodo.4245572}.
 \bibitem[11]{8_bibliography:id13}
 \sphinxAtStartPar
 Anne Danielsen, Mari Romarheim Haugen, and Alexander Refsum Jensenius. Moving to the Beat: Studying Entrainment to Micro\sphinxhyphen{}Rhythmic Changes in Pulse by Motion Capture. \sphinxstyleemphasis{Timing \& Time Perception}, 3(1\sphinxhyphen{}2):133\textendash{}154, May 2015. \sphinxhref{https://doi.org/10.1163/22134468-00002043}{doi:10.1163/22134468\sphinxhyphen{}00002043}.
-\bibitem[12]{8_bibliography:id68}
+\bibitem[12]{8_bibliography:id69}
 \sphinxAtStartPar
 Dimitrios S. Delviniotis. New Method of Byzantine Music (BM) Intervals\textquotesingle{} Measuring and Its Application in the Fourth Mode. \$A\$ New Approach of the Music Intervals\textquotesingle{} Definition. \sphinxstyleemphasis{Series Musicologica Balcanica}, 1(2):209\textendash{}232, February 2021. \sphinxhref{https://doi.org/10.26262/smb.v1i2.7941}{doi:10.26262/smb.v1i2.7941}.
 \bibitem[13]{8_bibliography:id11}
 \sphinxAtStartPar
 Peter Desain and Henkjan Honing. The Formation of Rhythmic Categories and Metric Priming. \sphinxstyleemphasis{Perception}, 32(3):341\textendash{}365, March 2003. \sphinxhref{https://doi.org/10.1068/p3370}{doi:10.1068/p3370}.
-\bibitem[14]{8_bibliography:id33}
+\bibitem[14]{8_bibliography:id34}
 \sphinxAtStartPar
 Chris Donahue, Huanru Henry Mao, and Julian McAuley. The NES Music Database: A multi\sphinxhyphen{}instrumental dataset with expressive performance attributes. \sphinxstyleemphasis{arXiv:1806.04278 {[}cs, eess{]}}, June 2018. arXiv: 1806.04278. URL: \sphinxurl{http://arxiv.org/abs/1806.04278} (visited on 2022\sphinxhyphen{}01\sphinxhyphen{}06).
 \bibitem[15]{8_bibliography:id5}
 \sphinxAtStartPar
 Leonhard Euler. \sphinxstyleemphasis{Tentamen Novae Theoriae Musicae Ex Certissimis Harmoniae Principiis Dilucide Expositae}. Ex Typographia Academiae Scientiarum, St. Petersburg, 1739.
-\bibitem[16]{8_bibliography:id74}
+\bibitem[16]{8_bibliography:id75}
 \sphinxAtStartPar
 Vedad FamourZadeh. La musique persane, Formalisation algébrique des structures. Technical Report, IRCAM, 2005.
 \bibitem[17]{8_bibliography:id25}
 \sphinxAtStartPar
 Allen Forte. \sphinxstyleemphasis{The Structure of Atonal Music}. Yale University Press, New Haven and London, 1977.
-\bibitem[18]{8_bibliography:id6}
+\bibitem[18]{8_bibliography:id32}
+\sphinxAtStartPar
+Patrick Georges and Aylin Seckin. Music information visualization and classical composers discovery: an application of network graphs, multidimensional scaling, and support vector machines. \sphinxstyleemphasis{Scientometrics}, 2022. \sphinxhref{https://doi.org/10.1007/s11192-022-04331-8}{doi:10.1007/s11192\sphinxhyphen{}022\sphinxhyphen{}04331\sphinxhyphen{}8}.
+\bibitem[19]{8_bibliography:id6}
 \sphinxAtStartPar
 Paul Gilroy. \sphinxstyleemphasis{The Black Atlantic: Modernity and Double\sphinxhyphen{}Consciousness}. Harvard University Press, 1995.
-\bibitem[19]{8_bibliography:id64}
+\bibitem[20]{8_bibliography:id65}
 \sphinxAtStartPar
 Zsolt Gárdonyi and Hubert Nordhoff. \sphinxstyleemphasis{Harmonik}. Möseler Verlag, Wolfenbüttel, 2002.
-\bibitem[20]{8_bibliography:id53}
-\sphinxAtStartPar
-Dora A Hanninen. Orientations, Criteria, Segments: A General Theory of Segmentation for Music Analysis. \sphinxstyleemphasis{Journal of Music Theory}, 45(2):345\textendash{}433, 2001.
 \bibitem[21]{8_bibliography:id54}
 \sphinxAtStartPar
+Dora A Hanninen. Orientations, Criteria, Segments: A General Theory of Segmentation for Music Analysis. \sphinxstyleemphasis{Journal of Music Theory}, 45(2):345\textendash{}433, 2001.
+\bibitem[22]{8_bibliography:id55}
+\sphinxAtStartPar
 Dora A. Hanninen. \sphinxstyleemphasis{A Theory of Music Analysis: On Segmentation and Associative Organization}. University of Rochester Press, Rochester, NY, first edition, December 2012.
-\bibitem[22]{8_bibliography:id36}
+\bibitem[23]{8_bibliography:id37}
 \sphinxAtStartPar
 Erin E. Hannon and Sandra E. Trehub. Tuning in to musical rhythms: infants learn more readily than adults. \sphinxstyleemphasis{Proceedings of the National Academy of Sciences of the United States of America}, 102(35):12639\textendash{}12643, 2005. \sphinxhref{https://doi.org/10.1073/pnas.0504254102}{doi:10.1073/pnas.0504254102}.
-\bibitem[23]{8_bibliography:id75}
+\bibitem[24]{8_bibliography:id76}
 \sphinxAtStartPar
 Daniel Harasim, Fabian C. Moss, Matthias Ramirez, and Martin Rohrmeier. Exploring the foundations of tonality: statistical cognitive modeling of modes in the history of Western classical music. \sphinxstyleemphasis{Humanities and Social Sciences Communications}, 8(1):1\textendash{}11, January 2021. \sphinxhref{https://doi.org/10.1057/s41599-020-00678-6}{doi:10.1057/s41599\sphinxhyphen{}020\sphinxhyphen{}00678\sphinxhyphen{}6}.
-\bibitem[24]{8_bibliography:id62}
-\sphinxAtStartPar
-Diane J Hu and Lawrence K Saul. A probabilistic topic model for unsupervised learning of musical key\sphinxhyphen{}profiles. In \sphinxstyleemphasis{Proceedings of the 10th International Society for Music Information Retrieval Conference (ISMIR 2009)}, 441\textendash{}446. Kobe, Japan, October 2009. \sphinxhref{https://doi.org/10.1.1.174.7644}{doi:10.1.1.174.7644}.
 \bibitem[25]{8_bibliography:id63}
 \sphinxAtStartPar
+Diane J Hu and Lawrence K Saul. A probabilistic topic model for unsupervised learning of musical key\sphinxhyphen{}profiles. In \sphinxstyleemphasis{Proceedings of the 10th International Society for Music Information Retrieval Conference (ISMIR 2009)}, 441\textendash{}446. Kobe, Japan, October 2009. \sphinxhref{https://doi.org/10.1.1.174.7644}{doi:10.1.1.174.7644}.
+\bibitem[26]{8_bibliography:id64}
+\sphinxAtStartPar
 Diane J Hu and Lawrence K Saul. A Probabilistic Topic Model for Music Analysis. In Y. Bengio, D. Schuurmans, J. D. Lafferty, C. K. I. Williams, and A. Culotta, editors, \sphinxstyleemphasis{Proceedings of the 22nd Conference on Neural Information Processing Systems 22 (NIPS 2009)}, 1\textendash{}4. Vancouver, Canada, 2009.
-\bibitem[26]{8_bibliography:id57}
+\bibitem[27]{8_bibliography:id58}
 \sphinxAtStartPar
 M Kemal Karaosmanoğlu. A Turkish Makam Music Symbolic Database for Music Information Retrieval: SymbTr. In \sphinxstyleemphasis{ISMIR}, 6. 2012.
-\bibitem[27]{8_bibliography:id2}
+\bibitem[28]{8_bibliography:id2}
 \sphinxAtStartPar
 David Lewin. \sphinxstyleemphasis{Generalized Musical Intervals and Transformations}. Oxford University Press, Oxford, 1987.
-\bibitem[28]{8_bibliography:id32}
+\bibitem[29]{8_bibliography:id33}
 \sphinxAtStartPar
 Robert Lieck and Martin Rohrmeier. Modelling Hierarchical Key Structure with Pitch Scapes. In \sphinxstyleemphasis{Proceedings of the 21st International Society for Music Information Retrieval Conference (ISMIR 2020)}, 811\textendash{}818. Montreal, Canada, 2020. \sphinxhref{https://doi.org/10.5281/zenodo.4245558}{doi:10.5281/zenodo.4245558}.
-\bibitem[29]{8_bibliography:id8}
+\bibitem[30]{8_bibliography:id8}
 \sphinxAtStartPar
 Justin London. \sphinxstyleemphasis{Hearing in Time: Psychological Aspects of Musical Meter}. Oxford University Press, Oxford, second edition, 2012.
-\bibitem[30]{8_bibliography:id47}
-\sphinxAtStartPar
-Christopher Longuet\sphinxhyphen{}Higgins. The Three Dimensions of Harmony. In \sphinxstyleemphasis{Mental Processes: Studies in Cognitive Science}, pages 59\textendash{}63. MIT Press, Cambridge, MA, 1987.
 \bibitem[31]{8_bibliography:id48}
 \sphinxAtStartPar
+Christopher Longuet\sphinxhyphen{}Higgins. The Three Dimensions of Harmony. In \sphinxstyleemphasis{Mental Processes: Studies in Cognitive Science}, pages 59\textendash{}63. MIT Press, Cambridge, MA, 1987.
+\bibitem[32]{8_bibliography:id49}
+\sphinxAtStartPar
 Christopher Longuet\sphinxhyphen{}Higgins. Two Letters to a Musical Friend. In \sphinxstyleemphasis{Mental Processes: Studies in Cognitive Science}, pages 64\textendash{}81. MIT Press, Cambridge, MA, 1987.
-\bibitem[32]{8_bibliography:id46}
+\bibitem[33]{8_bibliography:id47}
 \sphinxAtStartPar
 Guerino Mazzola. \sphinxstyleemphasis{Geometrie der Töne: Elemente der Mathematischen Musiktheorie}. Birkhäuser, Basel, 1990.
-\bibitem[33]{8_bibliography:id4}
+\bibitem[34]{8_bibliography:id4}
 \sphinxAtStartPar
 Guerino Mazzola. The Euler Space. In \sphinxstyleemphasis{Basic Music Technology}, pages 51\textendash{}61. Springer, 2018. \sphinxhref{https://doi.org/10.1007/978-3-030-00982-3\_6}{doi:10.1007/978\sphinxhyphen{}3\sphinxhyphen{}030\sphinxhyphen{}00982\sphinxhyphen{}3\_6}.
-\bibitem[34]{8_bibliography:id72}
+\bibitem[35]{8_bibliography:id73}
 \sphinxAtStartPar
 Leland McInnes, John Healy, and James Melville. UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. \sphinxstyleemphasis{arXiv:1802.03426 {[}cs, stat{]}}, September 2020. \sphinxhref{https://arxiv.org/abs/1802.03426}{arXiv:1802.03426}.
-\bibitem[35]{8_bibliography:id51}
+\bibitem[36]{8_bibliography:id52}
 \sphinxAtStartPar
 Samuel Mehr, Manvir Singh, Dean Knox, Daniel Ketter, Daniel Pickens\sphinxhyphen{}Jones, S. Atwood, Christopher Lucas, Nori Jacoby, Alena Egner, Erin J. Hopkins, Rhea M. Howard, Joshua Hartshorne, Mariela Jennings, Jan Simson, Constance Bainbridge, Steven Pinker, Timothy J. O\textquotesingle{}Donnell, Max Krasnow, and Luke Glowacki. Universality and diversity in human song. \sphinxstyleemphasis{Science}, 366:eaax0868, 2019. \sphinxhref{https://doi.org/10.31234/OSF.IO/EMQ8R}{doi:10.31234/OSF.IO/EMQ8R}.
-\bibitem[36]{8_bibliography:id27}
+\bibitem[37]{8_bibliography:id27}
 \sphinxAtStartPar
 David Meredith. The ps13 pitch spelling algorithm. \sphinxstyleemphasis{Journal of New Music Research}, 35(2):121\textendash{}159, June 2006. \sphinxhref{https://doi.org/10.1080/09298210600834961}{doi:10.1080/09298210600834961}.
-\bibitem[37]{8_bibliography:id26}
+\bibitem[38]{8_bibliography:id26}
 \sphinxAtStartPar
 David Meredith and Geraint A Wiggins. Comparing Pitch Spelling Algorithms. \sphinxstyleemphasis{Proceedings of the International Symposium on Music Information Retrieval (ISMIR)}, pages 280\textendash{}287, 2005. \sphinxhref{https://doi.org/10.1007/978-3-540-31807-1\_14}{doi:10.1007/978\sphinxhyphen{}3\sphinxhyphen{}540\sphinxhyphen{}31807\sphinxhyphen{}1\_14}.
-\bibitem[38]{8_bibliography:id45}
+\bibitem[39]{8_bibliography:id46}
 \sphinxAtStartPar
 Fabian C Moss, Markus Neuwirth, and Martin Rohrmeier. The line of fifths and the co\sphinxhyphen{}evolution of tonal pitch classes. \sphinxstyleemphasis{Journal of Mathematics and Music}, accepted.
-\bibitem[39]{8_bibliography:id14}
+\bibitem[40]{8_bibliography:id14}
 \sphinxAtStartPar
 Fabian C. Moss. Choro Songbook Corpus. Zenodo, 2020. \sphinxhref{https://doi.org/10.5281/zenodo.3881347}{doi:10.5281/zenodo.3881347}.
-\bibitem[40]{8_bibliography:id55}
+\bibitem[41]{8_bibliography:id56}
 \sphinxAtStartPar
 Fabian C. Moss, Markus Neuwirth, Daniel Harasim, and Martin Rohrmeier. Statistical characteristics of tonal harmony: a corpus study of Beethoven\textquotesingle{}s string quartets. \sphinxstyleemphasis{PLoS ONE}, 14(6):e0217242, 2019. \sphinxhref{https://doi.org/10.1371/journal.pone.0217242}{doi:10.1371/journal.pone.0217242}.
-\bibitem[41]{8_bibliography:id15}
+\bibitem[42]{8_bibliography:id15}
 \sphinxAtStartPar
 Fabian C. Moss and Martin Rohrmeier. Discovering Tonal Profiles with Latent Dirichlet Allocation. \sphinxstyleemphasis{Music \& Science}, 4:20592043211048827, January 2021. \sphinxhref{https://doi.org/10.1177/20592043211048827}{doi:10.1177/20592043211048827}.
-\bibitem[42]{8_bibliography:id16}
+\bibitem[43]{8_bibliography:id16}
 \sphinxAtStartPar
 Fabian C. Moss, Willian Fernandes Souza, and Martin Rohrmeier. Harmony and form in Brazilian Choro: A corpus\sphinxhyphen{}driven approach to musical style analysis. \sphinxstyleemphasis{Journal of New Music Research}, 49(5):416\textendash{}437, 2020. \sphinxhref{https://doi.org/10.1080/09298215.2020.1797109}{doi:10.1080/09298215.2020.1797109}.
-\bibitem[43]{8_bibliography:id24}
+\bibitem[44]{8_bibliography:id24}
 \sphinxAtStartPar
 Meinhard Müller. \sphinxstyleemphasis{Fundamentals of Music Processing}. Springer, 2015.
-\bibitem[44]{8_bibliography:id77}
+\bibitem[45]{8_bibliography:id78}
 \sphinxAtStartPar
 Markus Neuwirth, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. The Annotated Beethoven Corpus (ABC): A Dataset of Harmonic Analyses of All Beethoven String Quartets. \sphinxstyleemphasis{Frontiers in Digital Humanities}, 5(July):1\textendash{}5, 2018. \sphinxhref{https://doi.org/10.3389/fdigh.2018.00016}{doi:10.3389/fdigh.2018.00016}.
-\bibitem[45]{8_bibliography:id43}
+\bibitem[46]{8_bibliography:id44}
 \sphinxAtStartPar
 Thomas Noll. Die Vernunft in der Tradition: Neue mathematische Untersuchungen zu den alten Begriffen der Diatonizität. \sphinxstyleemphasis{Zeitschrift der Gesellschaft für Musiktheorie}, 2016.
-\bibitem[46]{8_bibliography:id56}
+\bibitem[47]{8_bibliography:id57}
 \sphinxAtStartPar
 Edward Nowacki. \sphinxstyleemphasis{Latin and Greek Music Theory}. Eastman Studies in Music. University of Rochester Press, Rochester, 2020.
-\bibitem[47]{8_bibliography:id76}
+\bibitem[48]{8_bibliography:id77}
 \sphinxAtStartPar
 Thomas Nuttall, Miguel G. Casado, Andres Ferraro, Darrell Conklin, and Rafael Caro Repetto. A computational exploration of melodic patterns in Arab\sphinxhyphen{}Andalusian music. \sphinxstyleemphasis{Journal of Mathematics and Music}, 0(0):1\textendash{}13, May 2021. \sphinxhref{https://doi.org/10.1080/17459737.2021.1917010}{doi:10.1080/17459737.2021.1917010}.
-\bibitem[48]{8_bibliography:id69}
+\bibitem[49]{8_bibliography:id70}
 \sphinxAtStartPar
 Richard Parncutt. Pitch\sphinxhyphen{}class prevalence in plainchant, scale\sphinxhyphen{}degree consonance, and the origin of the rising leading tone. \sphinxstyleemphasis{Journal of New Music Research}, 48(5):434\textendash{}448, October 2019. \sphinxhref{https://doi.org/10.1080/09298215.2019.1642360}{doi:10.1080/09298215.2019.1642360}.
-\bibitem[49]{8_bibliography:id7}
+\bibitem[50]{8_bibliography:id7}
 \sphinxAtStartPar
 Rainer Polak, Nori Jacoby, and Justin London. Both isochronous and non\sphinxhyphen{}isochronous metrical subdivision afford precise and stable ensemble entrainment: A corpus study of Malian jembe drumming. \sphinxstyleemphasis{Frontiers in Neuroscience}, 2016. \sphinxhref{https://doi.org/10.3389/fnins.2016.00285}{doi:10.3389/fnins.2016.00285}.
-\bibitem[50]{8_bibliography:id23}
+\bibitem[51]{8_bibliography:id23}
 \sphinxAtStartPar
 Harold S. Powers, Frans Wiering, James Porter, James Cowdery, Richard Widdess, Ruth Davis, Marc Perlman, Stephen Jones, and Allan Marett. Mode. In \sphinxstyleemphasis{Grove Music Online}. Oxford University Press, Oxford, 2001. \sphinxhref{https://doi.org/10.1093/gmo/9781561592630.article.43718}{doi:10.1093/gmo/9781561592630.article.43718}.
-\bibitem[51]{8_bibliography:id9}
+\bibitem[52]{8_bibliography:id9}
 \sphinxAtStartPar
 Andrea Ravignani, Bill Thompson, Massimo Lumaca, and Manon Grube. Why Do Durations in Musical Rhythms Conform to Small Integer Ratios? \sphinxstyleemphasis{Frontiers in Computational Neuroscience}, 12:1\textendash{}9, November 2018. \sphinxhref{https://doi.org/10.3389/fncom.2018.00086}{doi:10.3389/fncom.2018.00086}.
-\bibitem[52]{8_bibliography:id17}
+\bibitem[53]{8_bibliography:id17}
 \sphinxAtStartPar
 Martin Rohrmeier and Thore Graepel. Comparing Feature\sphinxhyphen{}Based Models of Harmony. In \sphinxstyleemphasis{Proceedings of the 9th International Symposium on Computer Music Modeling and Retrieval CMMR 2012}, 357\textendash{}370. London, UK, 2012. Springer.
-\bibitem[53]{8_bibliography:id20}
+\bibitem[54]{8_bibliography:id20}
 \sphinxAtStartPar
 Sebastian Rosenzweig, Frank Scherbaum, David Shugliashvili, Vlora Arifi\sphinxhyphen{}Müller, and Meinard Müller. Erkomaishvili Dataset: A Curated Corpus of Traditional Georgian Vocal Music for Computational Musicology. \sphinxstyleemphasis{Transactions of the International Society for Music Information Retrieval}, 3(1):31\textendash{}41, 2020. \sphinxhref{https://doi.org/10.5334/tismir.44}{doi:10.5334/tismir.44}.
-\bibitem[54]{8_bibliography:id70}
+\bibitem[55]{8_bibliography:id71}
 \sphinxAtStartPar
 Farshad Sanati. \sphinxstyleemphasis{An Investigation on the Value of Intervals in Persian Music}. Master Thesis, University of Jyväskylä, 2020.
-\bibitem[55]{8_bibliography:id38}
-\sphinxAtStartPar
-Craig Stuart Sapp. Harmonic Visualizations of Tonal Music. In \sphinxstyleemphasis{The International Computer Music Conference (ICMC)}, 423\textendash{}430. 2001.
 \bibitem[56]{8_bibliography:id39}
 \sphinxAtStartPar
+Craig Stuart Sapp. Harmonic Visualizations of Tonal Music. In \sphinxstyleemphasis{The International Computer Music Conference (ICMC)}, 423\textendash{}430. 2001.
+\bibitem[57]{8_bibliography:id40}
+\sphinxAtStartPar
 Craig Stuart Sapp. Visual hierarchical key analysis. \sphinxstyleemphasis{Computers in Entertainment}, 3(4):3, 2005. \sphinxhref{https://doi.org/10.1145/1095534.1095544}{doi:10.1145/1095534.1095544}.
-\bibitem[57]{8_bibliography:id30}
+\bibitem[58]{8_bibliography:id30}
 \sphinxAtStartPar
 Joshua Stoddard, Christopher Raphael, and Paul E Utgoff. Well\sphinxhyphen{}tempered spelling: A key\sphinxhyphen{}invariant pitch spelling algorithm. In \sphinxstyleemphasis{Proceedings of the 5th International Conference on Music Information Retrieval (ISMIR 2004)}. Barcelona, Spain, 2004.
-\bibitem[58]{8_bibliography:id3}
+\bibitem[59]{8_bibliography:id3}
 \sphinxAtStartPar
 Joseph Nathan Straus. \sphinxstyleemphasis{Introduction to post\sphinxhyphen{}tonal theory}. Pearson Prentice Hall, New York, 3rd edition, 2005.
-\bibitem[59]{8_bibliography:id41}
+\bibitem[60]{8_bibliography:id42}
 \sphinxAtStartPar
 David Temperley. The Line of Fifths. \sphinxstyleemphasis{Music Analysis}, 19(3):289\textendash{}319, 2000. \sphinxhref{https://doi.org/10.2307/854457}{doi:10.2307/854457}.
-\bibitem[60]{8_bibliography:id31}
+\bibitem[61]{8_bibliography:id31}
 \sphinxAtStartPar
 David Temperley. \sphinxstyleemphasis{The Cognition of Basic Musical Structures}. MIT Press, 2001.
-\bibitem[61]{8_bibliography:id49}
+\bibitem[62]{8_bibliography:id50}
 \sphinxAtStartPar
 Gary Tomlinson. \sphinxstyleemphasis{A Million Years of Music}. Princeton University Press, 2018.
-\bibitem[62]{8_bibliography:id37}
+\bibitem[63]{8_bibliography:id38}
 \sphinxAtStartPar
 Sandra E. Trehub, E. Glenn Schellenberg, and Stuart B. Kamenetsky. Infants\textquotesingle{} and adults\textquotesingle{} perception of scale structure. \sphinxstyleemphasis{Journal of Experimental Psychology: Human Perception and Performance}, 25(4):965\textendash{}975, 1999. \sphinxhref{https://doi.org/10.1037/0096-1523.25.4.965}{doi:10.1037/0096\sphinxhyphen{}1523.25.4.965}.
-\bibitem[63]{8_bibliography:id60}
+\bibitem[64]{8_bibliography:id61}
 \sphinxAtStartPar
 Dmitri Tymoczko. \sphinxstyleemphasis{A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice}. Oxford University Press, Oxford, 2011.
-\bibitem[64]{8_bibliography:id73}
+\bibitem[65]{8_bibliography:id74}
 \sphinxAtStartPar
 Laurens Van Der Maaten and Geoffrey Hinton. Visualizing Data using t\sphinxhyphen{}SNE. \sphinxstyleemphasis{Journal of Machine Learning Research}, 9(November):2579\textendash{}2605, 2008.
-\bibitem[65]{8_bibliography:id52}
+\bibitem[66]{8_bibliography:id53}
 \sphinxAtStartPar
 Cédric Viaccoz, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. Wavescapes: A visual hierarchical analysis of tonality using the discrete Fourier transform. \sphinxstyleemphasis{Musicae Scientiae}, pages 10298649211034906, January 2022. \sphinxhref{https://doi.org/10.1177/10298649211034906}{doi:10.1177/10298649211034906}.
-\bibitem[66]{8_bibliography:id34}
+\bibitem[67]{8_bibliography:id35}
 \sphinxAtStartPar
 Wayne Vitale and William Sethares. Balinese Gamelan Tuning: The Toth Archives. \sphinxstyleemphasis{Analytical Approaches to World Music}, 9(2):1\textendash{}39, 2021.
-\bibitem[67]{8_bibliography:id19}
+\bibitem[68]{8_bibliography:id19}
 \sphinxAtStartPar
 Robert W Wason and Elizabeth West Marvin. Riemann\textquotesingle{}s "Ideen zu Einer \textquotesingle{}Lehre von den Tonvorstellungen\textquotesingle{}": An Annotated Translation. \sphinxstyleemphasis{Journal of Music Theory}, 36(1):69\textendash{}79, 1992.
-\bibitem[68]{8_bibliography:id35}
+\bibitem[69]{8_bibliography:id36}
 \sphinxAtStartPar
 Gerrit Wendt and Rolf Bader. Analysis and Perception of Javanese Gamelan Tunings. In Rolf Bader, editor, \sphinxstyleemphasis{Computational Phonogram Archiving}, Current Research in Systematic Musicology, pages 129\textendash{}142. Springer International Publishing, Cham, 2019. \sphinxhref{https://doi.org/10.1007/978-3-030-02695-0\_6}{doi:10.1007/978\sphinxhyphen{}3\sphinxhyphen{}030\sphinxhyphen{}02695\sphinxhyphen{}0\_6}.
-\bibitem[69]{8_bibliography:id58}
+\bibitem[70]{8_bibliography:id59}
 \sphinxAtStartPar
 Frans Wiering. \sphinxstyleemphasis{The Language of the Modes: Studies in the History of Polyphonic Modality}. Routledge, New York and London, 2001.
-\bibitem[70]{8_bibliography:id10}
+\bibitem[71]{8_bibliography:id10}
 \sphinxAtStartPar
 Geraint A. Wiggins. Music, mind and mathematics: theory, reality and formality. \sphinxstyleemphasis{Journal of Mathematics and Music}, 6(2):111\textendash{}123, 2012. \sphinxhref{https://doi.org/10.1080/17459737.2012.694710}{doi:10.1080/17459737.2012.694710}.
-\bibitem[71]{8_bibliography:id40}
+\bibitem[72]{8_bibliography:id41}
 \sphinxAtStartPar
 Jason Yust. \sphinxstyleemphasis{Organized Time: Rhythm, Tonality, and Form}. Oxford Studies in Music Theory. Oxford University Press, Oxford, New York, 2018.
 \end{sphinxthebibliography}

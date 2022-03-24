@@ -90,3 +90,8 @@ Music analysis with the discrete Fourier transform
 
 Topic modeling 
 --------------
+
+Networks
+--------
+
+Building networks of creative influence: :cite:`georges_music_2022`
