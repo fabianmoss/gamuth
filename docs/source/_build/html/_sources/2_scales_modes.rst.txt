@@ -17,6 +17,13 @@ ones, are out of the scope of this book, and we restrict the descriptions to
 what we can model using the approch established in the earlier chapter:
 a formal description of tonal relations.
 
+.. note:: Disclaimer
+
+   For most of the music cultures discussed below,
+   I am not an expert but rely on the sources that I cite.
+   If you find any errors or misinterpretations on my behalf,
+   please let me know so that I can correct them.
+
 :cite:t:`Powers2001_Mode`
 
 Indian classical music
