@@ -1,5 +1,5 @@
 {
     "restructuredtext.confPath": "${workspaceFolder}/docs/source",
-    "esbonio.sphinx.confDir": "/home/fmoss/GitHub/fabianmoss/gamuth/docs/source",
+    "esbonio.sphinx.confDir": "${workspaceFolder}/docs/source",
     "esbonio.server.enabled": true
 }

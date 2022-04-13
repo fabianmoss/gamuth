@@ -40,6 +40,10 @@ that in music (as in life) we can only move forward.
    \draw[thick,->,>=stealth] (-0.3,0) -- (8,0) node[midway,below] {Time};
    \draw[thick] (0,-0.3) -- (0,3) node[midway,above,sloped] {Sound};
 
+.. TODO: Add 2-part figure as illustration
+   left: MuseScore screenshot (in continuous view)
+   right: Audacity screenshot
+
 This is also the way music is usually displayed
 in *Digital Audio Workstations* (DAW) that feature
 a master window where music blocks can be arranged
