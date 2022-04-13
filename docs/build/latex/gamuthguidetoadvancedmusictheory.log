@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.3.18)  24 MAR 2022 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.11)  13 APR 2022 08:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -118,7 +118,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count272
 \U@D=\dimen148
-\l@unhyphenated=\language8
+\l@unhyphenated=\language12
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -1189,7 +1189,7 @@ LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
 (/home/fmoss/texmf/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [3] [4]
-<./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png, id=616, 215.60
+<./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png, id=621, 215.60
 55pt x 41.4348pt>
 File: ./_lilypond/4a8a6697e4903f58c19b2a9f28c197772704f0c1/music.png Graphic fi
 le (type png)
@@ -1238,22 +1238,22 @@ Chapter 10.
 ]
 Chapter 11.
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2003--2003
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2024--2024
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2003--2003
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2024--2024
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2003--2003
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2024--2024
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2003--2003
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2024--2024
 []| 
  []
 
@@ -1264,7 +1264,7 @@ Chapter 12.
 [41] [42] [43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2626.
+(hyperref)                removing `math shift' on input line 2647.
 
 [44] [45] [46
 
@@ -1281,12 +1281,12 @@ Chapter 14.
 ]
 Chapter 15.
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-2916.
+2937.
 (/home/fmoss/texmf/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <10> not available
-(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2916
+(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2937
 .
  [53] [54] [55] [56] [57]
 [58
@@ -1294,7 +1294,7 @@ LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <10> not available
 ] [59
 
 ] [60] [61]
-Underfull \hbox (badness 10000) in paragraph at lines 3540--3542
+Underfull \hbox (badness 10000) in paragraph at lines 3564--3566
 []\T1/qtm/m/n/10 Craig Stu-art Sapp. Vi-sual hi-er-ar-chi-cal key anal-y-sis. \
 T1/qtm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/qtm/m/n/10 , 3(4):3, 2005.
  []
@@ -1313,15 +1313,15 @@ T1/qtm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/qtm/m/n/10 , 3(4):3, 2005.
 (./gamuthguidetoadvancedmusictheory.aux)
 Package rerunfilecheck Info: File `gamuthguidetoadvancedmusictheory.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 6EC683B0EF560F3DFFC9AB72CF4030AA;17958.
+(rerunfilecheck)             Checksum: 80AF488E11855E30D28A41630B83F240;18209.
  ) 
 Here is how much of TeX's memory you used:
- 35281 strings out of 480194
- 805000 string characters out of 5893742
- 1190679 words of memory out of 5000000
- 52210 multiletter control sequences out of 15000+600000
+ 35288 strings out of 480121
+ 805167 string characters out of 5892160
+ 1191073 words of memory out of 5000000
+ 52221 multiletter control sequences out of 15000+600000
  534548 words of font info for 93 fonts, out of 8000000 for 9000
- 15 hyphenation exceptions out of 8191
+ 60 hyphenation exceptions out of 8191
  99i,25n,94p,746b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/fmoss/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/home/fmoss/texmf/fonts
 /enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/ba
@@ -1345,11 +1345,11 @@ type1/public/tex-gyre/qtmri.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t
 1xbtt.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/
 texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/texmf/fonts/type1/publi
 c/txfonts/tcxtt.pfb></home/fmoss/texmf/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gamuthguidetoadvancedmusictheory.pdf (69 pages, 457462 bytes)
+Output written on gamuthguidetoadvancedmusictheory.pdf (69 pages, 458200 bytes)
 .
 PDF statistics:
- 1263 PDF objects out of 1440 (max. 8388607)
- 1144 compressed objects within 12 object streams
- 286 named destinations out of 1000 (max. 500000)
- 934 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1274 PDF objects out of 1440 (max. 8388607)
+ 1155 compressed objects within 12 object streams
+ 289 named destinations out of 1000 (max. 500000)
+ 942 words of extra memory for PDF output out of 10000 (max. 10000000)
 

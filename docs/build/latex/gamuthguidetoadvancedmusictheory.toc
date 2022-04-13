@@ -23,6 +23,7 @@
 \contentsline {section}{\numberline {2.6}Jazz}{9}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Other scales}{9}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Balinese Pelog and Slendro}{9}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Ancient Greek and Latin music theory}{9}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Pitch\sphinxhyphen {}Class Set Theory}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Pitch classes}{11}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Octave equivalence}{11}{subsection.3.1.1}%
