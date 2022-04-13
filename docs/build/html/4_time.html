@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>4. Time</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="5. Harmony" href="4_harmony.html" />
+  <link rel="prev" title="3. Pitch-Class Set Theory" href="3_set_theory.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Time</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#notes" class="reference internal">Notes</a></li>
+                
+                  <li class="toctree-l2"><a href="#performance" class="reference internal">Performance</a></li>
+                
+                  <li class="toctree-l2"><a href="#rhythm" class="reference internal">Rhythm</a></li>
+                
+                  <li class="toctree-l2"><a href="#meter" class="reference internal">Meter</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_segmentation.html" class="reference internal ">Segmentation</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">4. </span>Time</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="3_set_theory.html"
+       title="previous chapter">← <span class="section-number">3. </span>Pitch-Class Set Theory</a>
+  </li>
+  <li class="next">
+    <a href="4_harmony.html"
+       title="next chapter"><span class="section-number">5. </span>Harmony →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="time">
+<span id="id1"></span><h1><span class="section-number">4. </span>Time<a class="headerlink" href="#time" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>beats</p></li>
+<li><p>seconds</p></li>
+<li><p>onsets</p></li>
+</ul>
+<div class="section" id="notes">
+<h2><span class="section-number">4.1. </span>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<p>(Tones + Duration)
+blablabla…</p>
+<p>Sinve the relations between tones only given by
+their location in tonal space (and the interval function)
+generalizing the notion of neighbor notes etc. corresponds
+to changing what the <em>lines</em> in Western notation mean.
+Traditionally, two lines separate tones that are a generic third apart.
+But there have been other representations.
+For instance, the first attempts of Guido separated notes by steps.
+Let’s reinterpret the lines as seconds and fifths.
+There have also been a number of attempts to develop a fully chromatic
+notation system (e.g. Parncutt).</p>
+</div>
+<div class="section" id="performance">
+<h2><span class="section-number">4.2. </span>Performance<a class="headerlink" href="#performance" title="Permalink to this headline">¶</a></h2>
+<p>Musical time vs. performance time</p>
+<p>The simple two-dimensional model (sound vs. time) from the beginning of the book already
+seems quite inadequate at this point where we have engaged with many different aspects of the
+sound and pitch side of music. But also in the time domain we will see that the reality is more
+complex than this simple picture conveys.</p>
+</div>
+<div class="section" id="rhythm">
+<h2><span class="section-number">4.3. </span>Rhythm<a class="headerlink" href="#rhythm" title="Permalink to this headline">¶</a></h2>
+<p>(Duration patterns)</p>
+<div class="section" id="african-rhythms">
+<h3><span class="section-number">4.3.1. </span>African rhythms<a class="headerlink" href="#african-rhythms" title="Permalink to this headline">¶</a></h3>
+<p>including afro-american (Brazil, Cuba, …) Black Atlantic <span id="id2">[<a class="reference internal" href="8_bibliography.html#id6" title="Paul Gilroy. The Black Atlantic: Modernity and Double-Consciousness. Harvard University Press, 1995.">19</a>]</span>.</p>
+</div>
+<div class="section" id="balkan-rhythms">
+<h3><span class="section-number">4.3.2. </span>Balkan rhythms<a class="headerlink" href="#balkan-rhythms" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="indian-tala">
+<h3><span class="section-number">4.3.3. </span>Indian tala<a class="headerlink" href="#indian-tala" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="meter">
+<h2><span class="section-number">4.4. </span>Meter<a class="headerlink" href="#meter" title="Permalink to this headline">¶</a></h2>
+<p>Hierarchy… GTTM</p>
+<ul class="simple">
+<li><p>Discussion of long-short (middle?) ratios <span id="id3">[<a class="reference internal" href="8_bibliography.html#id8" title="Justin London. Hearing in Time: Psychological Aspects of Musical Meter. Oxford University Press, Oxford, second edition, 2012.">30</a>]</span></p></li>
+<li><p>isochrony on several levels?</p></li>
+<li><p>Loud rest</p></li>
+<li><p>small integer ratios <span id="id4">Desain and Honing [<a class="reference internal" href="8_bibliography.html#id11" title="Peter Desain and Henkjan Honing. The Formation of Rhythmic Categories and Metric Priming. Perception, 32(3):341–365, March 2003. doi:10.1068/p3370.">13</a>], Ravignani <em>et al.</em> [<a class="reference internal" href="8_bibliography.html#id9" title="Andrea Ravignani, Bill Thompson, Massimo Lumaca, and Manon Grube. Why Do Durations in Musical Rhythms Conform to Small Integer Ratios? Frontiers in Computational Neuroscience, 12:1–9, November 2018. doi:10.3389/fncom.2018.00086.">53</a>]</span></p></li>
+<li><p>Malian music: <span id="id5">Polak <em>et al.</em> [<a class="reference internal" href="8_bibliography.html#id7" title="Rainer Polak, Nori Jacoby, and Justin London. Both isochronous and non-isochronous metrical subdivision afford precise and stable ensemble entrainment: A corpus study of Malian jembe drumming. Frontiers in Neuroscience, 2016. doi:10.3389/fnins.2016.00285.">51</a>]</span></p></li>
+<li><p>Learning of metrical categories (analogous to relativ pitch): <span id="id6">[<a class="reference internal" href="8_bibliography.html#id39" title="Erin E. Hannon and Sandra E. Trehub. Tuning in to musical rhythms: infants learn more readily than adults. Proceedings of the National Academy of Sciences of the United States of America, 102(35):12639–12643, 2005. doi:10.1073/pnas.0504254102.">23</a>, <a class="reference internal" href="8_bibliography.html#id40" title="Sandra E. Trehub, E. Glenn Schellenberg, and Stuart B. Kamenetsky. Infants' and adults' perception of scale structure. Journal of Experimental Psychology: Human Perception and Performance, 25(4):965–975, 1999. doi:10.1037/0096-1523.25.4.965.">65</a>]</span></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="3_set_theory.html"
+       title="previous chapter">← <span class="section-number">3. </span>Pitch-Class Set Theory</a>
+  </li>
+  <li class="next">
+    <a href="4_harmony.html"
+       title="next chapter"><span class="section-number">5. </span>Harmony →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>

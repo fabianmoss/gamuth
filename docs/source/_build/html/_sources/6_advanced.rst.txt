@@ -1,7 +1,7 @@
 Advanced topics
 ===============
 
-.. .. _Pitch spelling:
+.. _Pitch spelling:
 
 Pitch Spelling
 --------------

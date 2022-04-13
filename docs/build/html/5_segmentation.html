@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>13. Segmentation</title>
+    
+          <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="_static/theme.css " type="text/css" />
+          <link rel="stylesheet" href="_static/exercise.css" type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="_static/theme-vendors.js"></script> -->
+      <script src="_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="genindex.html" />
+  <link rel="search" title="Search" href="search.html" />
+  <link rel="next" title="14. Advanced topics" href="6_advanced.html" />
+  <link rel="prev" title="12. Topic Modeling with Latent Dirichlet Allocation (LDA)" href="topic_modeling.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="index.html" class="home-link">
+    
+      <span class="site-name">GAMuTh: Guide to Advanced Music Theory</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+  
+    <div class="nav-item">
+      <a href="index.html#gamuth-guide-to-advanced-music-theory"
+         class="nav-link  router-link-active">
+         gamuth: guide to advanced music theory
+      </a>
+    </div>
+  
+    <div class="nav-item">
+      <a href="index.html#developers"
+         class="nav-link ">
+         developers
+      </a>
+    </div>
+  
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#gamuth-guide-to-advanced-music-theory">gamuth: guide to advanced music theory</a></span>
+      </p>
+      <ul class="current">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="1_fundamentals.html" class="reference internal ">Fundamentals</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="2_scales_modes.html" class="reference internal ">Scales and Modes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="3_set_theory.html" class="reference internal ">Pitch-Class Set Theory</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_time.html" class="reference internal ">Time</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="4_harmony.html" class="reference internal ">Harmony</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="encodings.html" class="reference internal ">Music Encoding</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="5_notes.html" class="reference internal ">Pitch-class based music analysis</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="pc_distributions.html" class="reference internal ">Tonal pitch-class distributions</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="history.html" class="reference internal ">Historical usage of tonal pitch classes</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="coevolution.html" class="reference internal ">Tonal pitch-class coevolution</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="diatonicism_chromaticism.html" class="reference internal ">Diatonicism — Chromaticism — Enharmonicism</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="topic_modeling.html" class="reference internal ">Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 current">
+            
+              <a href="#" class="reference internal current">Segmentation</a>
+            
+
+            
+              <ul>
+                
+                  <li class="toctree-l2"><a href="#free-segmentation" class="reference internal">Free segmentation</a></li>
+                
+                  <li class="toctree-l2"><a href="#contiguous-segmentation" class="reference internal">Contiguous segmentation</a></li>
+                
+                  <li class="toctree-l2"><a href="#hierarchical-segmentation" class="reference internal">Hierarchical segmentation</a></li>
+                
+                  <li class="toctree-l2"><a href="#exhaustive-segmentation" class="reference internal">Exhaustive segmentation</a></li>
+                
+              </ul>
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="6_advanced.html" class="reference internal ">Advanced topics</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="8_bibliography.html" class="reference internal ">Bibliography</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="index.html#developers">developers</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="api.html" class="reference internal ">API - gamuth</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+    <li><span class="section-number">13. </span>Segmentation</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+  <li class="prev">
+    <a href="topic_modeling.html"
+       title="previous chapter">← <span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+  </li>
+  <li class="next">
+    <a href="6_advanced.html"
+       title="next chapter"><span class="section-number">14. </span>Advanced topics →</a>
+  </li>
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <div class="section" id="segmentation">
+<h1><span class="section-number">13. </span>Segmentation<a class="headerlink" href="#segmentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="free-segmentation">
+<h2><span class="section-number">13.1. </span>Free segmentation<a class="headerlink" href="#free-segmentation" title="Permalink to this headline">¶</a></h2>
+<p>(pc set analysis)</p>
+<ul class="simple">
+<li><p><span id="id1">Straus [<a class="reference internal" href="8_bibliography.html#id3" title="Joseph Nathan Straus. Introduction to post-tonal theory. Pearson Prentice Hall, New York, 3rd edition, 2005.">60</a>]</span></p></li>
+<li><p><span id="id2">Hanninen [<a class="reference internal" href="8_bibliography.html#id56" title="Dora A Hanninen. Orientations, Criteria, Segments: A General Theory of Segmentation for Music Analysis. Journal of Music Theory, 45(2):345–433, 2001.">21</a>], Hanninen [<a class="reference internal" href="8_bibliography.html#id57" title="Dora A. Hanninen. A Theory of Music Analysis: On Segmentation and Associative Organization. University of Rochester Press, Rochester, NY, first edition, December 2012.">22</a>]</span></p></li>
+</ul>
+<p>relating segments creates specific graph structure</p>
+</div>
+<div class="section" id="contiguous-segmentation">
+<h2><span class="section-number">13.2. </span>Contiguous segmentation<a class="headerlink" href="#contiguous-segmentation" title="Permalink to this headline">¶</a></h2>
+<p>chord labels, Roman numerals, etc.</p>
+<p>graph: chain</p>
+</div>
+<div class="section" id="hierarchical-segmentation">
+<h2><span class="section-number">13.3. </span>Hierarchical segmentation<a class="headerlink" href="#hierarchical-segmentation" title="Permalink to this headline">¶</a></h2>
+<p>CFGs, Schenker</p>
+<p>graph: tree</p>
+</div>
+<div class="section" id="exhaustive-segmentation">
+<h2><span class="section-number">13.4. </span>Exhaustive segmentation<a class="headerlink" href="#exhaustive-segmentation" title="Permalink to this headline">¶</a></h2>
+<p>Keyscapes <span id="id3">Sapp [<a class="reference internal" href="8_bibliography.html#id41" title="Craig Stuart Sapp. Harmonic Visualizations of Tonal Music. In The International Computer Music Conference (ICMC), 423–430. 2001.">57</a>], Sapp [<a class="reference internal" href="8_bibliography.html#id42" title="Craig Stuart Sapp. Visual hierarchical key analysis. Computers in Entertainment, 3(4):3, 2005. doi:10.1145/1095534.1095544.">58</a>]</span>,
+Pitchscapes <span id="id4">Lieck and Rohrmeier [<a class="reference internal" href="8_bibliography.html#id33" title="Robert Lieck and Martin Rohrmeier. Modelling Hierarchical Key Structure with Pitch Scapes. In Proceedings of the 21st International Society for Music Information Retrieval Conference (ISMIR 2020), 811–818. Montreal, Canada, 2020. doi:10.5281/zenodo.4245558.">29</a>]</span>,
+Wavescapes <span id="id5">Viaccoz <em>et al.</em> [<a class="reference internal" href="8_bibliography.html#id55" title="Cédric Viaccoz, Daniel Harasim, Fabian C. Moss, and Martin Rohrmeier. Wavescapes: A visual hierarchical analysis of tonality using the discrete Fourier transform. Musicae Scientiae, pages 10298649211034906, January 2022. doi:10.1177/10298649211034906.">68</a>]</span></p>
+<p>See also Müller (form)</p>
+</div>
+</div>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+  <li class="prev">
+    <a href="topic_modeling.html"
+       title="previous chapter">← <span class="section-number">12. </span>Topic Modeling with Latent Dirichlet Allocation (LDA)</a>
+  </li>
+  <li class="next">
+    <a href="6_advanced.html"
+       title="next chapter"><span class="section-number">14. </span>Advanced topics →</a>
+  </li>
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2021, Fabian C. Moss.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
