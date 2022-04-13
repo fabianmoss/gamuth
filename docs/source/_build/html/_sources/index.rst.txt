@@ -35,6 +35,14 @@ The Python project `musthe`_ also seems to pursue a similar goal.
 .. _`Music for Geeks and Nerds`: https://pedrokroger.net/mfgan/
 .. _`musthe`: https://github.com/gciruelos/musthe
 
+
+In the first part, Fundamentals, we will formalize
+tonal spaces as spaces of what is possible
+(within a given model/conceptzalization).
+Later, in the advanced chapters on corpus studies,
+we will build on the spaces of possibilities
+and look at what is likely to happen in these spaces.
+
 .. only:: latex
 
    .. note::
