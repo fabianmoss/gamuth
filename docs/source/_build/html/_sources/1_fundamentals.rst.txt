@@ -1,35 +1,51 @@
 Fundamentals
 ============
 
-The theory presented in here can be described as a *tonal theory* in the sense 
-that its most fundamental objects are *tones*, discrete musical entities that have
-a certain location in tonal space. 
-A tonal space is then a metrical space describing all possible tone locations,
-and the metric is given by an *interval function* between the tones. Note that by this definition,
-there are as many different tonal spaces as there are interval functions.
+The theory presented in here can be described
+as a *tonal theory* in the sense
+that its most fundamental objects are *tones*,
+discrete musical entities that have
+a certain location in tonal space.
+A tonal space is then a metrical space
+describing all possible tone locations,
+and the metric is given by an *interval function*
+between the tones. Note that by this definition,
+there are as many different tonal spaces
+as there are interval functions.
 
-While many aspects and examples will be taken 
-from Western (classical) music, the theory is in principle not restricted to this 
-tradition but extends well to virtually all musical cultures where a tone is a meaningful concept.
+While many aspects and examples will be taken
+from Western (classical) music, the theory is
+in principle not restricted to this
+tradition but extends well to virtually all musical cultures
+where a tone is a meaningful concept.
 
-Perhaps the most simple description of music is *sound organized in time* (attributed to 
-Edgar Varèse, see also :cite:`Yust2018_OrganizedTimeRhythm`). 
-Later we will see that this description falls short of encompassing many central aspects to music
-but it provides a good starting point for our considerations. Taking this definition for granted
-means that we can conceptualize music within a two-dimensional framework, where the axes 
-represent sound and time, respectively (see :numref:`fig_soundtime`). Note that only the x-axis ("Time") 
-is not represented as an arrow to indicate that in music (as in life) we can only move forward.
+Perhaps the most simple description of music
+is *sound organized in time* (attributed to
+Edgar Varèse, see also :cite:`Yust2018_OrganizedTimeRhythm`).
+Later we will see that this description falls short
+of encompassing many central aspects to music
+but it provides a good starting point for our considerations.
+Taking this definition for granted
+means that we can conceptualize music within
+a two-dimensional framework, where the axes
+represent sound and time, respectively (see :numref:`fig_soundtime`).
+Note that only the x-axis ("Time")
+is not represented as an arrow to indicate
+that in music (as in life) we can only move forward.
 
 .. _fig_soundtime:
 
-.. tikz:: Two-dimensional depiction of music: music as sound organized in time. 
+.. tikz:: Two-dimensional depiction of music: music as sound organized in time.
 
-   \draw[thick,->,>=stealth] (-0.3,0) -- (8,0) node[midway,below] {Time}; 
+   \draw[thick,->,>=stealth] (-0.3,0) -- (8,0) node[midway,below] {Time};
    \draw[thick] (0,-0.3) -- (0,3) node[midway,above,sloped] {Sound};
 
-This is also the way music is usually displayed in *Digital Audio Workstations* (DAW) that feature
-a master window where music blocks can be arranged along a fixed timeline. Producing music in 
-these environments thus quite literally consists of stacking blocks on top of one another. 
+This is also the way music is usually displayed
+in *Digital Audio Workstations* (DAW) that feature
+a master window where music blocks can be arranged
+along a fixed timeline. Producing music in
+these environments thus quite literally consists
+of stacking blocks on top of one another.
 
 Tones
 -----
@@ -43,11 +59,13 @@ Does this tone have a pitch? A duration? A velocity (volume)?
 "The ultimate elements of the tonal imagination are single tones."
 (:cite:t:`Wason1992_RiemannIdeenLehre`, p. 92).
 
-Bearing that in mind, let's create (or *instantiate*) a tone. To do so, we need to 
-conceptualize ("vorstellen" in Riemann's terminology) a *tone location* 
-("Tonort", :cite:t:`Mazzola1990_GeometrieToneElemente`, p. 241).
-There are many different ways to do this. In fact, the way we specify the location of a tone 
-defines the tonal space in which it is situated. 
+Bearing that in mind, let's create (or *instantiate*)
+a tone. To do so, we need to
+conceptualize ("vorstellen" in Riemann's terminology)
+a *tone location* ("Tonort", :cite:t:`Mazzola1990_GeometrieToneElemente`, p. 241).
+There are many different ways to do this.
+In fact, the way we specify the location of a tone
+defines the tonal space in which it is situated.
 The figure below is an adaptation from :cite:t:`Lewin1987`.
 
 .. tikz:: Two abstract tones :math:`s` and :math:`t`, and the interval :math:`i` between them.
@@ -56,7 +74,8 @@ The figure below is an adaptation from :cite:t:`Lewin1987`.
    \node[circle,fill,inner sep=0pt,minimum size=5pt,label={below: $t$}] (t) at (4,1.5) {};
    \draw[thick,->,-stealth,shorten <=2pt, shorten >=2pt] (s) -- (t) node[midway,below,sloped] {$i$};
 
-The fact that music operates with discrete pitches has also been argued to be crucial for its 
+The fact that music operates with discrete pitches
+has also been argued to be crucial for its
 evolution :cite:p:`Tomlinson2018_MillionYearsMusic`.
 
 Frequencies
@@ -66,15 +85,16 @@ Each tone corresponds to some *fundamental frequency* :math:`f` in Hertz (Hz),
 oscillations per second.
 
 - Overtone series
-- frequency ratios 
+- frequency ratios
 - logarithm: multiplication => addition
 
 Euler Space 
 ~~~~~~~~~~~
 
-One option is to locate a tone `t` as a point :math:`p=(o, q, t)` in Euler Space, defined by
-a number of octaves `o`, fifths `q`, and thirds `t`. We will use the :class:`gamuth.Tone`
-class for this
+One option is to locate a tone `t` as a point
+:math:`p=(o, q, t)` in Euler Space, defined by
+a number of octaves `o`, fifths `q`, and thirds
+`t`. We will use the :class:`gamuth.Tone` class for this
 
 .. code-block:: python
 
@@ -82,20 +102,21 @@ class for this
 
    t = Tone(o=0, q=0, t=0)
 
-From this representation we can derive a variety of others, corrsponding to transformations of 
-tonal space.
+From this representation we can derive a variety of others,
+corrsponding to transformations of tonal space.
 
 Octave equivalence
 ~~~~~~~~~~~~~~~~~~
 
-Octave equivalance considers all tones to be equivalent that are separated by one or
-multiple octaves, e.g C1, C2, C4, C10 etc. More precisely, all tones whose fundamental frequencies
+Octave equivalance considers all tones to be equivalent
+that are separated by one or multiple octaves, e.g C1, C2, C4, C10 etc.
+More precisely, all tones whose fundamental frequencies
 are related by multiples of 2 are octave equivalent.
 
 Tonnetz
 ~~~~~~~
 
-The *Tonnetz* does not contain octaves and thus corresponds to a projection 
+The *Tonnetz* does not contain octaves and thus corresponds to a projection
 
 .. math::
    
