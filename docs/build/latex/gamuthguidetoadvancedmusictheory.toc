@@ -107,8 +107,8 @@
 \contentsline {section}{\numberline {14.6}Music analysis with the discrete Fourier transform}{50}{section.14.6}%
 \contentsline {section}{\numberline {14.7}Topic modeling}{50}{section.14.7}%
 \contentsline {section}{\numberline {14.8}Networks}{50}{section.14.8}%
-\contentsline {chapter}{\numberline {15}Developers}{53}{chapter.15}%
-\contentsline {section}{\numberline {15.1}API \sphinxhyphen {} gamuth}{53}{section.15.1}%
-\contentsline {chapter}{Bibliography}{59}{chapter*.11}%
-\contentsline {chapter}{Python Module Index}{63}{section*.12}%
-\contentsline {chapter}{Index}{65}{section*.13}%
+\contentsline {chapter}{\numberline {15}Developers}{51}{chapter.15}%
+\contentsline {section}{\numberline {15.1}API \sphinxhyphen {} gamuth}{51}{section.15.1}%
+\contentsline {chapter}{Bibliography}{57}{chapter*.11}%
+\contentsline {chapter}{Python Module Index}{61}{section*.12}%
+\contentsline {chapter}{Index}{63}{section*.13}%

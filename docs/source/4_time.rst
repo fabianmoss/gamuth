@@ -3,9 +3,10 @@
 Time
 ====
 
+Fundamental concepts:
 
-- beats 
-- seconds 
+- beats
+- seconds
 - onsets
 
 Notes
@@ -14,14 +15,14 @@ Notes
 (Tones + Duration)
 blablabla...
 
-Sinve the relations between tones only given by 
+Sinve the relations between tones only given by
 their location in tonal space (and the interval function)
 generalizing the notion of neighbor notes etc. corresponds
 to changing what the *lines* in Western notation mean.
 Traditionally, two lines separate tones that are a generic third apart.
-But there have been other representations. 
+But there have been other representations.
 For instance, the first attempts of Guido separated notes by steps.
-Let's reinterpret the lines as seconds and fifths. 
+Let's reinterpret the lines as seconds and fifths.
 There have also been a number of attempts to develop a fully chromatic
 notation system (e.g. Parncutt).
 
@@ -31,27 +32,30 @@ Performance
 
 Musical time vs. performance time
 
-The simple two-dimensional model (sound vs. time) from the beginning of the book already 
-seems quite inadequate at this point where we have engaged with many different aspects of the 
-sound and pitch side of music. But also in the time domain we will see that the reality is more 
-complex than this simple picture conveys. 
+The simple two-dimensional model (sound vs. time)
+from the beginning of the book already seems quite inadequate
+at this point where we have engaged with many different aspects of the
+sound and pitch side of music. But also in the time domain we will
+see that the reality is more complex than this simple picture conveys.
 
 Rhythm
 ~~~~~~
 
 (Duration patterns)
 
-African rhythms 
+African rhythms
 ...............
 
-including afro-american (Brazil, Cuba, ...) Black Atlantic :cite:`Gilroy1995_BlackAtlanticModernity`.
+including afro-american (Brazil, Cuba, ...)
+Black Atlantic :cite:`Gilroy1995_BlackAtlanticModernity`.
 
-Balkan rhythms 
+Balkan rhythms
 ..............
 
-Indian tala 
+Indian tala
 ...........
 
+:cite:`Clayton2000_TimeIndianMusic`
 
 Meter
 ~~~~~

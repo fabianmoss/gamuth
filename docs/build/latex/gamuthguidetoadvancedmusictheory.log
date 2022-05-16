@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.11)  13 APR 2022 08:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.4.11)  16 MAY 2022 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -327,7 +327,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameSep=\dimen172
 ))
 (./sphinxlatexliterals.sty
-File: sphinxlatexliterals.sty 2021/12/06 code-blocks and parsed literals
+File: sphinxlatexliterals.sty 2021/01/27 code-blocks and parsed literals
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
@@ -469,9 +469,9 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthfirst=\dimen188
 ))
 (./sphinxlatexstyletext.sty
-File: sphinxlatexstyletext.sty 2021/12/06 text styling
+File: sphinxlatexstyletext.sty 2021/01/27 text styling
 ) (./sphinxlatexobjects.sty
-File: sphinxlatexobjects.sty 2021/12/05 documentation environments
+File: sphinxlatexobjects.sty 2021/01/27 documentation environments
 \py@argswidth=\skip79
 \lineblockindentation=\skip80
 \DUlineblockindent=\skip81
@@ -1238,22 +1238,22 @@ Chapter 10.
 ]
 Chapter 11.
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2064--2064
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2068--2068
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2064--2064
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2068--2068
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2064--2064
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2068--2068
 []| 
  []
 
 
-Overfull \hbox (5.6pt too wide) in paragraph at lines 2064--2064
+Overfull \hbox (5.6pt too wide) in paragraph at lines 2068--2068
 []| 
  []
 
@@ -1264,7 +1264,7 @@ Chapter 12.
 [41] [42] [43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2687.
+(hyperref)                removing `math shift' on input line 2691.
 
 [44] [45] [46
 
@@ -1274,39 +1274,38 @@ Chapter 13.
 
 ]
 Chapter 14.
-[49] [50] [51
-
-] [52
-
-]
+[49] [50]
 Chapter 15.
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-2978.
+2979.
 (/home/fmoss/texmf/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `TS1/txtt/m/it' in size <10> not available
-(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2978
+(Font)              Font shape `TS1/txtt/m/sl' tried instead on input line 2979
 .
- [53] [54] [55] [56] [57]
-[58
+ [51
 
-] [59
 
-] [60] [61]
-Underfull \hbox (badness 10000) in paragraph at lines 3605--3607
+] [52] [53] [54] [55]
+[56
+
+] [57
+
+] [58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 3609--3611
 []\T1/qtm/m/n/10 Craig Stu-art Sapp. Vi-sual hi-er-ar-chi-cal key anal-y-sis. \
 T1/qtm/m/it/10 Com-put-ers in En-ter-tain-ment\T1/qtm/m/n/10 , 3(4):3, 2005.
  []
 
-[62] [63
+[60] [61
 
 
 
-] (./gamuthguidetoadvancedmusictheory.ind [64
+] (./gamuthguidetoadvancedmusictheory.ind [62
 
 
-] [65
+] [63
 
 
 ])
@@ -1316,10 +1315,10 @@ t changed.
 (rerunfilecheck)             Checksum: 80AF488E11855E30D28A41630B83F240;18209.
  ) 
 Here is how much of TeX's memory you used:
- 35288 strings out of 480121
- 805167 string characters out of 5892160
- 1191073 words of memory out of 5000000
- 52221 multiletter control sequences out of 15000+600000
+ 35281 strings out of 480121
+ 805033 string characters out of 5892160
+ 1191046 words of memory out of 5000000
+ 52215 multiletter control sequences out of 15000+600000
  534548 words of font info for 93 fonts, out of 8000000 for 9000
  60 hyphenation exceptions out of 8191
  99i,25n,94p,746b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1345,11 +1344,11 @@ type1/public/tex-gyre/qtmri.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t
 1xbtt.pfb></home/fmoss/texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/
 texmf/fonts/type1/public/txfonts/t1xtt.pfb></home/fmoss/texmf/fonts/type1/publi
 c/txfonts/tcxtt.pfb></home/fmoss/texmf/fonts/type1/urw/times/utmr8a.pfb>
-Output written on gamuthguidetoadvancedmusictheory.pdf (69 pages, 458772 bytes)
+Output written on gamuthguidetoadvancedmusictheory.pdf (67 pages, 458265 bytes)
 .
 PDF statistics:
- 1274 PDF objects out of 1440 (max. 8388607)
- 1155 compressed objects within 12 object streams
- 289 named destinations out of 1000 (max. 500000)
+ 1266 PDF objects out of 1440 (max. 8388607)
+ 1149 compressed objects within 12 object streams
+ 288 named destinations out of 1000 (max. 500000)
  942 words of extra memory for PDF output out of 10000 (max. 10000000)
 
